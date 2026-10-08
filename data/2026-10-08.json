@@ -1,0 +1,100 @@
+{
+  "paper_name": "The Morning Commit",
+  "tagline": "AI · dev tools · tech — a two-minute read",
+  "edition": "Tampere edition",
+  "issue_no": "No. 1",
+  "date_long": "Thursday, 8 October 2026",
+  "date_slug": "2026-10-08",
+  "lead": {
+    "kicker": "Lead story · Anthropic",
+    "headline": "Claude Haiku 5.5 cuts small-model prices by 90%",
+    "summary": "Anthropic's new small model costs $0.10 in and $0.50 out per million tokens on prompts under 100k, 90% less than Haiku 4.5, and it's pitched as the cheap subagent working under Opus or Sonnet 5.5. It's the first Haiku with an adjustable effort setting. Sonnet 5.5 cache reads are halved too (about 20% cheaper agentic work), Max and Team plans get $100–$500 of monthly API credit, and Cursor has already added it.",
+    "source": "Anthropic",
+    "url": "https://www.anthropic.com/claude-haiku-5-5"
+  },
+  "number_of_day": {
+    "value": "39.2%",
+    "label": "Claude Haiku 5.5's score on the Terminal-Bench 4.0 agentic-coding test. Haiku 4.5 scored 0.0% on the same test, and Sonnet 5.5 gets 70.6%.",
+    "source": "Anthropic",
+    "url": "https://www.anthropic.com/claude-haiku-5-5"
+  },
+  "news": [
+    {
+      "tag": "Dev tools",
+      "headline": "LiteLLM open-sources Moyai, a self-hosted cloud coding agent",
+      "summary": "Give it a task in Slack or the browser and it opens a pull request while your laptop is closed. It runs Claude Code, Codex, OpenCode or Deep Agents in isolated workspaces on any of LiteLLM's 100+ providers, and provider keys stay out of the sandbox.",
+      "source": "LiteLLM",
+      "url": "https://docs.litellm.ai/blog/moyai-open-source"
+    },
+    {
+      "tag": "Nordics",
+      "headline": "Norway's Boost.ai is being sold to Automation Anywhere",
+      "summary": "Nordic Capital agreed to sell the conversational and voice AI company, built for banks and other regulated industries, to the agentic-automation firm. Terms weren't disclosed, and the deal should close in Q4 2026.",
+      "source": "Nordic Capital",
+      "url": "https://www.nordiccapital.com/insights/press-releases/nordic-capital-agrees-to-sell-boostai-a-leading-conversational-and-voice-ai-company-for-regulated-industries-to-automation-anywhere/"
+    },
+    {
+      "tag": "Policy",
+      "headline": "Australia wants AI labs to prove their safety systems work",
+      "summary": "National standards modelled on banking and aviation rules are due by year-end, with legislation in 2027. The push follows reports that OpenAI agents got unauthorised access to Australian government sites, including a Medicare statistics portal, during testing.",
+      "source": "ABC News",
+      "url": "https://www.abc.net.au/news/2026-10-08/federal-politics-ai-regulation-andrew-charlton-speech/107241674"
+    },
+    {
+      "tag": "Science",
+      "headline": "Biohub coordinates a $1.8B push for AI models of cells",
+      "summary": "The Zuckerberg–Chan nonprofit is pooling data, lab work and compute. Meta, Google DeepMind and Isomorphic Labs put in $300M combined, and the US Department of Energy is expected to add over $500M across five years.",
+      "source": "Creati.ai",
+      "url": "https://creati.ai/ai-news/2026-10-08/zuckerberg-backed-biohub-coordinates-1-8-billion-effort-to-build-ai-models-of-cell-behavior/"
+    }
+  ],
+  "quick_hit": {
+    "label": "Quick hit",
+    "text": "Three researchers OpenAI recently fired wrote to its board and safety committees on Wednesday, asking for independent safety audits and warning against approaches that make models' reasoning harder to monitor.",
+    "source": "Firstpost",
+    "url": "https://www.firstpost.com/tech/fired-openai-researchers-raise-ai-safety-concerns-call-for-independent-audits-14051296.html/amp"
+  },
+  "x_posts": [
+    {
+      "name": "Theo - t3.gg",
+      "handle": "theo",
+      "time": "Wed 12:31",
+      "text": "My agents wrote over 200 bad \"watch pr\" scripts over the last few months. If you have a \"babysit\" skill for watching PRs, send the following prompt to your agent: I want you to audit my history with Claude Code, Codex and other agents on this machine. …",
+      "why": "A prompt that has your agent audit its own history and clean up duplicate PR-watching scripts. 847 bookmarks.",
+      "likes": 767,
+      "reposts": 17,
+      "url": "https://x.com/theo/status/2107765823637168287"
+    },
+    {
+      "name": "Vojta Holik",
+      "handle": "vojta_holik",
+      "time": "Wed 18:00",
+      "text": "Your coding agent knows :has(), subgrid and anchor positioning. It just rarely reaches for them. I built good-css so it does: 47 modern CSS techniques your agent uses first.",
+      "why": "A skill pack that nudges agents toward modern CSS. Over 1,200 bookmarks.",
+      "likes": 701,
+      "reposts": 45,
+      "url": "https://x.com/vojta_holik/status/2107848426784428100"
+    },
+    {
+      "name": "Vox",
+      "handle": "Voxyz_ai",
+      "time": "Thu 00:00",
+      "text": "Highly recommend slimming down your AGENTS.md. Claude Code's docs say to keep each one under 200 lines, since the longer it gets, the less Claude follows it. Codex reads 32 KiB at most by default and skips anything past that. …",
+      "why": "A quick, practical check for the instruction files in your repos.",
+      "likes": 281,
+      "reposts": 12,
+      "url": "https://x.com/Voxyz_ai/status/2107939019091005836"
+    },
+    {
+      "name": "Nathan Cloos",
+      "handle": "nacloos",
+      "time": "Wed 16:34",
+      "text": "We left Eko, an embodied coding agent, on an island for 30 hours with no task or goal, studying it like ethologists study a new species. Eko explored, built, climbed, made games, and learned completely new techniques (1/9)",
+      "why": "A nine-part research thread on what a coding agent does when nobody gives it a job.",
+      "likes": 358,
+      "reposts": 36,
+      "url": "https://x.com/nacloos/status/2107826919081484750"
+    }
+  ],
+  "footer": "Compiled 8 Oct 2026, 07:55 Helsinki time. X posts come from one X search (last 24 h) and news from open web sources. Times are in Helsinki time."
+}

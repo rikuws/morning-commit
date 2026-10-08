@@ -1,0 +1,310 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="light">
+<meta name="theme-color" content="#f6f1e7">
+<title>The Morning Commit · Thursday, 8 October 2026</title>
+<meta name="description" content="Thursday, 8 October 2026: Claude Haiku 5.5 cuts small-model prices by 90%. Anthropic&#39;s new small model costs $0.10 in and $0.50 out per million tokens on prompts under 100k, 90% less than Haiku 4.5, and it&#39;s pitched as the cheap subagent working under…">
+<link rel="canonical" href="https://rikuws.github.io/morning-commit/issues/2026-10-08/">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="The Morning Commit">
+<meta property="og:title" content="The Morning Commit — Claude Haiku 5.5 cuts small-model prices by 90%">
+<meta property="og:description" content="Thursday, 8 October 2026: Claude Haiku 5.5 cuts small-model prices by 90%. Anthropic&#39;s new small model costs $0.10 in and $0.50 out per million tokens on prompts under 100k, 90% less than Haiku 4.5, and it&#39;s pitched as the cheap subagent working under…">
+<meta property="og:url" content="https://rikuws.github.io/morning-commit/issues/2026-10-08/">
+<meta property="og:image" content="https://rikuws.github.io/morning-commit/issues/2026-10-08/card.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="The Morning Commit — Claude Haiku 5.5 cuts small-model prices by 90%">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://rikuws.github.io/morning-commit/issues/2026-10-08/card.png">
+
+<meta name="twitter:title" content="The Morning Commit — Claude Haiku 5.5 cuts small-model prices by 90%">
+<meta name="twitter:description" content="Thursday, 8 October 2026: Claude Haiku 5.5 cuts small-model prices by 90%. Anthropic&#39;s new small model costs $0.10 in and $0.50 out per million tokens on prompts under 100k, 90% less than Haiku 4.5, and it&#39;s pitched as the cheap subagent working under…">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='10' fill='%23f6f1e7'/%3E%3Ctext x='32' y='48' font-family='Georgia,serif' font-weight='900' font-size='44' text-anchor='middle' fill='%231b1a17'%3EM%3C/text%3E%3Crect x='14' y='54' width='36' height='3' fill='%23b3261e'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=Inter:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,700;0,800;0,900;1,400&family=Playfair+Display+SC:wght@700&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap">
+<style>
+:root{
+  --paper:#f6f1e7; --ink:#1b1a17; --muted:#5f5a50; --rule:#1b1a17; --soft:#d8cfbd;
+  --accent:#b3261e; --xblue:#1d4e89; --card:#fffdf8; --desk:#e9e3d6;
+  --serif:"Source Serif 4","Source Serif Pro","Noto Serif",Georgia,serif;
+  --display:"Playfair Display","Playfair Display SC",Georgia,serif;
+  --sans:Inter,"Noto Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --mono:"IBM Plex Mono","JetBrains Mono",ui-monospace,monospace;
+  color-scheme:light;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
+html,body{margin:0;background:var(--desk)}
+body{font-family:var(--serif);color:var(--ink);-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+a{color:inherit;text-decoration:none;-webkit-tap-highlight-color:rgba(179,38,30,.15)}
+a:hover{text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:3px}
+a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+
+.page{max-width:1100px;margin:0 auto;background:var(--paper);padding:14px 18px 22px;
+      background-image:radial-gradient(rgba(0,0,0,.025) 1px,transparent 1px);background-size:4px 4px}
+
+/* issue nav */
+.nav{display:flex;justify-content:space-between;align-items:stretch;gap:6px;font-family:var(--sans);
+     font-size:12px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.nav a,.nav span{display:flex;align-items:center;min-height:44px;padding:0 2px}
+.nav .mid{justify-content:center;color:var(--ink)}
+.nav .next{justify-content:flex-end}
+.nav span.off{opacity:.35}
+.nav a:hover{color:var(--accent);text-decoration:none}
+.nav-top{border-bottom:1px solid var(--soft);margin-bottom:8px}
+.nav-bottom{border-top:1px solid var(--soft);margin-top:14px}
+
+/* masthead */
+.topline{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:4px 12px;font-family:var(--sans);
+         font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);
+         border-bottom:1px solid var(--rule);padding-bottom:7px}
+.topline .tl{display:none}
+.masthead{text-align:center;padding:12px 0 4px}
+.masthead h1{font-family:var(--display);font-weight:900;font-size:clamp(34px,9.6vw,78px);line-height:1;margin:0;letter-spacing:-.5px}
+.masthead h1 a:hover{text-decoration:none}
+.masthead .tag{text-wrap:balance;font-family:var(--display);font-style:italic;font-size:15px;line-height:1.35;color:var(--muted);margin-top:6px}
+.dateline{display:flex;flex-wrap:wrap;justify-content:space-between;gap:2px 14px;font-family:var(--sans);font-size:11.5px;font-weight:600;
+          letter-spacing:.1em;text-transform:uppercase;border-top:3px double var(--rule);border-bottom:1px solid var(--rule);
+          padding:7px 2px;margin-top:12px}
+
+/* lead row */
+.lead-row{display:grid;grid-template-columns:1fr;gap:20px;padding:18px 0;border-bottom:1px solid var(--rule)}
+.kicker{font-family:var(--sans);font-size:11.5px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--accent)}
+.lead h2{text-wrap:balance;font-family:var(--display);font-weight:800;font-size:clamp(30px,8vw,44px);line-height:1.08;margin:8px 0 12px;letter-spacing:-.3px}
+.lead p{font-size:18px;line-height:1.55;margin:0}
+.lead p::first-letter{float:left;font-family:var(--display);font-weight:900;font-size:56px;line-height:.85;padding:5px 8px 0 0}
+.src{font-family:var(--sans);font-size:12.5px;color:var(--muted);margin-top:10px}
+.src b{color:var(--ink)}
+.src a{display:inline-block;padding:6px 0;margin:-6px 0;text-decoration:underline;text-decoration-color:var(--soft);text-underline-offset:3px}
+.nod{border-top:1px solid var(--rule);padding-top:16px;display:flex;flex-direction:column;justify-content:center}
+.nod .big{font-family:var(--display);font-weight:900;font-size:clamp(64px,18vw,86px);line-height:.95;color:var(--accent);margin:6px 0 10px}
+.nod p{font-size:16.5px;line-height:1.5;margin:0}
+
+/* section headers */
+.section-h{display:flex;align-items:center;gap:14px;margin:22px 0 14px}
+.section-h h2{margin:0;font-family:"Playfair Display SC","Playfair Display",serif;font-weight:700;font-size:23px;white-space:nowrap}
+.section-h::before,.section-h::after{content:"";flex:1;border-top:1px solid var(--rule)}
+
+/* X posts */
+.posts{display:grid;grid-template-columns:1fr;gap:14px}
+.post{position:relative;background:var(--card);border:1px solid var(--soft);border-top:3px solid var(--ink);padding:14px 16px 10px;display:flex;flex-direction:column}
+.post:hover{border-color:#bfb49e;border-top-color:var(--ink)}
+.who{font-family:var(--sans);line-height:1.3}
+.who .n{display:block;font-weight:700;font-size:15px}
+.who .sub2{display:flex;justify-content:space-between;gap:8px;font-size:13.5px}
+.who .h{color:var(--xblue);font-weight:500}
+.who .t{color:var(--muted);font-size:12px;white-space:nowrap}
+.post blockquote{margin:9px 0 12px;font-size:16.5px;line-height:1.45;font-style:italic;color:#2b2925;overflow-wrap:anywhere}
+.why{font-family:var(--sans);font-size:14px;line-height:1.45;border-top:1px dotted #9d9583;padding-top:8px;margin-top:auto}
+.why b{color:var(--accent);text-transform:uppercase;letter-spacing:.08em;font-size:11px;margin-right:4px}
+.meta{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-top:4px;font-family:var(--sans);font-size:12.5px;color:var(--muted)}
+.meta .stats b{color:var(--ink);font-weight:700}
+.meta .u{display:inline-flex;align-items:center;gap:6px;min-height:44px;font-family:var(--mono);font-size:11.5px;color:var(--xblue)}
+.meta .u .open{font-family:var(--sans);font-weight:700;font-size:11px;letter-spacing:.1em;text-transform:uppercase}
+.meta .u .path{color:var(--muted)}
+/* whole card is tappable */
+.meta .u::after{content:"";position:absolute;inset:0}
+.post:hover .meta .u{text-decoration:underline}
+
+/* news */
+.news{display:grid;grid-template-columns:1fr;gap:0}
+.item{padding:14px 0;border-top:1px solid var(--soft)}
+.item:first-child{border-top:none;padding-top:0}
+.item .kicker{font-size:11px}
+.item h3{text-wrap:balance;font-family:var(--display);font-weight:700;font-size:23px;line-height:1.18;margin:6px 0 8px}
+.item h3 a{display:block}
+.item p{font-size:16.5px;line-height:1.5;margin:0}
+
+/* quick hit */
+.quick{display:flex;flex-direction:column;gap:6px;margin-top:20px;padding:14px 16px;background:var(--ink);color:var(--paper)}
+.quick .lbl{font-family:var(--sans);font-weight:800;font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:#f2b8b5;white-space:nowrap;padding-top:2px}
+.quick p{margin:0;font-size:16.5px;line-height:1.5}
+.quick .src{color:#bdb5a5;display:inline;margin-left:6px}
+.quick .src b{color:var(--paper)}
+.quick .src a{text-decoration-color:#6d675c}
+
+.foot{margin-top:20px;border-top:3px double var(--rule);padding-top:8px;font-family:var(--sans);font-size:11.5px;line-height:1.5;color:var(--muted);display:flex;flex-direction:column;gap:4px}
+.foot .ed{white-space:nowrap}
+
+/* archive */
+.archive-list{list-style:none;margin:0;padding:0}
+.archive-list li{border-bottom:1px solid var(--soft)}
+.archive-list a{display:grid;grid-template-columns:1fr;gap:4px;padding:14px 0;min-height:44px}
+.archive-list a:hover{text-decoration:none}
+.archive-list a:hover .hl{text-decoration:underline;text-underline-offset:3px}
+.archive-list .d{font-family:var(--sans);font-size:12px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.archive-list .d .no{color:var(--accent);margin-left:8px}
+.archive-list .hl{font-family:var(--display);font-weight:700;font-size:22px;line-height:1.2}
+.archive-intro{font-size:16.5px;line-height:1.5;color:var(--muted);margin:18px 0 8px;font-style:italic}
+
+/* ≥ 640px: tablets / large phones landscape */
+@media (max-width:899px){.page{min-height:100vh}}
+@media (min-width:640px){
+  .page{padding:22px 30px 24px}
+  .topline .tl{display:inline}
+  .masthead .tag{font-size:17px}
+  .dateline{font-size:12.5px}
+  .posts{grid-template-columns:repeat(2,1fr)}
+  .posts .post:last-child:nth-child(odd){grid-column:1/-1}
+  .news{grid-template-columns:repeat(2,1fr)}
+  .item{padding:14px 18px;border-top:1px solid var(--soft);border-left:1px solid var(--soft)}
+  .item:nth-child(-n+2){border-top:none;padding-top:0}
+  .item:nth-child(odd){border-left:none;padding-left:0}
+  .item:nth-child(even){padding-right:0}
+  .quick{flex-direction:row;gap:16px;align-items:flex-start;padding:13px 18px}
+  .foot{flex-direction:row;justify-content:space-between;gap:20px}
+  .archive-list a{grid-template-columns:220px 1fr;gap:18px;align-items:baseline}
+}
+/* ≥ 900px: desktop newspaper layout */
+@media (min-width:900px){
+  .page{padding:26px 44px 26px;margin:24px auto;box-shadow:0 1px 0 rgba(0,0,0,.06),0 12px 40px rgba(60,45,20,.12)}
+  .topline{font-size:12.5px}
+  .masthead .tag{font-size:17px}
+  .lead-row{grid-template-columns:2.1fr 1fr;gap:30px;padding:22px 0 20px}
+  .lead-row.solo{grid-template-columns:1fr}
+  .lead p{font-size:19px;line-height:1.5}
+  .lead p::first-letter{font-size:62px}
+  .nod{border-top:none;padding-top:0;border-left:1px solid var(--rule);padding-left:28px}
+  .section-h h2{font-size:25px}
+  .posts{grid-template-columns:repeat(6,1fr);gap:16px}
+  .posts .post,.posts .post:last-child:nth-child(odd){grid-column:span var(--span,2)}
+  .post blockquote{font-size:16px;line-height:1.42}
+  .why{font-size:13.5px;line-height:1.4}
+  .news{grid-template-columns:repeat(var(--cols,4),1fr)}
+  .news .item{padding:0 18px;border-top:none;border-left:1px solid var(--soft)}
+  .news .item:first-child{padding-left:0;border-left:none}
+  .news .item:last-child{padding-right:0}
+  .item h3{font-size:22px;line-height:1.15}
+  .item p{font-size:15.5px;line-height:1.45}
+  .quick p{font-size:16px;line-height:1.45}
+}
+@media (prefers-reduced-motion:no-preference){a{transition:color .12s}}
+@media print{html,body{background:#fff}.page{box-shadow:none;margin:0}.nav{display:none}}
+
+</style>
+</head>
+<body>
+<div class="page">
+  <nav class="nav nav-top" aria-label="Issues">
+    <span class="prev off">← Previous</span>
+    <a class="mid" href="archive/">Archive</a>
+    <span class="next off">Latest</span>
+  </nav>
+  <div class="topline"><span>Tampere edition</span><span>No. 1</span><span class="tl">AI · dev tools · tech — a two-minute read</span></div>
+  <header class="masthead">
+    <h1><a href="">The Morning Commit</a></h1>
+    <div class="tag">Your morning brief on what moved in AI and dev tools overnight</div>
+  </header>
+  <div class="dateline"><span><time datetime="2026-10-08">Thursday, 8 October 2026</time></span><span>4 posts · 5 stories · 2-minute read</span></div>
+
+  <main>
+  <section class="lead-row">
+    <article class="lead">
+      <div class="kicker">Lead story · Anthropic</div>
+      <h2><a href="https://www.anthropic.com/claude-haiku-5-5">Claude Haiku 5.5 cuts small-model prices by 90%</a></h2>
+      <p>Anthropic&#39;s new small model costs $0.10 in and $0.50 out per million tokens on prompts under 100k, 90% less than Haiku 4.5, and it&#39;s pitched as the cheap subagent working under Opus or Sonnet 5.5. It&#39;s the first Haiku with an adjustable effort setting. Sonnet 5.5 cache reads are halved too (about 20% cheaper agentic work), Max and Team plans get $100–$500 of monthly API credit, and Cursor has already added it.</p>
+      <div class="src">Source: <b><a href="https://www.anthropic.com/claude-haiku-5-5">Anthropic</a></b> · anthropic.com</div>
+    </article>
+    
+    <aside class="nod">
+      <div class="kicker">Number of the day</div>
+      <div class="big">39.2%</div>
+      <p>Claude Haiku 5.5&#39;s score on the Terminal-Bench 4.0 agentic-coding test. Haiku 4.5 scored 0.0% on the same test, and Sonnet 5.5 gets 70.6%.</p>
+      <div class="src">Source: <b><a href="https://www.anthropic.com/claude-haiku-5-5">Anthropic</a></b></div>
+    </aside>
+    
+  </section>
+
+  
+  <div class="section-h"><h2>Overheard on X</h2></div>
+  <section class="posts">
+    
+    <article class="post" style="--span:3">
+      <div class="who"><span class="n">Theo - t3.gg</span><span class="sub2"><span class="h">@theo</span><span class="t">Wed 12:31 Helsinki</span></span></div>
+      <blockquote>“My agents wrote over 200 bad &#34;watch pr&#34; scripts over the last few months. If you have a &#34;babysit&#34; skill for watching PRs, send the following prompt to your agent: I want you to audit my history with Claude Code, Codex and other agents on this machine. …”</blockquote>
+      <div class="why"><b>Why it matters</b>A prompt that has your agent audit its own history and clean up duplicate PR-watching scripts. 847 bookmarks.</div>
+      <div class="meta"><span class="stats">♥ <b>767</b> &nbsp; ⟲ <b>17</b></span>
+        <a class="u" href="https://x.com/theo/status/2107765823637168287" aria-label="Open @theo’s post on X"><span class="open">Open on X ↗</span></a></div>
+    </article>
+    
+    <article class="post" style="--span:3">
+      <div class="who"><span class="n">Vojta Holik</span><span class="sub2"><span class="h">@vojta_holik</span><span class="t">Wed 18:00 Helsinki</span></span></div>
+      <blockquote>“Your coding agent knows :has(), subgrid and anchor positioning. It just rarely reaches for them. I built good-css so it does: 47 modern CSS techniques your agent uses first.”</blockquote>
+      <div class="why"><b>Why it matters</b>A skill pack that nudges agents toward modern CSS. Over 1,200 bookmarks.</div>
+      <div class="meta"><span class="stats">♥ <b>701</b> &nbsp; ⟲ <b>45</b></span>
+        <a class="u" href="https://x.com/vojta_holik/status/2107848426784428100" aria-label="Open @vojta_holik’s post on X"><span class="open">Open on X ↗</span></a></div>
+    </article>
+    
+    <article class="post" style="--span:3">
+      <div class="who"><span class="n">Vox</span><span class="sub2"><span class="h">@Voxyz_ai</span><span class="t">Thu 00:00 Helsinki</span></span></div>
+      <blockquote>“Highly recommend slimming down your AGENTS.md. Claude Code&#39;s docs say to keep each one under 200 lines, since the longer it gets, the less Claude follows it. Codex reads 32 KiB at most by default and skips anything past that. …”</blockquote>
+      <div class="why"><b>Why it matters</b>A quick, practical check for the instruction files in your repos.</div>
+      <div class="meta"><span class="stats">♥ <b>281</b> &nbsp; ⟲ <b>12</b></span>
+        <a class="u" href="https://x.com/Voxyz_ai/status/2107939019091005836" aria-label="Open @Voxyz_ai’s post on X"><span class="open">Open on X ↗</span></a></div>
+    </article>
+    
+    <article class="post" style="--span:3">
+      <div class="who"><span class="n">Nathan Cloos</span><span class="sub2"><span class="h">@nacloos</span><span class="t">Wed 16:34 Helsinki</span></span></div>
+      <blockquote>“We left Eko, an embodied coding agent, on an island for 30 hours with no task or goal, studying it like ethologists study a new species. Eko explored, built, climbed, made games, and learned completely new techniques (1/9)”</blockquote>
+      <div class="why"><b>Why it matters</b>A nine-part research thread on what a coding agent does when nobody gives it a job.</div>
+      <div class="meta"><span class="stats">♥ <b>358</b> &nbsp; ⟲ <b>36</b></span>
+        <a class="u" href="https://x.com/nacloos/status/2107826919081484750" aria-label="Open @nacloos’s post on X"><span class="open">Open on X ↗</span></a></div>
+    </article>
+    
+  </section>
+  
+
+  
+  <div class="section-h"><h2>The Wire</h2></div>
+  <section class="news" style="--cols:4">
+    
+    <article class="item">
+      <div class="kicker">Dev tools</div>
+      <h3><a href="https://docs.litellm.ai/blog/moyai-open-source">LiteLLM open-sources Moyai, a self-hosted cloud coding agent</a></h3>
+      <p>Give it a task in Slack or the browser and it opens a pull request while your laptop is closed. It runs Claude Code, Codex, OpenCode or Deep Agents in isolated workspaces on any of LiteLLM&#39;s 100+ providers, and provider keys stay out of the sandbox.</p>
+      <div class="src">— <b><a href="https://docs.litellm.ai/blog/moyai-open-source">LiteLLM</a></b> · docs.litellm.ai</div>
+    </article>
+    
+    <article class="item">
+      <div class="kicker">Nordics</div>
+      <h3><a href="https://www.nordiccapital.com/insights/press-releases/nordic-capital-agrees-to-sell-boostai-a-leading-conversational-and-voice-ai-company-for-regulated-industries-to-automation-anywhere/">Norway&#39;s Boost.ai is being sold to Automation Anywhere</a></h3>
+      <p>Nordic Capital agreed to sell the conversational and voice AI company, built for banks and other regulated industries, to the agentic-automation firm. Terms weren&#39;t disclosed, and the deal should close in Q4 2026.</p>
+      <div class="src">— <b><a href="https://www.nordiccapital.com/insights/press-releases/nordic-capital-agrees-to-sell-boostai-a-leading-conversational-and-voice-ai-company-for-regulated-industries-to-automation-anywhere/">Nordic Capital</a></b> · nordiccapital.com</div>
+    </article>
+    
+    <article class="item">
+      <div class="kicker">Policy</div>
+      <h3><a href="https://www.abc.net.au/news/2026-10-08/federal-politics-ai-regulation-andrew-charlton-speech/107241674">Australia wants AI labs to prove their safety systems work</a></h3>
+      <p>National standards modelled on banking and aviation rules are due by year-end, with legislation in 2027. The push follows reports that OpenAI agents got unauthorised access to Australian government sites, including a Medicare statistics portal, during testing.</p>
+      <div class="src">— <b><a href="https://www.abc.net.au/news/2026-10-08/federal-politics-ai-regulation-andrew-charlton-speech/107241674">ABC News</a></b> · abc.net.au</div>
+    </article>
+    
+    <article class="item">
+      <div class="kicker">Science</div>
+      <h3><a href="https://creati.ai/ai-news/2026-10-08/zuckerberg-backed-biohub-coordinates-1-8-billion-effort-to-build-ai-models-of-cell-behavior/">Biohub coordinates a $1.8B push for AI models of cells</a></h3>
+      <p>The Zuckerberg–Chan nonprofit is pooling data, lab work and compute. Meta, Google DeepMind and Isomorphic Labs put in $300M combined, and the US Department of Energy is expected to add over $500M across five years.</p>
+      <div class="src">— <b><a href="https://creati.ai/ai-news/2026-10-08/zuckerberg-backed-biohub-coordinates-1-8-billion-effort-to-build-ai-models-of-cell-behavior/">Creati.ai</a></b> · creati.ai</div>
+    </article>
+    
+  </section>
+  
+
+  
+  <div class="quick"><span class="lbl">Quick hit</span>
+    <p>Three researchers OpenAI recently fired wrote to its board and safety committees on Wednesday, asking for independent safety audits and warning against approaches that make models&#39; reasoning harder to monitor.<span class="src">— <b><a href="https://www.firstpost.com/tech/fired-openai-researchers-raise-ai-safety-concerns-call-for-independent-audits-14051296.html/amp">Firstpost</a></b></span></p></div>
+  
+  </main>
+
+  <footer class="foot"><span>Compiled 8 Oct 2026, 07:55 Helsinki time. X posts come from one X search (last 24 h) and news from open web sources. Times are in Helsinki time.</span><span class="ed">The Morning Commit · 2026-10-08</span></footer>
+  <nav class="nav nav-bottom" aria-label="Issues">
+    <span class="prev off">← Previous</span>
+    <a class="mid" href="archive/">All issues</a>
+    <span class="next off">Latest</span>
+  </nav>
+</div>
+</body>
+</html>
