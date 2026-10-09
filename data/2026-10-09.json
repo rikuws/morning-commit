@@ -1,0 +1,100 @@
+{
+  "paper_name": "The Morning Commit",
+  "tagline": "AI · dev tools · tech — a two-minute read",
+  "edition": "Tampere edition",
+  "issue_no": "No. 2",
+  "date_long": "Friday, 9 October 2026",
+  "date_slug": "2026-10-09",
+  "lead": {
+    "kicker": "Lead story · Google Cloud",
+    "headline": "Google ships a Gemini agent that plans work and picks its own model",
+    "summary": "At Gemini at Work, Google Cloud launched a universal work agent that takes objectives, uses tools and skills, and connects to Workspace, Microsoft 365, Slack, Jira, Git, BigQuery and MCP servers. It can route to Gemini or Anthropic Claude (more models later), gets its own Workspace account for audit trails, and starts with businesses before consumers. Early testers include On, Shopify and PayPal; Gemini has over 1B monthly users and nearly 90% of Fortune 100 use Gemini Enterprise.",
+    "source": "TechCrunch",
+    "url": "https://techcrunch.com/2026/10/08/google-brings-agentic-ai-to-gemini-starting-with-businesses/"
+  },
+  "number_of_day": {
+    "value": "€10B",
+    "label": "Planned investment by French AI infrastructure firm Sesterce in a data-centre campus at the former Kaipola mill in Jämsä, Finland — starting at 200 MW, expanding to 600 MW, with construction due before year-end.",
+    "source": "Helsinki Times",
+    "url": "https://www.helsinkitimes.fi/business/29365-french-firm-sesterce-plans-10-billion-ai-data-centre-in-finland.html"
+  },
+  "news": [
+    {
+      "tag": "Finland",
+      "headline": "Sesterce plans a €10B AI data centre in Jämsä",
+      "summary": "The French firm will reuse the old UPM Kaipola mill site, pledging one megawatt of new Finnish renewables for every megawatt the campus uses within ten years. The CEO told Yle a deal with one of the world's two leading AI labs is signed; Google and atNorth already have large Finland projects underway.",
+      "source": "Helsinki Times",
+      "url": "https://www.helsinkitimes.fi/business/29365-french-firm-sesterce-plans-10-billion-ai-data-centre-in-finland.html"
+    },
+    {
+      "tag": "Security",
+      "headline": "Anthropic puts Claude on grids and open-source CVE hunting",
+      "summary": "Its Critical Infrastructure Defense Program brings frontier models and engineers to firms protecting power and water systems, with eleven founding partners from consulting, OT security and industrial vendors. OSS Scanner gives eligible open-source projects free periodic scans; early wolfSSL trials turned five of 74 reports into CVEs.",
+      "source": "SiliconANGLE",
+      "url": "https://siliconangle.com/2026/10/08/anthropic-launches-critical-infrastructure-program-and-free-oss-scanner-for-open-source/"
+    },
+    {
+      "tag": "Policy",
+      "headline": "OpenAI bans Russian and Iranian false-front influence ops",
+      "summary": "Accounts used ChatGPT to staff a Latin American 'think tank', fake leaked docs, and seven invented journalist bylines that placed nearly 100 articles. One Russian campaign reached a European Parliament member after a staged school event in Peru; Iranian ops focused on the US–Iran war.",
+      "source": "OpenAI",
+      "url": "https://openai.com/index/disrupting-ai-enabled-false-front-operations"
+    },
+    {
+      "tag": "Product",
+      "headline": "GPT-6 Intelligent UI turns answers into charts and forms",
+      "summary": "ChatGPT can now stream interactive calculators, diagrams and maps inside a reply, with Plus through Enterprise first and Free/Go starting Oct 8. OpenAI says GPT-6 Instant begins web-search answers 44% sooner on average than GPT-5.6 Instant; it works on web and updated apps, not Pro effort or older desktop apps.",
+      "source": "TechRepublic",
+      "url": "https://www.techrepublic.com/article/news-gpt-6-intelligent-ui-charts-forms/"
+    }
+  ],
+  "quick_hit": {
+    "label": "Quick hit",
+    "text": "Cursor added a /visualize command that builds charts and diagrams inline in the Agents Window, so you can ask a follow-up and get another chart in the same thread.",
+    "source": "Cursor",
+    "url": "https://rss.bz/post/cursor-visualize-command-charts"
+  },
+  "x_posts": [
+    {
+      "name": "Mitchell Hashimoto",
+      "handle": "mitchellh",
+      "time": "Wed 21:03",
+      "text": "The status of the program status specification I shared yesterday in alphabetical order: integrated in Amp, Factoryai, TUIOS, libghostty. Verbal support and in-progress PRs by Claude Code, cmux, Codex, Herdr, OpenCode, Pi. Requests in to many others. Not bad for 24 hours!",
+      "why": "A real standards push for how coding agents report status, with early adopters already shipping it.",
+      "likes": 964,
+      "reposts": 12,
+      "url": "https://x.com/mitchellh/status/2107894687587795079"
+    },
+    {
+      "name": "Rohan Paul",
+      "handle": "rohanpaul_ai",
+      "time": "Thu 09:48",
+      "text": "A new Stanford paper just proved that decentralized multi-agent systems can beat Claude Code and Codex on complex coding tasks, running up to 2.49× faster! DeLM tackles a key bottleneck in multi-agent systems: time wasted repeating work and waiting on other agents. DeLM …",
+      "why": "Research claiming decentralized agents beat the big coding tools on speed and quality.",
+      "likes": 328,
+      "reposts": 54,
+      "url": "https://x.com/rohanpaul_ai/status/2108087162092818694"
+    },
+    {
+      "name": "Brett Harrison",
+      "handle": "BrettHarrison",
+      "time": "Wed 18:09",
+      "text": "Introducing Liquid Inference by Architect, a new LLM model router where inference providers compete dynamically to offer lowest-cost tokens. Providers onboard in minutes, not weeks. Buyers have full price visibility and receive 20% of referred fees in free inference. More info: …",
+      "why": "A marketplace-style router that makes providers compete on token price in real time.",
+      "likes": 313,
+      "reposts": 42,
+      "url": "https://x.com/BrettHarrison/status/2107850779973304680"
+    },
+    {
+      "name": "Meng To",
+      "handle": "MengTo",
+      "time": "Wed 18:55",
+      "text": "I recorded a 45-min tutorial on how to create paid apps with Claude Code and Codex. Prompts below 👇 TLDR: I hit $100K MRR. Aura is now only 20% of that. Completely different strategy now. Here's my playbook for building paid web apps with AI: - Find ideas in the tools you use …",
+      "why": "A concrete indie-hacker playbook for shipping paid apps with coding agents.",
+      "likes": 296,
+      "reposts": 29,
+      "url": "https://x.com/MengTo/status/2107862479548403806"
+    }
+  ],
+  "footer": "Compiled 9 Oct 2026, 07:55 Helsinki time. X posts come from one X search (last ~48 h) and news from open web sources. Times are in Helsinki time."
+}
