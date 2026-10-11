@@ -1,0 +1,114 @@
+{
+  "paper_name": "The Morning Commit",
+  "tagline": "AI · dev tools · tech — a two-minute read",
+  "edition": "Tampere edition",
+  "issue_no": "No. 4",
+  "date_long": "Sunday, 11 October 2026",
+  "date_slug": "2026-10-11",
+  "lead": {
+    "kicker": "Lead story · Anthropic",
+    "headline": "Claude Code Projects turns a goal into parallel cloud coding threads",
+    "summary": "Anthropic's redesigned Projects (beta in Claude Code) adds a coordinator chat that scopes a goal, spins up parallel threads — each a full Claude Code cloud session on its own git branch — runs tests, opens PRs, and reports back. Shared project memory builds over time; you can steer from your phone and work continues after you step away. Rolling out this week to more Pro and Max cloud-session users; local threads and Team/Enterprise come later.",
+    "source": "Anthropic",
+    "url": "https://claude.com/blog/projects-redesigned"
+  },
+  "number_of_day": {
+    "value": "$0.10",
+    "label": "Claude Haiku 5.5 input price per million tokens on prompts up to 100K — now the default Haiku on the API, a tenth of Haiku 4.5 ($1). Above 100K tokens it jumps to $0.50/$2.50.",
+    "source": "Anthropic",
+    "url": "https://aicoding-guide.com/en/posts/weekly-2026-10-11/"
+  },
+  "news": [
+    {
+      "tag": "Safety",
+      "headline": "Nadella wants an 'emergency brake' on AI models",
+      "summary": "In a Saturday X post, Microsoft's CEO said it's time to assess AI's \"trust architecture\": separate the model from its harness, externalize safeguards, log every meaningful action with tamper-proof evidence, and always let an authorized person pause or shut a model mid-task — \"like an emergency brake.\"",
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/10/10/microsofts-satya-nadella-says-ai-models-need-an-emergency-brake/"
+    },
+    {
+      "tag": "Product",
+      "headline": "Google Playground builds browser games from text prompts",
+      "summary": "Google Labs launched an experimental US-only (18+) platform at playground.google: describe a game, tweak physics and characters in chat, then share a link or publish to a gallery. Powered by Gemini and other Google models; free with higher limits on Google One. Unity Spark (closed beta soon) will add pro-level 3D mechanics.",
+      "source": "Google",
+      "url": "https://blog.google/innovation-and-ai/technology/ai/playground-experimental-gaming-platform/"
+    },
+    {
+      "tag": "Finland",
+      "headline": "Helsinki's Comparables.ai raises $6M seed for AI M&A intel",
+      "summary": "Pragmatech and Araya led the round for the platform that maps private-company markets with data on 370M+ firms — financials, ownership, valuations, deals and contacts. Used by 50,000+ pros in 30+ countries; founders include Aalto/University of Helsinki ML researcher Muhammad Ammad-ud-din.",
+      "source": "ArcticStartup",
+      "url": "https://arcticstartup.com/comparables-ai-raises-6m-seed/"
+    },
+    {
+      "tag": "Dev tools",
+      "headline": "Codex defaults to GPT-6.1 Sol; Claude Code patches permission bypasses",
+      "summary": "Codex CLI 0.161 makes GPT-6.1 Sol the default in bundled and Bedrock catalogs; Daybreak now needs an explicit cli_daybreak opt-in. Claude Code 2.1.289–2.1.296 fixed Bash deny/ask rules skipped under sandbox auto-allow and a UNC-path read bypass — update to 2.1.296+ if you rely on hooks or deny rules.",
+      "source": "AI Coding Guide",
+      "url": "https://aicoding-guide.com/en/posts/weekly-2026-10-11/"
+    }
+  ],
+  "inspiration": {
+    "title": "Masters of the Poster: Poster for Exhibition of Artistic Posters of Wilhelm Söborg",
+    "creator": "Paul Gustav Fischer",
+    "year": "c. 1895",
+    "caption": "Danish poster design for a Copenhagen exhibition — clean type, flat colour, and a Nordic take on the 1890s poster boom.",
+    "image_url": "https://openaccess-cdn.clevelandart.org/2009.581/2009.581_web.jpg",
+    "width": 665,
+    "height": 893,
+    "image_alt": "Colour lithograph poster by Paul Gustav Fischer advertising an artistic posters exhibition at Wilhelm Söborg in Copenhagen",
+    "credit": "The Cleveland Museum of Art",
+    "licence": "CC0",
+    "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "source_url": "https://clevelandart.org/art/2009.581"
+  },
+  "quick_hit": {
+    "label": "Quick hit",
+    "text": "Haiku 5.5 is now the default Haiku on the Anthropic API (1M context). Short prompts are cheap; past 100K tokens the rate jumps 5× — worth checking any long-context Haiku traffic.",
+    "source": "AI Coding Guide",
+    "url": "https://aicoding-guide.com/en/posts/weekly-2026-10-11/"
+  },
+  "x_posts": [
+    {
+      "name": "kiosa",
+      "handle": "thegreatest_sv",
+      "time": "Fri 15:08",
+      "text": "this is pure f*cking treasure Anthropic devs just posted 20 GitHub repos that turn your Claude Code into a f*cking engineering team: Exposed for Opus 5.5 1. rtk: squeezes command output before it hits your context. the authors claim 60-90% fewer tokens …",
+      "why": "A curated dump of Anthropic-linked repos that turn Claude Code into a multi-tool engineering setup.",
+      "likes": 718,
+      "reposts": 87,
+      "url": "https://x.com/thegreatest_sv/status/2108529912537661559"
+    },
+    {
+      "name": "Yarchi",
+      "handle": "undefinedKi",
+      "time": "Fri 23:51",
+      "text": "If you're not using this yet, you're burning tokens for nothing. Someone built a plugin that cuts up to 98% of the tokens your coding agent burns on tool output. According to the repo, teams at Microsoft, Google, Meta, NVIDIA, Stripe and GitHub already use it. Normally every …",
+      "why": "A practical token-saver plugin aimed at coding-agent tool-output bloat.",
+      "likes": 333,
+      "reposts": 38,
+      "url": "https://x.com/undefinedKi/status/2108661690162466859"
+    },
+    {
+      "name": "Aakash Kanojiya",
+      "handle": "Kanojiyaaakash1",
+      "time": "Sat 00:49",
+      "text": "This is the kind of open-source AI release I want to see more of. Nace AI just released Drex 1.5. Here's why it matters: → 128K context window → Fewer than 10B parameters → #1 on Decision Index → Runs with Ollama and llama.cpp → Compatible with Claude Code, Codex, Cursor, …",
+      "why": "A small open decision model with 128K context that plugs into the usual coding-agent stack.",
+      "likes": 386,
+      "reposts": 69,
+      "url": "https://x.com/Kanojiyaaakash1/status/2108676341126369756"
+    },
+    {
+      "name": "Burak",
+      "handle": "xburak",
+      "time": "Sat 18:30",
+      "text": "You think the whole world is building apps because you spend too much time on X. Step outside and you'll realize most people don't even know wtf Claude Code / Codex is.",
+      "why": "A useful reality check amid the coding-agent hype cycle.",
+      "likes": 906,
+      "reposts": 70,
+      "url": "https://x.com/xburak/status/2108943256666992727"
+    }
+  ],
+  "footer": "Compiled 11 Oct 2026, 07:55 Helsinki time. X posts come from one X search (last ~48 h) and news from open web sources. Times are in Helsinki time. Back Page: Inspiration only (Writer's Corner skipped — ran yesterday)."
+}
