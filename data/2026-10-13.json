@@ -1,0 +1,114 @@
+{
+  "paper_name": "The Morning Commit",
+  "tagline": "AI · dev tools · tech — a two-minute read",
+  "edition": "Tampere edition",
+  "issue_no": "No. 6",
+  "date_long": "Tuesday, 13 October 2026",
+  "date_slug": "2026-10-13",
+  "lead": {
+    "kicker": "Lead story · Meta",
+    "headline": "Meta's Muse Wonder lands at the frontier — and level with Claude Code on coding agents",
+    "summary": "Meta Superintelligence Labs released Muse Wonder and Muse Wonder Full on 12 Oct, pitched at personal and professional agents with 'Active Memory' and 'Active Focus'. Artificial Analysis scores them 52 and 56 on its Intelligence Index (Muse Spark 1.3 was 48), with Terminal-Bench up from 33% to 57% for Full. Muse Wonder is on Meta's API at $4/$20 per million input/output tokens with a 1M context; Full is only inside Muse Code for now. A fuller safety report is still to come.",
+    "source": "Meta AI",
+    "url": "https://research.meta.ai/blog/muse-wonder"
+  },
+  "number_of_day": {
+    "value": "68",
+    "label": "Muse Wonder Full's score on Artificial Analysis' Coding Agents Index in Muse Code — tied with Claude Code on Sonnet 5.5, just ahead of Opus 5.5 (66).",
+    "source": "Artificial Analysis",
+    "url": "https://artificialanalysis.ai/articles/muse-wonder"
+  },
+  "news": [
+    {
+      "tag": "Research",
+      "headline": "DeepMind's AlphaProof Nexus cracks open Erdős problems — peer reviewed in Science",
+      "summary": "Built on Gemini 3.1 Pro drafting proofs that Lean checks step by step, it solved 9 of 353 open Erdős problems (two open for 56 years) and proved 44 OEIS conjectures. Unlike OpenAI's recent proof dump on GitHub, this went through peer review; the proofs are public.",
+      "source": "The Decoder",
+      "url": "https://the-decoder.com/google-deepminds-alphaproof-nexus-solved-dozens-of-open-math-problems-and-actually-got-peer-reviewed/"
+    },
+    {
+      "tag": "Industry",
+      "headline": "Musk: only OpenAI, Anthropic and Cursor have enough coding data",
+      "summary": "Asked why SpaceX paid about $60B for Cursor, Musk said cracking coding is the path to superintelligence and named just three organisations with enough programming training data — Google 'barely half', xAI not at all. Same day, Broadcom's and Intel's CEOs called capital, not chips, the industry's biggest constraint.",
+      "source": "Silicon Noon",
+      "url": "https://siliconnoon.com/musk-only-three-organizations-have-enough-coding-data/"
+    },
+    {
+      "tag": "Dev tools",
+      "headline": "agent-engineer: an open plugin that teaches coding agents to build agents",
+      "summary": "Sarthak Rastogi's free plugin for Claude Code, Codex, Cursor, OpenCode and Gemini CLI adds 11 skills, 4 subagents and 5 hooks on evals, tool safety, RAG and guardrails. In his own blinded A/B on six tasks, Opus 5.5 met 53% of requirements with it vs 34% without — small sample, his numbers.",
+      "source": "AI Agent Engineering",
+      "url": "https://sarthakai.substack.com/p/a-coding-plugin-to-make-you-a-10x"
+    },
+    {
+      "tag": "Finland",
+      "headline": "ICEYE and Nokia team up on sovereign satellite networks",
+      "summary": "Helsinki's ICEYE will pair its sovereign SAR satellite missions with Nokia's secure networking to build LEO communications that governments own outright — for defence, border security and disaster response when ground networks fail. First satellites are expected in 2028.",
+      "source": "ArcticStartup",
+      "url": "https://arcticstartup.com/iceye-and-nokia-partner/"
+    }
+  ],
+  "inspiration": {
+    "title": "La Pianta Grande di Roma",
+    "creator": "Giovanni Battista Nolli",
+    "year": "1748",
+    "caption": "Twelve copper plates and a decade of surveying flatten Rome into one horizontal slice — the ancestor of every figure-ground plan and floor-plan UI.",
+    "image_url": "https://openaccess-cdn.clevelandart.org/2020.276/2020.276_web.jpg",
+    "width": 900,
+    "height": 769,
+    "image_alt": "Engraved twelve-sheet map of Rome in black and white, with the Tiber winding through dense street blocks and allegorical figures and ruins in the lower corners",
+    "credit": "The Cleveland Museum of Art",
+    "licence": "CC0",
+    "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "source_url": "https://clevelandart.org/art/2020.276"
+  },
+  "quick_hit": {
+    "label": "Quick hit",
+    "text": "Want to try Muse Wonder without a Meta account? Vercel's AI Gateway added it on 12 Oct — set AI_GATEWAY_API_KEY and use the model name meta/muse-wonder-1.0.",
+    "source": "Vercel",
+    "url": "https://vercel.com/changelog/muse-wonder-now-available-on-ai-gateway"
+  },
+  "x_posts": [
+    {
+      "name": "Artificial Analysis",
+      "handle": "ArtificialAnlys",
+      "time": "Mon 20:25",
+      "text": "Meta has released Muse Wonder and Muse Wonder Full, achieving Artificial Analysis Intelligence Index v4.3 scores of 52 and 56 at max reasoning effort - each a material gain over Muse Spark 1.3 (max) at 48, with a release gap of only 6 weeks\n\nMuse Wonder is available for users on",
+      "why": "The independent benchmark read on Meta's new models, six weeks after the last ones.",
+      "likes": 2345,
+      "reposts": 257,
+      "url": "https://x.com/ArtificialAnlys/status/2109697083519447118"
+    },
+    {
+      "name": "Riley Brown",
+      "handle": "rileybrown",
+      "time": "Tue 05:25",
+      "text": "Used Muse Wonder for 5 hours. \nWas gonna make a video. \nNo need, back to codex and claude code.",
+      "why": "The hands-on counterpoint: a heavy agent user tried it for an evening and went back to his usual stack.",
+      "likes": 524,
+      "reposts": 5,
+      "url": "https://x.com/rileybrown/status/2109832818536890732"
+    },
+    {
+      "name": "Alexey Fateev",
+      "handle": "superalesha",
+      "time": "Mon 16:18",
+      "text": "Qwen just published HOW they train their flagship agent model. Not a blog post with a chart. The method.\n\nQwenGyre: RL for agent tasks that run 700K tokens per attempt. Sub-agents, compaction, retries, all of it becomes training data. Idle GPUs move between running the agent and",
+      "why": "A readable pointer to Qwen's paper on RL for very long agent runs (arXiv, 27 Sep).",
+      "likes": 314,
+      "reposts": 26,
+      "url": "https://x.com/superalesha/status/2109634720560468350"
+    },
+    {
+      "name": "Guido Rosso",
+      "handle": "guidorosso",
+      "time": "Sun 23:52",
+      "text": "To be clear, this is 100% Rive. The city, the buildings, the lighting, the vehicles, the UI, etc. Most think of Rive as an animation tool, because that’s where the format started, but the goal was always to build a new type of experience engine. It’s lightweight, accelerates",
+      "why": "Rive's co-founder on pushing a design/animation tool into a full experience engine — a city scene built entirely in it.",
+      "likes": 353,
+      "reposts": 34,
+      "url": "https://x.com/guidorosso/status/2109386556247245075"
+    }
+  ],
+  "footer": "Compiled 13 Oct 2026, 07:58 Helsinki time. X posts come from one X search (last ~36 h) and news from open web sources. Times are in Helsinki time. Back Page: Inspiration (maps/diagrams); Writer's Corner skipped — ran yesterday."
+}
