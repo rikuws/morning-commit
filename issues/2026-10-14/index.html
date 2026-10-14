@@ -1,0 +1,387 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="light">
+<meta name="theme-color" content="#f6f1e7">
+<title>The Morning Commit · Wednesday, 14 October 2026</title>
+<meta name="description" content="Wednesday, 14 October 2026: Gemini 4 Argon goes public — a frontier model at a fifth of the price. A day after Meta&#39;s Muse Wonder, Google opened Gemini 4 Argon to everyone on 13 Oct, after weeks limited to cyber defenders. It&#39;s in the Gemini API and AI Studio, the Gemini app…">
+<link rel="canonical" href="https://rikuws.github.io/morning-commit/issues/2026-10-14/">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="The Morning Commit">
+<meta property="og:title" content="The Morning Commit — Gemini 4 Argon goes public — a frontier model at a fifth of the price">
+<meta property="og:description" content="Wednesday, 14 October 2026: Gemini 4 Argon goes public — a frontier model at a fifth of the price. A day after Meta&#39;s Muse Wonder, Google opened Gemini 4 Argon to everyone on 13 Oct, after weeks limited to cyber defenders. It&#39;s in the Gemini API and AI Studio, the Gemini app…">
+<meta property="og:url" content="https://rikuws.github.io/morning-commit/issues/2026-10-14/">
+<meta property="og:image" content="https://rikuws.github.io/morning-commit/issues/2026-10-14/card.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="The Morning Commit — Gemini 4 Argon goes public — a frontier model at a fifth of the price">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://rikuws.github.io/morning-commit/issues/2026-10-14/card.png">
+
+<meta name="twitter:title" content="The Morning Commit — Gemini 4 Argon goes public — a frontier model at a fifth of the price">
+<meta name="twitter:description" content="Wednesday, 14 October 2026: Gemini 4 Argon goes public — a frontier model at a fifth of the price. A day after Meta&#39;s Muse Wonder, Google opened Gemini 4 Argon to everyone on 13 Oct, after weeks limited to cyber defenders. It&#39;s in the Gemini API and AI Studio, the Gemini app…">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='10' fill='%23f6f1e7'/%3E%3Ctext x='32' y='48' font-family='Georgia,serif' font-weight='900' font-size='44' text-anchor='middle' fill='%231b1a17'%3EM%3C/text%3E%3Crect x='14' y='54' width='36' height='3' fill='%23b3261e'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=Inter:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,700;0,800;0,900;1,400&family=Playfair+Display+SC:wght@700&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap">
+<style>
+:root{
+  --paper:#f6f1e7; --ink:#1b1a17; --muted:#5f5a50; --rule:#1b1a17; --soft:#d8cfbd;
+  --accent:#b3261e; --xblue:#1d4e89; --card:#fffdf8; --desk:#e9e3d6;
+  --serif:"Source Serif 4","Source Serif Pro","Noto Serif",Georgia,serif;
+  --display:"Playfair Display","Playfair Display SC",Georgia,serif;
+  --sans:Inter,"Noto Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --mono:"IBM Plex Mono","JetBrains Mono",ui-monospace,monospace;
+  color-scheme:light;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
+html,body{margin:0;background:var(--desk)}
+body{font-family:var(--serif);color:var(--ink);-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+a{color:inherit;text-decoration:none;-webkit-tap-highlight-color:rgba(179,38,30,.15)}
+a:hover{text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:3px}
+a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+
+.page{max-width:1100px;margin:0 auto;background:var(--paper);padding:14px 18px 22px;
+      background-image:radial-gradient(rgba(0,0,0,.025) 1px,transparent 1px);background-size:4px 4px}
+
+/* issue nav */
+.nav{display:flex;justify-content:space-between;align-items:stretch;gap:6px;font-family:var(--sans);
+     font-size:12px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.nav a,.nav span{display:flex;align-items:center;min-height:44px;padding:0 2px}
+.nav .mid{justify-content:center;color:var(--ink)}
+.nav .next{justify-content:flex-end}
+.nav span.off{opacity:.35}
+.nav a:hover{color:var(--accent);text-decoration:none}
+.nav-top{border-bottom:1px solid var(--soft);margin-bottom:8px}
+.nav-bottom{border-top:1px solid var(--soft);margin-top:14px}
+
+/* masthead */
+.topline{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:4px 12px;font-family:var(--sans);
+         font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);
+         border-bottom:1px solid var(--rule);padding-bottom:7px}
+.topline .tl{display:none}
+.masthead{text-align:center;padding:12px 0 4px}
+.masthead h1{font-family:var(--display);font-weight:900;font-size:clamp(34px,9.6vw,78px);line-height:1;margin:0;letter-spacing:-.5px}
+.masthead h1 a:hover{text-decoration:none}
+.masthead .tag{text-wrap:balance;font-family:var(--display);font-style:italic;font-size:15px;line-height:1.35;color:var(--muted);margin-top:6px}
+.dateline{display:flex;flex-wrap:wrap;justify-content:space-between;gap:2px 14px;font-family:var(--sans);font-size:11.5px;font-weight:600;
+          letter-spacing:.1em;text-transform:uppercase;border-top:3px double var(--rule);border-bottom:1px solid var(--rule);
+          padding:7px 2px;margin-top:12px}
+
+/* lead row */
+.lead-row{display:grid;grid-template-columns:1fr;gap:20px;padding:18px 0;border-bottom:1px solid var(--rule)}
+.kicker{font-family:var(--sans);font-size:11.5px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--accent)}
+.lead h2{text-wrap:balance;font-family:var(--display);font-weight:800;font-size:clamp(30px,8vw,44px);line-height:1.08;margin:8px 0 12px;letter-spacing:-.3px}
+.lead p{font-size:18px;line-height:1.55;margin:0}
+.lead p::first-letter{float:left;font-family:var(--display);font-weight:900;font-size:56px;line-height:.85;padding:5px 8px 0 0}
+.src{font-family:var(--sans);font-size:12.5px;color:var(--muted);margin-top:10px}
+.src b{color:var(--ink)}
+.src a{display:inline-block;padding:6px 0;margin:-6px 0;text-decoration:underline;text-decoration-color:var(--soft);text-underline-offset:3px}
+.nod{border-top:1px solid var(--rule);padding-top:16px;display:flex;flex-direction:column;justify-content:center}
+.nod .big{font-family:var(--display);font-weight:900;font-size:clamp(64px,18vw,86px);line-height:.95;color:var(--accent);margin:6px 0 10px}
+.nod p{font-size:16.5px;line-height:1.5;margin:0}
+
+/* section headers */
+.section-h{display:flex;align-items:center;gap:14px;margin:22px 0 14px}
+.section-h h2{margin:0;font-family:"Playfair Display SC","Playfair Display",serif;font-weight:700;font-size:23px;white-space:nowrap}
+.section-h::before,.section-h::after{content:"";flex:1;border-top:1px solid var(--rule)}
+
+/* X posts */
+.posts{display:grid;grid-template-columns:1fr;gap:14px}
+.post{position:relative;background:var(--card);border:1px solid var(--soft);border-top:3px solid var(--ink);padding:14px 16px 10px;display:flex;flex-direction:column}
+.post:hover{border-color:#bfb49e;border-top-color:var(--ink)}
+.who{font-family:var(--sans);line-height:1.3}
+.who .n{display:block;font-weight:700;font-size:15px}
+.who .sub2{display:flex;justify-content:space-between;gap:8px;font-size:13.5px}
+.who .h{color:var(--xblue);font-weight:500}
+.who .t{color:var(--muted);font-size:12px;white-space:nowrap}
+.post blockquote{margin:9px 0 12px;font-size:16.5px;line-height:1.45;font-style:italic;color:#2b2925;overflow-wrap:anywhere}
+.why{font-family:var(--sans);font-size:14px;line-height:1.45;border-top:1px dotted #9d9583;padding-top:8px;margin-top:auto}
+.why b{color:var(--accent);text-transform:uppercase;letter-spacing:.08em;font-size:11px;margin-right:4px}
+.meta{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-top:4px;font-family:var(--sans);font-size:12.5px;color:var(--muted)}
+.meta .stats b{color:var(--ink);font-weight:700}
+.meta .u{display:inline-flex;align-items:center;gap:6px;min-height:44px;font-family:var(--mono);font-size:11.5px;color:var(--xblue)}
+.meta .u .open{font-family:var(--sans);font-weight:700;font-size:11px;letter-spacing:.1em;text-transform:uppercase}
+.meta .u .path{color:var(--muted)}
+/* whole card is tappable */
+.meta .u::after{content:"";position:absolute;inset:0}
+.post:hover .meta .u{text-decoration:underline}
+
+/* news */
+.news{display:grid;grid-template-columns:1fr;gap:0}
+.item{padding:14px 0;border-top:1px solid var(--soft)}
+.item:first-child{border-top:none;padding-top:0}
+.item .kicker{font-size:11px}
+.item h3{text-wrap:balance;font-family:var(--display);font-weight:700;font-size:23px;line-height:1.18;margin:6px 0 8px}
+.item h3 a{display:block}
+.item p{font-size:16.5px;line-height:1.5;margin:0}
+
+/* quick hit */
+.quick{display:flex;flex-direction:column;gap:6px;margin-top:20px;padding:14px 16px;background:var(--ink);color:var(--paper)}
+.quick .lbl{font-family:var(--sans);font-weight:800;font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:#f2b8b5;white-space:nowrap;padding-top:2px}
+.quick p{margin:0;font-size:16.5px;line-height:1.5}
+.quick .src{color:#bdb5a5;display:inline;margin-left:6px}
+.quick .src b{color:var(--paper)}
+.quick .src a{text-decoration-color:#6d675c}
+
+.foot{margin-top:20px;border-top:3px double var(--rule);padding-top:8px;font-family:var(--sans);font-size:11.5px;line-height:1.5;color:var(--muted);display:flex;flex-direction:column;gap:4px}
+.foot .ed{white-space:nowrap}
+
+/* archive */
+.archive-list{list-style:none;margin:0;padding:0}
+.archive-list li{border-bottom:1px solid var(--soft)}
+.archive-list a{display:grid;grid-template-columns:1fr;gap:4px;padding:14px 0;min-height:44px}
+.archive-list a:hover{text-decoration:none}
+.archive-list a:hover .hl{text-decoration:underline;text-underline-offset:3px}
+.archive-list .d{font-family:var(--sans);font-size:12px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.archive-list .d .no{color:var(--accent);margin-left:8px}
+.archive-list .hl{font-family:var(--display);font-weight:700;font-size:22px;line-height:1.2}
+.archive-intro{font-size:16.5px;line-height:1.5;color:var(--muted);margin:18px 0 8px;font-style:italic}
+
+/* ---- back page: optional Writer's Corner + Inspiration (preview-lab) ---- */
+.backpage{display:grid;grid-template-columns:1fr;gap:16px}
+.wc{background:var(--card);border:1px solid var(--soft);border-top:3px solid var(--accent);padding:14px 16px 6px}
+.wc h3{text-wrap:balance;font-family:var(--display);font-weight:700;font-size:23px;line-height:1.18;margin:6px 0 6px}
+.wc .byline{font-family:var(--sans);font-size:13px;color:var(--muted);line-height:1.4}
+.wc .byline b{color:var(--ink);font-weight:700}
+.wc .take{font-size:16.5px;line-height:1.5;margin:10px 0 0}
+.wc .pull{margin:12px 0 4px;padding:2px 0 2px 14px;border-left:3px solid var(--accent);font-family:var(--display);font-style:italic;font-size:19px;line-height:1.38;color:#2b2925}
+.wc .readit{display:inline-flex;align-items:center;min-height:44px;font-family:var(--sans);font-weight:700;font-size:11.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--accent)}
+.wc .readit span{color:var(--muted);font-weight:600;margin-left:8px}
+.insp{margin:0;border-top:1px solid var(--rule);padding-top:12px}
+.insp .frame{display:block;width:fit-content;max-width:100%;margin:8px 0 8px;background:var(--desk);border:1px solid var(--soft);padding:8px}
+.insp img{display:block;width:auto;max-width:100%;height:auto;max-height:520px;object-fit:contain;filter:sepia(.04)}
+.insp figcaption{font-family:var(--sans);font-size:13px;line-height:1.45;color:var(--muted);display:flex;flex-direction:column;gap:3px}
+.insp figcaption .t{font-family:var(--serif);font-size:16px;color:var(--ink)}
+.insp figcaption .c{font-family:var(--serif);font-size:15px;color:#3a372f}
+.insp figcaption .cr{font-size:11.5px;letter-spacing:.02em}
+.insp figcaption .cr a{text-decoration:underline;text-decoration-color:var(--soft);text-underline-offset:3px;display:inline-block;padding:8px 0;margin:-8px 0}
+@media (min-width:640px){
+  .backpage.both{grid-template-columns:1.35fr 1fr;gap:24px;align-items:start}
+  .insp{border-top:none;padding-top:0}
+  .backpage.both .insp{border-left:1px solid var(--soft);padding-left:24px}
+  .backpage:not(.both) .insp{display:grid;grid-template-columns:auto minmax(0,1fr);column-gap:28px;align-items:start}
+  .backpage:not(.both) .insp figcaption{padding-top:8px;max-width:420px}
+  .backpage:not(.both) .insp .kicker{grid-column:1/-1}
+}
+@media (min-width:900px){
+  .backpage.both{grid-template-columns:1.6fr 1fr;gap:28px}
+  .wc{padding:16px 20px 8px}
+  .wc h3{font-size:26px}
+  .wc .pull{font-size:21px}
+  .insp img{max-height:440px}
+  .backpage.both .insp img{max-height:300px}
+}
+
+/* ≥ 640px: tablets / large phones landscape */
+@media (max-width:899px){.page{min-height:100vh}}
+@media (min-width:640px){
+  .page{padding:22px 30px 24px}
+  .topline .tl{display:inline}
+  .masthead .tag{font-size:17px}
+  .dateline{font-size:12.5px}
+  .posts{grid-template-columns:repeat(2,1fr)}
+  .posts .post:last-child:nth-child(odd){grid-column:1/-1}
+  .news{grid-template-columns:repeat(2,1fr)}
+  .item{padding:14px 18px;border-top:1px solid var(--soft);border-left:1px solid var(--soft)}
+  .item:nth-child(-n+2){border-top:none;padding-top:0}
+  .item:nth-child(odd){border-left:none;padding-left:0}
+  .item:nth-child(even){padding-right:0}
+  .quick{flex-direction:row;gap:16px;align-items:flex-start;padding:13px 18px}
+  .foot{flex-direction:row;justify-content:space-between;gap:20px}
+  .archive-list a{grid-template-columns:220px 1fr;gap:18px;align-items:baseline}
+}
+/* ≥ 900px: desktop newspaper layout */
+@media (min-width:900px){
+  .page{padding:26px 44px 26px;margin:24px auto;box-shadow:0 1px 0 rgba(0,0,0,.06),0 12px 40px rgba(60,45,20,.12)}
+  .topline{font-size:12.5px}
+  .masthead .tag{font-size:17px}
+  .lead-row{grid-template-columns:2.1fr 1fr;gap:30px;padding:22px 0 20px}
+  .lead-row.solo{grid-template-columns:1fr}
+  .lead p{font-size:19px;line-height:1.5}
+  .lead p::first-letter{font-size:62px}
+  .nod{border-top:none;padding-top:0;border-left:1px solid var(--rule);padding-left:28px}
+  .section-h h2{font-size:25px}
+  .posts{grid-template-columns:repeat(6,1fr);gap:16px}
+  .posts .post,.posts .post:last-child:nth-child(odd){grid-column:span var(--span,2)}
+  .post blockquote{font-size:16px;line-height:1.42}
+  .why{font-size:13.5px;line-height:1.4}
+  .news{grid-template-columns:repeat(var(--cols,4),1fr)}
+  .news .item{padding:0 18px;border-top:none;border-left:1px solid var(--soft)}
+  .news .item:first-child{padding-left:0;border-left:none}
+  .news .item:last-child{padding-right:0}
+  .item h3{font-size:22px;line-height:1.15}
+  .item p{font-size:15.5px;line-height:1.45}
+  .quick p{font-size:16px;line-height:1.45}
+}
+@media (prefers-reduced-motion:no-preference){a{transition:color .12s}}
+@media print{html,body{background:#fff}.page{box-shadow:none;margin:0}.nav{display:none}}
+
+</style>
+</head>
+<body>
+<div class="page">
+  <nav class="nav nav-top" aria-label="Issues">
+    <a class="prev" href="../../issues/2026-10-13/" rel="prev">← Previous</a>
+    <a class="mid" href="../../archive/">Archive</a>
+    <a class="next" href="../../">Latest →</a>
+  </nav>
+  <div class="topline"><span>Tampere edition</span><span>No. 7</span><span class="tl">AI · dev tools · tech — a two-minute read</span></div>
+  <header class="masthead">
+    <h1><a href="../../">The Morning Commit</a></h1>
+    <div class="tag">Your morning brief on what moved in AI and dev tools overnight</div>
+  </header>
+  <div class="dateline"><span><time datetime="2026-10-14">Wednesday, 14 October 2026</time></span><span>4 posts · 5 stories · 2-minute read</span></div>
+
+  <main>
+  <section class="lead-row">
+    <article class="lead">
+      <div class="kicker">Lead story · Google</div>
+      <h2><a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-argon/">Gemini 4 Argon goes public — a frontier model at a fifth of the price</a></h2>
+      <p>A day after Meta&#39;s Muse Wonder, Google opened Gemini 4 Argon to everyone on 13 Oct, after weeks limited to cyber defenders. It&#39;s in the Gemini API and AI Studio, the Gemini app and AI Mode for Pro and Ultra, and in Google&#39;s Antigravity coding agent for Ultra only. Google claims it beats GPT-6 Astra, Claude Fable 5.1 and Opus 5.5 across coding, cyber, science, finance and law, and it ranks #1 on the Vals Index. Intro pricing is $2/$10 per million input/output tokens (about a fifth of Astra and Fable, per The Verge) until 30 Nov, then $4/$20, with a 1M unified token limit.</p>
+      <div class="src">Source: <b><a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-argon/">Google</a></b> · blog.google</div>
+    </article>
+    
+    <aside class="nod">
+      <div class="kicker">Number of the day</div>
+      <div class="big">10–100×</div>
+      <p>How much less hidden Claude reasoning distillers can extract on Anthropic&#39;s platform since its new two-stage classifier went in — on some days too little to measure.</p>
+      <div class="src">Source: <b><a href="https://www.anthropic.com/research/distillation-defenses">Anthropic</a></b></div>
+    </aside>
+    
+  </section>
+
+  
+  <div class="section-h"><h2>Overheard on X</h2></div>
+  <section class="posts">
+    
+    <article class="post" style="--span:3">
+      <div class="who"><span class="n">Dan Shipper</span><span class="sub2"><span class="h">@danshipper</span><span class="t">Tue 19:03 Helsinki</span></span></div>
+      <blockquote>“BREAKING: Gemini 4 is OUT and it&#39;s SURPRISINGLY GOOD?? 
+
+I admit I was ready to trash this model qhen I saw the benchmarks but six of us at @every spent the past week testing it across coding, writing, design, and knowledge work, and were pleasantly surprsied.”</blockquote>
+      <div class="why"><b>Why it matters</b>A week of hands-on testing by six people at Every, not a benchmark screenshot.</div>
+      <div class="meta"><span class="stats">♥ <b>372</b> &nbsp; ⟲ <b>26</b></span>
+        <a class="u" href="https://x.com/danshipper/status/2110038834205409332" aria-label="Open @danshipper’s post on X"><span class="open">Open on X ↗</span></a></div>
+    </article>
+    
+    <article class="post" style="--span:3">
+      <div class="who"><span class="n">Layton Gott</span><span class="sub2"><span class="h">@Layton_Gott</span><span class="t">Tue 20:11 Helsinki</span></span></div>
+      <blockquote>“wait WHAT is Google doing here lol
+
+Argon is available to Pro users in Gemini...
+
+but you need Ultra to use it in Antigravity???
+
+so if you&#39;re on Pro, Argon is locked inside the Gemini chat.
+
+want to use it in Google&#39;s actual coding agent?
+
+upgrade to Ultra.”</blockquote>
+      <div class="why"><b>Why it matters</b>The catch in the launch: on Pro you get Argon in chat, but not in Google&#39;s own coding agent.</div>
+      <div class="meta"><span class="stats">♥ <b>487</b> &nbsp; ⟲ <b>11</b></span>
+        <a class="u" href="https://x.com/Layton_Gott/status/2110055947661971655" aria-label="Open @Layton_Gott’s post on X"><span class="open">Open on X ↗</span></a></div>
+    </article>
+    
+    <article class="post" style="--span:3">
+      <div class="who"><span class="n">Ira Bodnar</span><span class="sub2"><span class="h">@irabukht</span><span class="t">Wed 05:03 Helsinki</span></span></div>
+      <blockquote>“Railway hacked AI SEO, and it took them from $20M to ~$100M ARR in 1 year:
+
+1/ Claude Code picks Railway for 82% of Python apps
+-&gt; Ask it &#34;how do I deploy this&#34; and it installs Railway and puts your app live there
+
+2/ The founder treats AI recommendations as a growth channel”</blockquote>
+      <div class="why"><b>Why it matters</b>Indie-hacker angle: when coding agents choose your stack, being the agent&#39;s default is distribution. Her figures, not verified.</div>
+      <div class="meta"><span class="stats">♥ <b>408</b> &nbsp; ⟲ <b>12</b></span>
+        <a class="u" href="https://x.com/irabukht/status/2110189752666440181" aria-label="Open @irabukht’s post on X"><span class="open">Open on X ↗</span></a></div>
+    </article>
+    
+    <article class="post" style="--span:3">
+      <div class="who"><span class="n">FluidVoice</span><span class="sub2"><span class="h">@FluidVoiceApp</span><span class="t">Tue 20:30 Helsinki</span></span></div>
+      <blockquote>“We took NVIDIA&#39;s Parakeet and made it better.
+
+Introducing Fluid Speech Mini: the best Open Source Model purpose-built for Dictation 🚀
+
+With SOTA performance under 300 MB
+
+Run it on your iPhone, Mac, or PC. No cloud, no internet.
+Dictation shouldn&#39;t need a server.”</blockquote>
+      <div class="why"><b>Why it matters</b>A small builder shipping an open, on-device dictation model fine-tuned from Parakeet — the SOTA claim is theirs.</div>
+      <div class="meta"><span class="stats">♥ <b>309</b> &nbsp; ⟲ <b>18</b></span>
+        <a class="u" href="https://x.com/FluidVoiceApp/status/2110060621886816593" aria-label="Open @FluidVoiceApp’s post on X"><span class="open">Open on X ↗</span></a></div>
+    </article>
+    
+  </section>
+  
+
+  
+  <div class="section-h"><h2>The Wire</h2></div>
+  <section class="news" style="--cols:4">
+    
+    <article class="item">
+      <div class="kicker">Dev tools</div>
+      <h3><a href="https://thekernelwire.com/devops/spacex-bundles-cursor-with-grok-under-unified-subscription-but-third-party-ai-models-now-cost-extra">Cursor joins &#39;The X Subscription&#39; — Claude and GPT now cost extra</a></h3>
+      <p>SpaceXAI bundled Grok, Grok Bot, Cursor and X Premium into one plan ($8 Plus, $30 Premium, $100 Super, $200 Ultra) with a weekly Grok usage pool shared across Grok and Cursor. Third-party models stay available on Premium and up, but at API list price from the first request via top-ups. Existing Cursor plans keep their included usage until you switch.</p>
+      <div class="src">— <b><a href="https://thekernelwire.com/devops/spacex-bundles-cursor-with-grok-under-unified-subscription-but-third-party-ai-models-now-cost-extra">The Kernel Wire</a></b> · thekernelwire.com</div>
+    </article>
+    
+    <article class="item">
+      <div class="kicker">Safety</div>
+      <h3><a href="https://www.anthropic.com/research/distillation-defenses">Anthropic says its distillation defences now work — and names Zhipu and Moonshot</a></h3>
+      <p>Preserved thinking blocks new API accounts from editing prior context, a two-stage classifier (&lt;0.1% false positives) catches reasoning-extraction tricks, and repeat offenders get banned — tens of thousands of accounts so far. Anthropic says Zhipu distilled US models&#39; cyber skills for GLM-5.3. The trade-off: some integrations had to change, and blocked requests are billed again.</p>
+      <div class="src">— <b><a href="https://www.anthropic.com/research/distillation-defenses">Anthropic</a></b> · anthropic.com</div>
+    </article>
+    
+    <article class="item">
+      <div class="kicker">Outage</div>
+      <h3><a href="https://opentools.ai/news/openai-gpt-6-1-sol-work-codex-degraded-performance-october-13-2026">Codex had an eight-hour wobble yesterday — check your agent runs</a></h3>
+      <p>OpenAI&#39;s status page logged degraded GPT-6.1 Sol performance in Codex Web, the Codex API, CLI and VS Code extension plus ChatGPT Work from 11:10 to 19:36 Helsinki time on 13 Oct. No root cause yet. If a task timed out in that window, check what actually landed before re-running it.</p>
+      <div class="src">— <b><a href="https://opentools.ai/news/openai-gpt-6-1-sol-work-codex-degraded-performance-october-13-2026">OpenTools</a></b> · opentools.ai</div>
+    </article>
+    
+    <article class="item">
+      <div class="kicker">Finland</div>
+      <h3><a href="https://www.helsinkitimes.fi/finland/finland-news/domestic/29383-foreign-ministry-introduces-secure-ai-system-for-classified-government-data.html">Finland&#39;s Foreign Ministry pilots UMAI, an AI assistant for classified data</a></h3>
+      <p>UMAI went into pilot use on 13 Oct for a small group of users, running in an environment approved for TL IV classified material. With Valtori, the ministry is a pilot for a shared central-government AI platform; Minister Elina Valtonen framed it as Europe keeping control of critical technology.</p>
+      <div class="src">— <b><a href="https://www.helsinkitimes.fi/finland/finland-news/domestic/29383-foreign-ministry-introduces-secure-ai-system-for-classified-government-data.html">Helsinki Times</a></b> · helsinkitimes.fi</div>
+    </article>
+    
+  </section>
+  
+
+  
+  
+  <div class="section-h"><h2>The Back Page</h2></div>
+  <section class="backpage">
+    
+    <article class="wc">
+      <div class="kicker">Writer’s Corner · History</div>
+      <h3><a href="https://publicdomainreview.org/collection/kalvach-postcards">Rudolf Kalvach&#39;s Wiener Werkstätte Postcards (1907)</a></h3>
+      <div class="byline"><b>Thea Applebaum Licht</b> · The Public Domain Review · Tue 13 Oct</div>
+      <p class="take">Vienna&#39;s &#39;total work of art&#39; workshop made nearly a thousand avant-garde postcards; Kalvach&#39;s grotesque, primary-coloured ones mocked greeting-card sentiment — and almost nobody actually mailed them.</p>
+      <blockquote class="pull"><a href="https://publicdomainreview.org/collection/kalvach-postcards">“The sideways success of its postcards — coveted, collected, but almost never posted — reflected the challenge of the Werkstätte’s idealism.”</a></blockquote>
+      <a class="readit" href="https://publicdomainreview.org/collection/kalvach-postcards">Read it ↗<span>· short essay + 14-card gallery</span></a>
+    </article>
+    
+    
+  </section>
+  
+
+  
+  <div class="quick"><span class="lbl">Quick hit</span>
+    <p>No Ultra plan? Gemini 4 Argon also landed in GitHub Copilot on 13 Oct for Pro+, Max, Business and Enterprise — VS Code, JetBrains, Copilot CLI and the coding agent — billed at provider list price.<span class="src">— <b><a href="https://github.blog/changelog/2026-10-13-gemini-4-argon-in-github-copilot/">GitHub Changelog</a></b></span></p></div>
+  
+  </main>
+
+  <footer class="foot"><span>Compiled 14 Oct 2026, 07:58 Helsinki time. X posts come from one X search (last ~34 h) and news from open web sources. Times are in Helsinki time. Back Page: Writer&#39;s Corner (History); Inspiration skipped — ran yesterday.</span><span class="ed">The Morning Commit · 2026-10-14</span></footer>
+  <nav class="nav nav-bottom" aria-label="Issues">
+    <a class="prev" href="../../issues/2026-10-13/" rel="prev">← Previous</a>
+    <a class="mid" href="../../archive/">All issues</a>
+    <a class="next" href="../../">Latest →</a>
+  </nav>
+</div>
+</body>
+</html>

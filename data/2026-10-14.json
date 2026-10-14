@@ -1,0 +1,112 @@
+{
+  "paper_name": "The Morning Commit",
+  "tagline": "AI · dev tools · tech — a two-minute read",
+  "edition": "Tampere edition",
+  "issue_no": "No. 7",
+  "date_long": "Wednesday, 14 October 2026",
+  "date_slug": "2026-10-14",
+  "lead": {
+    "kicker": "Lead story · Google",
+    "headline": "Gemini 4 Argon goes public — a frontier model at a fifth of the price",
+    "summary": "A day after Meta's Muse Wonder, Google opened Gemini 4 Argon to everyone on 13 Oct, after weeks limited to cyber defenders. It's in the Gemini API and AI Studio, the Gemini app and AI Mode for Pro and Ultra, and in Google's Antigravity coding agent for Ultra only. Google claims it beats GPT-6 Astra, Claude Fable 5.1 and Opus 5.5 across coding, cyber, science, finance and law, and it ranks #1 on the Vals Index. Intro pricing is $2/$10 per million input/output tokens (about a fifth of Astra and Fable, per The Verge) until 30 Nov, then $4/$20, with a 1M unified token limit.",
+    "source": "Google",
+    "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-argon/"
+  },
+  "number_of_day": {
+    "value": "10–100×",
+    "label": "How much less hidden Claude reasoning distillers can extract on Anthropic's platform since its new two-stage classifier went in — on some days too little to measure.",
+    "source": "Anthropic",
+    "url": "https://www.anthropic.com/research/distillation-defenses"
+  },
+  "news": [
+    {
+      "tag": "Dev tools",
+      "headline": "Cursor joins 'The X Subscription' — Claude and GPT now cost extra",
+      "summary": "SpaceXAI bundled Grok, Grok Bot, Cursor and X Premium into one plan ($8 Plus, $30 Premium, $100 Super, $200 Ultra) with a weekly Grok usage pool shared across Grok and Cursor. Third-party models stay available on Premium and up, but at API list price from the first request via top-ups. Existing Cursor plans keep their included usage until you switch.",
+      "source": "The Kernel Wire",
+      "url": "https://thekernelwire.com/devops/spacex-bundles-cursor-with-grok-under-unified-subscription-but-third-party-ai-models-now-cost-extra"
+    },
+    {
+      "tag": "Safety",
+      "headline": "Anthropic says its distillation defences now work — and names Zhipu and Moonshot",
+      "summary": "Preserved thinking blocks new API accounts from editing prior context, a two-stage classifier (<0.1% false positives) catches reasoning-extraction tricks, and repeat offenders get banned — tens of thousands of accounts so far. Anthropic says Zhipu distilled US models' cyber skills for GLM-5.3. The trade-off: some integrations had to change, and blocked requests are billed again.",
+      "source": "Anthropic",
+      "url": "https://www.anthropic.com/research/distillation-defenses"
+    },
+    {
+      "tag": "Outage",
+      "headline": "Codex had an eight-hour wobble yesterday — check your agent runs",
+      "summary": "OpenAI's status page logged degraded GPT-6.1 Sol performance in Codex Web, the Codex API, CLI and VS Code extension plus ChatGPT Work from 11:10 to 19:36 Helsinki time on 13 Oct. No root cause yet. If a task timed out in that window, check what actually landed before re-running it.",
+      "source": "OpenTools",
+      "url": "https://opentools.ai/news/openai-gpt-6-1-sol-work-codex-degraded-performance-october-13-2026"
+    },
+    {
+      "tag": "Finland",
+      "headline": "Finland's Foreign Ministry pilots UMAI, an AI assistant for classified data",
+      "summary": "UMAI went into pilot use on 13 Oct for a small group of users, running in an environment approved for TL IV classified material. With Valtori, the ministry is a pilot for a shared central-government AI platform; Minister Elina Valtonen framed it as Europe keeping control of critical technology.",
+      "source": "Helsinki Times",
+      "url": "https://www.helsinkitimes.fi/finland/finland-news/domestic/29383-foreign-ministry-introduces-secure-ai-system-for-classified-government-data.html"
+    }
+  ],
+  "writers_corner": {
+    "category": "History",
+    "writer": "Thea Applebaum Licht",
+    "publication": "The Public Domain Review",
+    "date": "Tue 13 Oct",
+    "title": "Rudolf Kalvach's Wiener Werkstätte Postcards (1907)",
+    "take": "Vienna's 'total work of art' workshop made nearly a thousand avant-garde postcards; Kalvach's grotesque, primary-coloured ones mocked greeting-card sentiment — and almost nobody actually mailed them.",
+    "quote": "The sideways success of its postcards — coveted, collected, but almost never posted — reflected the challenge of the Werkstätte’s idealism.",
+    "url": "https://publicdomainreview.org/collection/kalvach-postcards",
+    "read_note": "short essay + 14-card gallery",
+    "feed_url": "https://publicdomainreview.org/rss.xml"
+  },
+  "quick_hit": {
+    "label": "Quick hit",
+    "text": "No Ultra plan? Gemini 4 Argon also landed in GitHub Copilot on 13 Oct for Pro+, Max, Business and Enterprise — VS Code, JetBrains, Copilot CLI and the coding agent — billed at provider list price.",
+    "source": "GitHub Changelog",
+    "url": "https://github.blog/changelog/2026-10-13-gemini-4-argon-in-github-copilot/"
+  },
+  "x_posts": [
+    {
+      "name": "Dan Shipper",
+      "handle": "danshipper",
+      "time": "Tue 19:03",
+      "text": "BREAKING: Gemini 4 is OUT and it's SURPRISINGLY GOOD?? \n\nI admit I was ready to trash this model qhen I saw the benchmarks but six of us at @every spent the past week testing it across coding, writing, design, and knowledge work, and were pleasantly surprsied.",
+      "why": "A week of hands-on testing by six people at Every, not a benchmark screenshot.",
+      "likes": 372,
+      "reposts": 26,
+      "url": "https://x.com/danshipper/status/2110038834205409332"
+    },
+    {
+      "name": "Layton Gott",
+      "handle": "Layton_Gott",
+      "time": "Tue 20:11",
+      "text": "wait WHAT is Google doing here lol\n\nArgon is available to Pro users in Gemini...\n\nbut you need Ultra to use it in Antigravity???\n\nso if you're on Pro, Argon is locked inside the Gemini chat.\n\nwant to use it in Google's actual coding agent?\n\nupgrade to Ultra.",
+      "why": "The catch in the launch: on Pro you get Argon in chat, but not in Google's own coding agent.",
+      "likes": 487,
+      "reposts": 11,
+      "url": "https://x.com/Layton_Gott/status/2110055947661971655"
+    },
+    {
+      "name": "Ira Bodnar",
+      "handle": "irabukht",
+      "time": "Wed 05:03",
+      "text": "Railway hacked AI SEO, and it took them from $20M to ~$100M ARR in 1 year:\n\n1/ Claude Code picks Railway for 82% of Python apps\n-> Ask it \"how do I deploy this\" and it installs Railway and puts your app live there\n\n2/ The founder treats AI recommendations as a growth channel",
+      "why": "Indie-hacker angle: when coding agents choose your stack, being the agent's default is distribution. Her figures, not verified.",
+      "likes": 408,
+      "reposts": 12,
+      "url": "https://x.com/irabukht/status/2110189752666440181"
+    },
+    {
+      "name": "FluidVoice",
+      "handle": "FluidVoiceApp",
+      "time": "Tue 20:30",
+      "text": "We took NVIDIA's Parakeet and made it better.\n\nIntroducing Fluid Speech Mini: the best Open Source Model purpose-built for Dictation 🚀\n\nWith SOTA performance under 300 MB\n\nRun it on your iPhone, Mac, or PC. No cloud, no internet.\nDictation shouldn't need a server.",
+      "why": "A small builder shipping an open, on-device dictation model fine-tuned from Parakeet — the SOTA claim is theirs.",
+      "likes": 309,
+      "reposts": 18,
+      "url": "https://x.com/FluidVoiceApp/status/2110060621886816593"
+    }
+  ],
+  "footer": "Compiled 14 Oct 2026, 07:58 Helsinki time. X posts come from one X search (last ~34 h) and news from open web sources. Times are in Helsinki time. Back Page: Writer's Corner (History); Inspiration skipped — ran yesterday."
+}
