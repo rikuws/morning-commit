@@ -1,0 +1,114 @@
+{
+  "paper_name": "The Morning Commit",
+  "tagline": "AI · dev tools · tech — a two-minute read",
+  "edition": "Tampere edition",
+  "issue_no": "No. 8",
+  "date_long": "Thursday, 15 October 2026",
+  "date_slug": "2026-10-15",
+  "lead": {
+    "kicker": "Lead story · OpenCode",
+    "headline": "OpenCode 2.0: one local service, Code Mode, and background agents",
+    "summary": "Anomaly’s open coding agent just shipped a major rewrite: TUI, web and desktop now share one auto-started local backend, MCP tools become scriptable functions in Code Mode (one round-trip instead of tool-call ping-pong), and background subagents plus async shell keep the main agent unblocked. Plugins are stable (80+ shipped as internal ones first), the server API is rebuilt, and V1 plugins don’t run — upgrade with `opencode upgrade --major`. Changelog already at v2.0.29 as of 14 Oct.",
+    "source": "Anomaly",
+    "url": "https://anoma.ly/notes/opencode-2-0/"
+  },
+  "number_of_day": {
+    "value": "$0.13",
+    "label": "Paper Instruments’ claimed cost per task for Ultramarine 1 Flash on its internal knowledge-work suite — vs $1.26–$8.19 for the frontier models it trails by a few points.",
+    "source": "Paper Instruments",
+    "url": "https://www.paperinstruments.com/blog/ultramarine"
+  },
+  "news": [
+    {
+      "tag": "Models",
+      "headline": "A five-person lab ships Ultramarine 1 Flash for non-verifiable knowledge work",
+      "summary": "Paper Instruments post-trained GLM-5.3 Flash with RL on finance, law, consulting and ops tasks where there’s no unit test — and says it beats its base by 4.1 points on six knowledge-work benches while using 6.5% fewer tokens. API is live; weights ‘coming soon’. Their numbers, on their Feather harness.",
+      "source": "Paper Instruments",
+      "url": "https://www.paperinstruments.com/blog/ultramarine"
+    },
+    {
+      "tag": "Safety",
+      "headline": "Kiro’s local command sandbox is generally available",
+      "summary": "Agent shell commands now run under OS-enforced limits (Seatbelt / bubblewrap / AppContainer): project writes only, credential paths denied at the kernel, network through a domain filter. Off by default — `/sandbox on` or a sandbox.json. The agent stays outside so you can flip it mid-session; Kiro says it’s not total isolation.",
+      "source": "Kiro",
+      "url": "https://kiro.dev/blog/local-sandboxing/"
+    },
+    {
+      "tag": "Dev tools",
+      "headline": "Antigravity CLI gets Auto mode — safe commands without the prompt tax",
+      "summary": "Google’s Antigravity 1.3.5 (14 Oct) auto-approves file edits and ‘safe’ shell commands, still asks before irreversible work, and routes sandbox escapes to a separate review agent. `--mode auto`, Shift+Tab, or /config — Linux and macOS now, Windows later. Same cut: on-demand /compact and a faster /diff.",
+      "source": "GitHub",
+      "url": "https://github.com/google-antigravity/antigravity-cli/releases/tag/1.3.5"
+    },
+    {
+      "tag": "Open source",
+      "headline": "Graphicle: a Rust code graph + memory for Claude Code, Cursor and Codex",
+      "summary": "KarLex AI’s Apache-2.0 local MCP tool indexes repos with tree-sitter, keeps session memory in SQLite, and feeds agents cited excerpts under a token budget — no account or API key for the graph itself. They clocked Kubernetes (31k files) in 3m 18s vs Graphify’s 26m 38s on the same box; Show HN yesterday.",
+      "source": "GitHub",
+      "url": "https://github.com/graphicle-ai/graphicle"
+    }
+  ],
+  "inspiration": {
+    "title": "Vase",
+    "creator": "Gunnel Nyman",
+    "year": "1950s",
+    "caption": "Finnish modernist glass in one tall silhouette — Nyman’s mid-century forms still set the bar for Nordic industrial design.",
+    "image_url": "https://openaccess-cdn.clevelandart.org/1993.169/1993.169_web.jpg",
+    "width": 549,
+    "height": 900,
+    "image_alt": "Tall clear glass vase with a slender neck and rounded base, photographed against a plain background",
+    "credit": "The Cleveland Museum of Art",
+    "licence": "CC0",
+    "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "source_url": "https://clevelandart.org/art/1993.169"
+  },
+  "quick_hit": {
+    "label": "Quick hit",
+    "text": "DeepSeek’s status page flagged a partial Web/API outage Wednesday evening (US time) hitting chat and V4.1 Flash; Downdetector saw a spike. Check before you lean on it for a long agent run.",
+    "source": "IBTimes Australia",
+    "url": "https://www.ibtimes.com.au/deepseek-partial-outage-chat-api-service-1876726"
+  },
+  "x_posts": [
+    {
+      "name": "🚨 AI News | TestingCatalog",
+      "handle": "testingcatalog",
+      "time": "Wed 22:41",
+      "text": "ANTHROPIC 🔥: Claude Code Desktop now has a new sessions hub, live session statuses on the nav bar, and more!\n\nUsers can now start, track, manage, and follow up on multiple sessions at once from the Claude Code main screen. \n\nThis \"Claude Hub\" experience has been in testing for a",
+      "why": "Desktop finally treats parallel agent sessions as a first-class hub, not one chat at a time.",
+      "likes": 420,
+      "reposts": 16,
+      "url": "https://x.com/testingcatalog/status/2110455911344931130"
+    },
+    {
+      "name": "OpenBMB",
+      "handle": "OpenBMB",
+      "time": "Wed 16:36",
+      "text": "🚀 PilotDeck 2.0 is here!\n\nMeet the open-source AI Agent Harness built to get complex work done. Developed by Tsinghua THUNLP, @modelbest_ai, @OpenBMB , and AI9Stars, PilotDeck is a model-agnostic Agent operating system that turns natural language instructions into completed",
+      "why": "Another open agent OS from the Tsinghua / OpenBMB orbit — watch how it stacks against Claude Code and OpenCode.",
+      "likes": 552,
+      "reposts": 45,
+      "url": "https://x.com/OpenBMB/status/2110364065822646570"
+    },
+    {
+      "name": "Aiswarya Sankar",
+      "handle": "Aiswarya_Sankar",
+      "time": "Wed 19:08",
+      "text": "Introducing AgentPlay 🚀\n\nThe future of coding is self improving coding agent harnesses that help agents avoid making the same mistakes over and over.\n\nTurn your existing Claude Code, Codex, Cursor and Copilot sessions into interactive maps and replayable timelines.\n\nSee what",
+      "why": "Session replay as a product — maps and timelines so agents (and you) stop repeating the same mistakes.",
+      "likes": 262,
+      "reposts": 23,
+      "url": "https://x.com/Aiswarya_Sankar/status/2110402337533727182"
+    },
+    {
+      "name": "tae kim",
+      "handle": "firstadopter",
+      "time": "Thu 03:29",
+      "text": "Here is what is going on with OpenAI/Anthropic:\n\n-OpenAI quickly saw Anthropic’s success at the end of 2025 and pivoted resources to agentic coding\n\n-By April, OpenAI’s products had largely caught up, with positive developer reception of its GPT-5.5 coding agent (the online vibes",
+      "why": "A clean timeline of how OpenAI chased Anthropic into agentic coding — useful framing, not a product launch.",
+      "likes": 371,
+      "reposts": 21,
+      "url": "https://x.com/firstadopter/status/2110528384807956680"
+    }
+  ],
+  "footer": "Compiled 15 Oct 2026, 07:55 Helsinki time. X posts come from one X search (last ~34 h) and news from open web sources. Times are in Helsinki time. Back Page: Inspiration only (Gunnel Nyman); Writer's Corner skipped — ran yesterday."
+}
