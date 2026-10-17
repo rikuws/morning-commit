@@ -1,0 +1,375 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="light">
+<meta name="theme-color" content="#f6f1e7">
+<title>The Morning Commit · Saturday, 17 October 2026</title>
+<meta name="description" content="Saturday, 17 October 2026: Claude cracks the 25-year riddle of the NIST curve seeds: “It’s just timestamps”. The NSA-supplied seeds behind P-192 through P-521 were never a hash of a forgotten joke phrase. Anthropic says an internal research model worked out in under half an hour that…">
+<link rel="canonical" href="https://rikuws.github.io/morning-commit/issues/2026-10-17/">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="The Morning Commit">
+<meta property="og:title" content="The Morning Commit — Claude cracks the 25-year riddle of the NIST curve seeds: “It’s just timestamps”">
+<meta property="og:description" content="Saturday, 17 October 2026: Claude cracks the 25-year riddle of the NIST curve seeds: “It’s just timestamps”. The NSA-supplied seeds behind P-192 through P-521 were never a hash of a forgotten joke phrase. Anthropic says an internal research model worked out in under half an hour that…">
+<meta property="og:url" content="https://rikuws.github.io/morning-commit/issues/2026-10-17/">
+<meta property="og:image" content="https://rikuws.github.io/morning-commit/issues/2026-10-17/card.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="The Morning Commit — Claude cracks the 25-year riddle of the NIST curve seeds: “It’s just timestamps”">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://rikuws.github.io/morning-commit/issues/2026-10-17/card.png">
+
+<meta name="twitter:title" content="The Morning Commit — Claude cracks the 25-year riddle of the NIST curve seeds: “It’s just timestamps”">
+<meta name="twitter:description" content="Saturday, 17 October 2026: Claude cracks the 25-year riddle of the NIST curve seeds: “It’s just timestamps”. The NSA-supplied seeds behind P-192 through P-521 were never a hash of a forgotten joke phrase. Anthropic says an internal research model worked out in under half an hour that…">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='10' fill='%23f6f1e7'/%3E%3Ctext x='32' y='48' font-family='Georgia,serif' font-weight='900' font-size='44' text-anchor='middle' fill='%231b1a17'%3EM%3C/text%3E%3Crect x='14' y='54' width='36' height='3' fill='%23b3261e'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=Inter:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,700;0,800;0,900;1,400&family=Playfair+Display+SC:wght@700&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap">
+<style>
+:root{
+  --paper:#f6f1e7; --ink:#1b1a17; --muted:#5f5a50; --rule:#1b1a17; --soft:#d8cfbd;
+  --accent:#b3261e; --xblue:#1d4e89; --card:#fffdf8; --desk:#e9e3d6;
+  --serif:"Source Serif 4","Source Serif Pro","Noto Serif",Georgia,serif;
+  --display:"Playfair Display","Playfair Display SC",Georgia,serif;
+  --sans:Inter,"Noto Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --mono:"IBM Plex Mono","JetBrains Mono",ui-monospace,monospace;
+  color-scheme:light;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
+html,body{margin:0;background:var(--desk)}
+body{font-family:var(--serif);color:var(--ink);-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+a{color:inherit;text-decoration:none;-webkit-tap-highlight-color:rgba(179,38,30,.15)}
+a:hover{text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:3px}
+a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+
+.page{max-width:1100px;margin:0 auto;background:var(--paper);padding:14px 18px 22px;
+      background-image:radial-gradient(rgba(0,0,0,.025) 1px,transparent 1px);background-size:4px 4px}
+
+/* issue nav */
+.nav{display:flex;justify-content:space-between;align-items:stretch;gap:6px;font-family:var(--sans);
+     font-size:12px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.nav a,.nav span{display:flex;align-items:center;min-height:44px;padding:0 2px}
+.nav .mid{justify-content:center;color:var(--ink)}
+.nav .next{justify-content:flex-end}
+.nav span.off{opacity:.35}
+.nav a:hover{color:var(--accent);text-decoration:none}
+.nav-top{border-bottom:1px solid var(--soft);margin-bottom:8px}
+.nav-bottom{border-top:1px solid var(--soft);margin-top:14px}
+
+/* masthead */
+.topline{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:4px 12px;font-family:var(--sans);
+         font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);
+         border-bottom:1px solid var(--rule);padding-bottom:7px}
+.topline .tl{display:none}
+.masthead{text-align:center;padding:12px 0 4px}
+.masthead h1{font-family:var(--display);font-weight:900;font-size:clamp(34px,9.6vw,78px);line-height:1;margin:0;letter-spacing:-.5px}
+.masthead h1 a:hover{text-decoration:none}
+.masthead .tag{text-wrap:balance;font-family:var(--display);font-style:italic;font-size:15px;line-height:1.35;color:var(--muted);margin-top:6px}
+.dateline{display:flex;flex-wrap:wrap;justify-content:space-between;gap:2px 14px;font-family:var(--sans);font-size:11.5px;font-weight:600;
+          letter-spacing:.1em;text-transform:uppercase;border-top:3px double var(--rule);border-bottom:1px solid var(--rule);
+          padding:7px 2px;margin-top:12px}
+
+/* lead row */
+.lead-row{display:grid;grid-template-columns:1fr;gap:20px;padding:18px 0;border-bottom:1px solid var(--rule)}
+.kicker{font-family:var(--sans);font-size:11.5px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--accent)}
+.lead h2{text-wrap:balance;font-family:var(--display);font-weight:800;font-size:clamp(30px,8vw,44px);line-height:1.08;margin:8px 0 12px;letter-spacing:-.3px}
+.lead p{font-size:18px;line-height:1.55;margin:0}
+.lead p::first-letter{float:left;font-family:var(--display);font-weight:900;font-size:56px;line-height:.85;padding:5px 8px 0 0}
+.src{font-family:var(--sans);font-size:12.5px;color:var(--muted);margin-top:10px}
+.src b{color:var(--ink)}
+.src a{display:inline-block;padding:6px 0;margin:-6px 0;text-decoration:underline;text-decoration-color:var(--soft);text-underline-offset:3px}
+.nod{border-top:1px solid var(--rule);padding-top:16px;display:flex;flex-direction:column;justify-content:center}
+.nod .big{font-family:var(--display);font-weight:900;font-size:clamp(64px,18vw,86px);line-height:.95;color:var(--accent);margin:6px 0 10px}
+.nod p{font-size:16.5px;line-height:1.5;margin:0}
+
+/* section headers */
+.section-h{display:flex;align-items:center;gap:14px;margin:22px 0 14px}
+.section-h h2{margin:0;font-family:"Playfair Display SC","Playfair Display",serif;font-weight:700;font-size:23px;white-space:nowrap}
+.section-h::before,.section-h::after{content:"";flex:1;border-top:1px solid var(--rule)}
+
+/* X posts */
+.posts{display:grid;grid-template-columns:1fr;gap:14px}
+.post{position:relative;background:var(--card);border:1px solid var(--soft);border-top:3px solid var(--ink);padding:14px 16px 10px;display:flex;flex-direction:column}
+.post:hover{border-color:#bfb49e;border-top-color:var(--ink)}
+.who{font-family:var(--sans);line-height:1.3}
+.who .n{display:block;font-weight:700;font-size:15px}
+.who .sub2{display:flex;justify-content:space-between;gap:8px;font-size:13.5px}
+.who .h{color:var(--xblue);font-weight:500}
+.who .t{color:var(--muted);font-size:12px;white-space:nowrap}
+.post blockquote{margin:9px 0 12px;font-size:16.5px;line-height:1.45;font-style:italic;color:#2b2925;overflow-wrap:anywhere}
+.why{font-family:var(--sans);font-size:14px;line-height:1.45;border-top:1px dotted #9d9583;padding-top:8px;margin-top:auto}
+.why b{color:var(--accent);text-transform:uppercase;letter-spacing:.08em;font-size:11px;margin-right:4px}
+.meta{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-top:4px;font-family:var(--sans);font-size:12.5px;color:var(--muted)}
+.meta .stats b{color:var(--ink);font-weight:700}
+.meta .u{display:inline-flex;align-items:center;gap:6px;min-height:44px;font-family:var(--mono);font-size:11.5px;color:var(--xblue)}
+.meta .u .open{font-family:var(--sans);font-weight:700;font-size:11px;letter-spacing:.1em;text-transform:uppercase}
+.meta .u .path{color:var(--muted)}
+/* whole card is tappable */
+.meta .u::after{content:"";position:absolute;inset:0}
+.post:hover .meta .u{text-decoration:underline}
+
+/* news */
+.news{display:grid;grid-template-columns:1fr;gap:0}
+.item{padding:14px 0;border-top:1px solid var(--soft)}
+.item:first-child{border-top:none;padding-top:0}
+.item .kicker{font-size:11px}
+.item h3{text-wrap:balance;font-family:var(--display);font-weight:700;font-size:23px;line-height:1.18;margin:6px 0 8px}
+.item h3 a{display:block}
+.item p{font-size:16.5px;line-height:1.5;margin:0}
+
+/* quick hit */
+.quick{display:flex;flex-direction:column;gap:6px;margin-top:20px;padding:14px 16px;background:var(--ink);color:var(--paper)}
+.quick .lbl{font-family:var(--sans);font-weight:800;font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:#f2b8b5;white-space:nowrap;padding-top:2px}
+.quick p{margin:0;font-size:16.5px;line-height:1.5}
+.quick .src{color:#bdb5a5;display:inline;margin-left:6px}
+.quick .src b{color:var(--paper)}
+.quick .src a{text-decoration-color:#6d675c}
+
+.foot{margin-top:20px;border-top:3px double var(--rule);padding-top:8px;font-family:var(--sans);font-size:11.5px;line-height:1.5;color:var(--muted);display:flex;flex-direction:column;gap:4px}
+.foot .ed{white-space:nowrap}
+
+/* archive */
+.archive-list{list-style:none;margin:0;padding:0}
+.archive-list li{border-bottom:1px solid var(--soft)}
+.archive-list a{display:grid;grid-template-columns:1fr;gap:4px;padding:14px 0;min-height:44px}
+.archive-list a:hover{text-decoration:none}
+.archive-list a:hover .hl{text-decoration:underline;text-underline-offset:3px}
+.archive-list .d{font-family:var(--sans);font-size:12px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.archive-list .d .no{color:var(--accent);margin-left:8px}
+.archive-list .hl{font-family:var(--display);font-weight:700;font-size:22px;line-height:1.2}
+.archive-intro{font-size:16.5px;line-height:1.5;color:var(--muted);margin:18px 0 8px;font-style:italic}
+
+/* ---- back page: optional Writer's Corner + Inspiration (preview-lab) ---- */
+.backpage{display:grid;grid-template-columns:1fr;gap:16px}
+.wc{background:var(--card);border:1px solid var(--soft);border-top:3px solid var(--accent);padding:14px 16px 6px}
+.wc h3{text-wrap:balance;font-family:var(--display);font-weight:700;font-size:23px;line-height:1.18;margin:6px 0 6px}
+.wc .byline{font-family:var(--sans);font-size:13px;color:var(--muted);line-height:1.4}
+.wc .byline b{color:var(--ink);font-weight:700}
+.wc .take{font-size:16.5px;line-height:1.5;margin:10px 0 0}
+.wc .pull{margin:12px 0 4px;padding:2px 0 2px 14px;border-left:3px solid var(--accent);font-family:var(--display);font-style:italic;font-size:19px;line-height:1.38;color:#2b2925}
+.wc .readit{display:inline-flex;align-items:center;min-height:44px;font-family:var(--sans);font-weight:700;font-size:11.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--accent)}
+.wc .readit span{color:var(--muted);font-weight:600;margin-left:8px}
+.insp{margin:0;border-top:1px solid var(--rule);padding-top:12px}
+.insp .frame{display:block;width:fit-content;max-width:100%;margin:8px 0 8px;background:var(--desk);border:1px solid var(--soft);padding:8px}
+.insp img{display:block;width:auto;max-width:100%;height:auto;max-height:520px;object-fit:contain;filter:sepia(.04)}
+.insp figcaption{font-family:var(--sans);font-size:13px;line-height:1.45;color:var(--muted);display:flex;flex-direction:column;gap:3px}
+.insp figcaption .t{font-family:var(--serif);font-size:16px;color:var(--ink)}
+.insp figcaption .c{font-family:var(--serif);font-size:15px;color:#3a372f}
+.insp figcaption .cr{font-size:11.5px;letter-spacing:.02em}
+.insp figcaption .cr a{text-decoration:underline;text-decoration-color:var(--soft);text-underline-offset:3px;display:inline-block;padding:8px 0;margin:-8px 0}
+@media (min-width:640px){
+  .backpage.both{grid-template-columns:1.35fr 1fr;gap:24px;align-items:start}
+  .insp{border-top:none;padding-top:0}
+  .backpage.both .insp{border-left:1px solid var(--soft);padding-left:24px}
+  .backpage:not(.both) .insp{display:grid;grid-template-columns:auto minmax(0,1fr);column-gap:28px;align-items:start}
+  .backpage:not(.both) .insp figcaption{padding-top:8px;max-width:420px}
+  .backpage:not(.both) .insp .kicker{grid-column:1/-1}
+}
+@media (min-width:900px){
+  .backpage.both{grid-template-columns:1.6fr 1fr;gap:28px}
+  .wc{padding:16px 20px 8px}
+  .wc h3{font-size:26px}
+  .wc .pull{font-size:21px}
+  .insp img{max-height:440px}
+  .backpage.both .insp img{max-height:300px}
+}
+
+/* ≥ 640px: tablets / large phones landscape */
+@media (max-width:899px){.page{min-height:100vh}}
+@media (min-width:640px){
+  .page{padding:22px 30px 24px}
+  .topline .tl{display:inline}
+  .masthead .tag{font-size:17px}
+  .dateline{font-size:12.5px}
+  .posts{grid-template-columns:repeat(2,1fr)}
+  .posts .post:last-child:nth-child(odd){grid-column:1/-1}
+  .news{grid-template-columns:repeat(2,1fr)}
+  .item{padding:14px 18px;border-top:1px solid var(--soft);border-left:1px solid var(--soft)}
+  .item:nth-child(-n+2){border-top:none;padding-top:0}
+  .item:nth-child(odd){border-left:none;padding-left:0}
+  .item:nth-child(even){padding-right:0}
+  .quick{flex-direction:row;gap:16px;align-items:flex-start;padding:13px 18px}
+  .foot{flex-direction:row;justify-content:space-between;gap:20px}
+  .archive-list a{grid-template-columns:220px 1fr;gap:18px;align-items:baseline}
+}
+/* ≥ 900px: desktop newspaper layout */
+@media (min-width:900px){
+  .page{padding:26px 44px 26px;margin:24px auto;box-shadow:0 1px 0 rgba(0,0,0,.06),0 12px 40px rgba(60,45,20,.12)}
+  .topline{font-size:12.5px}
+  .masthead .tag{font-size:17px}
+  .lead-row{grid-template-columns:2.1fr 1fr;gap:30px;padding:22px 0 20px}
+  .lead-row.solo{grid-template-columns:1fr}
+  .lead p{font-size:19px;line-height:1.5}
+  .lead p::first-letter{font-size:62px}
+  .nod{border-top:none;padding-top:0;border-left:1px solid var(--rule);padding-left:28px}
+  .section-h h2{font-size:25px}
+  .posts{grid-template-columns:repeat(6,1fr);gap:16px}
+  .posts .post,.posts .post:last-child:nth-child(odd){grid-column:span var(--span,2)}
+  .post blockquote{font-size:16px;line-height:1.42}
+  .why{font-size:13.5px;line-height:1.4}
+  .news{grid-template-columns:repeat(var(--cols,4),1fr)}
+  .news .item{padding:0 18px;border-top:none;border-left:1px solid var(--soft)}
+  .news .item:first-child{padding-left:0;border-left:none}
+  .news .item:last-child{padding-right:0}
+  .item h3{font-size:22px;line-height:1.15}
+  .item p{font-size:15.5px;line-height:1.45}
+  .quick p{font-size:16px;line-height:1.45}
+}
+@media (prefers-reduced-motion:no-preference){a{transition:color .12s}}
+@media print{html,body{background:#fff}.page{box-shadow:none;margin:0}.nav{display:none}}
+
+</style>
+</head>
+<body>
+<div class="page">
+  <nav class="nav nav-top" aria-label="Issues">
+    <a class="prev" href="../../issues/2026-10-15/" rel="prev">← Previous</a>
+    <a class="mid" href="../../archive/">Archive</a>
+    <a class="next" href="../../">Latest →</a>
+  </nav>
+  <div class="topline"><span>Tampere edition</span><span>No. 9</span><span class="tl">AI · dev tools · tech — a two-minute read</span></div>
+  <header class="masthead">
+    <h1><a href="../../">The Morning Commit</a></h1>
+    <div class="tag">Your morning brief on what moved in AI and dev tools overnight</div>
+  </header>
+  <div class="dateline"><span><time datetime="2026-10-17">Saturday, 17 October 2026</time></span><span>4 posts · 5 stories · 2-minute read</span></div>
+
+  <main>
+  <section class="lead-row">
+    <article class="lead">
+      <div class="kicker">Lead story · Cryptography</div>
+      <h2><a href="https://www.anthropic.com/research/ecdsa-curve-origins">Claude cracks the 25-year riddle of the NIST curve seeds: “It’s just timestamps”</a></h2>
+      <p>The NSA-supplied seeds behind P-192 through P-521 were never a hash of a forgotten joke phrase. Anthropic says an internal research model worked out in under half an hour that they’re output from the old C `lrand48` generator, seeded with Unix timestamps from May 1997 to April 1998 — P-256 is candidate 1,842 of a run started 16 Aug 1997, 01:52:34 UTC. It spotted the generator’s fingerprint (top bits always zero), recovered states with LLL lattice reduction, and even explained six base points via Arjen Lenstra’s FreeLIP. Not a break: it makes a backdoor far less plausible. Filippo Valsorda re-implemented it in Go to verify; the $36,864 bounty goes to ISRG (Let’s Encrypt). B-163 and the P-256 base point remain unexplained.</p>
+      <div class="src">Source: <b><a href="https://www.anthropic.com/research/ecdsa-curve-origins">Anthropic</a></b> · anthropic.com</div>
+    </article>
+    
+    <aside class="nod">
+      <div class="kicker">Number of the day</div>
+      <div class="big">53 h</div>
+      <p>Length of the single, mostly unattended Claude run that produced a new elliptic-curve point-addition circuit with 17x fewer gates — compared with the eight years of multi-group work behind the field’s famous FeMoco gate-count drop.</p>
+      <div class="src">Source: <b><a href="https://www.anthropic.com/research/designing-efficient-quantum-circuits">Anthropic</a></b></div>
+    </aside>
+    
+  </section>
+
+  
+  <div class="section-h"><h2>Overheard on X</h2></div>
+  <section class="posts">
+    
+    <article class="post" style="--span:3">
+      <div class="who"><span class="n">Artificial Analysis</span><span class="sub2"><span class="h">@ArtificialAnlys</span><span class="t">Fri 03:41 Helsinki</span></span></div>
+      <blockquote>“Meta has released Muse Spark Open, an 816B (42B active) open-weights model that scores 39 on the Artificial Analysis Intelligence Index, making it the #1 US open-weights model
+
+Muse Spark Open (xhigh) scores 22 points above Muse Glimmer (high, 17), Meta&#39;s 30B dense open-weights”</blockquote>
+      <div class="why"><b>Why it matters</b>Independent scoring of Meta’s big open release (built with Apple to run on two Mac Studios) — top US open model, still behind the Chinese leaders.</div>
+      <div class="meta"><span class="stats">♥ <b>726</b> &nbsp; ⟲ <b>47</b></span>
+        <a class="u" href="https://x.com/ArtificialAnlys/status/2110893784422908225" aria-label="Open @ArtificialAnlys’s post on X"><span class="open">Open on X ↗</span></a></div>
+    </article>
+    
+    <article class="post" style="--span:3">
+      <div class="who"><span class="n">Winston B.</span><span class="sub2"><span class="h">@DoDataThings</span><span class="t">Fri 19:07 Helsinki</span></span></div>
+      <blockquote>“Active parameters are the price tag.
+
+Muse Spark Open fires 42B of 816B per token. Nemotron 3.5 Super VL fires 12B of 120B. Kimi K3 sits further out on the same curve: 104B active of 2.8T, compute for a model 27x smaller than its weights. I laid out that math in July.”</blockquote>
+      <div class="why"><b>Why it matters</b>A one-paragraph mental model for this week’s MoE wave: total params are storage, active params are your bill.</div>
+      <div class="meta"><span class="stats">♥ <b>0</b> &nbsp; ⟲ <b>0</b></span>
+        <a class="u" href="https://x.com/DoDataThings/status/2111127001448976535" aria-label="Open @DoDataThings’s post on X"><span class="open">Open on X ↗</span></a></div>
+    </article>
+    
+    <article class="post" style="--span:3">
+      <div class="who"><span class="n">轩源</span><span class="sub2"><span class="h">@4xy</span><span class="t">Fri 15:41 Helsinki</span></span></div>
+      <blockquote>“Ramp says 87% of teams that pay for a coding agent also pay for Claude Code.
+
+Codex sits at 40. Cursor at 35.
+
+That chart isn&#39;t a ranking. It&#39;s three tabs left open.”</blockquote>
+      <div class="why"><b>Why it matters</b>Nice reframe of spend data (his citation of Ramp; we haven’t checked the chart): teams stack agents rather than pick one.</div>
+      <div class="meta"><span class="stats">♥ <b>2</b> &nbsp; ⟲ <b>0</b></span>
+        <a class="u" href="https://x.com/4xy/status/2111074956226560111" aria-label="Open @4xy’s post on X"><span class="open">Open on X ↗</span></a></div>
+    </article>
+    
+    <article class="post" style="--span:3">
+      <div class="who"><span class="n">Dev Sanghvi</span><span class="sub2"><span class="h">@Dv04Ds</span><span class="t">Fri 03:39 Helsinki</span></span></div>
+      <blockquote>“I kept losing the one coding-agent chat that was quietly waiting on me, so I built DHI Orbit.
+
+One local board for Claude Code, Codex, Cursor, Gemini CLI and Antigravity: what needs you, what&#39;s working, your limits, and a reply box.
+
+Free and open source.”</blockquote>
+      <div class="why"><b>Why it matters</b>Small builder tool for a real pain: one local dashboard for every agent session that’s blocked on you.</div>
+      <div class="meta"><span class="stats">♥ <b>9</b> &nbsp; ⟲ <b>1</b></span>
+        <a class="u" href="https://x.com/Dv04Ds/status/2110893422475395550" aria-label="Open @Dv04Ds’s post on X"><span class="open">Open on X ↗</span></a></div>
+    </article>
+    
+  </section>
+  
+
+  
+  <div class="section-h"><h2>The Wire</h2></div>
+  <section class="news" style="--cols:4">
+    
+    <article class="item">
+      <div class="kicker">Research</div>
+      <h3><a href="https://www.anthropic.com/research/designing-efficient-quantum-circuits">Same day, second Anthropic paper: Claude out-designs published quantum circuits</a></h3>
+      <p>Given plain-language specs and an automated scorer, Claude Mythos 5 found circuits beating the best published designs on eight primitives. Highlights: the first reversible divsteps modular inversion with no stored branch history (verified in Lean), and a Reed–Solomon decoder about 12x leaner than Google’s for decoded quantum interferometry. Anthropic notes it had to nudge the model to stop playing safe.</p>
+      <div class="src">— <b><a href="https://www.anthropic.com/research/designing-efficient-quantum-circuits">Anthropic</a></b> · anthropic.com</div>
+    </article>
+    
+    <article class="item">
+      <div class="kicker">Dev tools</div>
+      <h3><a href="https://techcrunch.com/2026/10/16/replit-is-no-longer-working-with-anthropic-ceo-says/">Replit’s CEO says it dropped Anthropic — insiders say the deal stands</a></h3>
+      <p>On stage at TechCrunch Disrupt, Amjad Masad said Replit moved on over cost, partnership and its own benchmarks: “I think ChatGPT is better now.” A person familiar told TechCrunch the partnership is still in place, and Replit’s late-September production notes still listed Claude models. Replit added OpenAI as a provider in August.</p>
+      <div class="src">— <b><a href="https://techcrunch.com/2026/10/16/replit-is-no-longer-working-with-anthropic-ceo-says/">TechCrunch</a></b> · techcrunch.com</div>
+    </article>
+    
+    <article class="item">
+      <div class="kicker">Agents</div>
+      <h3><a href="https://runtimewire.com/article/openai-gpt-6-pro-chat-multi-agent-upgrade">GPT-6 Pro in ChatGPT now splits work across parallel agents</a></h3>
+      <p>Pro users get delegated sub-tasks running at once in the Chat tab, with per-agent progress and reviewable results. Separately, OpenAI’s Tibo says Codex and Work stretch usage further by reusing context across subagents, caching longer and routing for cache hits. No latency, cost or quota numbers were published.</p>
+      <div class="src">— <b><a href="https://runtimewire.com/article/openai-gpt-6-pro-chat-multi-agent-upgrade">Runtime Wire</a></b> · runtimewire.com</div>
+    </article>
+    
+    <article class="item">
+      <div class="kicker">Finland</div>
+      <h3><a href="https://theintelligent.fi/teknologia/2026/elisa-testaa-moontalk-airi-tekoalyavustajan-reaaliaikaista-beetaversiota">Elisa pilots a real-time Moontalk AIRI that joins business calls</a></h3>
+      <p>The Oulu-built assistant (Moontalk is part of the Elisa group) used to record calls and write summaries; the new beta, now with selected business customers, pulls from a company’s own sources and suggests answers during the call. It runs on Nvidia Nemotron models with distributed edge compute.</p>
+      <div class="src">— <b><a href="https://theintelligent.fi/teknologia/2026/elisa-testaa-moontalk-airi-tekoalyavustajan-reaaliaikaista-beetaversiota">The Intelligent</a></b> · theintelligent.fi</div>
+    </article>
+    
+  </section>
+  
+
+  
+  
+  <div class="section-h"><h2>The Back Page</h2></div>
+  <section class="backpage">
+    
+    <article class="wc">
+      <div class="kicker">Writer’s Corner · Philosophy</div>
+      <h3><a href="https://www.experimental-history.com/p/claude-dont-touch-my-lump">Claude, don’t touch my lump</a></h3>
+      <div class="byline"><b>Adam Mastroianni</b> · Experimental History · Tue 13 Oct</div>
+      <p class="take">AI job-doom repeats the “lump of labor” mistake, he argues: wants are a hedonic treadmill — satisfy one, and a new one (and new work) appears. Call it the finite-desires fallacy.</p>
+      <blockquote class="pull"><a href="https://www.experimental-history.com/p/claude-dont-touch-my-lump">“Perhaps as long as we can never be satisfied, we can never be rendered obsolete.”</a></blockquote>
+      <a class="readit" href="https://www.experimental-history.com/p/claude-dont-touch-my-lump">Read it ↗<span>· free</span></a>
+    </article>
+    
+    
+  </section>
+  
+
+  
+  <div class="quick"><span class="lbl">Quick hit</span>
+    <p>Filippo Valsorda, who ran the seeds bounty, says the find rules out the Bernstein–Lange seed-steering attack and he’d now personally recommend NIST curves over Curve25519 — “just in time for them to be retired in favor of post-quantum signatures.”<span class="src">— <b><a href="https://words.filippo.io/seeds-solved/">Filippo Valsorda</a></b></span></p></div>
+  
+  </main>
+
+  <footer class="foot"><span>Compiled 17 Oct 2026, 08:10 Helsinki time. X posts come from two X searches (last ~36 h) and news from open web sources. Times are in Helsinki time. Back Page: Writer&#39;s Corner (Philosophy — Adam Mastroianni); Inspiration skipped — ran twice this week.</span><span class="ed">The Morning Commit · 2026-10-17</span></footer>
+  <nav class="nav nav-bottom" aria-label="Issues">
+    <a class="prev" href="../../issues/2026-10-15/" rel="prev">← Previous</a>
+    <a class="mid" href="../../archive/">All issues</a>
+    <a class="next" href="../../">Latest →</a>
+  </nav>
+</div>
+</body>
+</html>

@@ -1,0 +1,112 @@
+{
+  "paper_name": "The Morning Commit",
+  "tagline": "AI · dev tools · tech — a two-minute read",
+  "edition": "Tampere edition",
+  "issue_no": "No. 9",
+  "date_long": "Saturday, 17 October 2026",
+  "date_slug": "2026-10-17",
+  "lead": {
+    "kicker": "Lead story · Cryptography",
+    "headline": "Claude cracks the 25-year riddle of the NIST curve seeds: “It’s just timestamps”",
+    "summary": "The NSA-supplied seeds behind P-192 through P-521 were never a hash of a forgotten joke phrase. Anthropic says an internal research model worked out in under half an hour that they’re output from the old C `lrand48` generator, seeded with Unix timestamps from May 1997 to April 1998 — P-256 is candidate 1,842 of a run started 16 Aug 1997, 01:52:34 UTC. It spotted the generator’s fingerprint (top bits always zero), recovered states with LLL lattice reduction, and even explained six base points via Arjen Lenstra’s FreeLIP. Not a break: it makes a backdoor far less plausible. Filippo Valsorda re-implemented it in Go to verify; the $36,864 bounty goes to ISRG (Let’s Encrypt). B-163 and the P-256 base point remain unexplained.",
+    "source": "Anthropic",
+    "url": "https://www.anthropic.com/research/ecdsa-curve-origins"
+  },
+  "number_of_day": {
+    "value": "53 h",
+    "label": "Length of the single, mostly unattended Claude run that produced a new elliptic-curve point-addition circuit with 17x fewer gates — compared with the eight years of multi-group work behind the field’s famous FeMoco gate-count drop.",
+    "source": "Anthropic",
+    "url": "https://www.anthropic.com/research/designing-efficient-quantum-circuits"
+  },
+  "news": [
+    {
+      "tag": "Research",
+      "headline": "Same day, second Anthropic paper: Claude out-designs published quantum circuits",
+      "summary": "Given plain-language specs and an automated scorer, Claude Mythos 5 found circuits beating the best published designs on eight primitives. Highlights: the first reversible divsteps modular inversion with no stored branch history (verified in Lean), and a Reed–Solomon decoder about 12x leaner than Google’s for decoded quantum interferometry. Anthropic notes it had to nudge the model to stop playing safe.",
+      "source": "Anthropic",
+      "url": "https://www.anthropic.com/research/designing-efficient-quantum-circuits"
+    },
+    {
+      "tag": "Dev tools",
+      "headline": "Replit’s CEO says it dropped Anthropic — insiders say the deal stands",
+      "summary": "On stage at TechCrunch Disrupt, Amjad Masad said Replit moved on over cost, partnership and its own benchmarks: “I think ChatGPT is better now.” A person familiar told TechCrunch the partnership is still in place, and Replit’s late-September production notes still listed Claude models. Replit added OpenAI as a provider in August.",
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/10/16/replit-is-no-longer-working-with-anthropic-ceo-says/"
+    },
+    {
+      "tag": "Agents",
+      "headline": "GPT-6 Pro in ChatGPT now splits work across parallel agents",
+      "summary": "Pro users get delegated sub-tasks running at once in the Chat tab, with per-agent progress and reviewable results. Separately, OpenAI’s Tibo says Codex and Work stretch usage further by reusing context across subagents, caching longer and routing for cache hits. No latency, cost or quota numbers were published.",
+      "source": "Runtime Wire",
+      "url": "https://runtimewire.com/article/openai-gpt-6-pro-chat-multi-agent-upgrade"
+    },
+    {
+      "tag": "Finland",
+      "headline": "Elisa pilots a real-time Moontalk AIRI that joins business calls",
+      "summary": "The Oulu-built assistant (Moontalk is part of the Elisa group) used to record calls and write summaries; the new beta, now with selected business customers, pulls from a company’s own sources and suggests answers during the call. It runs on Nvidia Nemotron models with distributed edge compute.",
+      "source": "The Intelligent",
+      "url": "https://theintelligent.fi/teknologia/2026/elisa-testaa-moontalk-airi-tekoalyavustajan-reaaliaikaista-beetaversiota"
+    }
+  ],
+  "writers_corner": {
+    "category": "Philosophy",
+    "writer": "Adam Mastroianni",
+    "publication": "Experimental History",
+    "date": "Tue 13 Oct",
+    "title": "Claude, don’t touch my lump",
+    "take": "AI job-doom repeats the “lump of labor” mistake, he argues: wants are a hedonic treadmill — satisfy one, and a new one (and new work) appears. Call it the finite-desires fallacy.",
+    "quote": "Perhaps as long as we can never be satisfied, we can never be rendered obsolete.",
+    "url": "https://www.experimental-history.com/p/claude-dont-touch-my-lump",
+    "read_note": "free",
+    "feed_url": "https://www.experimental-history.com/feed"
+  },
+  "quick_hit": {
+    "label": "Quick hit",
+    "text": "Filippo Valsorda, who ran the seeds bounty, says the find rules out the Bernstein–Lange seed-steering attack and he’d now personally recommend NIST curves over Curve25519 — “just in time for them to be retired in favor of post-quantum signatures.”",
+    "source": "Filippo Valsorda",
+    "url": "https://words.filippo.io/seeds-solved/"
+  },
+  "x_posts": [
+    {
+      "name": "Artificial Analysis",
+      "handle": "ArtificialAnlys",
+      "time": "Fri 03:41",
+      "text": "Meta has released Muse Spark Open, an 816B (42B active) open-weights model that scores 39 on the Artificial Analysis Intelligence Index, making it the #1 US open-weights model\n\nMuse Spark Open (xhigh) scores 22 points above Muse Glimmer (high, 17), Meta's 30B dense open-weights",
+      "why": "Independent scoring of Meta’s big open release (built with Apple to run on two Mac Studios) — top US open model, still behind the Chinese leaders.",
+      "likes": 726,
+      "reposts": 47,
+      "url": "https://x.com/ArtificialAnlys/status/2110893784422908225"
+    },
+    {
+      "name": "Winston B.",
+      "handle": "DoDataThings",
+      "time": "Fri 19:07",
+      "text": "Active parameters are the price tag.\n\nMuse Spark Open fires 42B of 816B per token. Nemotron 3.5 Super VL fires 12B of 120B. Kimi K3 sits further out on the same curve: 104B active of 2.8T, compute for a model 27x smaller than its weights. I laid out that math in July.",
+      "why": "A one-paragraph mental model for this week’s MoE wave: total params are storage, active params are your bill.",
+      "likes": 0,
+      "reposts": 0,
+      "url": "https://x.com/DoDataThings/status/2111127001448976535"
+    },
+    {
+      "name": "轩源",
+      "handle": "4xy",
+      "time": "Fri 15:41",
+      "text": "Ramp says 87% of teams that pay for a coding agent also pay for Claude Code.\n\nCodex sits at 40. Cursor at 35.\n\nThat chart isn't a ranking. It's three tabs left open.",
+      "why": "Nice reframe of spend data (his citation of Ramp; we haven’t checked the chart): teams stack agents rather than pick one.",
+      "likes": 2,
+      "reposts": 0,
+      "url": "https://x.com/4xy/status/2111074956226560111"
+    },
+    {
+      "name": "Dev Sanghvi",
+      "handle": "Dv04Ds",
+      "time": "Fri 03:39",
+      "text": "I kept losing the one coding-agent chat that was quietly waiting on me, so I built DHI Orbit.\n\nOne local board for Claude Code, Codex, Cursor, Gemini CLI and Antigravity: what needs you, what's working, your limits, and a reply box.\n\nFree and open source.",
+      "why": "Small builder tool for a real pain: one local dashboard for every agent session that’s blocked on you.",
+      "likes": 9,
+      "reposts": 1,
+      "url": "https://x.com/Dv04Ds/status/2110893422475395550"
+    }
+  ],
+  "footer": "Compiled 17 Oct 2026, 08:10 Helsinki time. X posts come from two X searches (last ~36 h) and news from open web sources. Times are in Helsinki time. Back Page: Writer's Corner (Philosophy — Adam Mastroianni); Inspiration skipped — ran twice this week."
+}
