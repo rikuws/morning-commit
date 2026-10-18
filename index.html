@@ -5,23 +5,23 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="color-scheme" content="light">
 <meta name="theme-color" content="#f6f1e7">
-<title>The Morning Commit · Saturday, 17 October 2026</title>
-<meta name="description" content="Saturday, 17 October 2026: Claude cracks the 25-year riddle of the NIST curve seeds: “It’s just timestamps”. The NSA-supplied seeds behind P-192 through P-521 were never a hash of a forgotten joke phrase. Anthropic says an internal research model worked out in under half an hour that…">
-<link rel="canonical" href="https://rikuws.github.io/morning-commit/issues/2026-10-17/">
+<title>The Morning Commit · Sunday, 18 October 2026</title>
+<meta name="description" content="Sunday, 18 October 2026: OpenCode breach leaks saved provider keys — and strangers ran up the bills overnight. Someone got into “a legacy system that we were in the process of decommissioning” at OpenCode late Friday, exposing the OpenAI, Anthropic and Google keys that some paid Console…">
+<link rel="canonical" href="https://rikuws.github.io/morning-commit/issues/2026-10-18/">
 <meta property="og:type" content="article">
 <meta property="og:site_name" content="The Morning Commit">
-<meta property="og:title" content="The Morning Commit — Claude cracks the 25-year riddle of the NIST curve seeds: “It’s just timestamps”">
-<meta property="og:description" content="Saturday, 17 October 2026: Claude cracks the 25-year riddle of the NIST curve seeds: “It’s just timestamps”. The NSA-supplied seeds behind P-192 through P-521 were never a hash of a forgotten joke phrase. Anthropic says an internal research model worked out in under half an hour that…">
-<meta property="og:url" content="https://rikuws.github.io/morning-commit/issues/2026-10-17/">
-<meta property="og:image" content="https://rikuws.github.io/morning-commit/issues/2026-10-17/card.png">
+<meta property="og:title" content="The Morning Commit — OpenCode breach leaks saved provider keys — and strangers ran up the bills overnight">
+<meta property="og:description" content="Sunday, 18 October 2026: OpenCode breach leaks saved provider keys — and strangers ran up the bills overnight. Someone got into “a legacy system that we were in the process of decommissioning” at OpenCode late Friday, exposing the OpenAI, Anthropic and Google keys that some paid Console…">
+<meta property="og:url" content="https://rikuws.github.io/morning-commit/issues/2026-10-18/">
+<meta property="og:image" content="https://rikuws.github.io/morning-commit/issues/2026-10-18/card.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="The Morning Commit — Claude cracks the 25-year riddle of the NIST curve seeds: “It’s just timestamps”">
+<meta property="og:image:alt" content="The Morning Commit — OpenCode breach leaks saved provider keys — and strangers ran up the bills overnight">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://rikuws.github.io/morning-commit/issues/2026-10-17/card.png">
+<meta name="twitter:image" content="https://rikuws.github.io/morning-commit/issues/2026-10-18/card.png">
 
-<meta name="twitter:title" content="The Morning Commit — Claude cracks the 25-year riddle of the NIST curve seeds: “It’s just timestamps”">
-<meta name="twitter:description" content="Saturday, 17 October 2026: Claude cracks the 25-year riddle of the NIST curve seeds: “It’s just timestamps”. The NSA-supplied seeds behind P-192 through P-521 were never a hash of a forgotten joke phrase. Anthropic says an internal research model worked out in under half an hour that…">
+<meta name="twitter:title" content="The Morning Commit — OpenCode breach leaks saved provider keys — and strangers ran up the bills overnight">
+<meta name="twitter:description" content="Sunday, 18 October 2026: OpenCode breach leaks saved provider keys — and strangers ran up the bills overnight. Someone got into “a legacy system that we were in the process of decommissioning” at OpenCode late Friday, exposing the OpenAI, Anthropic and Google keys that some paid Console…">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='10' fill='%23f6f1e7'/%3E%3Ctext x='32' y='48' font-family='Georgia,serif' font-weight='900' font-size='44' text-anchor='middle' fill='%231b1a17'%3EM%3C/text%3E%3Crect x='14' y='54' width='36' height='3' fill='%23b3261e'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -225,31 +225,31 @@ a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
 <body>
 <div class="page">
   <nav class="nav nav-top" aria-label="Issues">
-    <a class="prev" href="issues/2026-10-15/" rel="prev">← Previous</a>
+    <a class="prev" href="issues/2026-10-17/" rel="prev">← Previous</a>
     <a class="mid" href="archive/">Archive</a>
     <span class="next off">Latest</span>
   </nav>
-  <div class="topline"><span>Tampere edition</span><span>No. 9</span><span class="tl">AI · dev tools · tech — a two-minute read</span></div>
+  <div class="topline"><span>Tampere edition</span><span>No. 10</span><span class="tl">AI · dev tools · tech — a two-minute read</span></div>
   <header class="masthead">
     <h1><a href="">The Morning Commit</a></h1>
     <div class="tag">Your morning brief on what moved in AI and dev tools overnight</div>
   </header>
-  <div class="dateline"><span><time datetime="2026-10-17">Saturday, 17 October 2026</time></span><span>4 posts · 5 stories · 2-minute read</span></div>
+  <div class="dateline"><span><time datetime="2026-10-18">Sunday, 18 October 2026</time></span><span>4 posts · 5 stories · 2-minute read</span></div>
 
   <main>
   <section class="lead-row">
     <article class="lead">
-      <div class="kicker">Lead story · Cryptography</div>
-      <h2><a href="https://www.anthropic.com/research/ecdsa-curve-origins">Claude cracks the 25-year riddle of the NIST curve seeds: “It’s just timestamps”</a></h2>
-      <p>The NSA-supplied seeds behind P-192 through P-521 were never a hash of a forgotten joke phrase. Anthropic says an internal research model worked out in under half an hour that they’re output from the old C `lrand48` generator, seeded with Unix timestamps from May 1997 to April 1998 — P-256 is candidate 1,842 of a run started 16 Aug 1997, 01:52:34 UTC. It spotted the generator’s fingerprint (top bits always zero), recovered states with LLL lattice reduction, and even explained six base points via Arjen Lenstra’s FreeLIP. Not a break: it makes a backdoor far less plausible. Filippo Valsorda re-implemented it in Go to verify; the $36,864 bounty goes to ISRG (Let’s Encrypt). B-163 and the P-256 base point remain unexplained.</p>
-      <div class="src">Source: <b><a href="https://www.anthropic.com/research/ecdsa-curve-origins">Anthropic</a></b> · anthropic.com</div>
+      <div class="kicker">Lead story · Security</div>
+      <h2><a href="https://thelatent.co/models/opencode-says-breach-tied-to-distillation-attack-exposed-users-ai-provider-keys">OpenCode breach leaks saved provider keys — and strangers ran up the bills overnight</a></h2>
+      <p>Someone got into “a legacy system that we were in the process of decommissioning” at OpenCode late Friday, exposing the OpenAI, Anthropic and Google keys that some paid Console users had saved in their workspaces. OpenCode says 1.4% of Console users were hit (a subset with external providers linked), emailed them Saturday morning and tied it to “a large scale distillation attack”, without explaining how. Users were seeing charges before any announcement: one reported $281 on OpenAI and $168 on Anthropic from 2 a.m. ET, others $700–1,700. If you ever linked a key in Console, revoke it at the provider (not in Console), check usage since 16 Oct and put a spend cap on the new one. Local CLI keys aren’t reported as affected.</p>
+      <div class="src">Source: <b><a href="https://thelatent.co/models/opencode-says-breach-tied-to-distillation-attack-exposed-users-ai-provider-keys">The Latent</a></b> · thelatent.co</div>
     </article>
     
     <aside class="nod">
       <div class="kicker">Number of the day</div>
-      <div class="big">53 h</div>
-      <p>Length of the single, mostly unattended Claude run that produced a new elliptic-curve point-addition circuit with 17x fewer gates — compared with the eight years of multi-group work behind the field’s famous FeMoco gate-count drop.</p>
-      <div class="src">Source: <b><a href="https://www.anthropic.com/research/designing-efficient-quantum-circuits">Anthropic</a></b></div>
+      <div class="big">6 : 1</div>
+      <p>Hours worked by employee-directed AI agents versus their human handlers at Anthropic by August — agent runtime first passed human work hours in March 2026.</p>
+      <div class="src">Source: <b><a href="https://www.anthropic.com/research/employment-at-anthropic">Anthropic</a></b></div>
     </aside>
     
   </section>
@@ -259,47 +259,47 @@ a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
   <section class="posts">
     
     <article class="post" style="--span:3">
-      <div class="who"><span class="n">Artificial Analysis</span><span class="sub2"><span class="h">@ArtificialAnlys</span><span class="t">Fri 03:41 Helsinki</span></span></div>
-      <blockquote>“Meta has released Muse Spark Open, an 816B (42B active) open-weights model that scores 39 on the Artificial Analysis Intelligence Index, making it the #1 US open-weights model
+      <div class="who"><span class="n">Tom</span><span class="sub2"><span class="h">@krip_tom</span><span class="t">Sat 15:28 Helsinki</span></span></div>
+      <blockquote>“The new open models don&#39;t ship as weights. They ship as a machine and a harness.
 
-Muse Spark Open (xhigh) scores 22 points above Muse Glimmer (high, 17), Meta&#39;s 30B dense open-weights”</blockquote>
-      <div class="why"><b>Why it matters</b>Independent scoring of Meta’s big open release (built with Apple to run on two Mac Studios) — top US open model, still behind the Chinese leaders.</div>
-      <div class="meta"><span class="stats">♥ <b>726</b> &nbsp; ⟲ <b>47</b></span>
-        <a class="u" href="https://x.com/ArtificialAnlys/status/2110893784422908225" aria-label="Open @ArtificialAnlys’s post on X"><span class="open">Open on X ↗</span></a></div>
+Meta&#39;s Muse Spark Open: 816B total, 42B active, 1M context, runs locally on two 512 GB M5 Ultra Mac Studios via MLX. Reflection Beam: 501B total, 23B active, Apache 2.0, trained together with its…”</blockquote>
+      <div class="why"><b>Why it matters</b>A sharp read on this week’s open releases: the model, the hardware recipe and the agent harness now arrive as one package.</div>
+      <div class="meta"><span class="stats">♥ <b>1</b> &nbsp; ⟲ <b>0</b></span>
+        <a class="u" href="https://x.com/krip_tom/status/2111434129396904231" aria-label="Open @krip_tom’s post on X"><span class="open">Open on X ↗</span></a></div>
     </article>
     
     <article class="post" style="--span:3">
-      <div class="who"><span class="n">Winston B.</span><span class="sub2"><span class="h">@DoDataThings</span><span class="t">Fri 19:07 Helsinki</span></span></div>
-      <blockquote>“Active parameters are the price tag.
+      <div class="who"><span class="n">FastFix AI</span><span class="sub2"><span class="h">@FastfixAI</span><span class="t">Sun 07:23 Helsinki</span></span></div>
+      <blockquote>“Your coding agent can probably open your .env file right now.
 
-Muse Spark Open fires 42B of 816B per token. Nemotron 3.5 Super VL fires 12B of 120B. Kimi K3 sits further out on the same curve: 104B active of 2.8T, compute for a model 27x smaller than its weights. I laid out that math in July.”</blockquote>
-      <div class="why"><b>Why it matters</b>A one-paragraph mental model for this week’s MoE wave: total params are storage, active params are your bill.</div>
-      <div class="meta"><span class="stats">♥ <b>0</b> &nbsp; ⟲ <b>0</b></span>
-        <a class="u" href="https://x.com/DoDataThings/status/2111127001448976535" aria-label="Open @DoDataThings’s post on X"><span class="open">Open on X ↗</span></a></div>
+Claude Code, Cursor and Codex each have a setting to block that, and each one has a gap.
+
+Where they live and what they miss 🧵”</blockquote>
+      <div class="why"><b>Why it matters</b>Timely after the OpenCode key leak: a thread on the deny-settings for secrets in each agent (we haven’t checked every claim in it).</div>
+      <div class="meta"><span class="stats">♥ <b>1</b> &nbsp; ⟲ <b>0</b></span>
+        <a class="u" href="https://x.com/FastfixAI/status/2111674540258644144" aria-label="Open @FastfixAI’s post on X"><span class="open">Open on X ↗</span></a></div>
     </article>
     
     <article class="post" style="--span:3">
-      <div class="who"><span class="n">轩源</span><span class="sub2"><span class="h">@4xy</span><span class="t">Fri 15:41 Helsinki</span></span></div>
-      <blockquote>“Ramp says 87% of teams that pay for a coding agent also pay for Claude Code.
+      <div class="who"><span class="n">Vibhek Soni</span><span class="sub2"><span class="h">@ImVibhek</span><span class="t">Fri 23:37 Helsinki</span></span></div>
+      <blockquote>“I moved to Pi as my main coding agent and wanted to bring all my old Claude Code, Codex and Devin sessions with me so I built UniSessions
 
-Codex sits at 40. Cursor at 35.
-
-That chart isn&#39;t a ranking. It&#39;s three tabs left open.”</blockquote>
-      <div class="why"><b>Why it matters</b>Nice reframe of spend data (his citation of Ramp; we haven’t checked the chart): teams stack agents rather than pick one.</div>
-      <div class="meta"><span class="stats">♥ <b>2</b> &nbsp; ⟲ <b>0</b></span>
-        <a class="u" href="https://x.com/4xy/status/2111074956226560111" aria-label="Open @4xy’s post on X"><span class="open">Open on X ↗</span></a></div>
+• converts sessions both ways between 10 AI coding tools
+• exports traces for fine tuning (HuggingFace, OpenAI, ShareGPT)
+• MCP server so…”</blockquote>
+      <div class="why"><b>Why it matters</b>Builder tool for a real lock-in problem: your agent history shouldn’t be stuck in whichever tool you used last month.</div>
+      <div class="meta"><span class="stats">♥ <b>12</b> &nbsp; ⟲ <b>0</b></span>
+        <a class="u" href="https://x.com/ImVibhek/status/2111194751437287456" aria-label="Open @ImVibhek’s post on X"><span class="open">Open on X ↗</span></a></div>
     </article>
     
     <article class="post" style="--span:3">
-      <div class="who"><span class="n">Dev Sanghvi</span><span class="sub2"><span class="h">@Dv04Ds</span><span class="t">Fri 03:39 Helsinki</span></span></div>
-      <blockquote>“I kept losing the one coding-agent chat that was quietly waiting on me, so I built DHI Orbit.
+      <div class="who"><span class="n">Dami</span><span class="sub2"><span class="h">@madebydamilola</span><span class="t">Sat 14:27 Helsinki</span></span></div>
+      <blockquote>“While working on Fieldnote, I noticed that making changes can be stressful. You would usually have to take screenshots and explain context; and even with this, you will hope Claude gets it right.
 
-One local board for Claude Code, Codex, Cursor, Gemini CLI and Antigravity: what needs you, what&#39;s working, your limits, and a reply box.
-
-Free and open source.”</blockquote>
-      <div class="why"><b>Why it matters</b>Small builder tool for a real pain: one local dashboard for every agent session that’s blocked on you.</div>
-      <div class="meta"><span class="stats">♥ <b>9</b> &nbsp; ⟲ <b>1</b></span>
-        <a class="u" href="https://x.com/Dv04Ds/status/2110893422475395550" aria-label="Open @Dv04Ds’s post on X"><span class="open">Open on X ↗</span></a></div>
+So, I built Limno to solve this. With limno, you can select an element and edit…”</blockquote>
+      <div class="why"><b>Why it matters</b>A product designer’s fix for the screenshot-and-explain loop: point at the UI element instead of describing it to the agent.</div>
+      <div class="meta"><span class="stats">♥ <b>20</b> &nbsp; ⟲ <b>2</b></span>
+        <a class="u" href="https://x.com/madebydamilola/status/2111418918984155507" aria-label="Open @madebydamilola’s post on X"><span class="open">Open on X ↗</span></a></div>
     </article>
     
   </section>
@@ -310,63 +310,47 @@ Free and open source.”</blockquote>
   <section class="news" style="--cols:4">
     
     <article class="item">
-      <div class="kicker">Research</div>
-      <h3><a href="https://www.anthropic.com/research/designing-efficient-quantum-circuits">Same day, second Anthropic paper: Claude out-designs published quantum circuits</a></h3>
-      <p>Given plain-language specs and an automated scorer, Claude Mythos 5 found circuits beating the best published designs on eight primitives. Highlights: the first reversible divsteps modular inversion with no stored branch history (verified in Lean), and a Reed–Solomon decoder about 12x leaner than Google’s for decoded quantum interferometry. Anthropic notes it had to nudge the model to stop playing safe.</p>
-      <div class="src">— <b><a href="https://www.anthropic.com/research/designing-efficient-quantum-circuits">Anthropic</a></b> · anthropic.com</div>
+      <div class="kicker">Open weights</div>
+      <h3><a href="https://reflection.ai/blog/beam-is-available">Reflection ships Beam: a 501B coding model that’s actually Apache 2.0</a></h3>
+      <p>Beam is a sparse MoE with 23B active parameters and a 1M-token context, released in BF16, FP8 and NVFP4 with day-zero vLLM, SGLang and Transformers support. It comes with Mirror, an open CLI harness (Python front end, Rust agent core) it was trained alongside, and also runs in Pi, OpenCode and Hermes. 40+ partners host it, from Ollama and OpenRouter to Dell and HPE for air-gapped installs.</p>
+      <div class="src">— <b><a href="https://reflection.ai/blog/beam-is-available">Reflection</a></b> · reflection.ai</div>
     </article>
     
     <article class="item">
-      <div class="kicker">Dev tools</div>
-      <h3><a href="https://techcrunch.com/2026/10/16/replit-is-no-longer-working-with-anthropic-ceo-says/">Replit’s CEO says it dropped Anthropic — insiders say the deal stands</a></h3>
-      <p>On stage at TechCrunch Disrupt, Amjad Masad said Replit moved on over cost, partnership and its own benchmarks: “I think ChatGPT is better now.” A person familiar told TechCrunch the partnership is still in place, and Replit’s late-September production notes still listed Claude models. Replit added OpenAI as a provider in August.</p>
-      <div class="src">— <b><a href="https://techcrunch.com/2026/10/16/replit-is-no-longer-working-with-anthropic-ceo-says/">TechCrunch</a></b> · techcrunch.com</div>
+      <div class="kicker">Work</div>
+      <h3><a href="https://www.anthropic.com/research/employment-at-anthropic">Anthropic’s own data: fewer juniors, more meetings, humans as the bottleneck</a></h3>
+      <p>Junior technical hires fell from 27% to 9% of hiring since early 2025, while code commits per engineer are 5x what they were six months ago — with no rise in reverted agent-written code. Interactive Claude sessions sit idle about 80% of the time waiting for a human, and the median employee spends 20% more time in meetings than a year ago.</p>
+      <div class="src">— <b><a href="https://www.anthropic.com/research/employment-at-anthropic">Anthropic</a></b> · anthropic.com</div>
     </article>
     
     <article class="item">
-      <div class="kicker">Agents</div>
-      <h3><a href="https://runtimewire.com/article/openai-gpt-6-pro-chat-multi-agent-upgrade">GPT-6 Pro in ChatGPT now splits work across parallel agents</a></h3>
-      <p>Pro users get delegated sub-tasks running at once in the Chat tab, with per-agent progress and reviewable results. Separately, OpenAI’s Tibo says Codex and Work stretch usage further by reusing context across subagents, caching longer and routing for cache hits. No latency, cost or quota numbers were published.</p>
-      <div class="src">— <b><a href="https://runtimewire.com/article/openai-gpt-6-pro-chat-multi-agent-upgrade">Runtime Wire</a></b> · runtimewire.com</div>
+      <div class="kicker">Models</div>
+      <h3><a href="https://api-docs.deepseek.com/updates">DeepSeek swaps in V4.1-Flash-1017 — no code change needed</a></h3>
+      <p>The `deepseek-flash` API name now serves the new checkpoint, and the retired v4-flash names route to it at the Flash price. Briefings report it scores 77.0 on DeepSWE v1.1 versus 74.0 for Claude Opus 5 but trails well behind on HLE without tools; DeepSeek also opened standalone Search and Fetch APIs for agents.</p>
+      <div class="src">— <b><a href="https://api-docs.deepseek.com/updates">DeepSeek API docs</a></b> · api-docs.deepseek.com</div>
     </article>
     
     <article class="item">
       <div class="kicker">Finland</div>
-      <h3><a href="https://theintelligent.fi/teknologia/2026/elisa-testaa-moontalk-airi-tekoalyavustajan-reaaliaikaista-beetaversiota">Elisa pilots a real-time Moontalk AIRI that joins business calls</a></h3>
-      <p>The Oulu-built assistant (Moontalk is part of the Elisa group) used to record calls and write summaries; the new beta, now with selected business customers, pulls from a company’s own sources and suggests answers during the call. It runs on Nvidia Nemotron models with distributed edge compute.</p>
-      <div class="src">— <b><a href="https://theintelligent.fi/teknologia/2026/elisa-testaa-moontalk-airi-tekoalyavustajan-reaaliaikaista-beetaversiota">The Intelligent</a></b> · theintelligent.fi</div>
+      <h3><a href="https://www.verkkouutiset.fi/a/julkinen-sektori-ei-voi-jaada-tekoalyn-kanssa-kokeilujen-tasolle-sanoo-anna-kaisa-ikonen/">Minister Ikonen: the public sector can’t stay stuck in AI pilots</a></h3>
+      <p>The goal is 20% higher public-sector productivity through AI and automation by 2031, with €10M set aside for an AI-agent and automation programme in 2026–27. Valtori is building a shared state AI platform, and a new strategic AI steering group brings the state, municipalities and wellbeing areas together. Her biggest risk for Finland: “that we leave it undone.”</p>
+      <div class="src">— <b><a href="https://www.verkkouutiset.fi/a/julkinen-sektori-ei-voi-jaada-tekoalyn-kanssa-kokeilujen-tasolle-sanoo-anna-kaisa-ikonen/">Verkkouutiset</a></b> · verkkouutiset.fi</div>
     </article>
     
   </section>
   
 
-  
-  
-  <div class="section-h"><h2>The Back Page</h2></div>
-  <section class="backpage">
-    
-    <article class="wc">
-      <div class="kicker">Writer’s Corner · Philosophy</div>
-      <h3><a href="https://www.experimental-history.com/p/claude-dont-touch-my-lump">Claude, don’t touch my lump</a></h3>
-      <div class="byline"><b>Adam Mastroianni</b> · Experimental History · Tue 13 Oct</div>
-      <p class="take">AI job-doom repeats the “lump of labor” mistake, he argues: wants are a hedonic treadmill — satisfy one, and a new one (and new work) appears. Call it the finite-desires fallacy.</p>
-      <blockquote class="pull"><a href="https://www.experimental-history.com/p/claude-dont-touch-my-lump">“Perhaps as long as we can never be satisfied, we can never be rendered obsolete.”</a></blockquote>
-      <a class="readit" href="https://www.experimental-history.com/p/claude-dont-touch-my-lump">Read it ↗<span>· free</span></a>
-    </article>
-    
-    
-  </section>
   
 
   
   <div class="quick"><span class="lbl">Quick hit</span>
-    <p>Filippo Valsorda, who ran the seeds bounty, says the find rules out the Bernstein–Lange seed-steering attack and he’d now personally recommend NIST curves over Curve25519 — “just in time for them to be retired in favor of post-quantum signatures.”<span class="src">— <b><a href="https://words.filippo.io/seeds-solved/">Filippo Valsorda</a></b></span></p></div>
+    <p>Beam’s final reinforcement-learning run peaked at 883,006 vCPUs across 23 clusters on GCP and AWS — and Reflection says its RL training, evals and ablations used roughly 1.3 billion sandboxes in total.<span class="src">— <b><a href="https://reflection.ai/blog/beam-is-available">Reflection</a></b></span></p></div>
   
   </main>
 
-  <footer class="foot"><span>Compiled 17 Oct 2026, 08:10 Helsinki time. X posts come from two X searches (last ~36 h) and news from open web sources. Times are in Helsinki time. Back Page: Writer&#39;s Corner (Philosophy — Adam Mastroianni); Inspiration skipped — ran twice this week.</span><span class="ed">The Morning Commit · 2026-10-17</span></footer>
+  <footer class="foot"><span>Compiled 18 Oct 2026, 08:05 Helsinki time. X posts come from two X searches (last ~36 h) and news from open web sources. Times are in Helsinki time. Back Page resting today: the Writer&#39;s Corner ran yesterday and the Inspiration ran twice this week.</span><span class="ed">The Morning Commit · 2026-10-18</span></footer>
   <nav class="nav nav-bottom" aria-label="Issues">
-    <a class="prev" href="issues/2026-10-15/" rel="prev">← Previous</a>
+    <a class="prev" href="issues/2026-10-17/" rel="prev">← Previous</a>
     <a class="mid" href="archive/">All issues</a>
     <span class="next off">Latest</span>
   </nav>

@@ -1,0 +1,100 @@
+{
+  "paper_name": "The Morning Commit",
+  "tagline": "AI · dev tools · tech — a two-minute read",
+  "edition": "Tampere edition",
+  "issue_no": "No. 10",
+  "date_long": "Sunday, 18 October 2026",
+  "date_slug": "2026-10-18",
+  "lead": {
+    "kicker": "Lead story · Security",
+    "headline": "OpenCode breach leaks saved provider keys — and strangers ran up the bills overnight",
+    "summary": "Someone got into “a legacy system that we were in the process of decommissioning” at OpenCode late Friday, exposing the OpenAI, Anthropic and Google keys that some paid Console users had saved in their workspaces. OpenCode says 1.4% of Console users were hit (a subset with external providers linked), emailed them Saturday morning and tied it to “a large scale distillation attack”, without explaining how. Users were seeing charges before any announcement: one reported $281 on OpenAI and $168 on Anthropic from 2 a.m. ET, others $700–1,700. If you ever linked a key in Console, revoke it at the provider (not in Console), check usage since 16 Oct and put a spend cap on the new one. Local CLI keys aren’t reported as affected.",
+    "source": "The Latent",
+    "url": "https://thelatent.co/models/opencode-says-breach-tied-to-distillation-attack-exposed-users-ai-provider-keys"
+  },
+  "number_of_day": {
+    "value": "6 : 1",
+    "label": "Hours worked by employee-directed AI agents versus their human handlers at Anthropic by August — agent runtime first passed human work hours in March 2026.",
+    "source": "Anthropic",
+    "url": "https://www.anthropic.com/research/employment-at-anthropic"
+  },
+  "news": [
+    {
+      "tag": "Open weights",
+      "headline": "Reflection ships Beam: a 501B coding model that’s actually Apache 2.0",
+      "summary": "Beam is a sparse MoE with 23B active parameters and a 1M-token context, released in BF16, FP8 and NVFP4 with day-zero vLLM, SGLang and Transformers support. It comes with Mirror, an open CLI harness (Python front end, Rust agent core) it was trained alongside, and also runs in Pi, OpenCode and Hermes. 40+ partners host it, from Ollama and OpenRouter to Dell and HPE for air-gapped installs.",
+      "source": "Reflection",
+      "url": "https://reflection.ai/blog/beam-is-available"
+    },
+    {
+      "tag": "Work",
+      "headline": "Anthropic’s own data: fewer juniors, more meetings, humans as the bottleneck",
+      "summary": "Junior technical hires fell from 27% to 9% of hiring since early 2025, while code commits per engineer are 5x what they were six months ago — with no rise in reverted agent-written code. Interactive Claude sessions sit idle about 80% of the time waiting for a human, and the median employee spends 20% more time in meetings than a year ago.",
+      "source": "Anthropic",
+      "url": "https://www.anthropic.com/research/employment-at-anthropic"
+    },
+    {
+      "tag": "Models",
+      "headline": "DeepSeek swaps in V4.1-Flash-1017 — no code change needed",
+      "summary": "The `deepseek-flash` API name now serves the new checkpoint, and the retired v4-flash names route to it at the Flash price. Briefings report it scores 77.0 on DeepSWE v1.1 versus 74.0 for Claude Opus 5 but trails well behind on HLE without tools; DeepSeek also opened standalone Search and Fetch APIs for agents.",
+      "source": "DeepSeek API docs",
+      "url": "https://api-docs.deepseek.com/updates"
+    },
+    {
+      "tag": "Finland",
+      "headline": "Minister Ikonen: the public sector can’t stay stuck in AI pilots",
+      "summary": "The goal is 20% higher public-sector productivity through AI and automation by 2031, with €10M set aside for an AI-agent and automation programme in 2026–27. Valtori is building a shared state AI platform, and a new strategic AI steering group brings the state, municipalities and wellbeing areas together. Her biggest risk for Finland: “that we leave it undone.”",
+      "source": "Verkkouutiset",
+      "url": "https://www.verkkouutiset.fi/a/julkinen-sektori-ei-voi-jaada-tekoalyn-kanssa-kokeilujen-tasolle-sanoo-anna-kaisa-ikonen/"
+    }
+  ],
+  "quick_hit": {
+    "label": "Quick hit",
+    "text": "Beam’s final reinforcement-learning run peaked at 883,006 vCPUs across 23 clusters on GCP and AWS — and Reflection says its RL training, evals and ablations used roughly 1.3 billion sandboxes in total.",
+    "source": "Reflection",
+    "url": "https://reflection.ai/blog/beam-is-available"
+  },
+  "x_posts": [
+    {
+      "name": "Tom",
+      "handle": "krip_tom",
+      "time": "Sat 15:28",
+      "text": "The new open models don't ship as weights. They ship as a machine and a harness.\n\nMeta's Muse Spark Open: 816B total, 42B active, 1M context, runs locally on two 512 GB M5 Ultra Mac Studios via MLX. Reflection Beam: 501B total, 23B active, Apache 2.0, trained together with its…",
+      "why": "A sharp read on this week’s open releases: the model, the hardware recipe and the agent harness now arrive as one package.",
+      "likes": 1,
+      "reposts": 0,
+      "url": "https://x.com/krip_tom/status/2111434129396904231"
+    },
+    {
+      "name": "FastFix AI",
+      "handle": "FastfixAI",
+      "time": "Sun 07:23",
+      "text": "Your coding agent can probably open your .env file right now.\n\nClaude Code, Cursor and Codex each have a setting to block that, and each one has a gap.\n\nWhere they live and what they miss 🧵",
+      "why": "Timely after the OpenCode key leak: a thread on the deny-settings for secrets in each agent (we haven’t checked every claim in it).",
+      "likes": 1,
+      "reposts": 0,
+      "url": "https://x.com/FastfixAI/status/2111674540258644144"
+    },
+    {
+      "name": "Vibhek Soni",
+      "handle": "ImVibhek",
+      "time": "Fri 23:37",
+      "text": "I moved to Pi as my main coding agent and wanted to bring all my old Claude Code, Codex and Devin sessions with me so I built UniSessions\n\n• converts sessions both ways between 10 AI coding tools\n• exports traces for fine tuning (HuggingFace, OpenAI, ShareGPT)\n• MCP server so…",
+      "why": "Builder tool for a real lock-in problem: your agent history shouldn’t be stuck in whichever tool you used last month.",
+      "likes": 12,
+      "reposts": 0,
+      "url": "https://x.com/ImVibhek/status/2111194751437287456"
+    },
+    {
+      "name": "Dami",
+      "handle": "madebydamilola",
+      "time": "Sat 14:27",
+      "text": "While working on Fieldnote, I noticed that making changes can be stressful. You would usually have to take screenshots and explain context; and even with this, you will hope Claude gets it right.\n\nSo, I built Limno to solve this. With limno, you can select an element and edit…",
+      "why": "A product designer’s fix for the screenshot-and-explain loop: point at the UI element instead of describing it to the agent.",
+      "likes": 20,
+      "reposts": 2,
+      "url": "https://x.com/madebydamilola/status/2111418918984155507"
+    }
+  ],
+  "footer": "Compiled 18 Oct 2026, 08:05 Helsinki time. X posts come from two X searches (last ~36 h) and news from open web sources. Times are in Helsinki time. Back Page resting today: the Writer's Corner ran yesterday and the Inspiration ran twice this week."
+}
