@@ -1,0 +1,112 @@
+{
+  "paper_name": "The Morning Commit",
+  "tagline": "AI · dev tools · tech — a two-minute read",
+  "edition": "Tampere edition",
+  "issue_no": "No. 11",
+  "date_long": "Monday, 19 October 2026",
+  "date_slug": "2026-10-19",
+  "lead": {
+    "kicker": "Lead story · Anthropic",
+    "headline": "Anthropic puts 5% of its shares into a public benefit fund that grows as the company does",
+    "summary": "Subject to stockholder approval, 5% of Anthropic’s shares go into a new Anthropic Public Benefit Fund, with another 2% possible at the board’s discretion for every 50% rise in value above a set baseline. It’s a wholly owned LLC rather than a 501(c)(3), so it can switch between big donations to nonprofits and “direct distributions to specific populations” — AI’s impact on jobs is the named example, on top of the $200M Anthropic has already committed to that. None of the equity can go to lobbying or political giving. Add the co-founders’ 80% pledge and the employee match, and Anthropic says roughly 20% of its shares are now set aside for the public good. It landed Sunday as the company lays the ground for a possible blockbuster IPO; Musk’s reply was to give the shares directly to the public.",
+    "source": "Anthropic",
+    "url": "https://www.anthropic.com/news/public-benefit-fund"
+  },
+  "number_of_day": {
+    "value": "27",
+    "label": "Robotics openings on OpenAI’s careers page, from motion control and custom actuators to manufacturing and supply chain — the humanoid is hiring before it walks.",
+    "source": "Engadget",
+    "url": "https://www.engadget.com/2285040/openai-humanoid-robot-sam-altman-statement-real-challenge/"
+  },
+  "news": [
+    {
+      "tag": "Infra",
+      "headline": "Only about a third of the US data-centre pipeline looks buildable, FT reports",
+      "summary": "At least 47 large US projects have been delayed, withdrawn or blocked this year, more than 1,000 communities have sought limits, and analysts reckon only about a third of the planned pipeline is credible. Credit is turning too: a CoreWeave unsecured bond slid into distressed territory with its shares down almost 25% on the week, and SB Energy shelved a $50bn listing. Tenants like Anthropic hold walk-away rights if partners miss deadlines.",
+      "source": "Financial Times via investingLive",
+      "url": "https://investinglive.com/news/only-a-third-of-the-us-data-centre-pipeline-looks-credible-as-ai-financing-strains-build/"
+    },
+    {
+      "tag": "Robotics",
+      "headline": "Altman: OpenAI “will” build a humanoid, with “a cool demo in 2027”",
+      "summary": "On the Sources podcast Altman said a human shape makes sense because “the world is very much designed for people”, but the real work is “the brain that makes the robot work”. He told Fortune not to expect robots walking the streets for a few more years. OpenAI’s job posts say the short-term aim is general-purpose robots that help skilled workers build infrastructure, with a personal robot as the long-term goal.",
+      "source": "Engadget",
+      "url": "https://www.engadget.com/2285040/openai-humanoid-robot-sam-altman-statement-real-challenge/"
+    },
+    {
+      "tag": "Research",
+      "headline": "Hybrid Reasoning Agents think in latent space and switch to text only to act",
+      "summary": "Stanford, UIUC and Together AI researchers add a small adapter (HybridLink, about 10M parameters on a 4B model) that lets an agent reason in hidden states and drop back to text for tool calls. On Qwen3 at 4B–14B across 11 benchmarks they report +10.4% performance, 35.5–54.7% fewer tokens and 1.8–2.6× faster inference — and the latent steps can still be read back as pseudo-text for auditing. It topped Hacker News this morning.",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2610.18861"
+    },
+    {
+      "tag": "Finland",
+      "headline": "First SOTE AI Hackathon names its winners in Espoo",
+      "summary": "Länsi-Uusimaa wellbeing services county ran the two-day event at Dipoli around three real problems: freeing professionals’ time for clients, using up-to-date client data, and building an agentic wellbeing companion. Winners were Anamnesis (patient history from scattered systems in one traceable view, built during the event), Microsoft, Team AKP and Kide. Each got €1,500 plus LUMI AI Factory compute, and the county wants to turn it into a national model with Sitra.",
+      "source": "Tivi",
+      "url": "https://www.tivi.fi/uutiset/a/45647b07-6219-49f3-ae40-ac0a6e77cbaf"
+    }
+  ],
+  "quick_hit": {
+    "label": "Quick hit",
+    "text": "Dominik Picheta built KillSwitch, an esoteric language designed to trip up LLMs: hidden lies in the spec, rules based on letter counts, and phrases that set off safety filters. Top score on his benchmark is 66.8, from Claude Opus 5 rather than 5.5.",
+    "source": "Dominik Picheta",
+    "url": "https://blog.picheta.me/post/killswitch-lang/"
+  },
+  "x_posts": [
+    {
+      "name": "Gergely Orosz",
+      "handle": "GergelyOrosz",
+      "time": "Sun 23:57",
+      "text": "A middleware engineer in South Korea wrote to me, seeking help on what to do now that their manager is \"blinded by GenAI hype\" and set an \"AI token usage\" KPI. This eng is using v little AI, so manager is poking them to use more.\n\nMy response: your manager is trying to help you",
+      "why": "A contrarian take on the token-usage KPIs showing up in engineering orgs, and it's a conversation plenty of teams are having right now.",
+      "likes": 667,
+      "reposts": 46,
+      "url": "https://x.com/GergelyOrosz/status/2111924637126820076"
+    },
+    {
+      "name": "Ethan Mollick",
+      "handle": "emollick",
+      "time": "Sun 21:17",
+      "text": "Developers are going to be a small part of total token usage over time, as the internal stats on usage at OpenAI and Anthropic both show. And for long-running high value tasks in areas where verification is harder, the benefits for higher \"intelligence\" models are quite large.",
+      "why": "A useful counterweight to the cheap-open-weights week: where checking the work is hard, the smartest model still pays for itself.",
+      "likes": 470,
+      "reposts": 26,
+      "url": "https://x.com/emollick/status/2111884340955062274"
+    },
+    {
+      "name": "DAIR.AI",
+      "handle": "dair_ai",
+      "time": "Sun 19:51",
+      "text": "The Top AI Papers of the Week (October 12 - 18):\n\n- Harness^2\n- ReHarness\n- LongHarness\n- The Agentic Scientist\n- Hybrid Reasoning Agents\n- Quantum Circuit Discovery\n- Scaling Discovery Requires Forgetting",
+      "why": "The weekly reading list, and three of the seven papers are about agent harnesses rather than models.",
+      "likes": 186,
+      "reposts": 27,
+      "url": "https://x.com/dair_ai/status/2111862865560998135"
+    },
+    {
+      "name": "Maestro",
+      "handle": "maestro__dev",
+      "time": "Sun 20:25",
+      "text": "Have Claude Code, Cursor or Codex run a UI test on an iOS Simulator or Android emulator, then save it as a Flow and run the same test again.",
+      "why": "Tool maker's walkthrough of turning an agent's one-off mobile UI check into a repeatable test.",
+      "likes": 46,
+      "reposts": 1,
+      "url": "https://x.com/maestro__dev/status/2111871415632748806"
+    }
+  ],
+  "writers_corner": {
+    "category": "Tech",
+    "writer": "Aakash Gupta",
+    "publication": "AI by Aakash",
+    "date": "Sun 18 Oct",
+    "title": "Reverse Engineer Anything",
+    "take": "Codex rebuilt Linear’s core from a one-page spec in 3½ minutes, so Aakash argues features and habit no longer protect software; data, workflow, network, distribution and learning from users still do.",
+    "quote": "SaaS that sells a feature list is dying, while SaaS that owns its customers' data, workflow or network is doing fine.",
+    "url": "https://www.aibyaakash.com/p/reverse-engineer-anything",
+    "read_note": "free, ~12-min read incl. news roundup",
+    "feed_url": "https://www.aibyaakash.com/feed"
+  },
+  "footer": "Compiled 19 Oct 2026, 08:10 Helsinki time. X posts come from three X searches (last ~36 h) and news from open web sources. Times are in Helsinki time. Back Page: Writer's Corner today; the Inspiration is resting until later in the week."
+}
