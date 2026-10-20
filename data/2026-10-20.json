@@ -1,0 +1,124 @@
+{
+  "paper_name": "The Morning Commit",
+  "tagline": "AI · dev tools · tech — a two-minute read",
+  "edition": "Tampere edition",
+  "issue_no": "No. 12",
+  "date_long": "Tuesday, 20 October 2026",
+  "date_slug": "2026-10-20",
+  "lead": {
+    "kicker": "Lead story · Security",
+    "headline": "One hacker, an army of AI agents, 100+ breached company sites",
+    "summary": "Security firm Norforge found more than 20 exposed panels of Cairn, an open-source “problem-solving engine” that orchestrates AI agents, being used for attacks, and watched over the attackers’ shoulders. The busiest, a Chinese-speaking hacker, gave the agents fewer than 100 Chinese characters of instructions and let them work through 1,200+ sites across the US, Canada, Australia and Japan; Reuters identified break-ins at over 100 companies, including John Deere, SharkNinja and Cummins. Successful intrusions took about 23 hours, the campaign burned roughly $5,000 in tokens (about $50 per breach), and every task ran on a worker labelled claudecode_deepseek-v4.1-flash. Deere says there’s no sign sensitive data was accessed; SharkNinja says only a standalone support site was hit.",
+    "source": "The Verge, citing Reuters and Norforge",
+    "url": "https://www.theverge.com/ai-artificial-intelligence/1013643/ai-agents-hack-john-deere-shark-ninja-cummins"
+  },
+  "number_of_day": {
+    "value": "1,068",
+    "label": "Tokens per second Inception claims for Mercury 3, its new diffusion LLM with a 1M-token context, at half-price launch rates of $0.10/$0.35 per million tokens. Vendor numbers, so test before you plan capacity on them.",
+    "source": "Inception",
+    "url": "https://www.inceptionlabs.ai/blog/introducing-mercury-3"
+  },
+  "news": [
+    {
+      "tag": "Policy",
+      "headline": "DHS orders DeepSeek out of every US federal civilian agency, open-weight spin-offs included",
+      "summary": "A Homeland Security order, signed in the summer and filed publicly on Monday, bars civilian agencies from buying anything from DeepSeek and tells them to remove what they have. The removal also covers “third-party products and services developed using DeepSeek implementations”, so vendors that embed or fine-tune its open weights are caught too. Exceptions need a “compelling justification”.",
+      "source": "CyberScoop",
+      "url": "https://cyberscoop.com/dhs-bans-deepseek-federal-agencies/"
+    },
+    {
+      "tag": "Models",
+      "headline": "MiniMax M3.1 Flash is the mystery “Space Bunny”, now at $0.15 per million tokens",
+      "summary": "MiniMax confirmed the anonymous OpenRouter model was an early M3.1 Flash build that pushed more than 200 trillion tokens before anyone knew whose it was. The 428B model takes text, image and video with a 1M context, claims 70% cheaper agent runs and nearly 3× faster inference than M3, and scores 73.7% on DeepSWE (self-reported). Weights are promised later.",
+      "source": "SiliconANGLE",
+      "url": "https://siliconangle.com/2026/10/19/minimax-launches-m3-1-flash-model-says-it-cuts-ai-agent-costs-by-70/"
+    },
+    {
+      "tag": "Dev tools",
+      "headline": "Claude Code 2.1.304 adds /auto-mode-setup and fixes a worktree bug that could lose commits",
+      "summary": "The new guided /auto-mode-setup reads your project and recent sessions to teach auto mode about your environment. Mods can now insist that only a person approves a tool call. Among the long list of fixes: claude --worktree no longer deletes the worktree and its branch without asking when HEAD was detached. Code Review also gets Quick, Standard and Deep levels.",
+      "source": "Anthropic on GitHub",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.304"
+    },
+    {
+      "tag": "Nordics",
+      "headline": "Tandem Health’s AI scribe plugs straight into Apotti",
+      "summary": "The Swedish company’s assistant is now connected to the Apotti client and patient records system through an API. That makes Apotti the first Finnish records system with an integration like this. It listens to appointments, drafts the notes and suggests diagnosis codes. After pilots in Helsinki’s physio and occupational therapy units, testing is expanding to social services, student healthcare and the Vantaa–Kerava wellbeing county.",
+      "source": "The Intelligent",
+      "url": "https://theintelligent.fi/teknologia/2026/tandem-healthin-tekoalyassistentti-integroitu-osaksi-apotti-jarjestelmaa"
+    }
+  ],
+  "quick_hit": {
+    "label": "Quick hit",
+    "text": "Sean Goedecke argues that a lot of work writing is proof of work: risk templates, tickets and status rollups exist to show effort, not to be read. LLMs broke that, so stop hand-writing the evidence documents and save your effort for writing people will actually read.",
+    "source": "Sean Goedecke",
+    "url": "https://www.seangoedecke.com/writing-is-no-longer-proof-of-work/"
+  },
+  "x_posts": [
+    {
+      "name": "Guillermo Rauch",
+      "handle": "rauchg",
+      "time": "Mon 21:18",
+      "text": "We open sourced a *really fast* HTML artifact builder. It's powered by libfx, making the agent durable.\n\nBuilding the low-level plumbing for v0 to survive server crashes, flaky LLMs, function limits was a huge pain.\n\nNow it's easy, free, and OSS",
+      "why": "The plumbing behind v0 is now open source: an agent that survives crashes and flaky models, built by people who run one at scale.",
+      "likes": 1494,
+      "reposts": 87,
+      "url": "https://x.com/rauchg/status/2112247046082363821"
+    },
+    {
+      "name": "DHH",
+      "handle": "dhh",
+      "time": "Mon 18:51",
+      "text": "You wouldn't believe the hours I spent manually testing and verifying Omarchy releases during the first year. With Prime's stellar work leading the QA effort, we can finally replace all that toil with agents 🤘",
+      "why": "Release QA for a whole Linux distro handed to agents, from someone who did that toil by hand for a year.",
+      "likes": 1749,
+      "reposts": 40,
+      "url": "https://x.com/dhh/status/2112209965377302998"
+    },
+    {
+      "name": "Thorsten Ball",
+      "handle": "thorstenball",
+      "time": "Mon 17:54",
+      "text": "“The whole digital world is now malleable. The only thing that matters is knowing what you want and knowing that you have it.”\n\nA senior engineer said this when I spoke at the investment bank.\n\nSo what should junior engineers learn?",
+      "why": "A line worth keeping, and a fair question about what juniors should learn now.",
+      "likes": 171,
+      "reposts": 12,
+      "url": "https://x.com/thorstenball/status/2112195749492490713"
+    },
+    {
+      "name": "Ethan Mollick",
+      "handle": "emollick",
+      "time": "Tue 02:58",
+      "text": "New Claude Projects* is a nice interface for multi-agent work. It does a good job with having a user-facing coordinator model and independent agents running threads that pass messages around. Takes some fiddling but quite powerful.\n\n* Same name but no relation to old Projects🤪",
+      "why": "A hands-on first verdict on the coordinator-plus-workers setup a lot of agent tools are moving to.",
+      "likes": 276,
+      "reposts": 10,
+      "url": "https://x.com/emollick/status/2112332499917681028"
+    },
+    {
+      "name": "Haider.",
+      "handle": "haider1",
+      "time": "Mon 15:26",
+      "text": "minimax m3.1 flash is looking really competitive for its price\n\nautomation-bench:\nm3.1 flash: 62.2%\nopus 5: 50.3%\n5.6 sol: 45.8%\n\non DeepSwe, it's essentially tied with both\n\napi pricing:\nm3.1 flash: $0.15 / $0.60\nopus 5: $5 / $25\n5.6 sol: $4 / $20\n\nopen weights coming october 23",
+      "why": "Puts the MiniMax launch next to frontier prices, more than 30× cheaper per token, ahead of the open weights promised for Friday.",
+      "likes": 46,
+      "reposts": 6,
+      "url": "https://x.com/haider1/status/2112158463782703406"
+    }
+  ],
+  "inspiration": {
+    "title": "Strawberry Thief",
+    "creator": "William Morris",
+    "year": "c. 1936 print",
+    "caption": "Thrushes raiding the strawberry beds at Kelmscott Manor. Morris dyed the whole cloth indigo, bleached the pattern out and block-printed it, using more colours than in any of his other textiles.",
+    "image_url": "https://openaccess-cdn.clevelandart.org/1937.696/1937.696_web.jpg",
+    "width": 900,
+    "height": 803,
+    "image_alt": "Dense repeating textile pattern on a deep indigo ground: pairs of speckled thrushes among red strawberries, pink and cream flowers and pale leaves",
+    "credit": "The Cleveland Museum of Art",
+    "licence": "CC0",
+    "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "source_url": "https://clevelandart.org/art/1937.696"
+  },
+  "footer": "Compiled 20 Oct 2026, 08:05 Helsinki time. X posts come from three X searches (last ~30 h) and news from open web sources. Times are in Helsinki time. Back Page: Inspiration today (William Morris); the Writer's Corner is resting after yesterday's."
+}
