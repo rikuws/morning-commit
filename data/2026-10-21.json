@@ -1,0 +1,110 @@
+{
+  "paper_name": "The Morning Commit",
+  "tagline": "AI · dev tools · tech — a two-minute read",
+  "edition": "Tampere edition",
+  "issue_no": "No. 13",
+  "date_long": "Wednesday, 21 October 2026",
+  "date_slug": "2026-10-21",
+  "lead": {
+    "kicker": "Lead story · Open source",
+    "headline": "DeepSeek open-sources DeepInfer, the engine that serves its own API",
+    "summary": "A day after the US ordered federal agencies to rip out its products, DeepSeek published the inference framework it runs in production, under Apache 2.0. For now it supports only DeepSeek-V4.1-Flash, on Nvidia SM100 GPUs and Huawei Ascend 950 chips, with speculative decoding, asynchronous scheduling, batch-invariant and deterministic sampling, and structured outputs. It isn’t a full service yet: the KV cache system, prefill/decode split and replica load balancing are left out. A companion library, deepseek-recipe, reproduces how the official API turns requests into tokens and back. The speed numbers are DeepSeek’s own; the repo passed 8,000 stars by Tuesday afternoon.",
+    "source": "The Next Web, The New Stack, DeepSeek on GitHub",
+    "url": "https://thenextweb.com/news/deepseek-deepinfer-open-source-inference-engine"
+  },
+  "news": [
+    {
+      "tag": "Safety",
+      "headline": "Anthropic’s automated red-teamer beat its human bug bounty 23 times out of 24",
+      "summary": "Tested on the same 8 bounty questions and 3 generations of its bioweapons classifiers, the system matched or beat the best human submission in every pair and won 23. It took 24 to 48 hours instead of the bounty’s weeks to months, so Anthropic ticked off a goal it had set for January 2027. A longer write-up is promised.",
+      "source": "Anthropic",
+      "url": "https://www.anthropic.com/responsible-scaling-policy/updates"
+    },
+    {
+      "tag": "Dev tools",
+      "headline": "OpenAI spells out how to keep its models in Cursor after the 12 November cutoff",
+      "summary": "A new help page lists three routes: your own OpenAI API key, the Codex IDE extension inside Cursor, or an OpenAI-compatible gateway such as Bedrock or Azure. The catch: a bring-your-own key only works in local Chat and Agent, not in Tab, Auto, cloud agents, automations, the CLI or the SDK.",
+      "source": "OpenAI Help Center",
+      "url": "https://help.openai.com/en/articles/20001506-using-openai-models-in-cursor"
+    },
+    {
+      "tag": "Infra",
+      "headline": "TorchTPU goes open source: plain PyTorch now runs natively on Google TPUs",
+      "summary": "Co-developed with Meta’s PyTorch team and announced at PyTorch Conference, it supports eager mode, torch.compile and distributed primitives, and Transformers v5 deploys with device_map=\"tpu\". Alongside it: vLLM and SGLang backends, llm-d 1.0 for Kubernetes inference routing, and a TPU agent suite in preview for coding harnesses.",
+      "source": "Google Cloud Blog",
+      "url": "https://cloud.google.com/blog/topics/ai-infrastructure/torchtpu-is-now-open-source-run-native-pytorch-on-tpus"
+    },
+    {
+      "tag": "Nordics",
+      "headline": "Aalto spin-out Coherence Quantum raises €2.78M to fix how quantum computers scale",
+      "summary": "The Espoo startup builds cryogenic signal and control hardware that sits close to the qubits, so bigger processors don’t need ever more cabling and cooling. Lifeline Ventures led the seed, with Mårten Mickos as an angel. The team includes a key builder of Aalto’s 20-qubit Q20 machine and an ex-Bluefors product lead.",
+      "source": "Uusiteknologia.fi",
+      "url": "https://www.uusiteknologia.fi/2026/10/20/suomalaisyritys-aikoo-ratkaista-kvanttikoneiden-skaalausongelmat/"
+    }
+  ],
+  "x_posts": [
+    {
+      "name": "Simon Willison",
+      "handle": "simonw",
+      "time": "Tue 22:43",
+      "text": "I built a Command & Conquer style RTS called Battle Drones, mainly using Claude Opus 5.5, which runs in the browser and includes device-to-device multiplayer over an audio link",
+      "why": "A real game built mostly by an agent, with multiplayer over sound, and Simon’s write-up on how it went.",
+      "likes": 577,
+      "reposts": 25,
+      "url": "https://x.com/simonw/status/2112630778068881543"
+    },
+    {
+      "name": "Guillermo Rauch",
+      "handle": "rauchg",
+      "time": "Wed 00:33",
+      "text": "Much like we did with @aisdk, we're bringing a truly open-source, runtime-agnostic solution to harness durability.\n\nWe're extending the durability infra that powers @eve and Workflows to all harnesses, like Pi and OpenCode. Local, Vercel, or DIY.",
+      "why": "Agents that survive crashes, as an open layer for any harness rather than a Vercel-only feature.",
+      "likes": 383,
+      "reposts": 22,
+      "url": "https://x.com/rauchg/status/2112658577110520122"
+    },
+    {
+      "name": "Gergely Orosz",
+      "handle": "GergelyOrosz",
+      "time": "Tue 23:00",
+      "text": "So this is how AI SEO works? Agencies emailing publications that have articles that rank highly on AI searches, to add a link to their product with context, so that AI agents will be more likely to recommend them?",
+      "why": "A first-hand look at how people are already gaming what agents recommend. Worth knowing when you trust a tool suggestion.",
+      "likes": 53,
+      "reposts": 1,
+      "url": "https://x.com/GergelyOrosz/status/2112635116677714312"
+    },
+    {
+      "name": "Ethan Mollick",
+      "handle": "emollick",
+      "time": "Wed 00:25",
+      "text": "I wrote about the exponential curve of the last 30 months of AI development\n\nAnd I asked Opus 5.5 to create the ultimate response to the test I use for all AI image generation models (make a picture of \"an otter on a plane using wifi\"), it made this video",
+      "why": "Thirty months of progress in charts, plus his long-running otter test taken to its silly conclusion.",
+      "likes": 403,
+      "reposts": 22,
+      "url": "https://x.com/emollick/status/2112656453685367004"
+    },
+    {
+      "name": "@levelsio",
+      "handle": "levelsio",
+      "time": "Wed 02:24",
+      "text": "I asked Claude Code to make a new GTA: San Andreas mission where CJ has to vibe code a startup and then raise money from investors in SF",
+      "why": "Pure fun, and a sign of how far modding by prompt has come.",
+      "likes": 3653,
+      "reposts": 215,
+      "url": "https://x.com/levelsio/status/2112686345617547538"
+    }
+  ],
+  "writers_corner": {
+    "category": "Design",
+    "writer": "Hernan Diaz",
+    "publication": "The Creative Independent",
+    "date": "Tue 20 Oct",
+    "title": "Writer Hernan Diaz on trying to make something that’s beautiful",
+    "take": "The Pulitzer winner credits 13 years editing an academic journal for his craft: constraints sharpen the work, lucid prose beats clever jargon, and slowness is a feature.",
+    "quote": "There is a tendency to mistake obscurity with depth",
+    "url": "https://thecreativeindependent.com/people/writer-hernan-diaz-on-trying-to-make-something-that%27s-beautiful/",
+    "read_note": "free interview, about 3,500 words",
+    "feed_url": "https://thecreativeindependent.com/feed.xml"
+  },
+  "footer": "Compiled 21 Oct 2026, 08:10 Helsinki time. X posts come from two X searches (last ~30 h) and news from open web sources. Times are in Helsinki time. Back Page: Writer's Corner today (Hernan Diaz); Inspiration rests after yesterday's."
+}
