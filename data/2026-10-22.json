@@ -1,0 +1,118 @@
+{
+  "paper_name": "The Morning Commit",
+  "tagline": "AI · dev tools · tech — a two-minute read",
+  "edition": "Tampere edition",
+  "issue_no": "No. 14",
+  "date_long": "Thursday, 22 October 2026",
+  "date_slug": "2026-10-22",
+  "lead": {
+    "kicker": "Lead story · Security",
+    "headline": "PHP2Shell: AI-found bugs in PHP itself let attackers run code on almost any PHP site",
+    "summary": "PHP shipped emergency fixes on Wednesday for two use-after-free flaws (CVE-2026-109618 and -109619) that allow unauthenticated remote code execution in the engine, not in any app on top of it. Wiz says every PHP version from the last decade is hit by at least one of them, and it demoed exploits on stock WordPress, Drupal and Joomla images, plus memory leaks that expose passwords and API keys. Calif found one using GPT-5.6 Sol through OpenAI’s Patch the Planet program, and Wiz found both independently with Gemini 4 Argon and GPT-5.6 Sol. Details leaked on Tuesday, which forced an early release. Update to 8.5.12, 8.4.27, 8.3.36 or 8.2.35; CISA says 8.1 and older should go offline until patched.",
+    "source": "Wiz, CISA, OpenAI, BBC",
+    "url": "https://www.wiz.io/blog/php2shell-php-rce"
+  },
+  "number_of_day": {
+    "value": "$1B",
+    "label": "in subsidised access to its Daybreak security models that OpenAI committed to under-resourced defenders of essential services, alongside the PHP disclosure",
+    "source": "OpenAI",
+    "url": "https://openai.com/index/coordinated-disclosure-of-critical-vulnerabilities/"
+  },
+  "news": [
+    {
+      "tag": "Agents",
+      "headline": "Anthropic opens Claude Duet, a separate app where Claude works as a proactive agent",
+      "summary": "It flags what needs your attention, keeps working when you step away and checks before acting for you. It’s a waitlisted research preview on iOS, Android and claude.ai, starting with US Pro and Max users, and its background checks count against your plan’s usage limits.",
+      "source": "Anthropic",
+      "url": "https://claude.com/resources/articles/claude-duet"
+    },
+    {
+      "tag": "Local models",
+      "headline": "Recursive’s Flint is a free 40B coding model for your laptop, built largely by its own AI researcher",
+      "summary": "A mixture-of-experts model with about 2.5B parameters active at a time, Apache 2.0 on Hugging Face. Recursive measured about 131 tokens per second on an M4 Pro MacBook Pro, roughly twice similar models, and says it leads models under 50B on SWE-Bench Verified. It suggests splitting big tasks into small steps.",
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/10/21/recursive-launches-flint-a-laptop-coding-model-it-says-was-largely-built-by-ai/"
+    },
+    {
+      "tag": "Security",
+      "headline": "OpenAI pitches a playbook for disclosing AI-found bugs at internet scale",
+      "summary": "Alongside the PHP fix, OpenAI laid out five stages, from fixing upstream to staged early notice for hosts, WAF vendors and governments, and shared a PHP version checker as a Codex skill. It says similar findings will “increase sharply in the coming months” and asks the security community for feedback.",
+      "source": "OpenAI",
+      "url": "https://openai.com/index/coordinated-disclosure-of-critical-vulnerabilities/"
+    },
+    {
+      "tag": "Nordics",
+      "headline": "Vaisala’s Xweather teams up with Nvidia to stretch lightning warnings from one hour to three",
+      "summary": "Xweather’s lightning observations are being combined with Nvidia’s StormScope short-range storm model and Earth-2 weather stack, with other severe weather to follow. No launch date, regions or deal value were given.",
+      "source": "Kauppalehti",
+      "url": "https://www.kauppalehti.fi/uutiset/a/015ef775-f71e-46a4-9c25-627e69fe5d31"
+    }
+  ],
+  "x_posts": [
+    {
+      "name": "@levelsio",
+      "handle": "levelsio",
+      "time": "Thu 00:47",
+      "text": "Some people say this will be the end of PHP \n\nI don't think so because these AI-assisted vulnerability exploits will now increasingly happen to any language, any framework, any server software etc.\n\nI mean Node patched a high security vulnerability this week too",
+      "why": "The web’s best-known PHP indie hacker on why PHP2Shell isn’t really a PHP story.",
+      "likes": 481,
+      "reposts": 15,
+      "url": "https://x.com/levelsio/status/2113024336097591766"
+    },
+    {
+      "name": "Guillermo Rauch",
+      "handle": "rauchg",
+      "time": "Thu 02:29",
+      "text": "Vercel has proactively rolled out Firewall-level mitigations for today's Node.js RCE vulnerability, in advance of the official patch release. \n\nAll traffic for all deployments is automatically protected. We're actively monitoring and rolling out managed runtime upgrades.",
+      "why": "Node has its own RCE this week. Worth checking your runtimes if you self-host.",
+      "likes": 1126,
+      "reposts": 43,
+      "url": "https://x.com/rauchg/status/2113050053724221732"
+    },
+    {
+      "name": "Ethan Mollick",
+      "handle": "emollick",
+      "time": "Thu 03:22",
+      "text": "A visible sign of what AI insiders have been warning about since at least the Mythos release. Acceleration of attack and defense, at inhuman speeds, interacting with the very human systems that need to react to them.",
+      "why": "One line that sums up the week: AI finds bugs fast, and humans still have to patch them.",
+      "likes": 962,
+      "reposts": 79,
+      "url": "https://x.com/emollick/status/2113063313810792916"
+    },
+    {
+      "name": "Harrison Chase",
+      "handle": "hwchase17",
+      "time": "Wed 22:03",
+      "text": "the traces you already log are training data - keep the runs that did the task well, fine-tune a small model on them, eval on your task\n\na 9B model beating frontier models makes sense when it's trained on exactly your task",
+      "why": "A practical recipe for cheaper agents: your own good runs become a small, specialised model.",
+      "likes": 75,
+      "reposts": 9,
+      "url": "https://x.com/hwchase17/status/2112983115215802417"
+    },
+    {
+      "name": "Mitchell Hashimoto",
+      "handle": "mitchellh",
+      "time": "Wed 22:47",
+      "text": "We invited 5,000 more people to the Rex macOS beta today, about 7,500 so far this week. Last week we only invited ~2500 in TOTAL. We're ramping up quickly. We've now invited ~15% of our total waitlist. We also started the Linux server testing program today with 100 people.",
+      "why": "Rex’s beta is opening up fast, and Linux server testing has started.",
+      "likes": 873,
+      "reposts": 3,
+      "url": "https://x.com/mitchellh/status/2112994236618731589"
+    }
+  ],
+  "inspiration": {
+    "title": "Capriccio: A Palace with a Courtyard by the Lagoon",
+    "creator": "Antonio Canaletto",
+    "year": "c. 1750–55",
+    "caption": "A believable place that never existed: Canaletto borrowed a real Venetian portal and invented the palace, lagoon and figures around it, with ruled chalk lines and grey washes for flickering light.",
+    "image_url": "https://openaccess-cdn.clevelandart.org/1930.23/1930.23_web.jpg",
+    "width": 1263,
+    "height": 812,
+    "image_alt": "Pen and wash drawing of a grand palace with an arched courtyard beside a lagoon, small figures in front and a domed building in the distance",
+    "credit": "The Cleveland Museum of Art",
+    "licence": "CC0",
+    "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "source_url": "https://clevelandart.org/art/1930.23"
+  },
+  "footer": "Compiled 22 Oct 2026, 08:00 Helsinki time. X posts come from one X search (last ~30 h) and news from open web sources. Times are in Helsinki time. Back Page: Inspiration today; Writer's Corner rests after yesterday's."
+}
