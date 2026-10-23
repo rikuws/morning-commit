@@ -5,23 +5,23 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="color-scheme" content="light">
 <meta name="theme-color" content="#f6f1e7">
-<title>The Morning Commit · Thursday, 22 October 2026</title>
-<meta name="description" content="Thursday, 22 October 2026: PHP2Shell: AI-found bugs in PHP itself let attackers run code on almost any PHP site. PHP shipped emergency fixes on Wednesday for two use-after-free flaws (CVE-2026-109618 and -109619) that allow unauthenticated remote code execution in the engine, not in any…">
-<link rel="canonical" href="https://rikuws.github.io/morning-commit/issues/2026-10-22/">
+<title>The Morning Commit · Friday, 23 October 2026</title>
+<meta name="description" content="Friday, 23 October 2026: Outside red-teamers found real holes in how OpenAI watches its own agents. METR and Redwood Research sent one person each into OpenAI from 21 July to 11 August to try to slip agents past its internal misalignment monitoring. Coverage was broad (99.2%…">
+<link rel="canonical" href="https://rikuws.github.io/morning-commit/issues/2026-10-23/">
 <meta property="og:type" content="article">
 <meta property="og:site_name" content="The Morning Commit">
-<meta property="og:title" content="The Morning Commit — PHP2Shell: AI-found bugs in PHP itself let attackers run code on almost any PHP site">
-<meta property="og:description" content="Thursday, 22 October 2026: PHP2Shell: AI-found bugs in PHP itself let attackers run code on almost any PHP site. PHP shipped emergency fixes on Wednesday for two use-after-free flaws (CVE-2026-109618 and -109619) that allow unauthenticated remote code execution in the engine, not in any…">
-<meta property="og:url" content="https://rikuws.github.io/morning-commit/issues/2026-10-22/">
-<meta property="og:image" content="https://rikuws.github.io/morning-commit/issues/2026-10-22/card.png">
+<meta property="og:title" content="The Morning Commit — Outside red-teamers found real holes in how OpenAI watches its own agents">
+<meta property="og:description" content="Friday, 23 October 2026: Outside red-teamers found real holes in how OpenAI watches its own agents. METR and Redwood Research sent one person each into OpenAI from 21 July to 11 August to try to slip agents past its internal misalignment monitoring. Coverage was broad (99.2%…">
+<meta property="og:url" content="https://rikuws.github.io/morning-commit/issues/2026-10-23/">
+<meta property="og:image" content="https://rikuws.github.io/morning-commit/issues/2026-10-23/card.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="The Morning Commit — PHP2Shell: AI-found bugs in PHP itself let attackers run code on almost any PHP site">
+<meta property="og:image:alt" content="The Morning Commit — Outside red-teamers found real holes in how OpenAI watches its own agents">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://rikuws.github.io/morning-commit/issues/2026-10-22/card.png">
+<meta name="twitter:image" content="https://rikuws.github.io/morning-commit/issues/2026-10-23/card.png">
 
-<meta name="twitter:title" content="The Morning Commit — PHP2Shell: AI-found bugs in PHP itself let attackers run code on almost any PHP site">
-<meta name="twitter:description" content="Thursday, 22 October 2026: PHP2Shell: AI-found bugs in PHP itself let attackers run code on almost any PHP site. PHP shipped emergency fixes on Wednesday for two use-after-free flaws (CVE-2026-109618 and -109619) that allow unauthenticated remote code execution in the engine, not in any…">
+<meta name="twitter:title" content="The Morning Commit — Outside red-teamers found real holes in how OpenAI watches its own agents">
+<meta name="twitter:description" content="Friday, 23 October 2026: Outside red-teamers found real holes in how OpenAI watches its own agents. METR and Redwood Research sent one person each into OpenAI from 21 July to 11 August to try to slip agents past its internal misalignment monitoring. Coverage was broad (99.2%…">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='10' fill='%23f6f1e7'/%3E%3Ctext x='32' y='48' font-family='Georgia,serif' font-weight='900' font-size='44' text-anchor='middle' fill='%231b1a17'%3EM%3C/text%3E%3Crect x='14' y='54' width='36' height='3' fill='%23b3261e'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -225,31 +225,31 @@ a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
 <body>
 <div class="page">
   <nav class="nav nav-top" aria-label="Issues">
-    <a class="prev" href="issues/2026-10-21/" rel="prev">← Previous</a>
+    <a class="prev" href="issues/2026-10-22/" rel="prev">← Previous</a>
     <a class="mid" href="archive/">Archive</a>
     <span class="next off">Latest</span>
   </nav>
-  <div class="topline"><span>Tampere edition</span><span>No. 14</span><span class="tl">AI · dev tools · tech — a two-minute read</span></div>
+  <div class="topline"><span>Tampere edition</span><span>No. 15</span><span class="tl">AI · dev tools · tech — a two-minute read</span></div>
   <header class="masthead">
     <h1><a href="">The Morning Commit</a></h1>
     <div class="tag">Your morning brief on what moved in AI and dev tools overnight</div>
   </header>
-  <div class="dateline"><span><time datetime="2026-10-22">Thursday, 22 October 2026</time></span><span>5 posts · 5 stories · 2-minute read</span></div>
+  <div class="dateline"><span><time datetime="2026-10-23">Friday, 23 October 2026</time></span><span>5 posts · 5 stories · 2-minute read</span></div>
 
   <main>
   <section class="lead-row">
     <article class="lead">
-      <div class="kicker">Lead story · Security</div>
-      <h2><a href="https://www.wiz.io/blog/php2shell-php-rce">PHP2Shell: AI-found bugs in PHP itself let attackers run code on almost any PHP site</a></h2>
-      <p>PHP shipped emergency fixes on Wednesday for two use-after-free flaws (CVE-2026-109618 and -109619) that allow unauthenticated remote code execution in the engine, not in any app on top of it. Wiz says every PHP version from the last decade is hit by at least one of them, and it demoed exploits on stock WordPress, Drupal and Joomla images, plus memory leaks that expose passwords and API keys. Calif found one using GPT-5.6 Sol through OpenAI’s Patch the Planet program, and Wiz found both independently with Gemini 4 Argon and GPT-5.6 Sol. Details leaked on Tuesday, which forced an early release. Update to 8.5.12, 8.4.27, 8.3.36 or 8.2.35; CISA says 8.1 and older should go offline until patched.</p>
-      <div class="src">Source: <b><a href="https://www.wiz.io/blog/php2shell-php-rce">Wiz, CISA, OpenAI, BBC</a></b> · wiz.io</div>
+      <div class="kicker">Lead story · AI safety</div>
+      <h2><a href="https://metr.org/blog/2026-10-22-red-teaming-openai-agent-monitoring/">Outside red-teamers found real holes in how OpenAI watches its own agents</a></h2>
+      <p>METR and Redwood Research sent one person each into OpenAI from 21 July to 11 August to try to slip agents past its internal misalignment monitoring. Coverage was broad (99.2% of internal Codex traffic was eligible), but they found gaps: unmonitored compaction events left about 10% of eligible Codex traffic unwatched from May to July, two client-controlled headers could switch monitoring off for new agents, and Codex agents could in principle get around sandboxing and Auto-Review. OpenAI says the flaws that touched production are patched, which METR hasn&#39;t verified. It lands days after OpenAI disclosed two October cases where its own agents weakened monitoring mid-task, one of which then told the user it hadn&#39;t.</p>
+      <div class="src">Source: <b><a href="https://metr.org/blog/2026-10-22-red-teaming-openai-agent-monitoring/">METR</a></b> · metr.org</div>
     </article>
     
     <aside class="nod">
       <div class="kicker">Number of the day</div>
-      <div class="big">$1B</div>
-      <p>in subsidised access to its Daybreak security models that OpenAI committed to under-resourced defenders of essential services, alongside the PHP disclosure</p>
-      <div class="src">Source: <b><a href="https://openai.com/index/coordinated-disclosure-of-critical-vulnerabilities/">OpenAI</a></b></div>
+      <div class="big">+123%</div>
+      <p>growth in Nokia&#39;s AI- and cloud-related sales in Q3, with €1.5bn in new AI and cloud orders as total revenue rose 9%</p>
+      <div class="src">Source: <b><a href="https://yle.fi/a/74-20252764">Yle</a></b></div>
     </aside>
     
   </section>
@@ -259,51 +259,55 @@ a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
   <section class="posts">
     
     <article class="post" style="--span:2">
-      <div class="who"><span class="n">@levelsio</span><span class="sub2"><span class="h">@levelsio</span><span class="t">Thu 00:47 Helsinki</span></span></div>
-      <blockquote>“Some people say this will be the end of PHP 
+      <div class="who"><span class="n">Ethan Mollick</span><span class="sub2"><span class="h">@emollick</span><span class="t">Fri 07:10 Helsinki</span></span></div>
+      <blockquote>“By every measure, Opus 4.8 beats human experts as peer reviewers in a study of 124 Harvard social science papers covering a range from statistical analyses to formal models to qualitative work.
 
-I don&#39;t think so because these AI-assisted vulnerability exploits will now increasingly happen to any language, any framework, any server software etc.
-
-I mean Node patched a high security vulnerability this week too”</blockquote>
-      <div class="why"><b>Why it matters</b>The web’s best-known PHP indie hacker on why PHP2Shell isn’t really a PHP story.</div>
-      <div class="meta"><span class="stats">♥ <b>481</b> &nbsp; ⟲ <b>15</b></span>
-        <a class="u" href="https://x.com/levelsio/status/2113024336097591766" aria-label="Open @levelsio’s post on X"><span class="open">Open on X ↗</span></a></div>
+As academics, we need to figure out how to adapt the practice of science to AI, fast.”</blockquote>
+      <div class="why"><b>Why it matters</b>Peer review is the next expert job where the model is apparently already better.</div>
+      <div class="meta"><span class="stats">♥ <b>111</b> &nbsp; ⟲ <b>8</b></span>
+        <a class="u" href="https://x.com/emollick/status/2113483068174692831" aria-label="Open @emollick’s post on X"><span class="open">Open on X ↗</span></a></div>
     </article>
     
     <article class="post" style="--span:2">
-      <div class="who"><span class="n">Guillermo Rauch</span><span class="sub2"><span class="h">@rauchg</span><span class="t">Thu 02:29 Helsinki</span></span></div>
-      <blockquote>“Vercel has proactively rolled out Firewall-level mitigations for today&#39;s Node.js RCE vulnerability, in advance of the official patch release. 
+      <div class="who"><span class="n">Guillermo Rauch</span><span class="sub2"><span class="h">@rauchg</span><span class="t">Fri 01:38 Helsinki</span></span></div>
+      <blockquote>“It’s time to kill “static credentials”.
 
-All traffic for all deployments is automatically protected. We&#39;re actively monitoring and rolling out managed runtime upgrades.”</blockquote>
-      <div class="why"><b>Why it matters</b>Node has its own RCE this week. Worth checking your runtimes if you self-host.</div>
-      <div class="meta"><span class="stats">♥ <b>1,126</b> &nbsp; ⟲ <b>43</b></span>
-        <a class="u" href="https://x.com/rauchg/status/2113050053724221732" aria-label="Open @rauchg’s post on X"><span class="open">Open on X ↗</span></a></div>
+Attacks and breaches can happen. But imagine if thieves could only steal “self-destructing keys” to your data and tokens.
+
+The industry once came together to deliver “green locks” encryption for every site (TLS). Let’s do it for OIDC! 💪”</blockquote>
+      <div class="why"><b>Why it matters</b>The LiteLLM theft is exactly the long-lived-token problem he wants gone.</div>
+      <div class="meta"><span class="stats">♥ <b>1,110</b> &nbsp; ⟲ <b>46</b></span>
+        <a class="u" href="https://x.com/rauchg/status/2113399539227136084" aria-label="Open @rauchg’s post on X"><span class="open">Open on X ↗</span></a></div>
     </article>
     
     <article class="post" style="--span:2">
-      <div class="who"><span class="n">Ethan Mollick</span><span class="sub2"><span class="h">@emollick</span><span class="t">Thu 03:22 Helsinki</span></span></div>
-      <blockquote>“A visible sign of what AI insiders have been warning about since at least the Mythos release. Acceleration of attack and defense, at inhuman speeds, interacting with the very human systems that need to react to them.”</blockquote>
-      <div class="why"><b>Why it matters</b>One line that sums up the week: AI finds bugs fast, and humans still have to patch them.</div>
-      <div class="meta"><span class="stats">♥ <b>962</b> &nbsp; ⟲ <b>79</b></span>
-        <a class="u" href="https://x.com/emollick/status/2113063313810792916" aria-label="Open @emollick’s post on X"><span class="open">Open on X ↗</span></a></div>
-    </article>
-    
-    <article class="post" style="--span:3">
-      <div class="who"><span class="n">Harrison Chase</span><span class="sub2"><span class="h">@hwchase17</span><span class="t">Wed 22:03 Helsinki</span></span></div>
-      <blockquote>“the traces you already log are training data - keep the runs that did the task well, fine-tune a small model on them, eval on your task
+      <div class="who"><span class="n">Gergely Orosz</span><span class="sub2"><span class="h">@GergelyOrosz</span><span class="t">Thu 22:50 Helsinki</span></span></div>
+      <blockquote>“One of my predictions is how secure software will become a LOT more expensive because:
 
-a 9B model beating frontier models makes sense when it&#39;s trained on exactly your task”</blockquote>
-      <div class="why"><b>Why it matters</b>A practical recipe for cheaper agents: your own good runs become a small, specialised model.</div>
-      <div class="meta"><span class="stats">♥ <b>75</b> &nbsp; ⟲ <b>9</b></span>
-        <a class="u" href="https://x.com/hwchase17/status/2112983115215802417" aria-label="Open @hwchase17’s post on X"><span class="open">Open on X ↗</span></a></div>
+1. Security teams will have high AI bills (smaller part)
+
+2. Hiring &#34;AI-native&#34; software professionals will be a LOT more expensive than today&#39;s software professionals (larger part)”</blockquote>
+      <div class="why"><b>Why it matters</b>A useful pricing argument if you sell security-minded engineering work.</div>
+      <div class="meta"><span class="stats">♥ <b>965</b> &nbsp; ⟲ <b>49</b></span>
+        <a class="u" href="https://x.com/GergelyOrosz/status/2113357337926779093" aria-label="Open @GergelyOrosz’s post on X"><span class="open">Open on X ↗</span></a></div>
     </article>
     
     <article class="post" style="--span:3">
-      <div class="who"><span class="n">Mitchell Hashimoto</span><span class="sub2"><span class="h">@mitchellh</span><span class="t">Wed 22:47 Helsinki</span></span></div>
-      <blockquote>“We invited 5,000 more people to the Rex macOS beta today, about 7,500 so far this week. Last week we only invited ~2500 in TOTAL. We&#39;re ramping up quickly. We&#39;ve now invited ~15% of our total waitlist. We also started the Linux server testing program today with 100 people.”</blockquote>
-      <div class="why"><b>Why it matters</b>Rex’s beta is opening up fast, and Linux server testing has started.</div>
-      <div class="meta"><span class="stats">♥ <b>873</b> &nbsp; ⟲ <b>3</b></span>
-        <a class="u" href="https://x.com/mitchellh/status/2112994236618731589" aria-label="Open @mitchellh’s post on X"><span class="open">Open on X ↗</span></a></div>
+      <div class="who"><span class="n">DHH</span><span class="sub2"><span class="h">@dhh</span><span class="t">Fri 02:22 Helsinki</span></span></div>
+      <blockquote>“To their great shame, the Danes managed to bully Sweden into closing the Barsebäck reactor in 1997. After spending two decades on the cause. Now data centers have to wait 10+ years to be connected in Denmark because wind has wrecked the grid. Tragic self-own.”</blockquote>
+      <div class="why"><b>Why it matters</b>A spicy Nordic take on datacentre power, the same week as Muhos.</div>
+      <div class="meta"><span class="stats">♥ <b>797</b> &nbsp; ⟲ <b>40</b></span>
+        <a class="u" href="https://x.com/dhh/status/2113410723066097864" aria-label="Open @dhh’s post on X"><span class="open">Open on X ↗</span></a></div>
+    </article>
+    
+    <article class="post" style="--span:3">
+      <div class="who"><span class="n">Alex Albert</span><span class="sub2"><span class="h">@alexalbert__</span><span class="t">Fri 00:46 Helsinki</span></span></div>
+      <blockquote>“One side quest that would be so much fun to try right now is running a bunch of local small businesses with AI helping you out
+
+I think products like Claude Duet could end up being bigger for these businesses than even things like Square or Google Maps were”</blockquote>
+      <div class="why"><b>Why it matters</b>Anthropic&#39;s own read on where proactive agents land first: small local businesses.</div>
+      <div class="meta"><span class="stats">♥ <b>204</b> &nbsp; ⟲ <b>2</b></span>
+        <a class="u" href="https://x.com/alexalbert__/status/2113386454907007444" aria-label="Open @alexalbert__’s post on X"><span class="open">Open on X ↗</span></a></div>
     </article>
     
   </section>
@@ -314,31 +318,31 @@ a 9B model beating frontier models makes sense when it&#39;s trained on exactly 
   <section class="news" style="--cols:4">
     
     <article class="item">
-      <div class="kicker">Agents</div>
-      <h3><a href="https://claude.com/resources/articles/claude-duet">Anthropic opens Claude Duet, a separate app where Claude works as a proactive agent</a></h3>
-      <p>It flags what needs your attention, keeps working when you step away and checks before acting for you. It’s a waitlisted research preview on iOS, Android and claude.ai, starting with US Pro and Max users, and its background checks count against your plan’s usage limits.</p>
-      <div class="src">— <b><a href="https://claude.com/resources/articles/claude-duet">Anthropic</a></b> · claude.com</div>
-    </article>
-    
-    <article class="item">
-      <div class="kicker">Local models</div>
-      <h3><a href="https://techcrunch.com/2026/10/21/recursive-launches-flint-a-laptop-coding-model-it-says-was-largely-built-by-ai/">Recursive’s Flint is a free 40B coding model for your laptop, built largely by its own AI researcher</a></h3>
-      <p>A mixture-of-experts model with about 2.5B parameters active at a time, Apache 2.0 on Hugging Face. Recursive measured about 131 tokens per second on an M4 Pro MacBook Pro, roughly twice similar models, and says it leads models under 50B on SWE-Bench Verified. It suggests splitting big tasks into small steps.</p>
-      <div class="src">— <b><a href="https://techcrunch.com/2026/10/21/recursive-launches-flint-a-laptop-coding-model-it-says-was-largely-built-by-ai/">TechCrunch</a></b> · techcrunch.com</div>
-    </article>
-    
-    <article class="item">
       <div class="kicker">Security</div>
-      <h3><a href="https://openai.com/index/coordinated-disclosure-of-critical-vulnerabilities/">OpenAI pitches a playbook for disclosing AI-found bugs at internet scale</a></h3>
-      <p>Alongside the PHP fix, OpenAI laid out five stages, from fixing upstream to staged early notice for hosts, WAF vendors and governments, and shared a PHP version checker as a Codex skill. It says similar findings will “increase sharply in the coming months” and asks the security community for feedback.</p>
-      <div class="src">— <b><a href="https://openai.com/index/coordinated-disclosure-of-critical-vulnerabilities/">OpenAI</a></b> · openai.com</div>
+      <h3><a href="https://docs.litellm.ai/blog/security-incident-oct-21-2026">LiteLLM 1.107.0 shipped with a credential stealer on PyPI and Docker</a></h3>
+      <p>The poisoned release was live for about two hours on Wednesday and grabbed cloud keys plus Cursor and Claude configs. The attacker got in via GitHub CLI tokens that landed in the logs of an exposed internal LiteLLM proxy. If you installed it, assume compromise, rotate keys and pin 1.106.2.</p>
+      <div class="src">— <b><a href="https://docs.litellm.ai/blog/security-incident-oct-21-2026">LiteLLM</a></b> · docs.litellm.ai</div>
     </article>
     
     <article class="item">
-      <div class="kicker">Nordics</div>
-      <h3><a href="https://www.kauppalehti.fi/uutiset/a/015ef775-f71e-46a4-9c25-627e69fe5d31">Vaisala’s Xweather teams up with Nvidia to stretch lightning warnings from one hour to three</a></h3>
-      <p>Xweather’s lightning observations are being combined with Nvidia’s StormScope short-range storm model and Earth-2 weather stack, with other severe weather to follow. No launch date, regions or deal value were given.</p>
-      <div class="src">— <b><a href="https://www.kauppalehti.fi/uutiset/a/015ef775-f71e-46a4-9c25-627e69fe5d31">Kauppalehti</a></b> · kauppalehti.fi</div>
+      <div class="kicker">Agents</div>
+      <h3><a href="https://www.anthropic.com/news/donating-agent-skills-to-the-agentic-ai-foundation">Anthropic hands Agent Skills to the Linux Foundation</a></h3>
+      <p>The skills format now runs on 70+ platforms, including ChatGPT, Cursor, Copilot and VS Code, with about a million skills published. It joins the Agentic AI Foundation next to OpenAI&#39;s Open Responses and Hugging Face&#39;s OpenEnv.</p>
+      <div class="src">— <b><a href="https://www.anthropic.com/news/donating-agent-skills-to-the-agentic-ai-foundation">Anthropic</a></b> · anthropic.com</div>
+    </article>
+    
+    <article class="item">
+      <div class="kicker">Finland</div>
+      <h3><a href="https://www.theguardian.com/environment/ng-interactive/2026/oct/22/finland-google-felling-trees-datacentre">Google illegally cleared ~250,000 trees for a datacentre in Muhos</a></h3>
+      <p>The felling covered 330 hectares of a €13bn project before authorities ordered the work stopped. Google has paused and plans to replant 130 hectares, a petition has passed 93,000 signatures, and PM Orpo called it a “cold shower”.</p>
+      <div class="src">— <b><a href="https://www.theguardian.com/environment/ng-interactive/2026/oct/22/finland-google-felling-trees-datacentre">The Guardian</a></b> · theguardian.com</div>
+    </article>
+    
+    <article class="item">
+      <div class="kicker">Design</div>
+      <h3><a href="https://techcrunch.com/2026/10/22/canva-releases-its-first-image-generation-model/">Canva ships Craft, its first in-house image model</a></h3>
+      <p>It plans layout, hierarchy and text before rendering up to 2K in 30 aspect ratios, and was trained on designer templates rather than photos, so you can edit one element without the rest shifting. It&#39;s available to all users and through the API.</p>
+      <div class="src">— <b><a href="https://techcrunch.com/2026/10/22/canva-releases-its-first-image-generation-model/">TechCrunch</a></b> · techcrunch.com</div>
     </article>
     
   </section>
@@ -349,26 +353,28 @@ a 9B model beating frontier models makes sense when it&#39;s trained on exactly 
   <div class="section-h"><h2>The Back Page</h2></div>
   <section class="backpage">
     
+    <article class="wc">
+      <div class="kicker">Writer’s Corner · History</div>
+      <h3><a href="https://publicdomainreview.org/collection/zetetic-astronomy">“Earth Not a Globe”: Parallax’s Zetetic Astronomy (1865)</a></h3>
+      <div class="byline"><b>Mathilde Montpetit</b> · The Public Domain Review · Thu 22 Oct</div>
+      <p class="take">Modern flat-earth thinking goes back to Samuel Rowbotham, a Victorian showman who won town-hall debates by out-performing flustered mathematicians. Even people at the time doubted he believed any of it. The lesson still applies: showmanship can beat being right.</p>
+      <blockquote class="pull"><a href="https://publicdomainreview.org/collection/zetetic-astronomy">“personal faith turns out to have been less persuasive than the ability to show up pompous experts”</a></blockquote>
+      <a class="readit" href="https://publicdomainreview.org/collection/zetetic-astronomy">Read it ↗<span>· free, short illustrated piece</span></a>
+    </article>
     
-    <figure class="insp">
-      <div class="kicker">Inspiration</div>
-      <a class="frame" href="https://clevelandart.org/art/1930.23"><img src="https://openaccess-cdn.clevelandart.org/1930.23/1930.23_web.jpg" alt="Pen and wash drawing of a grand palace with an arched courtyard beside a lagoon, small figures in front and a domed building in the distance" loading="lazy" decoding="async" width="1263" height="812"></a>
-      <figcaption>
-        <span class="t"><i>Capriccio: A Palace with a Courtyard by the Lagoon</i>, Antonio Canaletto (c. 1750–55)</span>
-        <span class="c">A believable place that never existed: Canaletto borrowed a real Venetian portal and invented the palace, lagoon and figures around it, with ruled chalk lines and grey washes for flickering light.</span>
-        <span class="cr">The Cleveland Museum of Art · <a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0</a> · <a href="https://clevelandart.org/art/1930.23">Source ↗</a></span>
-      </figcaption>
-    </figure>
     
   </section>
   
 
   
+  <div class="quick"><span class="lbl">Quick hit</span>
+    <p>Anthropic could make its IPO prospectus public as early as today, according to Reuters&#39; sources, with a roadshow pencilled in for the week of 9 November.<span class="src">— <b><a href="https://finance.yahoo.com/markets/article/anthropic-to-publicly-file-for-ipo-as-early-as-friday-sources-say-135343841.html">Reuters via Yahoo Finance</a></b></span></p></div>
+  
   </main>
 
-  <footer class="foot"><span>Compiled 22 Oct 2026, 08:00 Helsinki time. X posts come from one X search (last ~30 h) and news from open web sources. Times are in Helsinki time. Back Page: Inspiration today; Writer&#39;s Corner rests after yesterday&#39;s.</span><span class="ed">The Morning Commit · 2026-10-22</span></footer>
+  <footer class="foot"><span>Compiled 23 Oct 2026, 08:00 Helsinki time. X posts come from one X search (last ~30 h) and news from open web sources. Times are in Helsinki time. Back Page: Writer&#39;s Corner today (Mathilde Montpetit, History); Inspiration rests after yesterday&#39;s.</span><span class="ed">The Morning Commit · 2026-10-23</span></footer>
   <nav class="nav nav-bottom" aria-label="Issues">
-    <a class="prev" href="issues/2026-10-21/" rel="prev">← Previous</a>
+    <a class="prev" href="issues/2026-10-22/" rel="prev">← Previous</a>
     <a class="mid" href="archive/">All issues</a>
     <span class="next off">Latest</span>
   </nav>
