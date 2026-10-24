@@ -35,10 +35,10 @@
     },
     {
       "tag": "Health",
-      "headline": "Microsoft's diagnosis system beats GPs on hard cases, published in Science",
-      "summary": "On 300+ difficult NEJM case studies it reached about 83% diagnostic accuracy versus 36% for GPs allowed to use references, and 80% versus 47% on emergency cases. The test was retrospective on recorded cases, not live patients.",
-      "source": "AI Uutiset",
-      "url": "https://aiuutiset.fi/microsoftin-tekoaly-diagnosoi-laakareita-tarkemmin/"
+      "headline": "Microsoft's diagnosis orchestrator beats GPs on hard cases, now in Science",
+      "summary": "On 304 difficult NEJM case studies, MAI-DxO reached 83% diagnostic accuracy versus 36% for generalist doctors allowed to use search, and 80% versus 47% on emergency-department cases. It was a controlled, text-only benchmark, not real clinical workflows or patients.",
+      "source": "Science",
+      "url": "https://www.science.org/doi/10.1126/science.aeh7930"
     },
     {
       "tag": "Finland",
