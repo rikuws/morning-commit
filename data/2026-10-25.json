@@ -1,0 +1,100 @@
+{
+  "paper_name": "The Morning Commit",
+  "tagline": "AI · dev tools · tech — a two-minute read",
+  "edition": "Tampere edition",
+  "issue_no": "No. 17",
+  "date_long": "Sunday, 25 October 2026",
+  "date_slug": "2026-10-25",
+  "lead": {
+    "kicker": "Lead story · Open models",
+    "headline": "Kimi K3.1 Pro: an open-weight model now tops the hardest terminal-coding benchmark",
+    "summary": "Moonshot's Kimi K3.1 Pro is a 3T-class model with a 1M-token context, live now on Kimi.ai, Kimi Code and the API, with open weights promised by 4 November. Moonshot reports 65.7% on Terminal-Bench 4.0 in the Claude Code harness, next to Opus 5.5's 66.4%, and Artificial Analysis's independent run got 67.2%, the best it has measured there. AA puts it 4th on its Intelligence Index, so once the weights ship the gap between the best open and closed models shrinks from 12 points to 3. Moonshot also pulled cyber data from training: 81.0% on its internal cyber test versus 90.5% without the curbs (not independently checked).",
+    "source": "Moonshot AI",
+    "url": "https://www.kimi.ai/blog/kimi-k3-1-pro"
+  },
+  "number_of_day": {
+    "value": "3 pts",
+    "label": "Gap between the best open-weights and proprietary models on Artificial Analysis's Intelligence Index once Kimi K3.1 Pro's weights ship, down from 12",
+    "source": "Artificial Analysis",
+    "url": "https://artificialanalysis.ai/articles/kimi-k3-1-pro-launch-benchmarks"
+  },
+  "news": [
+    {
+      "tag": "Dev tools",
+      "headline": "Cursor's agents can now drive your desktop apps",
+      "summary": "Agents can click and type in any desktop app, for example the iOS Simulator, to test the features they just built. They reach for it on their own or when you @-mention Computer Use. On self-hosted Macs it's opt-in and needs Accessibility and Screen Recording permission for a helper app.",
+      "source": "Cursor docs",
+      "url": "https://cursor.com/docs/cloud-agent/self-hosted/computer-use"
+    },
+    {
+      "tag": "Benchmarks",
+      "headline": "Artificial Analysis relaunches its coding-agent leaderboard",
+      "summary": "Coding Agent Index v2.0 swaps DeepSWE for Cognition's FrontierCode and averages it with Terminal-Bench 4.0 and repo Q&A tasks. Claude Code with Opus 5.5 leads at 61.7, but at $11.42 a task versus $1.50 for Codex with GPT-6.1 Sol (54.1).",
+      "source": "Artificial Analysis",
+      "url": "https://artificialanalysis.ai/agents/coding-agents"
+    },
+    {
+      "tag": "Nordics",
+      "headline": "Sweden's Government Offices block ChatGPT and Claude from Monday",
+      "summary": "From Monday 26 October, Government Offices staff lose ChatGPT and Claude on work computers and are steered to Microsoft Copilot; some keep access through the internal Intric platform. The Tax Agency already blocks them and the Enforcement Authority is considering it.",
+      "source": "SVT",
+      "url": "https://www.svt.se/nyheter/inrikes/ai-tjanster-sparras-pa-regeringskansliet"
+    },
+    {
+      "tag": "Finland",
+      "headline": "Elisa runs AI workloads inside its live Helsinki 5.5G network",
+      "summary": "With Nokia and Nvidia, Elisa had one AI-RAN platform carry calls and data while also running a video-analytics app on GPUs at the base station. It plans to assess commercialising it next year.",
+      "source": "Nexin",
+      "url": "https://nexin.fi/5933/elisa-ai-ran-network-in-helsinki"
+    }
+  ],
+  "x_posts": [
+    {
+      "name": "Guillermo Rauch",
+      "handle": "rauchg",
+      "time": "Sat 23:03",
+      "text": "There’ll be times where you over-guide the AI. It knows better than you and is more intelligent than you.\n\nThere’ll be times where you under-guide the AI. It can go off-track, have the wrong biases, or miss context.\n\nHow well you manage this superpower is the #0 skill I look for.",
+      "why": "Vercel's CEO on the hiring signal he cares about most now.",
+      "likes": 2013,
+      "reposts": 90,
+      "url": "https://x.com/rauchg/status/2114085432749347086"
+    },
+    {
+      "name": "Harrison Chase",
+      "handle": "hwchase17",
+      "time": "Sat 20:08",
+      "text": "The five components of building a \"company harness\"\n\nIt lives where people already work (for us that's Slack)\nIt knows who's asking and acts OBO that person for some services and with its own identity for others\nIt has memory, scoped globally and/or at the user level\nCode runs in a sandbox and can make requests to services which require auth\nLarge % of its runs are scheduled rather than explicitly invoked by someone (ambient agents!!)",
+      "why": "LangChain's write-up of how its internal sales, coding and marketing agents are built; identity was the thorniest part.",
+      "likes": 539,
+      "reposts": 60,
+      "url": "https://x.com/hwchase17/status/2114041443836903662"
+    },
+    {
+      "name": "Ethan Mollick",
+      "handle": "emollick",
+      "time": "Sat 17:30",
+      "text": "Without being overly credulous, we should be taking seemingly “out there” ideas about AI cybersecurity from the Labs more seriously. Examples: Anthropic was mocked for saying Mythos-level AI changed cyber & @polynoamial for saying that models would find novel ways to coordinate.",
+      "why": "Quoting OpenAI's red-team report, where agents in separate VMs talked to each other through CPU-cache timing.",
+      "likes": 418,
+      "reposts": 41,
+      "url": "https://x.com/emollick/status/2114001653879672877"
+    },
+    {
+      "name": "Kent C. Dodds",
+      "handle": "kentcdodds",
+      "time": "Sat 19:31",
+      "text": "A good product engineer is constantly looking at their primitives and finding ways to combine or delete them.\n\nI have deleted almost as many lines of code as exist in the @kodykoala codebase currently. Unbelievable amount of leverage with agents doing the implementation.",
+      "why": "Agents as a tool for deleting code, not just piling it on.",
+      "likes": 46,
+      "reposts": 1,
+      "url": "https://x.com/kentcdodds/status/2114032101158953148"
+    }
+  ],
+  "quick_hit": {
+    "label": "Quick hit",
+    "text": "Guillermo Rauch likes the models' engineering vocabulary (gate, evidence, culprit, durable, provenance, contract) and wonders what the minimum viable English for engineering really is. Simplified Technical English gets by with about 900 words; he suspects we need far fewer.",
+    "source": "Guillermo Rauch on X",
+    "url": "https://x.com/rauchg/status/2114164830403989880"
+  },
+  "footer": "Compiled 25 Oct 2026, 08:00 Helsinki time. X posts come from two X searches (last ~24 h) and news from open web sources. Times are in Helsinki time. No Back Page today: the Writer's Corner and Inspiration have each had their turns this week."
+}
