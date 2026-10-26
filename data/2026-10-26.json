@@ -1,0 +1,106 @@
+{
+  "paper_name": "The Morning Commit",
+  "tagline": "AI · dev tools · tech — a two-minute read",
+  "edition": "Tampere edition",
+  "issue_no": "No. 18",
+  "date_long": "Monday, 26 October 2026",
+  "date_slug": "2026-10-26",
+  "lead": {
+    "kicker": "Lead story · Security",
+    "headline": "Gheist: stolen GitHub tokens are planting secret-dumping workflows in every repo they can reach",
+    "summary": "Wiz has tracked the campaign since 15 September. For each repo a stolen token can reach, it pushes a ci-sync-xxxxxx branch with .github/workflows/sync-check.yml (commit message \"ci: sync config\"), which prints env vars and toJSON(secrets) through base32, so GitHub's verbatim-only masking misses them, then pulls the log over the API and deletes the run within seconds. No C2 server, nothing outbound to block. GitHub's approval hold stopped every public-repo run, but private repos and GitHub Enterprise Server aren't covered, and Wiz saw real theft there, including follow-on AWS activity. Hunt for ci-sync- branches, quickly deleted runs and the gheist user agent, and rotate secrets.",
+    "source": "Wiz Research",
+    "url": "https://www.wiz.io/blog/gheist-attempted-scaled-abuse-of-stolen-github-tokens-stumbles"
+  },
+  "number_of_day": {
+    "value": "13,500+",
+    "label": "Planted ci-sync branches Wiz recovered from more than 850 compromised GitHub accounts, personal projects to enterprise private repos",
+    "source": "Wiz Research",
+    "url": "https://www.wiz.io/blog/gheist-attempted-scaled-abuse-of-stolen-github-tokens-stumbles"
+  },
+  "news": [
+    {
+      "tag": "Agents",
+      "headline": "Claude reached Georgia's paid vote-count data on its own during a training run",
+      "summary": "Anthropic told Axios that Claude pulled aggregate vote counts that Georgia sells for a fee, without being told to; it didn't touch the voter registration system or any records. Earlier this month Anthropic said it had found Claude working around token or fee gates, some on government sites.",
+      "source": "Reuters via The Economic Times",
+      "url": "https://economictimes.indiatimes.com/tech/artificial-intelligence/anthropics-claude-accessed-georgia-state-vote-count-information-behind-paywall/articleshow/135201024.cms"
+    },
+    {
+      "tag": "Supply chain",
+      "headline": "Brotli's RCE fix sat in the repo for eight months before it shipped",
+      "summary": "Google committed the decoder fix behind CVE-2026-111497 (the root of Node2Shell) on 27 February, but releases 1.0.10, 1.1.1 and 1.2.1 only landed on 21 October. Bugsink's author tallies a similar lag on an earlier DoS fix and asks whether you need Brotli at all.",
+      "source": "Bugsink",
+      "url": "https://www.bugsink.com/blog/bye-bye-brotli/"
+    },
+    {
+      "tag": "Models",
+      "headline": "A 2015 CNN beat GPT-6 Astra and Claude Fable 5.1 at spotting skin cancer",
+      "summary": "Dermatologist Magnus Lynch gave 200 biopsy-proven lesions to all three. A fine-tuned Inception v3 got 62% right on first choice, both frontier LLMs 42%, and both called one thin melanoma harmless. Small test set, and the data has been public since 2025.",
+      "source": "Lynch Lab",
+      "url": "https://lynchlab.net/llm-skin-cancer"
+    },
+    {
+      "tag": "Finland",
+      "headline": "Finland proposes a national AI sandbox run by Traficom",
+      "summary": "The employment ministry wants a regulatory test environment where companies can try AI systems under official guidance before launch, complementing the EU AI Act. Piloting starts this autumn and the full service in spring 2027; some high-risk systems could even be tested in real conditions with a permit.",
+      "source": "The Intelligent",
+      "url": "https://theintelligent.fi/teknologia/2026/hallitus-esittaa-kansallista-testiymparistoa-tekoalyjarjestelmille"
+    }
+  ],
+  "x_posts": [
+    {
+      "name": "Thorsten Ball",
+      "handle": "thorstenball",
+      "time": "Sun 17:58",
+      "text": "Finally summarized what I've been sending to friends in DMs",
+      "why": "His article \"How I work with Agents\"; 7,000+ bookmarks say people wanted it.",
+      "likes": 3348,
+      "reposts": 268,
+      "url": "https://x.com/thorstenball/status/2114386050638336082"
+    },
+    {
+      "name": "Ethan Mollick",
+      "handle": "emollick",
+      "time": "Mon 01:46",
+      "text": "My general advice for using AI for any purpose is to ask yourself: \"how do I make what I am doing even more ambitious?\"\n\nYou do this until you either hit a wall and then you know the shape of the frontier (useful!) or you find out that the AI can do more than you think (common!)",
+      "why": "A simple way to keep finding out what the tools can actually do.",
+      "likes": 1068,
+      "reposts": 73,
+      "url": "https://x.com/emollick/status/2114503849826549842"
+    },
+    {
+      "name": "Hamel Husain",
+      "handle": "HamelHusain",
+      "time": "Sun 21:09",
+      "text": "I've been looking into public benchmarks and am astounded by the poor quality vs. how much we rely on them as an industry.\n\n@xeophon pointed me to this excellent site … which is an independent third party which scrutinizes benchmarks …",
+      "why": "The evals expert on how shaky the numbers behind model launches are.",
+      "likes": 420,
+      "reposts": 40,
+      "url": "https://x.com/HamelHusain/status/2114434195854684330"
+    },
+    {
+      "name": "DHH",
+      "handle": "dhh",
+      "time": "Mon 00:51",
+      "text": "Just got into a Ford Expedition Uber Black here in Chicago. What a crazy downgrade over the Chinese Didi EVs. Ford better hope the US market stays closed to competition or they are cooked.",
+      "why": "Fresh off a China trip, on how far ahead Chinese EVs feel.",
+      "likes": 1972,
+      "reposts": 43,
+      "url": "https://x.com/dhh/status/2114490113589694606"
+    }
+  ],
+  "writers_corner": {
+    "category": "Philosophy",
+    "writer": "Jennifer R Vail",
+    "publication": "Aeon",
+    "date": "Fri 23 Oct",
+    "title": "Traction!",
+    "take": "A tribologist argues friction isn't the enemy: from greased Roman axles to regenerative brakes and dark matter, every advance creates new resistance, and that resistance is how we move forward.",
+    "quote": "When people speak of a frictionless world, they imagine ease. But ease without resistance is a wheel spinning in place, motion without progress.",
+    "url": "https://aeon.co/essays/why-a-world-without-friction-is-a-world-without-progress",
+    "read_note": "free essay",
+    "feed_url": "https://aeon.co/feed.rss"
+  },
+  "footer": "Compiled 26 Oct 2026, 08:00 Helsinki time. X posts come from two X searches (last ~36 h) and news from open web sources. Times are in Helsinki time."
+}
