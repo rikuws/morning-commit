@@ -1,0 +1,124 @@
+{
+  "paper_name": "The Morning Commit",
+  "tagline": "AI · dev tools · tech — a two-minute read",
+  "edition": "Tampere edition",
+  "issue_no": "No. 19",
+  "date_long": "Tuesday, 27 October 2026",
+  "date_slug": "2026-10-27",
+  "lead": {
+    "kicker": "Lead story · Research",
+    "headline": "Two labs, one week: OpenAI and Anthropic both say their AI disproved the Exponential Time Hypothesis",
+    "summary": "OpenAI announced three results on Monday: a proof of the local smoothing conjecture in every dimension (which also settles Kakeya), an existence proof for QCD and Yang–Mills in four dimensions, and a refutation of ETH, the ~30-year-old belief that 3-SAT needs exponential time, used in hundreds of hardness papers. Its model found the ETH disproof on 16 October and it was checked in Lean the next day; ETH's original proposers Impagliazzo and Paturi, with Ryan Williams, will lead the independent check. Hours later Anthropic posted its own paper, \"A 2^o(n) Time Algorithm for 3-SAT\", saying an internal Claude model found the core algorithm, also on 16 October, with 14M output tokens and no human input, also formalized in Lean. It's theoretical: the speedup is subexponential, not a practical SAT solver, and no human has fully checked either proof yet.",
+    "source": "OpenAI",
+    "url": "https://openai.com/index/building-scientific-understanding-with-academic-communities/"
+  },
+  "number_of_day": {
+    "value": "$2.08",
+    "label": "Revenue Anthropic earned per dollar of compute in Q2 2026 ($11.6B revenue on $5.6B of compute), per its S-1",
+    "source": "Fortune",
+    "url": "https://fortune.com/2026/10/26/anthropics-s-1/"
+  },
+  "news": [
+    {
+      "tag": "Business",
+      "headline": "Anthropic files to go public as ANT: $16.3B half-year revenue, first positive operating cash flow",
+      "summary": "First-half 2026 revenue was up from $1.2B a year earlier, 80% of it consumption-based. Operating loss narrowed to $693M and operating cash flow hit $3.9B, while a $72.4B convertible-note charge pushed the net loss to $80.7B. More than 11,900 customers now pay $100K+ a year.",
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/10/26/anthropic-officially-files-for-its-public-debut/"
+    },
+    {
+      "tag": "Models",
+      "headline": "GPT-6.1 Terra: OpenAI's cheap computer-use model, at half the API price",
+      "summary": "Out in ChatGPT Work, Codex and the API, priced 50% below GPT-5.6 Terra. OpenAI says it scores 50.3% on Terminal-Bench 4.0 at max effort (vs 21.5% for GPT-5.6 Terra) and costs about 9x less per task than Claude Opus 5.5 on Agents' Last Exam. Benchmarks are OpenAI's own.",
+      "source": "OpenAI",
+      "url": "https://openai.com/index/introducing-gpt-6-1-terra"
+    },
+    {
+      "tag": "Security",
+      "headline": "Cloudflare's GLM-5.3 leaked other users' data into 155 responses via a KV cache bug",
+      "summary": "Prompts over 681,280 tokens overflowed the prefill KV pool; an SGLang bug in disaggregated mode then let decode read stale pages from earlier requests and return HTTP 200. Fixed in September, disclosed now. If you run disaggregated SGLang, upgrade to v0.5.22 and check pool size against context length.",
+      "source": "Cloudflare",
+      "url": "https://blog.cloudflare.com/kv-cache-exposure-remediation/"
+    },
+    {
+      "tag": "Finland",
+      "headline": "FIN-FSA: 93% of Finnish financial firms use or plan to use AI",
+      "summary": "In Finanssivalvonta's survey of 84 banks, insurers, pension and investment firms, use of generative and general-purpose models jumped from 74% to 90% in a year, and agentic AI showed up for the first time. The supervisor wants clearer accountability and risk management.",
+      "source": "AI Uutiset",
+      "url": "https://aiuutiset.fi/finanssivalvonta-tekoalykysely-2026/"
+    }
+  ],
+  "x_posts": [
+    {
+      "name": "levent",
+      "handle": "__alpoge__",
+      "time": "Tue 06:00",
+      "text": "“The core algorithm was found on October 16 by an internal Claude research model with 14M output tokens and no human input. Anthropic researchers worked with Claude to improve the presentation, resulting in this paper.”",
+      "why": "The Anthropic researcher behind the second ETH paper, posted hours after OpenAI's.",
+      "likes": 860,
+      "reposts": 43,
+      "url": "https://x.com/__alpoge__/status/2114930095009968506"
+    },
+    {
+      "name": "Greg Brockman",
+      "handle": "gdb",
+      "time": "Tue 01:24",
+      "text": "p still probably doesn't equal np",
+      "why": "OpenAI's president heading off the obvious overreading of the ETH result.",
+      "likes": 4260,
+      "reposts": 192,
+      "url": "https://x.com/gdb/status/2114860693585563907"
+    },
+    {
+      "name": "Greg Brockman",
+      "handle": "gdb",
+      "time": "Mon 22:21",
+      "text": "computer use with terra has crossed a qualitative threshold where it feels faster at using a computer than what i can do unassisted",
+      "why": "A strong claim worth testing yourself on GPT-6.1 Terra.",
+      "likes": 1486,
+      "reposts": 70,
+      "url": "https://x.com/gdb/status/2114814747254432243"
+    },
+    {
+      "name": "Ethan Mollick",
+      "handle": "emollick",
+      "time": "Tue 06:47",
+      "text": "The end of detailed summarized thinking traces for Claude and ChatGPT (likely both anti-distillation & for UX) has made being a human in the loop challenging. It pushes us towards automation, rather than augmentation, as it has become much harder to weigh in on in-process AI work",
+      "why": "A real cost of hidden reasoning for anyone steering agents mid-task.",
+      "likes": 111,
+      "reposts": 5,
+      "url": "https://x.com/emollick/status/2114942007533515261"
+    },
+    {
+      "name": "Gergely Orosz",
+      "handle": "GergelyOrosz",
+      "time": "Mon 22:38",
+      "text": "Entire is the ONLY company I've invested in the last two years: b/c it's clear that we need an \"AI-native\" GitHub, and also clear that GitHub cannot disrupt itself. \n\nEntire just reinvented the PR for agents with Trails, and offer a Git forge that can handle agent load",
+      "why": "Entire launched a Git forge built for agent-human collaboration.",
+      "likes": 443,
+      "reposts": 21,
+      "url": "https://x.com/GergelyOrosz/status/2114818971698381094"
+    }
+  ],
+  "inspiration": {
+    "title": "Geometry (from the Tarocchi, Liberal Arts, #24)",
+    "creator": "Master of the E-Series Tarocchi",
+    "year": "before 1467",
+    "caption": "On the day machines claim new proofs, a 15th-century card of Geometry drawing circle, square and triangle with a compass, all framed in a crisp twisted-rope border.",
+    "image_url": "https://openaccess-cdn.clevelandart.org/1924.432.24/1924.432.24_web.jpg",
+    "width": 640,
+    "height": 893,
+    "image_alt": "Engraved card of a robed woman seated on a cloud, holding a compass to a circle, square and triangle, above a river landscape, captioned GEOMETRIA XXIIII",
+    "credit": "The Cleveland Museum of Art",
+    "licence": "CC0",
+    "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "source_url": "https://clevelandart.org/art/1924.432.24"
+  },
+  "quick_hit": {
+    "label": "Quick hit",
+    "text": "Microsoft offered voluntary exit packages to about 60,000 employees, roughly a quarter of its workforce, and expects only 3–5% to accept.",
+    "source": "The Seattle Times",
+    "url": "https://www.seattletimes.com/business/microsoft/microsoft-offers-mass-buyouts-for-roughly-a-quarter-of-its-workforce/"
+  },
+  "footer": "Compiled 27 Oct 2026, 07:55 Helsinki time. X posts come from two X searches and one lookup (last ~36 h) and news from open web sources. Times are in Helsinki time."
+}
