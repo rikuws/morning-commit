@@ -1,0 +1,116 @@
+{
+  "paper_name": "The Morning Commit",
+  "tagline": "AI · dev tools · tech — a two-minute read",
+  "edition": "Tampere edition",
+  "issue_no": "No. 20",
+  "date_long": "Wednesday, 28 October 2026",
+  "date_slug": "2026-10-28",
+  "lead": {
+    "kicker": "Lead story · Engineering",
+    "headline": "Amazon tells its engineers to stop tokenmaxxing: token counts and lines of code are \"deeply flawed\" metrics",
+    "summary": "Amazon published its revised role guideline for software engineers and managers on Tuesday, a memo first circulated internally in September. It says token usage, AI-tool adoption and code-change counts are deeply flawed when used as targets, because they drive up cost (tokenmaxxing is at odds with frugality) and complexity. They still correlate with real output, so use them \"with care and judgment\", watching the 10th and 90th percentile teams. AWS VP Marc Brooker told CNBC Amazon looks at feature velocity instead: launches and successful production changes. Amazon has not capped token use, but shut down an internal AI leaderboard in May after people gamed it. The best line for anyone: \"If your work does not benefit from current AI tooling, that is a finding, not a failing.\"",
+    "source": "About Amazon",
+    "url": "https://www.aboutamazon.com/news/company-news/amazon-software-engineer-role-guideline-ai"
+  },
+  "news": [
+    {
+      "tag": "Models",
+      "headline": "Genie 4: DeepMind's world model now does sound, dialogue and live edits",
+      "summary": "Genie 4 adds native audio (ambient sound, music and dialogue) and lets you steer a running world in plain language, with Gemini 3.8 Flash guiding the agent. Scenes stay coherent for about two minutes, roughly double Genie 3, though drift is still a limit. Trusted testers first, then Google AI Ultra and Gemini API partners.",
+      "source": "Google DeepMind",
+      "url": "https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/"
+    },
+    {
+      "tag": "Security",
+      "headline": "Warp breached through a vendor; AI agent traces and telemetry exposed",
+      "summary": "Attackers got in through a third-party vendor and reached agent traces and user telemetry. Warp says it caught it within hours and puts the upper bound at about 1% of users; CrowdStrike and law enforcement are involved. It's still unclear whether code, prompts or credentials were in what leaked.",
+      "source": "BleepingComputer",
+      "url": "https://www.bleepingcomputer.com/news/security/warp-discloses-breach-exposing-ai-agent-logs-user-telemetry-data/"
+    },
+    {
+      "tag": "Dev tools",
+      "headline": "Pages, Keynote and Numbers get AI assistants and MCP on macOS 27",
+      "summary": "Apple's Creator Studio update adds beta assistants, built on Apple and OpenAI models, that design slides in Keynote, draft text in Pages and suggest charts in Numbers. The bigger deal for builders: on macOS 27 the apps get MCP support, so outside agents can read, edit and act inside documents. US English first, arriving in November.",
+      "source": "Apple Newsroom",
+      "url": "https://www.apple.com/newsroom/2026/10/apple-creator-studio-adds-powerful-new-ai-features-and-even-more-creative-tools/"
+    },
+    {
+      "tag": "Finland",
+      "headline": "Qt Group launches Clate, an AI-native UI design tool for embedded devices",
+      "summary": "Designers prompt in natural language, connect tools over MCP, watch live FPS and memory use, and get production-ready QML for resource-limited hardware. Clate starts as a beta now; the rest of the planned features arrive in early 2027.",
+      "source": "Uusiteknologia.fi",
+      "url": "https://www.uusiteknologia.fi/2026/10/27/raataloitava-tekoalytyokalu-sulautettujen-kayttoliittymasuunnitteluun/"
+    }
+  ],
+  "x_posts": [
+    {
+      "name": "Ethan Mollick",
+      "handle": "emollick",
+      "time": "Wed 04:43",
+      "text": "Genie 4: \"Scene: A Victorian high tea. Character: A mouse in appropriate garb.\"\n\"A porcupine walks by\"\n\"The mouse grows wings\"\n\"The mouse flies to the teacup\"\nThis is realtime & I can walk around freely.\n\nIt is glitchy, but also impossibly advanced compared to a couple years ago.",
+      "why": "A hands-on first test of Genie 4's live steering.",
+      "likes": 200,
+      "reposts": 7,
+      "url": "https://x.com/emollick/status/2115273222061015169"
+    },
+    {
+      "name": "Ethan Mollick",
+      "handle": "emollick",
+      "time": "Wed 04:59",
+      "text": "Artificial Analysis finally moves to closed benchmarks (goodbye GDPval-AA), and finds that open weights models are falling  further behind than they had previously measured. Take with a grain of salt, but matches the general vibes that we haven't seen a Fable-class open model.",
+      "why": "In AA's v5 index the best open-weights model trails the leader by 12 points, up from 3.",
+      "likes": 563,
+      "reposts": 38,
+      "url": "https://x.com/emollick/status/2115277286123704654"
+    },
+    {
+      "name": "Amjad Masad",
+      "handle": "amasad",
+      "time": "Wed 00:23",
+      "text": "If I’m investing in frontier AI I would underwrite it mostly on new discovery and its applications like medicine because coding and most of knowledge work is quickly being saturated by sub-frontier models.",
+      "why": "Replit's CEO on where frontier models still earn their price.",
+      "likes": 577,
+      "reposts": 30,
+      "url": "https://x.com/amasad/status/2115207856496480261"
+    },
+    {
+      "name": "DHH",
+      "handle": "dhh",
+      "time": "Wed 01:19",
+      "text": "Windows Copilot was so terrible it might very well have seeded the AI opposition we now see among normies. Useless functionality, hyped to the moon, and a dumb key on every keyboard that did nothing worthwhile.",
+      "why": "A blunt take on how bad AI products shape public mood.",
+      "likes": 1634,
+      "reposts": 69,
+      "url": "https://x.com/dhh/status/2115221759662137458"
+    },
+    {
+      "name": "Guillermo Rauch",
+      "handle": "rauchg",
+      "time": "Wed 01:06",
+      "text": "$ 𝚊𝚕𝚒𝚊𝚜 𝚗𝚘𝚠=𝚟𝚎𝚛𝚌𝚎𝚕\n$ 𝚌𝚊𝚝 >𝙳𝚘𝚌𝚔𝚎𝚛𝚏𝚒𝚕𝚎 <<'𝙴𝙾𝙵'\n𝙵𝚁𝙾𝙼 𝚘𝚟𝚎𝚗/𝚋𝚞𝚗:𝚊𝚕𝚙𝚒𝚗𝚎\n𝙲𝙼𝙳 [\"𝚋𝚞𝚗\",\"-𝚎\",\"𝙱𝚞𝚗.𝚜𝚎𝚛𝚟𝚎({𝚙𝚘𝚛𝚝:𝟾𝟶,𝚏𝚎𝚝𝚌𝚑:()=>𝚗𝚎𝚠 𝚁𝚎𝚜𝚙𝚘𝚗𝚜𝚎('𝚠𝚎 𝚊𝚛𝚎 𝚜𝚘 𝚋𝚊𝚌𝚔')})\"]\n𝙴𝙾𝙵\n$ 𝚗𝚘𝚠\n> Ready: bun-dockerfile.vercel.app",
+      "why": "Vercel now deploys a plain Dockerfile or Containerfile at your repo root.",
+      "likes": 185,
+      "reposts": 2,
+      "url": "https://x.com/rauchg/status/2115218670389756243"
+    }
+  ],
+  "writers_corner": {
+    "category": "Tech",
+    "writer": "Gergely Orosz",
+    "publication": "The Pragmatic Engineer",
+    "date": "Tue 27 Oct",
+    "title": "AI SRE: what is it, how could it change on-call – and does it work?",
+    "take": "Agents doubled how often teams ship, so pages are up too. AI SREs mostly speed up incident investigation in Slack; fully autonomous fixes are still stage demos.",
+    "quote": "Almost all tech companies have seen their PR frequency double in a year due to AI agents.",
+    "url": "https://newsletter.pragmaticengineer.com/p/ai-sre",
+    "read_note": "free intro, rest for paid subscribers",
+    "feed_url": "https://newsletter.pragmaticengineer.com/feed"
+  },
+  "quick_hit": {
+    "label": "Quick hit",
+    "text": "Anthropic's Frontier Red Team details five attack chains in browsers and operating systems, found with an unreleased internal model, that led to remote code execution and other critical impacts with little to no user interaction. All were reported to vendors, who get 90 days to patch.",
+    "source": "Anthropic",
+    "url": "https://www.anthropic.com/research/discovering-vulnerabilities-with-claude"
+  },
+  "footer": "Compiled 28 Oct 2026, 08:05 Helsinki time. X posts come from one X search (last ~32 h) and news from open web sources. Times are in Helsinki time."
+}
