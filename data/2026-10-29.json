@@ -1,0 +1,100 @@
+{
+  "paper_name": "The Morning Commit",
+  "tagline": "AI · dev tools · tech — a two-minute read",
+  "edition": "Tampere edition",
+  "issue_no": "No. 21",
+  "date_long": "Thursday, 29 October 2026",
+  "date_slug": "2026-10-29",
+  "lead": {
+    "kicker": "Lead story · Models",
+    "headline": "Gemini 4 Carbon takes #1 on Artificial Analysis, but cyber defenders get it first",
+    "summary": "Google's new frontier model lands just two weeks after Gemini 4 Argon. It scores 59 on Artificial Analysis Intelligence Index v5, the top spot, and Google reports state-of-the-art security numbers measured without guardrails: 88.2% on SEC-bench Pro for finding real vulnerabilities, 54.8% on ExploitGym and 71.0% on CWE-bench for patches. Google also says cheating on Terminal-Bench 4.0 dropped to 0.0%. The catch: only a subset of cyber defenders get access this week, then trusted partners through the Fairwind programme, while Google joins US pre-release testing. Developer pricing is set at $2/$10 per million tokens to start, rising to $4/$20.",
+    "source": "Google",
+    "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/"
+  },
+  "number_of_day": {
+    "value": "40%+",
+    "label": "of GitHub pull requests in September started from an agent's first draft, up from 17% in March. That's about 110 million PRs in one month.",
+    "source": "GitHub Octoverse 2026",
+    "url": "https://github.blog/news-insights/octoverse/octoverse-commits-pushes-reach-new-highs-in-2026-as-developers-build-with-agents/"
+  },
+  "news": [
+    {
+      "tag": "Dev tools",
+      "headline": "GitHub Copilot Fusion picks and combines models for you",
+      "summary": "Now generally available: choose Fusion and an effort level (Standard, High, Max), and Copilot routes each prompt to one model, cascades from a cheap draft to a stronger model, or has one model critique another. GitHub says Fusion Max came within two points of Claude Code with Opus 5.5 Max on the Artificial Analysis Coding Agent Index at about half the cost per task. In VS Code, JetBrains, the CLI and the Copilot app, with 30% off for a limited time.",
+      "source": "GitHub Changelog",
+      "url": "https://github.blog/changelog/2026-10-28-route-and-orchestrate-models-with-github-copilot-fusion/"
+    },
+    {
+      "tag": "Enterprise",
+      "headline": "Anthropic gives Claude Enterprise admins reports on what the tokens actually bought",
+      "summary": "Now generally available: smart reports analyse sampled team transcripts to show workstreams, deliverables, spend per stream, friction points and recommendations. Pooled group budgets and in-app surveys ship too. Context from TechCrunch: Jellyfish data shows AI coding tool spend up 10x this year, now about 2% of engineering cost.",
+      "source": "Claude",
+      "url": "https://claude.com/resources/articles/smart-reports-surveys-pooled-budgets"
+    },
+    {
+      "tag": "Open models",
+      "headline": "Nvidia's Nemotron 3.5 Transcribe: open weights, 40 languages, speaker labels",
+      "summary": "A free, open-weight speech model for recordings up to an hour, with transcription, translation, speaker attribution and timestamps, and about 4B active parameters. It's for recorded audio, not live streams; Nvidia has a separate small streaming model for that.",
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/10/28/voice-ai-in-vogue-nvidia-releases-new-open-transcription-model/"
+    },
+    {
+      "tag": "Nordics",
+      "headline": "Nordic and Baltic media, Medialiitto included, set three terms for AI companies",
+      "summary": "Fourteen publisher groups and journalist unions from eight countries want consent before journalism is used commercially in AI, disclosure of training content (or a presumption that it was used), and an arbitration-style way to settle disputes, since talks with AI firms haven't produced satisfying deals.",
+      "source": "Medialiitto",
+      "url": "https://www.medialiitto.fi/uutiset/pohjoismaiden-ja-baltian-mediajarjestot-vaativat-reiluja-ehtoja-journalismin-kaytolle-tekoalyssa/"
+    }
+  ],
+  "x_posts": [
+    {
+      "name": "Gergely Orosz",
+      "handle": "GergelyOrosz",
+      "time": "Wed 22:14",
+      "text": "It’s hard to see anything else happening but coding interviews going away. \n\nThis won’t mean that technical ability won’t be interviewed: but it interviews will be less predictable, more subjective and harder to prep for than the near-universally-disliked DSA interviews.",
+      "why": "Quoting an Anthropic engineer who dropped the coding interview from their team's loops this month.",
+      "likes": 778,
+      "reposts": 23,
+      "url": "https://x.com/GergelyOrosz/status/2115537677676339483"
+    },
+    {
+      "name": "Guillermo Rauch",
+      "handle": "rauchg",
+      "time": "Thu 00:38",
+      "text": "This is like DNS for models. An alias that *resolves* to a model, giving you traffic-steering abilities.\n\nSolves a huge number of problems. From not having teams stuck on old model versions, to saving on costs, to removing “decision paralysis”. Try it!",
+      "why": "Vercel AI Gateway's new virtual models: one model ID across agents that you can repoint centrally.",
+      "likes": 195,
+      "reposts": 4,
+      "url": "https://x.com/rauchg/status/2115573969369845855"
+    },
+    {
+      "name": "DHH",
+      "handle": "dhh",
+      "time": "Thu 00:43",
+      "text": "Basecamp for Claude is live!",
+      "why": "Basecamp now plugs straight into Claude.",
+      "likes": 668,
+      "reposts": 20,
+      "url": "https://x.com/dhh/status/2115575125223387320"
+    },
+    {
+      "name": "Ethan Mollick",
+      "handle": "emollick",
+      "time": "Thu 02:00",
+      "text": "Academics have to invest tremendous effort into a single paper, so we often work on papers that we suspect will yield interesting & significant results. But that also pushes us to predictable work.\n\nAI has no such constraints, forcing us to rethink a lot of how science is done.",
+      "why": "On a new working paper finding AI can forecast economics treatment effects from pre-registration documents.",
+      "likes": 203,
+      "reposts": 14,
+      "url": "https://x.com/emollick/status/2115594672471195779"
+    }
+  ],
+  "quick_hit": {
+    "label": "Quick hit",
+    "text": "This year's Finnish copyright barometer: 81% of Finns say AI shouldn't use a known artist's personal style without permission and pay, up from 75% a year ago. Only 10% would consume AI-made culture as gladly as human-made.",
+    "source": "Klangi",
+    "url": "https://www.klangi.fi/uutiset/tekijanoikeusbarometri-2026-tekoaly/"
+  },
+  "footer": "Compiled 29 Oct 2026, 08:05 Helsinki time. X posts come from one X search (last ~30 h) and news from open web sources. Times are in Helsinki time."
+}
