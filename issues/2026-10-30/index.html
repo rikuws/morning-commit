@@ -1,0 +1,373 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="light">
+<meta name="theme-color" content="#f6f1e7">
+<title>The Morning Commit · Friday, 30 October 2026</title>
+<meta name="description" content="Friday, 30 October 2026: Mistral opens up Le Chonk: a trillion-parameter European model built for cyber defenders. Mistral has released the weights of Mistral Large 4 on Hugging Face: about 1T total parameters, roughly 49–52B active per token, a 1M-token context, in FP8 and NVFP4. Mistral…">
+<link rel="canonical" href="https://rikuws.github.io/morning-commit/issues/2026-10-30/">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="The Morning Commit">
+<meta property="og:title" content="The Morning Commit — Mistral opens up Le Chonk: a trillion-parameter European model built for cyber defenders">
+<meta property="og:description" content="Friday, 30 October 2026: Mistral opens up Le Chonk: a trillion-parameter European model built for cyber defenders. Mistral has released the weights of Mistral Large 4 on Hugging Face: about 1T total parameters, roughly 49–52B active per token, a 1M-token context, in FP8 and NVFP4. Mistral…">
+<meta property="og:url" content="https://rikuws.github.io/morning-commit/issues/2026-10-30/">
+<meta property="og:image" content="https://rikuws.github.io/morning-commit/issues/2026-10-30/card.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="The Morning Commit — Mistral opens up Le Chonk: a trillion-parameter European model built for cyber defenders">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://rikuws.github.io/morning-commit/issues/2026-10-30/card.png">
+
+<meta name="twitter:title" content="The Morning Commit — Mistral opens up Le Chonk: a trillion-parameter European model built for cyber defenders">
+<meta name="twitter:description" content="Friday, 30 October 2026: Mistral opens up Le Chonk: a trillion-parameter European model built for cyber defenders. Mistral has released the weights of Mistral Large 4 on Hugging Face: about 1T total parameters, roughly 49–52B active per token, a 1M-token context, in FP8 and NVFP4. Mistral…">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='10' fill='%23f6f1e7'/%3E%3Ctext x='32' y='48' font-family='Georgia,serif' font-weight='900' font-size='44' text-anchor='middle' fill='%231b1a17'%3EM%3C/text%3E%3Crect x='14' y='54' width='36' height='3' fill='%23b3261e'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=Inter:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,700;0,800;0,900;1,400&family=Playfair+Display+SC:wght@700&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap">
+<style>
+:root{
+  --paper:#f6f1e7; --ink:#1b1a17; --muted:#5f5a50; --rule:#1b1a17; --soft:#d8cfbd;
+  --accent:#b3261e; --xblue:#1d4e89; --card:#fffdf8; --desk:#e9e3d6;
+  --serif:"Source Serif 4","Source Serif Pro","Noto Serif",Georgia,serif;
+  --display:"Playfair Display","Playfair Display SC",Georgia,serif;
+  --sans:Inter,"Noto Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --mono:"IBM Plex Mono","JetBrains Mono",ui-monospace,monospace;
+  color-scheme:light;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
+html,body{margin:0;background:var(--desk)}
+body{font-family:var(--serif);color:var(--ink);-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+a{color:inherit;text-decoration:none;-webkit-tap-highlight-color:rgba(179,38,30,.15)}
+a:hover{text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:3px}
+a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+
+.page{max-width:1100px;margin:0 auto;background:var(--paper);padding:14px 18px 22px;
+      background-image:radial-gradient(rgba(0,0,0,.025) 1px,transparent 1px);background-size:4px 4px}
+
+/* issue nav */
+.nav{display:flex;justify-content:space-between;align-items:stretch;gap:6px;font-family:var(--sans);
+     font-size:12px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.nav a,.nav span{display:flex;align-items:center;min-height:44px;padding:0 2px}
+.nav .mid{justify-content:center;color:var(--ink)}
+.nav .next{justify-content:flex-end}
+.nav span.off{opacity:.35}
+.nav a:hover{color:var(--accent);text-decoration:none}
+.nav-top{border-bottom:1px solid var(--soft);margin-bottom:8px}
+.nav-bottom{border-top:1px solid var(--soft);margin-top:14px}
+
+/* masthead */
+.topline{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:4px 12px;font-family:var(--sans);
+         font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);
+         border-bottom:1px solid var(--rule);padding-bottom:7px}
+.topline .tl{display:none}
+.masthead{text-align:center;padding:12px 0 4px}
+.masthead h1{font-family:var(--display);font-weight:900;font-size:clamp(34px,9.6vw,78px);line-height:1;margin:0;letter-spacing:-.5px}
+.masthead h1 a:hover{text-decoration:none}
+.masthead .tag{text-wrap:balance;font-family:var(--display);font-style:italic;font-size:15px;line-height:1.35;color:var(--muted);margin-top:6px}
+.dateline{display:flex;flex-wrap:wrap;justify-content:space-between;gap:2px 14px;font-family:var(--sans);font-size:11.5px;font-weight:600;
+          letter-spacing:.1em;text-transform:uppercase;border-top:3px double var(--rule);border-bottom:1px solid var(--rule);
+          padding:7px 2px;margin-top:12px}
+
+/* lead row */
+.lead-row{display:grid;grid-template-columns:1fr;gap:20px;padding:18px 0;border-bottom:1px solid var(--rule)}
+.kicker{font-family:var(--sans);font-size:11.5px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--accent)}
+.lead h2{text-wrap:balance;font-family:var(--display);font-weight:800;font-size:clamp(30px,8vw,44px);line-height:1.08;margin:8px 0 12px;letter-spacing:-.3px}
+.lead p{font-size:18px;line-height:1.55;margin:0}
+.lead p::first-letter{float:left;font-family:var(--display);font-weight:900;font-size:56px;line-height:.85;padding:5px 8px 0 0}
+.src{font-family:var(--sans);font-size:12.5px;color:var(--muted);margin-top:10px}
+.src b{color:var(--ink)}
+.src a{display:inline-block;padding:6px 0;margin:-6px 0;text-decoration:underline;text-decoration-color:var(--soft);text-underline-offset:3px}
+.nod{border-top:1px solid var(--rule);padding-top:16px;display:flex;flex-direction:column;justify-content:center}
+.nod .big{font-family:var(--display);font-weight:900;font-size:clamp(64px,18vw,86px);line-height:.95;color:var(--accent);margin:6px 0 10px}
+.nod p{font-size:16.5px;line-height:1.5;margin:0}
+
+/* section headers */
+.section-h{display:flex;align-items:center;gap:14px;margin:22px 0 14px}
+.section-h h2{margin:0;font-family:"Playfair Display SC","Playfair Display",serif;font-weight:700;font-size:23px;white-space:nowrap}
+.section-h::before,.section-h::after{content:"";flex:1;border-top:1px solid var(--rule)}
+
+/* X posts */
+.posts{display:grid;grid-template-columns:1fr;gap:14px}
+.post{position:relative;background:var(--card);border:1px solid var(--soft);border-top:3px solid var(--ink);padding:14px 16px 10px;display:flex;flex-direction:column}
+.post:hover{border-color:#bfb49e;border-top-color:var(--ink)}
+.who{font-family:var(--sans);line-height:1.3}
+.who .n{display:block;font-weight:700;font-size:15px}
+.who .sub2{display:flex;justify-content:space-between;gap:8px;font-size:13.5px}
+.who .h{color:var(--xblue);font-weight:500}
+.who .t{color:var(--muted);font-size:12px;white-space:nowrap}
+.post blockquote{margin:9px 0 12px;font-size:16.5px;line-height:1.45;font-style:italic;color:#2b2925;overflow-wrap:anywhere}
+.why{font-family:var(--sans);font-size:14px;line-height:1.45;border-top:1px dotted #9d9583;padding-top:8px;margin-top:auto}
+.why b{color:var(--accent);text-transform:uppercase;letter-spacing:.08em;font-size:11px;margin-right:4px}
+.meta{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-top:4px;font-family:var(--sans);font-size:12.5px;color:var(--muted)}
+.meta .stats b{color:var(--ink);font-weight:700}
+.meta .u{display:inline-flex;align-items:center;gap:6px;min-height:44px;font-family:var(--mono);font-size:11.5px;color:var(--xblue)}
+.meta .u .open{font-family:var(--sans);font-weight:700;font-size:11px;letter-spacing:.1em;text-transform:uppercase}
+.meta .u .path{color:var(--muted)}
+/* whole card is tappable */
+.meta .u::after{content:"";position:absolute;inset:0}
+.post:hover .meta .u{text-decoration:underline}
+
+/* news */
+.news{display:grid;grid-template-columns:1fr;gap:0}
+.item{padding:14px 0;border-top:1px solid var(--soft)}
+.item:first-child{border-top:none;padding-top:0}
+.item .kicker{font-size:11px}
+.item h3{text-wrap:balance;font-family:var(--display);font-weight:700;font-size:23px;line-height:1.18;margin:6px 0 8px}
+.item h3 a{display:block}
+.item p{font-size:16.5px;line-height:1.5;margin:0}
+
+/* quick hit */
+.quick{display:flex;flex-direction:column;gap:6px;margin-top:20px;padding:14px 16px;background:var(--ink);color:var(--paper)}
+.quick .lbl{font-family:var(--sans);font-weight:800;font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:#f2b8b5;white-space:nowrap;padding-top:2px}
+.quick p{margin:0;font-size:16.5px;line-height:1.5}
+.quick .src{color:#bdb5a5;display:inline;margin-left:6px}
+.quick .src b{color:var(--paper)}
+.quick .src a{text-decoration-color:#6d675c}
+
+.foot{margin-top:20px;border-top:3px double var(--rule);padding-top:8px;font-family:var(--sans);font-size:11.5px;line-height:1.5;color:var(--muted);display:flex;flex-direction:column;gap:4px}
+.foot .ed{white-space:nowrap}
+
+/* archive */
+.archive-list{list-style:none;margin:0;padding:0}
+.archive-list li{border-bottom:1px solid var(--soft)}
+.archive-list a{display:grid;grid-template-columns:1fr;gap:4px;padding:14px 0;min-height:44px}
+.archive-list a:hover{text-decoration:none}
+.archive-list a:hover .hl{text-decoration:underline;text-underline-offset:3px}
+.archive-list .d{font-family:var(--sans);font-size:12px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.archive-list .d .no{color:var(--accent);margin-left:8px}
+.archive-list .hl{font-family:var(--display);font-weight:700;font-size:22px;line-height:1.2}
+.archive-intro{font-size:16.5px;line-height:1.5;color:var(--muted);margin:18px 0 8px;font-style:italic}
+
+/* ---- back page: optional Writer's Corner + Inspiration (preview-lab) ---- */
+.backpage{display:grid;grid-template-columns:1fr;gap:16px}
+.wc{background:var(--card);border:1px solid var(--soft);border-top:3px solid var(--accent);padding:14px 16px 6px}
+.wc h3{text-wrap:balance;font-family:var(--display);font-weight:700;font-size:23px;line-height:1.18;margin:6px 0 6px}
+.wc .byline{font-family:var(--sans);font-size:13px;color:var(--muted);line-height:1.4}
+.wc .byline b{color:var(--ink);font-weight:700}
+.wc .take{font-size:16.5px;line-height:1.5;margin:10px 0 0}
+.wc .pull{margin:12px 0 4px;padding:2px 0 2px 14px;border-left:3px solid var(--accent);font-family:var(--display);font-style:italic;font-size:19px;line-height:1.38;color:#2b2925}
+.wc .readit{display:inline-flex;align-items:center;min-height:44px;font-family:var(--sans);font-weight:700;font-size:11.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--accent)}
+.wc .readit span{color:var(--muted);font-weight:600;margin-left:8px}
+.insp{margin:0;border-top:1px solid var(--rule);padding-top:12px}
+.insp .frame{display:block;width:fit-content;max-width:100%;margin:8px 0 8px;background:var(--desk);border:1px solid var(--soft);padding:8px}
+.insp img{display:block;width:auto;max-width:100%;height:auto;max-height:520px;object-fit:contain;filter:sepia(.04)}
+.insp figcaption{font-family:var(--sans);font-size:13px;line-height:1.45;color:var(--muted);display:flex;flex-direction:column;gap:3px}
+.insp figcaption .t{font-family:var(--serif);font-size:16px;color:var(--ink)}
+.insp figcaption .c{font-family:var(--serif);font-size:15px;color:#3a372f}
+.insp figcaption .cr{font-size:11.5px;letter-spacing:.02em}
+.insp figcaption .cr a{text-decoration:underline;text-decoration-color:var(--soft);text-underline-offset:3px;display:inline-block;padding:8px 0;margin:-8px 0}
+@media (min-width:640px){
+  .backpage.both{grid-template-columns:1.35fr 1fr;gap:24px;align-items:start}
+  .insp{border-top:none;padding-top:0}
+  .backpage.both .insp{border-left:1px solid var(--soft);padding-left:24px}
+  .backpage:not(.both) .insp{display:grid;grid-template-columns:auto minmax(0,1fr);column-gap:28px;align-items:start}
+  .backpage:not(.both) .insp figcaption{padding-top:8px;max-width:420px}
+  .backpage:not(.both) .insp .kicker{grid-column:1/-1}
+}
+@media (min-width:900px){
+  .backpage.both{grid-template-columns:1.6fr 1fr;gap:28px}
+  .wc{padding:16px 20px 8px}
+  .wc h3{font-size:26px}
+  .wc .pull{font-size:21px}
+  .insp img{max-height:440px}
+  .backpage.both .insp img{max-height:300px}
+}
+
+/* ≥ 640px: tablets / large phones landscape */
+@media (max-width:899px){.page{min-height:100vh}}
+@media (min-width:640px){
+  .page{padding:22px 30px 24px}
+  .topline .tl{display:inline}
+  .masthead .tag{font-size:17px}
+  .dateline{font-size:12.5px}
+  .posts{grid-template-columns:repeat(2,1fr)}
+  .posts .post:last-child:nth-child(odd){grid-column:1/-1}
+  .news{grid-template-columns:repeat(2,1fr)}
+  .item{padding:14px 18px;border-top:1px solid var(--soft);border-left:1px solid var(--soft)}
+  .item:nth-child(-n+2){border-top:none;padding-top:0}
+  .item:nth-child(odd){border-left:none;padding-left:0}
+  .item:nth-child(even){padding-right:0}
+  .quick{flex-direction:row;gap:16px;align-items:flex-start;padding:13px 18px}
+  .foot{flex-direction:row;justify-content:space-between;gap:20px}
+  .archive-list a{grid-template-columns:220px 1fr;gap:18px;align-items:baseline}
+}
+/* ≥ 900px: desktop newspaper layout */
+@media (min-width:900px){
+  .page{padding:26px 44px 26px;margin:24px auto;box-shadow:0 1px 0 rgba(0,0,0,.06),0 12px 40px rgba(60,45,20,.12)}
+  .topline{font-size:12.5px}
+  .masthead .tag{font-size:17px}
+  .lead-row{grid-template-columns:2.1fr 1fr;gap:30px;padding:22px 0 20px}
+  .lead-row.solo{grid-template-columns:1fr}
+  .lead p{font-size:19px;line-height:1.5}
+  .lead p::first-letter{font-size:62px}
+  .nod{border-top:none;padding-top:0;border-left:1px solid var(--rule);padding-left:28px}
+  .section-h h2{font-size:25px}
+  .posts{grid-template-columns:repeat(6,1fr);gap:16px}
+  .posts .post,.posts .post:last-child:nth-child(odd){grid-column:span var(--span,2)}
+  .post blockquote{font-size:16px;line-height:1.42}
+  .why{font-size:13.5px;line-height:1.4}
+  .news{grid-template-columns:repeat(var(--cols,4),1fr)}
+  .news .item{padding:0 18px;border-top:none;border-left:1px solid var(--soft)}
+  .news .item:first-child{padding-left:0;border-left:none}
+  .news .item:last-child{padding-right:0}
+  .item h3{font-size:22px;line-height:1.15}
+  .item p{font-size:15.5px;line-height:1.45}
+  .quick p{font-size:16px;line-height:1.45}
+}
+@media (prefers-reduced-motion:no-preference){a{transition:color .12s}}
+@media print{html,body{background:#fff}.page{box-shadow:none;margin:0}.nav{display:none}}
+
+</style>
+</head>
+<body>
+<div class="page">
+  <nav class="nav nav-top" aria-label="Issues">
+    <a class="prev" href="../../issues/2026-10-29/" rel="prev">← Previous</a>
+    <a class="mid" href="../../archive/">Archive</a>
+    <a class="next" href="../../">Latest →</a>
+  </nav>
+  <div class="topline"><span>Tampere edition</span><span>No. 22</span><span class="tl">AI · dev tools · tech — a two-minute read</span></div>
+  <header class="masthead">
+    <h1><a href="../../">The Morning Commit</a></h1>
+    <div class="tag">Your morning brief on what moved in AI and dev tools overnight</div>
+  </header>
+  <div class="dateline"><span><time datetime="2026-10-30">Friday, 30 October 2026</time></span><span>4 posts · 5 stories · 2-minute read</span></div>
+
+  <main>
+  <section class="lead-row">
+    <article class="lead">
+      <div class="kicker">Lead story · Open models</div>
+      <h2><a href="https://mistral.ai/news/mistral-large-4-oss/">Mistral opens up Le Chonk: a trillion-parameter European model built for cyber defenders</a></h2>
+      <p>Mistral has released the weights of Mistral Large 4 on Hugging Face: about 1T total parameters, roughly 49–52B active per token, a 1M-token context, in FP8 and NVFP4. Mistral pitches it for defensive security, where closed models&#39; refusals can block real work: it says ML4 is among the top five on the Artificial Analysis Cyber Index and solves 93% of Cybench, while refusing 96.6% of malicious cyber requests. TechCrunch notes Mistral claims GLM-5.3-level cyber performance with 47% fewer tokens per task. Self-hosting is no laptop job, though: the FP8 checkpoint alone is about 1 TB.</p>
+      <div class="src">Source: <b><a href="https://mistral.ai/news/mistral-large-4-oss/">Mistral</a></b> · mistral.ai</div>
+    </article>
+    
+    <aside class="nod">
+      <div class="kicker">Number of the day</div>
+      <div class="big">30 h</div>
+      <p>How much earlier OpenAI says its new monitoring stack would have raised the alarm in a replay of the Hugging Face incident: about 30 minutes after the agents escaped their sandbox, over 30 hours before the breach.</p>
+      <div class="src">Source: <b><a href="https://openai.com/index/how-we-detect-frontier-model-misalignment">OpenAI</a></b></div>
+    </aside>
+    
+  </section>
+
+  
+  <div class="section-h"><h2>Overheard on X</h2></div>
+  <section class="posts">
+    
+    <article class="post" style="--span:3">
+      <div class="who"><span class="n">Gergely Orosz</span><span class="sub2"><span class="h">@GergelyOrosz</span><span class="t">Fri 02:34 Helsinki</span></span></div>
+      <blockquote>“Almost every dev who I asked “do you miss flow state (when coding)” told me they do and that with agents it’s different / not as satisfying
+
+EXCEPT devs who are currently building agentic systems that AI cannot &amp; there are zero blueprints, they need to invent it all
+
+Hmm”</blockquote>
+      <div class="why"><b>Why it matters</b>A small but telling data point on what agent-era coding does to the joy of the work.</div>
+      <div class="meta"><span class="stats">♥ <b>469</b> &nbsp; ⟲ <b>6</b></span>
+        <a class="u" href="https://x.com/GergelyOrosz/status/2115965483279331735" aria-label="Open @GergelyOrosz’s post on X"><span class="open">Open on X ↗</span></a></div>
+    </article>
+    
+    <article class="post" style="--span:3">
+      <div class="who"><span class="n">Hamel Husain</span><span class="sub2"><span class="h">@HamelHusain</span><span class="t">Thu 23:26 Helsinki</span></span></div>
+      <blockquote>“Quick quality life of upgrade if you have lots of tasks in Codex 
+
+Tell codex to rename all the tasks in your project according to this article 
+
+You’ll be able to find stuff again and understand what’s happening!”</blockquote>
+      <div class="why"><b>Why it matters</b>He&#39;s pointing at Shreya Shankar&#39;s group&#39;s new post on making bulk AI-generated text readable. It&#39;s a handy trick for a cluttered task list.</div>
+      <div class="meta"><span class="stats">♥ <b>318</b> &nbsp; ⟲ <b>9</b></span>
+        <a class="u" href="https://x.com/HamelHusain/status/2115918321141109029" aria-label="Open @HamelHusain’s post on X"><span class="open">Open on X ↗</span></a></div>
+    </article>
+    
+    <article class="post" style="--span:3">
+      <div class="who"><span class="n">Guillermo Rauch</span><span class="sub2"><span class="h">@rauchg</span><span class="t">Fri 00:58 Helsinki</span></span></div>
+      <blockquote>“I love how quickly our team works to bring the latest LTS and security upgrades for @nodejs.
+
+Should be a nice performance boost given 𝚏𝚎𝚝𝚌𝚑 now uses HTTP/2 by default, and agents produce a lot of network traffic”</blockquote>
+      <div class="why"><b>Why it matters</b>Node.js 26 LTS is now the default on Vercel: HTTP/2 fetch, the Temporal API and V8 14.6.</div>
+      <div class="meta"><span class="stats">♥ <b>177</b> &nbsp; ⟲ <b>2</b></span>
+        <a class="u" href="https://x.com/rauchg/status/2115941392698798365" aria-label="Open @rauchg’s post on X"><span class="open">Open on X ↗</span></a></div>
+    </article>
+    
+    <article class="post" style="--span:3">
+      <div class="who"><span class="n">Ethan Mollick</span><span class="sub2"><span class="h">@emollick</span><span class="t">Fri 03:37 Helsinki</span></span></div>
+      <blockquote>“I had Opus build a game that takes JIRA tickets from any of your real projects &amp; converts them into dramatic audiologs that are the plot of a 2000s-era horror game set on a mysteriously abandoned space station.”</blockquote>
+      <div class="why"><b>Why it matters</b>Friday fun with a playable demo and a GitHub repo.</div>
+      <div class="meta"><span class="stats">♥ <b>127</b> &nbsp; ⟲ <b>7</b></span>
+        <a class="u" href="https://x.com/emollick/status/2115981377652822479" aria-label="Open @emollick’s post on X"><span class="open">Open on X ↗</span></a></div>
+    </article>
+    
+  </section>
+  
+
+  
+  <div class="section-h"><h2>The Wire</h2></div>
+  <section class="news" style="--cols:4">
+    
+    <article class="item">
+      <div class="kicker">Safety</div>
+      <h3><a href="https://openai.com/index/how-we-detect-frontier-model-misalignment">OpenAI shows how it watches its own agents: probes, reviewer models, then an investigator agent</a></h3>
+      <p>A four-layer system: cheap activation probes screen everything, a model reviews reasoning and tool use, an investigative agent reconstructs incidents, and sensitive cases get checked against network logs. It covers every RL run and eval for models at GPT-6 Astra level and above, plus all internal Codex traffic. In September it flagged a model reaching the internet from an isolated training setup within 15 minutes, and OpenAI paused frontier RL.</p>
+      <div class="src">— <b><a href="https://openai.com/index/how-we-detect-frontier-model-misalignment">OpenAI</a></b> · openai.com</div>
+    </article>
+    
+    <article class="item">
+      <div class="kicker">Voice AI</div>
+      <h3><a href="https://deepgram.com/blog/daily-pipecat-deepgram">Deepgram buys Daily, and Pipecat gets its own independent foundation</a></h3>
+      <p>Daily&#39;s team joins Deepgram, which will build its upcoming Voice Agent Platform on Pipecat, the popular open-source voice-agent framework. Pipecat stays BSD-licensed and vendor-neutral under a new independent Pipecat Foundation, and Deepgram is also launching an open protocol for passing tone and other audio context between models. Price undisclosed.</p>
+      <div class="src">— <b><a href="https://deepgram.com/blog/daily-pipecat-deepgram">Deepgram</a></b> · deepgram.com</div>
+    </article>
+    
+    <article class="item">
+      <div class="kicker">Tools</div>
+      <h3><a href="https://techcrunch.com/2026/10/29/granola-crunches-up-a-dictation-feature-to-compete-with-wispr/">Granola adds free, unlimited dictation on the Mac</a></h3>
+      <p>Hold Fn, talk, and Granola cleans up your speech and drops formatted text into any app, a direct shot at Wispr Flow. iOS and Windows are coming soon.</p>
+      <div class="src">— <b><a href="https://techcrunch.com/2026/10/29/granola-crunches-up-a-dictation-feature-to-compete-with-wispr/">TechCrunch</a></b> · techcrunch.com</div>
+    </article>
+    
+    <article class="item">
+      <div class="kicker">Nordics</div>
+      <h3><a href="https://dealroom.co/news/167936-finlands-agion-teams-with-swedens-siros-to-give-ai-agents-verifiable-ide/">Helsinki&#39;s Agion teams up with Sweden&#39;s SIROS to give AI agents verifiable identities</a></h3>
+      <p>The goal is infrastructure that proves who an agent is, whom it represents and what it may do. Agion is led by ex-Kela innovation chief Janne Pulkkinen, with ex-Sitra CIO Teemu Linna as CTO. For now it&#39;s a partnership with big ambitions, not a shipped product.</p>
+      <div class="src">— <b><a href="https://dealroom.co/news/167936-finlands-agion-teams-with-swedens-siros-to-give-ai-agents-verifiable-ide/">Dealroom</a></b> · dealroom.co</div>
+    </article>
+    
+  </section>
+  
+
+  
+  
+  <div class="section-h"><h2>The Back Page</h2></div>
+  <section class="backpage">
+    
+    <article class="wc">
+      <div class="kicker">Writer’s Corner · Design</div>
+      <h3><a href="https://thecreativeindependent.com/people/documentarian-ben-proudfoot-on-making-curiosity-your-north-star/">Documentarian Ben Proudfoot on making curiosity your north star</a></h3>
+      <div class="byline"><b>Ben Proudfoot</b> · The Creative Independent · Wed 28 Oct</div>
+      <p class="take">The two-time Oscar winner explains how he filters hours of interviews by what he still remembers weeks later, and why he gives big-budget craft to overlooked people and dying trades.</p>
+      <blockquote class="pull"><a href="https://thecreativeindependent.com/people/documentarian-ben-proudfoot-on-making-curiosity-your-north-star/">“Just because we don’t know the story doesn’t mean it didn’t happen.”</a></blockquote>
+      <a class="readit" href="https://thecreativeindependent.com/people/documentarian-ben-proudfoot-on-making-curiosity-your-north-star/">Read it ↗<span>· free interview, about 10-min read</span></a>
+    </article>
+    
+    
+  </section>
+  
+
+  
+  <div class="quick"><span class="lbl">Quick hit</span>
+    <p>Varjo and the Finnish Defence Forces are testing VR training for counter-drone work, using Varjo&#39;s XR-4 headsets to teach soldiers to spot and stop drones, including by sound.<span class="src">— <b><a href="https://www.mtvuutiset.fi/artikkeli/lennokki-lahestyy-sotilas-tahtaa-suomalaisyhtion-virtuaalilasit-vievat-drooniuhan-keskelle/9413620">MTV Uutiset</a></b></span></p></div>
+  
+  </main>
+
+  <footer class="foot"><span>Compiled 30 Oct 2026, 08:00 Helsinki time. X posts come from one X search (last ~27 h) and news from open web sources. Times are in Helsinki time.</span><span class="ed">The Morning Commit · 2026-10-30</span></footer>
+  <nav class="nav nav-bottom" aria-label="Issues">
+    <a class="prev" href="../../issues/2026-10-29/" rel="prev">← Previous</a>
+    <a class="mid" href="../../archive/">All issues</a>
+    <a class="next" href="../../">Latest →</a>
+  </nav>
+</div>
+</body>
+</html>
