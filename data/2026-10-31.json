@@ -1,0 +1,109 @@
+{
+ "paper_name": "The Morning Commit",
+ "tagline": "AI · dev tools · tech — a two-minute read",
+ "edition": "Tampere edition",
+ "issue_no": "No. 23",
+ "date_long": "Saturday, 31 October 2026",
+ "date_slug": "2026-10-31",
+ "lead": {
+  "kicker": "SECURITY",
+  "headline": "A fake Claude Code extension in Cursor's marketplace tried to plant an SSH backdoor",
+  "summary": "Versions 2.1.312 and 2.1.313 of Anthropic.claude-code, not built by Anthropic, sat in Cursor's extension marketplace on 29 Oct from about 2:27am to 1:35pm PT for Windows and macOS. The payload grabbed host details (hostname, user, git email, env var names, public IP), added an attacker SSH key labelled svc-telemetry and tried to open a reverse SSH tunnel with persistence; the SSH step mostly failed without admin rights. Cursor pulled it, rebuilt the marketplace and rotated keys. Microsoft says the bad builds never reached the VS Marketplace or npm. If you were exposed, uninstalling isn't enough: check ~/.ssh/authorized_keys, remove the persistence and rotate credentials.",
+  "source": "Cursor",
+  "url": "https://cursor.com/blog/claude-code-extension-security-notice"
+ },
+ "number_of_day": {
+  "value": "1.7M",
+  "label": "AI API calls in 13 hours on one stolen Bedrock key, after a wave of breaches hit nine AI developer platforms this month.",
+  "source": "Wiz",
+  "url": "https://www.wiz.io/blog/black-october-for-ai-developer-platforms"
+ },
+ "news": [
+  {
+   "tag": "SECURITY",
+   "headline": "Wiz calls it Black October: nine AI dev platforms breached in a month",
+   "summary": "Fireworks, Zeabur, Lightning AI, OpenCode, Railway, Warp, Northflank and others were hit, with attackers hunting stored env vars for AI keys to resell. Zeabur is shutting down, and Northflank tells users to assume every env var was decrypted.",
+   "source": "Wiz",
+   "url": "https://www.wiz.io/blog/black-october-for-ai-developer-platforms"
+  },
+  {
+   "tag": "MARKETS",
+   "headline": "Cracks in the AI spending boom: Alphabet has its worst day on record",
+   "summary": "Big Tech plans over $740B in capex. Alphabet fell 12% on Thursday after $9.1B of negative free cash flow in Q3, and on Friday the Nasdaq dropped 2.9% and Nvidia 4%.",
+   "source": "TechCrunch",
+   "url": "https://techcrunch.com/2026/10/30/cracks-are-emerging-in-the-ai-spending-boom/"
+  },
+  {
+   "tag": "SPACE",
+   "headline": "Google's first data-centre satellite is online and writing haiku",
+   "summary": "The Suncatcher prototype carries four TPUs (one runs at a time, about 20 minutes per go) on up to 1 kW. Gemma 4 on board wrote a poem while it tests radiation and heat; two more satellites are planned for 2027.",
+   "source": "TechCrunch",
+   "url": "https://techcrunch.com/2026/10/30/googles-first-data-center-satellite-is-online-and-writing-poetry/"
+  },
+  {
+   "tag": "FINLAND",
+   "headline": "Finland and the US sign a Technology Prosperity Deal",
+   "summary": "Valtonen and Rubio signed the memorandum in Washington on Thursday, covering AI exports, 5G/6G, quantum commercialisation, post-quantum cryptography and research security, alongside a critical minerals framework.",
+   "source": "Nextgov/FCW",
+   "url": "https://www.nextgov.com/emerging-tech/2026/10/us-signs-emerging-technology-deal-finland/416927/"
+  }
+ ],
+ "x_posts": [
+  {
+   "name": "Mitchell Hashimoto", "handle": "@mitchellh", "time": "Sat 00:28",
+   "text": "A quick demo of floating panes in Rex, some of their features, and how I use them in my daily workflow. I think our implementation of floating panes looks great and feels great and I think you'll love it! These are also all scriptable and API driven, too, of course!",
+   "why": "Terminal craft from the Ghostty author: scriptable floating panes.",
+   "likes": 1597, "reposts": 46,
+   "url": "https://x.com/mitchellh/status/2116296333506359646"
+  },
+  {
+   "name": "Ethan Mollick", "handle": "@emollick", "time": "Fri 23:35",
+   "text": "OpenAI kills a lot of its products\n\nSora lasted 6 months, Agent Builder 8 months, Group Chat 8 months, Atlas 9 months...\n\nMost of the time (Sora excepted?) their own product became obsolete within months, in case you think they are immune to misjudging the exponential themselves",
+   "why": "A reminder to build on capabilities, not on any one product surface.",
+   "likes": 375, "reposts": 16,
+   "url": "https://x.com/emollick/status/2116282885112205365"
+  },
+  {
+   "name": "Gergely Orosz", "handle": "@GergelyOrosz", "time": "Sat 01:21",
+   "text": "…When Railway was breached on 21 Oct, Northflank dunked on them and urged people to migrate over to them because of that breach.\n\n9 days they got hacked, the same way.\n\nZero sympathy: instead of securing you were busy dunking",
+   "why": "The human side of the Black October breach wave.",
+   "likes": 831, "reposts": 43,
+   "url": "https://x.com/GergelyOrosz/status/2116309617424920624"
+  },
+  {
+   "name": "Harrison Chase", "handle": "@hwchase17", "time": "Fri 23:20",
+   "text": "when people think of \"agent observability\" they may think of \"datadog for agents\"\n\nit's really more like \"databricks for agents\"\n\nwe've done some stuff in this direction but expect to see more soon",
+   "why": "Agent traces as a data problem, not just monitoring.",
+   "likes": 143, "reposts": 14,
+   "url": "https://x.com/hwchase17/status/2116279214731395453"
+  },
+  {
+   "name": "Amjad Masad", "handle": "@amasad", "time": "Sat 03:38",
+   "text": "If you host your apps on Replit and enable “autofix” it becomes Self-Maintaining Software.",
+   "why": "The pitch for agents that keep shipped code alive.",
+   "likes": 181, "reposts": 10,
+   "url": "https://x.com/amasad/status/2116343923925041462"
+  }
+ ],
+ "quick_hit": {
+  "label": "SUNSET",
+  "text": "Ollie, a privacy-focused AI assistant, is shutting down on 6 November.",
+  "source": "TechCrunch",
+  "url": "https://techcrunch.com/2026/10/30/ollie-a-privacy-focused-ai-assistant-is-shutting-down/"
+ },
+ "inspiration": {
+  "title": "Teapot",
+  "creator": "Christopher Dresser",
+  "year": "ca. 1879",
+  "caption": "Decades before the Bauhaus, a silver-plated dome on stubby legs with a straight spout and an ebony bar handle: pure function, almost no ornament.",
+  "image_url": "https://images.metmuseum.org/CRDImages/es/web-large/DP-18258-025.jpg",
+  "width": 600,
+  "height": 600,
+  "image_alt": "Polished silver-plated teapot with a hemispherical body on short cylindrical legs, a straight angled spout, a small ball finial and a long angled ebony handle on a silver strut, against a grey backdrop",
+  "credit": "The Metropolitan Museum of Art",
+  "licence": "Public domain (CC0)",
+  "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "source_url": "https://www.metmuseum.org/art/collection/search/823191"
+ },
+ "footer": "Compiled 31 Oct 2026, 07:50 Helsinki time. X posts come from one X search (last ~27 h) and news from open web sources. Times are in Helsinki time."
+}
