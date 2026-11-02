@@ -1,0 +1,107 @@
+{
+ "paper_name": "The Morning Commit",
+ "tagline": "AI · dev tools · tech — a two-minute read",
+ "edition": "Tampere edition",
+ "issue_no": "No. 25",
+ "date_long": "Monday, 2 November 2026",
+ "date_slug": "2026-11-02",
+ "lead": {
+  "kicker": "CODEX",
+  "headline": "From December, your ChatGPT chats and Codex runs come out of the same pot",
+  "summary": "A new OpenAI help page says Plus, Pro and Business plans will share one usage allowance across ChatGPT and Codex starting in December, as the agentic Work features fold into the main ChatGPT app. Usage will be counted in tokens, so bigger models and harder tasks burn more of it; only Instant chat stays free of the meter. Combined usage and reset times will sit in Settings → Usage, and at the limit you wait, upgrade or buy credits. The page appeared on 31 October and OpenAI hasn't given an exact date yet. If you lean on Codex, heavy chatting will now eat into your coding budget.",
+  "source": "OpenAI Help Center",
+  "url": "https://help.openai.com/en/articles/20001625-understanding-chatgpt-and-codex-usage-limits"
+ },
+ "number_of_day": {
+  "value": "$3.6B",
+  "label": "net outflow from Binance in its first nine and a half hours of reopened withdrawals on Sunday, after a $6.3B hack it blames on North Korea.",
+  "source": "TechCrunch",
+  "url": "https://techcrunch.com/2026/11/01/binance-resumes-withdrawals-following-6-3-billion-breach/"
+ },
+ "news": [
+  {
+   "tag": "AGENTS",
+   "headline": "DeepSeek open-sources a research prototype of an always-on coding agent for one GitHub repo",
+   "summary": "dsh-superagent (MIT) listens to GitHub, opens a work item when an allowed person asks, runs it in its own session and directory, and answers in the same thread, often with a PR. Its rule: take as little human attention as possible. Not production-ready, and it runs with full access as your OS user.",
+   "source": "On The Wire",
+   "url": "https://onthewire.ai/article/deepseek-publishes-a-research-prototype-of-a-proactive-coding-agent-for-one-gith"
+  },
+  {
+   "tag": "COMMERCE",
+   "headline": "Banks and retailers are shutting the door on personal AI agents like Meta's Muse",
+   "summary": "JPMorgan, Schwab, Amazon, Kohl's and Neiman Marcus block outside agents, while Walmart just opened up to them. An audit of 51 big US retailers found 37 block shopping agents mostly by accident, through old anti-scraper rules, and none offers a way for a verified agent to finish a purchase.",
+   "source": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/01/jpmorgan-amazon-ai-agents-meta-muse.html"
+  },
+  {
+   "tag": "POLICY",
+   "headline": "OpenAI plans a post-midterms PR push, and might rename data centres \"AI compute campuses\"",
+   "summary": "Chief global affairs officer Chris Lehane told Axios the midterms are a trailer for 2028, when he expects AI to be the issue. Ideas on the list: AI \"speed limits\", a US role in global standards, and a friendlier name for the buildings communities keep fighting.",
+   "source": "TechCrunch",
+   "url": "https://techcrunch.com/2026/11/01/openai-might-rebrand-its-data-centers-as-ai-compute-campuses/"
+  },
+  {
+   "tag": "FINLAND",
+   "headline": "Lifeline's Timo Ahopelto: Finland could produce a €100B startup within five years",
+   "summary": "On Kauppalehti's Markkinaraati, Ahopelto called a Finnish hectocorn entirely possible, citing Oura as proof that growth is hard to predict. Startup community CEO Riikka Pakarinen bets on deep tech like space and quantum; Verda, a unicorn since its $189M round in September, came up as a candidate.",
+   "source": "Iltalehti",
+   "url": "https://www.iltalehti.fi/talous/a/28da29d0-143a-4385-a99d-49420a4b90fb"
+  }
+ ],
+ "x_posts": [
+  {
+   "name": "Andrej Karpathy", "handle": "@karpathy", "time": "Sun 20:14",
+   "text": "Weekend hack: HackerTube. I was annoyed with YouTube's recommendations so I had Claude filter down 43M comments over 20 years of HN to 6,454 videos that keep being recommended. *Significantly* better viewing experience, ~2 hours with Opus 5.5",
+   "why": "A two-hour weekend build that swaps an algorithm for 20 years of HN taste.",
+   "likes": 35872, "reposts": 3170,
+   "url": "https://x.com/karpathy/status/2116957135661945283"
+  },
+  {
+   "name": "@levelsio", "handle": "@levelsio", "time": "Sun 20:23",
+   "text": "My vlog today was fully edited by Claude Code with Opus 5.5!\n\nI copied the video clips from my DJI to a folder, then opened Claude Code in it and asked it to edit it into a 10 minute vlog\n\nI made a few adjustments but not a lot\n\nIt transcribed everything I said with mlx-whisper",
+   "why": "A coding agent as a video editor: 58 minutes of clips cut to about 10.",
+   "likes": 1485, "reposts": 54,
+   "url": "https://x.com/levelsio/status/2116959423117857026"
+  },
+  {
+   "name": "Amjad Masad", "handle": "@amasad", "time": "Sun 23:48",
+   "text": "If you're enjoying a subsidized AI subscription get ready to get rug pulled.",
+   "why": "Replit's CEO on flat-rate AI plans, the same week OpenAI pools its limits.",
+   "likes": 2184, "reposts": 86,
+   "url": "https://x.com/amasad/status/2117010858845089805"
+  },
+  {
+   "name": "Ethan Mollick", "handle": "@emollick", "time": "Sun 22:16",
+   "text": "GPT-4 could do 4 minutes of independent work with a 50% chance of success.\n\nCurrent models can do multiple weeks of work, and January 2026 is a reasonable cut-off for the moment agentic work started.\n\nLarge productivity impacts before that would mostly be confined to coding.",
+   "why": "A handy date for when agents stopped being a coding-only story.",
+   "likes": 550, "reposts": 20,
+   "url": "https://x.com/emollick/status/2116987671939875319"
+  },
+  {
+   "name": "Gergely Orosz", "handle": "@GergelyOrosz", "time": "Mon 06:01",
+   "text": "From the outside, few people have understood the type of internal tooling Uber has.\n\nThere's a tool called CAPRI that can capture production traffic, then replay it on-demand.\n\nBuilding this system took years!! (evolved from other internal systems called Deputy + Cerberus)",
+   "why": "Production traffic replay, the kind of internal tool most teams never get to build.",
+   "likes": 99, "reposts": 6,
+   "url": "https://x.com/GergelyOrosz/status/2117104781558980791"
+  }
+ ],
+ "writers_corner": {
+  "category": "History",
+  "writer": "Bret Devereaux",
+  "publication": "A Collection of Unmitigated Pedantry",
+  "date": "Fri 30 Oct",
+  "title": "Teaching Paradox: Hearts of Iron IV, Part IVb: Iron Ends",
+  "take": "Devereaux closes his series arguing that HoI4's streamlining, scoring war by army size and map painting, quietly adopts the Axis view of what mattered, and that simulations persuade.",
+  "quote": "Hearts of Iron IV shows World War II as modern neo-Nazis like to pretend it was",
+  "url": "https://acoup.blog/2026/10/30/teaching-paradox-hearts-of-iron-iv-part-ivb-iron-ends/",
+  "read_note": "long read, final part of a series",
+  "feed_url": "https://acoup.blog/feed/"
+ },
+ "quick_hit": {
+  "label": "GOVTECH",
+  "text": "Abu Dhabi and OpenAI launched a \"Machine-Readable Government\" initiative that turns a set of rules into machine-readable form so AI can help officials check permit compliance, with humans signing off.",
+  "source": "Abu Dhabi Media Office",
+  "url": "https://www.mediaoffice.abudhabi/en/crown-prince-news/khaled-bin-mohamed-bin-zayed-meets-sam-altman-and-witnesses-signing-of-agreements-with-openai/"
+ },
+ "footer": "Compiled 2 Nov 2026, 08:00 Helsinki time. X posts come from one X search (last ~25 h) and news from open web sources. Times are in Helsinki time."
+}
