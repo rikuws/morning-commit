@@ -50,38 +50,53 @@
  ],
  "x_posts": [
   {
-   "name": "Andrej Karpathy", "handle": "@karpathy", "time": "Sun 20:14",
+   "name": "Andrej Karpathy",
+   "handle": "@karpathy",
+   "time": "Sun 20:14",
    "text": "Weekend hack: HackerTube. I was annoyed with YouTube's recommendations so I had Claude filter down 43M comments over 20 years of HN to 6,454 videos that keep being recommended. *Significantly* better viewing experience, ~2 hours with Opus 5.5",
    "why": "A two-hour weekend build that swaps an algorithm for 20 years of HN taste.",
-   "likes": 35872, "reposts": 3170,
+   "likes": 35872,
+   "reposts": 3170,
    "url": "https://x.com/karpathy/status/2116957135661945283"
   },
   {
-   "name": "@levelsio", "handle": "@levelsio", "time": "Sun 20:23",
+   "name": "@levelsio",
+   "handle": "@levelsio",
+   "time": "Sun 20:23",
    "text": "My vlog today was fully edited by Claude Code with Opus 5.5!\n\nI copied the video clips from my DJI to a folder, then opened Claude Code in it and asked it to edit it into a 10 minute vlog\n\nI made a few adjustments but not a lot\n\nIt transcribed everything I said with mlx-whisper",
-   "why": "A coding agent as a video editor: 58 minutes of clips cut to about 10.",
-   "likes": 1485, "reposts": 54,
+   "why": "Unprompted, Claude built its own pipeline: contact sheets, voice matching and a JSON cut list.",
+   "likes": 1485,
+   "reposts": 54,
    "url": "https://x.com/levelsio/status/2116959423117857026"
   },
   {
-   "name": "Amjad Masad", "handle": "@amasad", "time": "Sun 23:48",
+   "name": "Amjad Masad",
+   "handle": "@amasad",
+   "time": "Sun 23:48",
    "text": "If you're enjoying a subsidized AI subscription get ready to get rug pulled.",
    "why": "Replit's CEO on flat-rate AI plans, the same week OpenAI pools its limits.",
-   "likes": 2184, "reposts": 86,
+   "likes": 2184,
+   "reposts": 86,
    "url": "https://x.com/amasad/status/2117010858845089805"
   },
   {
-   "name": "Ethan Mollick", "handle": "@emollick", "time": "Sun 22:16",
+   "name": "Ethan Mollick",
+   "handle": "@emollick",
+   "time": "Sun 22:16",
    "text": "GPT-4 could do 4 minutes of independent work with a 50% chance of success.\n\nCurrent models can do multiple weeks of work, and January 2026 is a reasonable cut-off for the moment agentic work started.\n\nLarge productivity impacts before that would mostly be confined to coding.",
    "why": "A handy date for when agents stopped being a coding-only story.",
-   "likes": 550, "reposts": 20,
+   "likes": 550,
+   "reposts": 20,
    "url": "https://x.com/emollick/status/2116987671939875319"
   },
   {
-   "name": "Gergely Orosz", "handle": "@GergelyOrosz", "time": "Mon 06:01",
+   "name": "Gergely Orosz",
+   "handle": "@GergelyOrosz",
+   "time": "Mon 06:01",
    "text": "From the outside, few people have understood the type of internal tooling Uber has.\n\nThere's a tool called CAPRI that can capture production traffic, then replay it on-demand.\n\nBuilding this system took years!! (evolved from other internal systems called Deputy + Cerberus)",
    "why": "Production traffic replay, the kind of internal tool most teams never get to build.",
-   "likes": 99, "reposts": 6,
+   "likes": 99,
+   "reposts": 6,
    "url": "https://x.com/GergelyOrosz/status/2117104781558980791"
   }
  ],
