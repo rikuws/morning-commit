@@ -14,7 +14,7 @@
  },
  "number_of_day": {
   "value": "12%",
-  "label": "top score on SemiAnalysis's new GDPx benchmark (206 expert tasks, up to 8 hours each), held by Claude Opus 5.5; Gemini 4 Carbon got 10.9% at about a third of the cost per task.",
+  "label": "top score on SemiAnalysis's new GDPx agentic benchmark (206 expert tasks across 11 domains, up to 8 hours each), held by Claude Opus 5.5 ahead of Gemini 4 Carbon (10.9%) and GPT-6 Astra (9.6%).",
   "source": "SemiAnalysis GDPx",
   "url": "https://gdpx.semianalysis.com/"
  },
@@ -29,14 +29,14 @@
   {
    "tag": "FUNDING",
    "headline": "Trajectory raises $45M so domain experts can keep retraining open models without an ML team",
-   "summary": "The 18-person Stanford spin-out (Sequoia-led Series A, $300M valuation) does continual learning: connect your app, collect feedback, and it post-trains an open-source model on it. Harvey and Rogo already use it, and the platform is now public.",
+   "summary": "The 18-person startup (Sequoia-led Series A at a $300M valuation, with Nvidia, Bessemer and Bain Capital Ventures) does continual learning: it post-trains open models on feedback from your app. Harvey, Rogo, Decagon and Mercor are customers, and the platform is now public.",
    "source": "TechCrunch",
    "url": "https://techcrunch.com/2026/11/02/trajectory-raises-45m-to-make-ai-model-training-accessible-to-nontechnical-experts/"
   },
   {
    "tag": "PRICING",
-   "headline": "Grok Bot users wake up to maxed-out weekly limits, and Musk says it's on purpose",
-   "summary": "Over the weekend some users saw usage jump from 50% to 100% overnight. Musk replied on X that serving costs were unsustainably high relative to revenue. One more sign this week that flat-rate agent plans are being repriced.",
+   "headline": "Grok Bot weekly limits tightened over Halloween weekend, and Musk says it's on purpose",
+   "summary": "Weekly usage limits were throttled over the Halloween weekend. Musk said the cost of serving Grok Bot was unsustainably high relative to revenue. One more sign that flat-rate agent plans are being repriced.",
    "source": "TechCrunch",
    "url": "https://techcrunch.com/2026/11/02/elon-musk-throttles-grok-bot-limits-due-to-unsustainably-high-costs/"
   },
