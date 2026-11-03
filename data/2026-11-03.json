@@ -1,0 +1,124 @@
+{
+ "paper_name": "The Morning Commit",
+ "tagline": "AI · dev tools · tech — a two-minute read",
+ "edition": "Tampere edition",
+ "issue_no": "No. 26",
+ "date_long": "Tuesday, 3 November 2026",
+ "date_slug": "2026-11-03",
+ "lead": {
+  "kicker": "ANTHROPIC",
+  "headline": "Anthropic's IPO filing says it may soon hit its own threshold for self-improving AI",
+  "summary": "Buried in Monday's revised S-1A, next to the soaring revenue and expenses, Anthropic added new risk factors: it has already used AI to build models whose leaps in capability it didn't recognise at the time, and it may soon meet its internal definition of recursive self-improvement. No current model is designated as past that line, it says, and it doesn't expect Claude to safely design its own successors without meaningful human oversight. It's now weighing Responsible Scaling Policy changes to keep humans in control of frontier model development.",
+  "source": "TechCrunch",
+  "url": "https://techcrunch.com/2026/11/02/anthropic-warns-that-its-very-close-to-rsi-capability-aka-self-building-ai/"
+ },
+ "number_of_day": {
+  "value": "12%",
+  "label": "top score on SemiAnalysis's new GDPx benchmark (206 expert tasks, up to 8 hours each), held by Claude Opus 5.5; Gemini 4 Carbon got 10.9% at about a third of the cost per task.",
+  "source": "SemiAnalysis GDPx",
+  "url": "https://gdpx.semianalysis.com/"
+ },
+ "news": [
+  {
+   "tag": "CHIPS",
+   "headline": "Marvell agrees to buy Lumentum for $115B to own the lasers inside AI data centres",
+   "summary": "An all-stock deal: 4.5 Marvell shares per Lumentum share, about a 24% premium, leaving Marvell holders with 67%. Lumentum makes optics that move data between AI chips as light instead of over copper. Closing is expected in the first half of 2028.",
+   "source": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/02/marvell-lumentum-ai-deal.html"
+  },
+  {
+   "tag": "FUNDING",
+   "headline": "Trajectory raises $45M so domain experts can keep retraining open models without an ML team",
+   "summary": "The 18-person Stanford spin-out (Sequoia-led Series A, $300M valuation) does continual learning: connect your app, collect feedback, and it post-trains an open-source model on it. Harvey and Rogo already use it, and the platform is now public.",
+   "source": "TechCrunch",
+   "url": "https://techcrunch.com/2026/11/02/trajectory-raises-45m-to-make-ai-model-training-accessible-to-nontechnical-experts/"
+  },
+  {
+   "tag": "PRICING",
+   "headline": "Grok Bot users wake up to maxed-out weekly limits, and Musk says it's on purpose",
+   "summary": "Over the weekend some users saw usage jump from 50% to 100% overnight. Musk replied on X that serving costs were unsustainably high relative to revenue. One more sign this week that flat-rate agent plans are being repriced.",
+   "source": "TechCrunch",
+   "url": "https://techcrunch.com/2026/11/02/elon-musk-throttles-grok-bot-limits-due-to-unsustainably-high-costs/"
+  },
+  {
+   "tag": "FINLAND",
+   "headline": "Finland's national risk assessment: relying on a few foreign AI vendors could expose us to pressure",
+   "summary": "The interior ministry's updated assessment (24 risks, roughly a five-year view) flags AI both as a cyberattack accelerator and as a dependency risk, since key models and clouds come from a handful of foreign firms. Data centres are named as possible terror targets.",
+   "source": "AI Uutiset",
+   "url": "https://aiuutiset.fi/sisaministerio-tekoalyriippuvuus-painostus/"
+  }
+ ],
+ "x_posts": [
+  {
+   "name": "@levelsio",
+   "handle": "@levelsio",
+   "time": "Mon 23:55",
+   "text": "I decompiled probably my favorite game ever: Battlefield 1942 and I put it on the web with multiplayer for you to play here [...] In case of Battlefield 1942 there was literally absolutely nothing to work on top of",
+   "why": "Claude Code turned 57,000 x86 functions into 100k lines of C, then WASM, WebGL and a WebSocket netcode.",
+   "likes": 1053,
+   "reposts": 52,
+   "url": "https://x.com/levelsio/status/2117374984192512391"
+  },
+  {
+   "name": "Anthropic",
+   "handle": "@AnthropicAI",
+   "time": "Mon 21:51",
+   "text": "Applications are now open for the Anthropic Residency, a paid, fixed-term research program for academics, technical founders, and staff-level engineers who want to make AI safe and beneficial for everyone. No ML background is required.\n\nApply by November 22",
+   "why": "A paid way into safety research for senior engineers, no ML background needed. Deadline 22 Nov.",
+   "likes": 19681,
+   "reposts": 1306,
+   "url": "https://x.com/AnthropicAI/status/2117343929960112486"
+  },
+  {
+   "name": "Ethan Mollick",
+   "handle": "@emollick",
+   "time": "Tue 04:33",
+   "text": "This is a fantastic idea - a mass attempted replication of old findings of LLMs with new models. Much conventional wisdom is outdated.\n\nRecent models no longer invent citations and both hallucination rates & stereotyping has dropped. But they are still sycophantic & lean left.",
+   "why": "Worth checking which of your old LLM rules of thumb still hold.",
+   "likes": 635,
+   "reposts": 48,
+   "url": "https://x.com/emollick/status/2117445039211086096"
+  },
+  {
+   "name": "Guillermo Rauch",
+   "handle": "@rauchg",
+   "time": "Mon 21:28",
+   "text": "Stateless sandboxes are the wrong benchmark. Agents are only useful if they have their workspace with them (identity, skills, repos, memories…)",
+   "why": "Vercel's CEO on why agent sandboxes need persistent state, as Sandboxes with Drives start 2.4x faster.",
+   "likes": 229,
+   "reposts": 6,
+   "url": "https://x.com/rauchg/status/2117338179535810957"
+  },
+  {
+   "name": "OpenAI",
+   "handle": "@OpenAI",
+   "time": "Tue 04:29",
+   "text": "We're also raising bug bounty rewards, including more than quadrupling rewards for critical findings. Exceptional findings will be eligible for up to $172,000, including bonuses.",
+   "why": "Alongside an AI-assisted security sprint with Cathedral Systems: defenders using models before attackers do.",
+   "likes": 1869,
+   "reposts": 180,
+   "url": "https://x.com/OpenAI/status/2117444048227123277"
+  }
+ ],
+ "inspiration": {
+  "title": "Prisoners on a Projecting Platform (Imaginary Prisons, Plate 10)",
+  "creator": "Giovanni Battista Piranesi",
+  "year": "1749–50",
+  "caption": "A stage designer's impossible architecture: stairs and arches that don't add up, drawn to feel vast rather than to be built.",
+  "image_url": "https://openaccess-cdn.clevelandart.org/1941.26.8/1941.26.8_web.jpg",
+  "width": 900,
+  "height": 701,
+  "image_alt": "Dark etching of a vast vaulted prison interior with arches, staircases and small figures on a projecting platform",
+  "credit": "The Cleveland Museum of Art",
+  "licence": "CC0",
+  "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "source_url": "https://clevelandart.org/art/1941.26.8"
+ },
+ "quick_hit": {
+  "label": "WATERMARKS",
+  "text": "Anthropic extends invisible text watermarks to its older Claude models from 3 November, and OpenAI and Grok models are adding them too, driven by the EU AI Act.",
+  "source": "Tivi",
+  "url": "https://www.tivi.fi/uutiset/a/e720f550-72d8-4e23-8ca3-2d8ca9ad10b7"
+ },
+ "footer": "Compiled 3 Nov 2026, 08:00 Helsinki time. X posts come from two X searches (last ~25 h) and news from open web sources. Times are in Helsinki time."
+}
