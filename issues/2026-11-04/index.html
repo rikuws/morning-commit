@@ -1,0 +1,371 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="light">
+<meta name="theme-color" content="#f6f1e7">
+<title>The Morning Commit · Wednesday, 4 November 2026</title>
+<meta name="description" content="Wednesday, 4 November 2026: Anthropic&#39;s FlashProve wants to prove which model actually wrote your answer. Anthropic researchers published FlashProve, an open-source system for &#34;provable inference&#34;: a cryptographic proof that a given output came from a specific model. Labs would…">
+<link rel="canonical" href="https://rikuws.github.io/morning-commit/issues/2026-11-04/">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="The Morning Commit">
+<meta property="og:title" content="The Morning Commit — Anthropic&#39;s FlashProve wants to prove which model actually wrote your answer">
+<meta property="og:description" content="Wednesday, 4 November 2026: Anthropic&#39;s FlashProve wants to prove which model actually wrote your answer. Anthropic researchers published FlashProve, an open-source system for &#34;provable inference&#34;: a cryptographic proof that a given output came from a specific model. Labs would…">
+<meta property="og:url" content="https://rikuws.github.io/morning-commit/issues/2026-11-04/">
+<meta property="og:image" content="https://rikuws.github.io/morning-commit/issues/2026-11-04/card.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="The Morning Commit — Anthropic&#39;s FlashProve wants to prove which model actually wrote your answer">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://rikuws.github.io/morning-commit/issues/2026-11-04/card.png">
+
+<meta name="twitter:title" content="The Morning Commit — Anthropic&#39;s FlashProve wants to prove which model actually wrote your answer">
+<meta name="twitter:description" content="Wednesday, 4 November 2026: Anthropic&#39;s FlashProve wants to prove which model actually wrote your answer. Anthropic researchers published FlashProve, an open-source system for &#34;provable inference&#34;: a cryptographic proof that a given output came from a specific model. Labs would…">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='10' fill='%23f6f1e7'/%3E%3Ctext x='32' y='48' font-family='Georgia,serif' font-weight='900' font-size='44' text-anchor='middle' fill='%231b1a17'%3EM%3C/text%3E%3Crect x='14' y='54' width='36' height='3' fill='%23b3261e'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=Inter:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,700;0,800;0,900;1,400&family=Playfair+Display+SC:wght@700&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap">
+<style>
+:root{
+  --paper:#f6f1e7; --ink:#1b1a17; --muted:#5f5a50; --rule:#1b1a17; --soft:#d8cfbd;
+  --accent:#b3261e; --xblue:#1d4e89; --card:#fffdf8; --desk:#e9e3d6;
+  --serif:"Source Serif 4","Source Serif Pro","Noto Serif",Georgia,serif;
+  --display:"Playfair Display","Playfair Display SC",Georgia,serif;
+  --sans:Inter,"Noto Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --mono:"IBM Plex Mono","JetBrains Mono",ui-monospace,monospace;
+  color-scheme:light;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
+html,body{margin:0;background:var(--desk)}
+body{font-family:var(--serif);color:var(--ink);-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+a{color:inherit;text-decoration:none;-webkit-tap-highlight-color:rgba(179,38,30,.15)}
+a:hover{text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:3px}
+a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+
+.page{max-width:1100px;margin:0 auto;background:var(--paper);padding:14px 18px 22px;
+      background-image:radial-gradient(rgba(0,0,0,.025) 1px,transparent 1px);background-size:4px 4px}
+
+/* issue nav */
+.nav{display:flex;justify-content:space-between;align-items:stretch;gap:6px;font-family:var(--sans);
+     font-size:12px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.nav a,.nav span{display:flex;align-items:center;min-height:44px;padding:0 2px}
+.nav .mid{justify-content:center;color:var(--ink)}
+.nav .next{justify-content:flex-end}
+.nav span.off{opacity:.35}
+.nav a:hover{color:var(--accent);text-decoration:none}
+.nav-top{border-bottom:1px solid var(--soft);margin-bottom:8px}
+.nav-bottom{border-top:1px solid var(--soft);margin-top:14px}
+
+/* masthead */
+.topline{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:4px 12px;font-family:var(--sans);
+         font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);
+         border-bottom:1px solid var(--rule);padding-bottom:7px}
+.topline .tl{display:none}
+.masthead{text-align:center;padding:12px 0 4px}
+.masthead h1{font-family:var(--display);font-weight:900;font-size:clamp(34px,9.6vw,78px);line-height:1;margin:0;letter-spacing:-.5px}
+.masthead h1 a:hover{text-decoration:none}
+.masthead .tag{text-wrap:balance;font-family:var(--display);font-style:italic;font-size:15px;line-height:1.35;color:var(--muted);margin-top:6px}
+.dateline{display:flex;flex-wrap:wrap;justify-content:space-between;gap:2px 14px;font-family:var(--sans);font-size:11.5px;font-weight:600;
+          letter-spacing:.1em;text-transform:uppercase;border-top:3px double var(--rule);border-bottom:1px solid var(--rule);
+          padding:7px 2px;margin-top:12px}
+
+/* lead row */
+.lead-row{display:grid;grid-template-columns:1fr;gap:20px;padding:18px 0;border-bottom:1px solid var(--rule)}
+.kicker{font-family:var(--sans);font-size:11.5px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--accent)}
+.lead h2{text-wrap:balance;font-family:var(--display);font-weight:800;font-size:clamp(30px,8vw,44px);line-height:1.08;margin:8px 0 12px;letter-spacing:-.3px}
+.lead p{font-size:18px;line-height:1.55;margin:0}
+.lead p::first-letter{float:left;font-family:var(--display);font-weight:900;font-size:56px;line-height:.85;padding:5px 8px 0 0}
+.src{font-family:var(--sans);font-size:12.5px;color:var(--muted);margin-top:10px}
+.src b{color:var(--ink)}
+.src a{display:inline-block;padding:6px 0;margin:-6px 0;text-decoration:underline;text-decoration-color:var(--soft);text-underline-offset:3px}
+.nod{border-top:1px solid var(--rule);padding-top:16px;display:flex;flex-direction:column;justify-content:center}
+.nod .big{font-family:var(--display);font-weight:900;font-size:clamp(64px,18vw,86px);line-height:.95;color:var(--accent);margin:6px 0 10px}
+.nod p{font-size:16.5px;line-height:1.5;margin:0}
+
+/* section headers */
+.section-h{display:flex;align-items:center;gap:14px;margin:22px 0 14px}
+.section-h h2{margin:0;font-family:"Playfair Display SC","Playfair Display",serif;font-weight:700;font-size:23px;white-space:nowrap}
+.section-h::before,.section-h::after{content:"";flex:1;border-top:1px solid var(--rule)}
+
+/* X posts */
+.posts{display:grid;grid-template-columns:1fr;gap:14px}
+.post{position:relative;background:var(--card);border:1px solid var(--soft);border-top:3px solid var(--ink);padding:14px 16px 10px;display:flex;flex-direction:column}
+.post:hover{border-color:#bfb49e;border-top-color:var(--ink)}
+.who{font-family:var(--sans);line-height:1.3}
+.who .n{display:block;font-weight:700;font-size:15px}
+.who .sub2{display:flex;justify-content:space-between;gap:8px;font-size:13.5px}
+.who .h{color:var(--xblue);font-weight:500}
+.who .t{color:var(--muted);font-size:12px;white-space:nowrap}
+.post blockquote{margin:9px 0 12px;font-size:16.5px;line-height:1.45;font-style:italic;color:#2b2925;overflow-wrap:anywhere}
+.why{font-family:var(--sans);font-size:14px;line-height:1.45;border-top:1px dotted #9d9583;padding-top:8px;margin-top:auto}
+.why b{color:var(--accent);text-transform:uppercase;letter-spacing:.08em;font-size:11px;margin-right:4px}
+.meta{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-top:4px;font-family:var(--sans);font-size:12.5px;color:var(--muted)}
+.meta .stats b{color:var(--ink);font-weight:700}
+.meta .u{display:inline-flex;align-items:center;gap:6px;min-height:44px;font-family:var(--mono);font-size:11.5px;color:var(--xblue)}
+.meta .u .open{font-family:var(--sans);font-weight:700;font-size:11px;letter-spacing:.1em;text-transform:uppercase}
+.meta .u .path{color:var(--muted)}
+/* whole card is tappable */
+.meta .u::after{content:"";position:absolute;inset:0}
+.post:hover .meta .u{text-decoration:underline}
+
+/* news */
+.news{display:grid;grid-template-columns:1fr;gap:0}
+.item{padding:14px 0;border-top:1px solid var(--soft)}
+.item:first-child{border-top:none;padding-top:0}
+.item .kicker{font-size:11px}
+.item h3{text-wrap:balance;font-family:var(--display);font-weight:700;font-size:23px;line-height:1.18;margin:6px 0 8px}
+.item h3 a{display:block}
+.item p{font-size:16.5px;line-height:1.5;margin:0}
+
+/* quick hit */
+.quick{display:flex;flex-direction:column;gap:6px;margin-top:20px;padding:14px 16px;background:var(--ink);color:var(--paper)}
+.quick .lbl{font-family:var(--sans);font-weight:800;font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:#f2b8b5;white-space:nowrap;padding-top:2px}
+.quick p{margin:0;font-size:16.5px;line-height:1.5}
+.quick .src{color:#bdb5a5;display:inline;margin-left:6px}
+.quick .src b{color:var(--paper)}
+.quick .src a{text-decoration-color:#6d675c}
+
+.foot{margin-top:20px;border-top:3px double var(--rule);padding-top:8px;font-family:var(--sans);font-size:11.5px;line-height:1.5;color:var(--muted);display:flex;flex-direction:column;gap:4px}
+.foot .ed{white-space:nowrap}
+
+/* archive */
+.archive-list{list-style:none;margin:0;padding:0}
+.archive-list li{border-bottom:1px solid var(--soft)}
+.archive-list a{display:grid;grid-template-columns:1fr;gap:4px;padding:14px 0;min-height:44px}
+.archive-list a:hover{text-decoration:none}
+.archive-list a:hover .hl{text-decoration:underline;text-underline-offset:3px}
+.archive-list .d{font-family:var(--sans);font-size:12px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.archive-list .d .no{color:var(--accent);margin-left:8px}
+.archive-list .hl{font-family:var(--display);font-weight:700;font-size:22px;line-height:1.2}
+.archive-intro{font-size:16.5px;line-height:1.5;color:var(--muted);margin:18px 0 8px;font-style:italic}
+
+/* ---- back page: optional Writer's Corner + Inspiration (preview-lab) ---- */
+.backpage{display:grid;grid-template-columns:1fr;gap:16px}
+.wc{background:var(--card);border:1px solid var(--soft);border-top:3px solid var(--accent);padding:14px 16px 6px}
+.wc h3{text-wrap:balance;font-family:var(--display);font-weight:700;font-size:23px;line-height:1.18;margin:6px 0 6px}
+.wc .byline{font-family:var(--sans);font-size:13px;color:var(--muted);line-height:1.4}
+.wc .byline b{color:var(--ink);font-weight:700}
+.wc .take{font-size:16.5px;line-height:1.5;margin:10px 0 0}
+.wc .pull{margin:12px 0 4px;padding:2px 0 2px 14px;border-left:3px solid var(--accent);font-family:var(--display);font-style:italic;font-size:19px;line-height:1.38;color:#2b2925}
+.wc .readit{display:inline-flex;align-items:center;min-height:44px;font-family:var(--sans);font-weight:700;font-size:11.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--accent)}
+.wc .readit span{color:var(--muted);font-weight:600;margin-left:8px}
+.insp{margin:0;border-top:1px solid var(--rule);padding-top:12px}
+.insp .frame{display:block;width:fit-content;max-width:100%;margin:8px 0 8px;background:var(--desk);border:1px solid var(--soft);padding:8px}
+.insp img{display:block;width:auto;max-width:100%;height:auto;max-height:520px;object-fit:contain;filter:sepia(.04)}
+.insp figcaption{font-family:var(--sans);font-size:13px;line-height:1.45;color:var(--muted);display:flex;flex-direction:column;gap:3px}
+.insp figcaption .t{font-family:var(--serif);font-size:16px;color:var(--ink)}
+.insp figcaption .c{font-family:var(--serif);font-size:15px;color:#3a372f}
+.insp figcaption .cr{font-size:11.5px;letter-spacing:.02em}
+.insp figcaption .cr a{text-decoration:underline;text-decoration-color:var(--soft);text-underline-offset:3px;display:inline-block;padding:8px 0;margin:-8px 0}
+@media (min-width:640px){
+  .backpage.both{grid-template-columns:1.35fr 1fr;gap:24px;align-items:start}
+  .insp{border-top:none;padding-top:0}
+  .backpage.both .insp{border-left:1px solid var(--soft);padding-left:24px}
+  .backpage:not(.both) .insp{display:grid;grid-template-columns:auto minmax(0,1fr);column-gap:28px;align-items:start}
+  .backpage:not(.both) .insp figcaption{padding-top:8px;max-width:420px}
+  .backpage:not(.both) .insp .kicker{grid-column:1/-1}
+}
+@media (min-width:900px){
+  .backpage.both{grid-template-columns:1.6fr 1fr;gap:28px}
+  .wc{padding:16px 20px 8px}
+  .wc h3{font-size:26px}
+  .wc .pull{font-size:21px}
+  .insp img{max-height:440px}
+  .backpage.both .insp img{max-height:300px}
+}
+
+/* ≥ 640px: tablets / large phones landscape */
+@media (max-width:899px){.page{min-height:100vh}}
+@media (min-width:640px){
+  .page{padding:22px 30px 24px}
+  .topline .tl{display:inline}
+  .masthead .tag{font-size:17px}
+  .dateline{font-size:12.5px}
+  .posts{grid-template-columns:repeat(2,1fr)}
+  .posts .post:last-child:nth-child(odd){grid-column:1/-1}
+  .news{grid-template-columns:repeat(2,1fr)}
+  .item{padding:14px 18px;border-top:1px solid var(--soft);border-left:1px solid var(--soft)}
+  .item:nth-child(-n+2){border-top:none;padding-top:0}
+  .item:nth-child(odd){border-left:none;padding-left:0}
+  .item:nth-child(even){padding-right:0}
+  .quick{flex-direction:row;gap:16px;align-items:flex-start;padding:13px 18px}
+  .foot{flex-direction:row;justify-content:space-between;gap:20px}
+  .archive-list a{grid-template-columns:220px 1fr;gap:18px;align-items:baseline}
+}
+/* ≥ 900px: desktop newspaper layout */
+@media (min-width:900px){
+  .page{padding:26px 44px 26px;margin:24px auto;box-shadow:0 1px 0 rgba(0,0,0,.06),0 12px 40px rgba(60,45,20,.12)}
+  .topline{font-size:12.5px}
+  .masthead .tag{font-size:17px}
+  .lead-row{grid-template-columns:2.1fr 1fr;gap:30px;padding:22px 0 20px}
+  .lead-row.solo{grid-template-columns:1fr}
+  .lead p{font-size:19px;line-height:1.5}
+  .lead p::first-letter{font-size:62px}
+  .nod{border-top:none;padding-top:0;border-left:1px solid var(--rule);padding-left:28px}
+  .section-h h2{font-size:25px}
+  .posts{grid-template-columns:repeat(6,1fr);gap:16px}
+  .posts .post,.posts .post:last-child:nth-child(odd){grid-column:span var(--span,2)}
+  .post blockquote{font-size:16px;line-height:1.42}
+  .why{font-size:13.5px;line-height:1.4}
+  .news{grid-template-columns:repeat(var(--cols,4),1fr)}
+  .news .item{padding:0 18px;border-top:none;border-left:1px solid var(--soft)}
+  .news .item:first-child{padding-left:0;border-left:none}
+  .news .item:last-child{padding-right:0}
+  .item h3{font-size:22px;line-height:1.15}
+  .item p{font-size:15.5px;line-height:1.45}
+  .quick p{font-size:16px;line-height:1.45}
+}
+@media (prefers-reduced-motion:no-preference){a{transition:color .12s}}
+@media print{html,body{background:#fff}.page{box-shadow:none;margin:0}.nav{display:none}}
+
+</style>
+</head>
+<body>
+<div class="page">
+  <nav class="nav nav-top" aria-label="Issues">
+    <a class="prev" href="../../issues/2026-11-03/" rel="prev">← Previous</a>
+    <a class="mid" href="../../archive/">Archive</a>
+    <a class="next" href="../../">Latest →</a>
+  </nav>
+  <div class="topline"><span>Tampere edition</span><span>No. 27</span><span class="tl">AI · dev tools · tech — a two-minute read</span></div>
+  <header class="masthead">
+    <h1><a href="../../">The Morning Commit</a></h1>
+    <div class="tag">Your morning brief on what moved in AI and dev tools overnight</div>
+  </header>
+  <div class="dateline"><span><time datetime="2026-11-04">Wednesday, 4 November 2026</time></span><span>5 posts · 5 stories · 2-minute read</span></div>
+
+  <main>
+  <section class="lead-row">
+    <article class="lead">
+      <div class="kicker">ANTHROPIC</div>
+      <h2><a href="https://techcrunch.com/2026/11/03/anthropic-is-working-on-a-system-to-prove-ai-models-identity/">Anthropic&#39;s FlashProve wants to prove which model actually wrote your answer</a></h2>
+      <p>Anthropic researchers published FlashProve, an open-source system for &#34;provable inference&#34;: a cryptographic proof that a given output came from a specific model. Labs would publish a fingerprint for each model that doesn&#39;t reveal its weights, so it could work for closed models too, and verification is meant to be light enough to run on your own device. The point is to catch a provider quietly swapping in a cheaper model, or a pricier one to pad benchmark results. The spec and working code are on GitHub, but it&#39;s still research, with no plans yet to deploy it at Anthropic or anywhere else.</p>
+      <div class="src">Source: <b><a href="https://techcrunch.com/2026/11/03/anthropic-is-working-on-a-system-to-prove-ai-models-identity/">TechCrunch</a></b> · techcrunch.com</div>
+    </article>
+    
+    <aside class="nod">
+      <div class="kicker">Number of the day</div>
+      <div class="big">58%</div>
+      <p>share of Anthropic&#39;s Q3 revenue that went to compute, up from 48% the quarter before. Revenue hit $17B, but $5B of the $10B compute bill was pricier short-term capacity bought to keep up with demand.</p>
+      <div class="src">Source: <b><a href="https://techcrunch.com/2026/11/03/anthropic-is-still-grappling-with-the-economics-of-compute/">TechCrunch</a></b></div>
+    </aside>
+    
+  </section>
+
+  
+  <div class="section-h"><h2>Overheard on X</h2></div>
+  <section class="posts">
+    
+    <article class="post" style="--span:2">
+      <div class="who"><span class="n">Gergely Orosz</span><span class="sub2"><span class="h">@@GergelyOrosz</span><span class="t">Wed 01:08 Helsinki</span></span></div>
+      <blockquote>“From a startup founder: “it’s now a red flag for me if I don’t see side projects on someone’s resume / application, because it signals lack of autonomy. Because it’s now so trivial to build anything on the side, vs before.””</blockquote>
+      <div class="why"><b>Why it matters</b>When building is cheap, not building starts to say something about you.</div>
+      <div class="meta"><span class="stats">♥ <b>886</b> &nbsp; ⟲ <b>45</b></span>
+        <a class="u" href="https://x.com/GergelyOrosz/status/2117755886105936144" aria-label="Open @@GergelyOrosz’s post on X"><span class="open">Open on X ↗</span></a></div>
+    </article>
+    
+    <article class="post" style="--span:2">
+      <div class="who"><span class="n">Guillermo Rauch</span><span class="sub2"><span class="h">@@rauchg</span><span class="t">Tue 23:45 Helsinki</span></span></div>
+      <blockquote>“I&#39;ve been looking forward to this day, because Vercel has an internal security agent that is **astonishingly effective** (lovingly called @hacker). Every single line of code gets audited, automatically. You can now get the same power. [...]”</blockquote>
+      <div class="why"><b>Why it matters</b>Vercel turns its in-house code-auditing agent into a product you can switch on per repo.</div>
+      <div class="meta"><span class="stats">♥ <b>675</b> &nbsp; ⟲ <b>26</b></span>
+        <a class="u" href="https://x.com/rauchg/status/2117734833824948373" aria-label="Open @@rauchg’s post on X"><span class="open">Open on X ↗</span></a></div>
+    </article>
+    
+    <article class="post" style="--span:2">
+      <div class="who"><span class="n">Ethan Mollick</span><span class="sub2"><span class="h">@@emollick</span><span class="t">Tue 23:53 Helsinki</span></span></div>
+      <blockquote>“The AI slopcomments are out-of-control on X but also remarkably easy to stop if the company wanted to? I did a little experiment and found that combining as few as five comments and running them through Pangram is good enough to weed out the slop and not punish real humans.”</blockquote>
+      <div class="why"><b>Why it matters</b>A cheap fix for reply spam: judge an account on a handful of comments, not one.</div>
+      <div class="meta"><span class="stats">♥ <b>225</b> &nbsp; ⟲ <b>11</b></span>
+        <a class="u" href="https://x.com/emollick/status/2117736864010645567" aria-label="Open @@emollick’s post on X"><span class="open">Open on X ↗</span></a></div>
+    </article>
+    
+    <article class="post" style="--span:3">
+      <div class="who"><span class="n">elvis</span><span class="sub2"><span class="h">@@omarsar0</span><span class="t">Tue 23:58 Helsinki</span></span></div>
+      <blockquote>“When you optimize an agent harness for both quality and cost, apply your cost preference only at the end of the search, since applying it at every step throws away harnesses that lead to better ones.”</blockquote>
+      <div class="why"><b>Why it matters</b>A practical rule if you&#39;re tuning agent setups: don&#39;t prune on cost too early.</div>
+      <div class="meta"><span class="stats">♥ <b>62</b> &nbsp; ⟲ <b>10</b></span>
+        <a class="u" href="https://x.com/omarsar0/status/2117738094069944347" aria-label="Open @@omarsar0’s post on X"><span class="open">Open on X ↗</span></a></div>
+    </article>
+    
+    <article class="post" style="--span:3">
+      <div class="who"><span class="n">Hamel Husain</span><span class="sub2"><span class="h">@@HamelHusain</span><span class="t">Wed 00:33 Helsinki</span></span></div>
+      <blockquote>“Amazing BenchmarkGate reveal by @xeophon where he found serious (even comical) problems in popular benchmarks: AutomationBench: &#34;[forces the models to] describe their request bodies in prose rather than in JSON Schema&#34; [...]”</blockquote>
+      <div class="why"><b>Why it matters</b>Another reminder to read a benchmark&#39;s grader before trusting its leaderboard.</div>
+      <div class="meta"><span class="stats">♥ <b>65</b> &nbsp; ⟲ <b>6</b></span>
+        <a class="u" href="https://x.com/HamelHusain/status/2117746902402039859" aria-label="Open @@HamelHusain’s post on X"><span class="open">Open on X ↗</span></a></div>
+    </article>
+    
+  </section>
+  
+
+  
+  <div class="section-h"><h2>The Wire</h2></div>
+  <section class="news" style="--cols:4">
+    
+    <article class="item">
+      <div class="kicker">RESEARCH</div>
+      <h3><a href="https://simonwillison.net/2026/Nov/3/qwen-can-interpret-model-weights/">LLMs reading raw weights: Simon Willison gets Qwen 3.8 27B on a laptop to do it too</a></h3>
+      <p>MIT CSAIL&#39;s &#34;weight-space programming&#34; post had GPT-6 Astra tell what small networks were trained on, and edit 0.016% of Qwen3.5-0.8B&#39;s weights to lift MATH-500 from 7.9% to 48.1%. Willison reran the no-tools game test locally: Qwen named Pac-Man, Pong and Breakout (taking 46 to 65 minutes each) but missed Freeway. He&#39;s impressed, but not ready to call it the end of source code.</p>
+      <div class="src">— <b><a href="https://simonwillison.net/2026/Nov/3/qwen-can-interpret-model-weights/">Simon Willison</a></b> · simonwillison.net</div>
+    </article>
+    
+    <article class="item">
+      <div class="kicker">SECURITY</div>
+      <h3><a href="https://techcrunch.com/2026/11/03/crowdstrike-to-shell-out-nearly-500m-for-2-ai-security-startups-as-the-market-for-securing-agents-takes-off/">CrowdStrike pays nearly $500M for two startups that watch and test AI agents</a></h3>
+      <p>Fiddler AI (about $400M, agent observability) becomes Falcon Observe, and Dreadnode (about $95M, automated security testing of models and agents) feeds Falcon Guardian. The bet: companies are rolling out agents faster than their security teams can keep track of them.</p>
+      <div class="src">— <b><a href="https://techcrunch.com/2026/11/03/crowdstrike-to-shell-out-nearly-500m-for-2-ai-security-startups-as-the-market-for-securing-agents-takes-off/">TechCrunch</a></b> · techcrunch.com</div>
+    </article>
+    
+    <article class="item">
+      <div class="kicker">EDUCATION</div>
+      <h3><a href="https://techcrunch.com/2026/11/03/google-will-let-schools-disable-its-ai-tools-but-not-without-sacrificing-search/">Google will switch off AI for K-12 students unless schools opt in, but blocking AI also blocks Search</a></h3>
+      <p>The change covers Gemini, NotebookLM, Gemini in Classroom and Search. Google says Search and AI are now too intertwined to split, so a school that turns AI off completely will see students get a &#34;not available&#34; message instead of Google Search.</p>
+      <div class="src">— <b><a href="https://techcrunch.com/2026/11/03/google-will-let-schools-disable-its-ai-tools-but-not-without-sacrificing-search/">TechCrunch</a></b> · techcrunch.com</div>
+    </article>
+    
+    <article class="item">
+      <div class="kicker">FINLAND</div>
+      <h3><a href="https://www.tivi.fi/uutiset/a/b5b74799-784e-4a7e-8738-2752488aa430">Linus Torvalds: AI patches are finally landing as normal development, not a flood of fixes</a></h3>
+      <p>The latest Linux merge window has nearly 20,000 changes versus about 15,000 usually. Torvalds is happy AI-made patches no longer pile up as extra fixes during the -rc phase, though he notes AMD GPU register dumps (about a third) and 7.4 being the expected LTS also swell it.</p>
+      <div class="src">— <b><a href="https://www.tivi.fi/uutiset/a/b5b74799-784e-4a7e-8738-2752488aa430">Tivi</a></b> · tivi.fi</div>
+    </article>
+    
+  </section>
+  
+
+  
+  
+  <div class="section-h"><h2>The Back Page</h2></div>
+  <section class="backpage">
+    
+    <article class="wc">
+      <div class="kicker">Writer’s Corner · Philosophy</div>
+      <h3><a href="https://www.themarginalian.org/2026/11/03/cajal-science-solitude/">The Founding Father of Neuroscience on Solitude, the Search for Truth, and the Ideal Environment for Breakthroughs</a></h3>
+      <div class="byline"><b>Maria Popova</b> · The Marginalian · Tue 3 Nov</div>
+      <p class="take">Through Cajal&#39;s Advice for a Young Investigator, Popova argues that a nation&#39;s greatness rests on science, which needs a supportive culture and, above all, solitude to grow original minds.</p>
+      <blockquote class="pull"><a href="https://www.themarginalian.org/2026/11/03/cajal-science-solitude/">“But science, of course, only thrives when scientists thrive.”</a></blockquote>
+      <a class="readit" href="https://www.themarginalian.org/2026/11/03/cajal-science-solitude/">Read it ↗<span>· short read, free</span></a>
+    </article>
+    
+    
+  </section>
+  
+
+  
+  <div class="quick"><span class="lbl">JET POWER</span>
+    <p>Stuck in years-long grid queues, some AI data centres now burn gas in converted jet engines. xAI has eight of them at Colossus 2 in Memphis, per the NYT.<span class="src">— <b><a href="https://techcrunch.com/2026/11/03/data-centers-are-turning-to-old-jet-engines-as-the-wait-for-power-grows/">TechCrunch</a></b></span></p></div>
+  
+  </main>
+
+  <footer class="foot"><span>Compiled 4 Nov 2026, 08:00 Helsinki time. X posts come from two X searches (last ~25 h) and news from open web sources. Times are in Helsinki time.</span><span class="ed">The Morning Commit · 2026-11-04</span></footer>
+  <nav class="nav nav-bottom" aria-label="Issues">
+    <a class="prev" href="../../issues/2026-11-03/" rel="prev">← Previous</a>
+    <a class="mid" href="../../archive/">All issues</a>
+    <a class="next" href="../../">Latest →</a>
+  </nav>
+</div>
+</body>
+</html>

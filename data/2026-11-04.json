@@ -1,0 +1,122 @@
+{
+ "paper_name": "The Morning Commit",
+ "tagline": "AI · dev tools · tech — a two-minute read",
+ "edition": "Tampere edition",
+ "issue_no": "No. 27",
+ "date_long": "Wednesday, 4 November 2026",
+ "date_slug": "2026-11-04",
+ "lead": {
+  "kicker": "ANTHROPIC",
+  "headline": "Anthropic's FlashProve wants to prove which model actually wrote your answer",
+  "summary": "Anthropic researchers published FlashProve, an open-source system for \"provable inference\": a cryptographic proof that a given output came from a specific model. Labs would publish a fingerprint for each model that doesn't reveal its weights, so it could work for closed models too, and verification is meant to be light enough to run on your own device. The point is to catch a provider quietly swapping in a cheaper model, or a pricier one to pad benchmark results. The spec and working code are on GitHub, but it's still research, with no plans yet to deploy it at Anthropic or anywhere else.",
+  "source": "TechCrunch",
+  "url": "https://techcrunch.com/2026/11/03/anthropic-is-working-on-a-system-to-prove-ai-models-identity/"
+ },
+ "number_of_day": {
+  "value": "58%",
+  "label": "share of Anthropic's Q3 revenue that went to compute, up from 48% the quarter before. Revenue hit $17B, but $5B of the $10B compute bill was pricier short-term capacity bought to keep up with demand.",
+  "source": "TechCrunch",
+  "url": "https://techcrunch.com/2026/11/03/anthropic-is-still-grappling-with-the-economics-of-compute/"
+ },
+ "news": [
+  {
+   "tag": "RESEARCH",
+   "headline": "LLMs reading raw weights: Simon Willison gets Qwen 3.8 27B on a laptop to do it too",
+   "summary": "MIT CSAIL's \"weight-space programming\" post had GPT-6 Astra tell what small networks were trained on, and edit 0.016% of Qwen3.5-0.8B's weights to lift MATH-500 from 7.9% to 48.1%. Willison reran the no-tools game test locally: Qwen named Pac-Man, Pong and Breakout (taking 46 to 65 minutes each) but missed Freeway. He's impressed, but not ready to call it the end of source code.",
+   "source": "Simon Willison",
+   "url": "https://simonwillison.net/2026/Nov/3/qwen-can-interpret-model-weights/"
+  },
+  {
+   "tag": "SECURITY",
+   "headline": "CrowdStrike pays nearly $500M for two startups that watch and test AI agents",
+   "summary": "Fiddler AI (about $400M, agent observability) becomes Falcon Observe, and Dreadnode (about $95M, automated security testing of models and agents) feeds Falcon Guardian. The bet: companies are rolling out agents faster than their security teams can keep track of them.",
+   "source": "TechCrunch",
+   "url": "https://techcrunch.com/2026/11/03/crowdstrike-to-shell-out-nearly-500m-for-2-ai-security-startups-as-the-market-for-securing-agents-takes-off/"
+  },
+  {
+   "tag": "EDUCATION",
+   "headline": "Google will switch off AI for K-12 students unless schools opt in, but blocking AI also blocks Search",
+   "summary": "The change covers Gemini, NotebookLM, Gemini in Classroom and Search. Google says Search and AI are now too intertwined to split, so a school that turns AI off completely will see students get a \"not available\" message instead of Google Search.",
+   "source": "TechCrunch",
+   "url": "https://techcrunch.com/2026/11/03/google-will-let-schools-disable-its-ai-tools-but-not-without-sacrificing-search/"
+  },
+  {
+   "tag": "FINLAND",
+   "headline": "Linus Torvalds: AI patches are finally landing as normal development, not a flood of fixes",
+   "summary": "The latest Linux merge window has nearly 20,000 changes versus about 15,000 usually. Torvalds is happy AI-made patches no longer pile up as extra fixes during the -rc phase, though he notes AMD GPU register dumps (about a third) and 7.4 being the expected LTS also swell it.",
+   "source": "Tivi",
+   "url": "https://www.tivi.fi/uutiset/a/b5b74799-784e-4a7e-8738-2752488aa430"
+  }
+ ],
+ "x_posts": [
+  {
+   "name": "Gergely Orosz",
+   "handle": "@GergelyOrosz",
+   "time": "Wed 01:08",
+   "text": "From a startup founder: “it’s now a red flag for me if I don’t see side projects on someone’s resume / application, because it signals lack of autonomy. Because it’s now so trivial to build anything on the side, vs before.”",
+   "why": "When building is cheap, not building starts to say something about you.",
+   "likes": 886,
+   "reposts": 45,
+   "url": "https://x.com/GergelyOrosz/status/2117755886105936144"
+  },
+  {
+   "name": "Guillermo Rauch",
+   "handle": "@rauchg",
+   "time": "Tue 23:45",
+   "text": "I've been looking forward to this day, because Vercel has an internal security agent that is **astonishingly effective** (lovingly called @hacker). Every single line of code gets audited, automatically. You can now get the same power. [...]",
+   "why": "Vercel turns its in-house code-auditing agent into a product you can switch on per repo.",
+   "likes": 675,
+   "reposts": 26,
+   "url": "https://x.com/rauchg/status/2117734833824948373"
+  },
+  {
+   "name": "Ethan Mollick",
+   "handle": "@emollick",
+   "time": "Tue 23:53",
+   "text": "The AI slopcomments are out-of-control on X but also remarkably easy to stop if the company wanted to? I did a little experiment and found that combining as few as five comments and running them through Pangram is good enough to weed out the slop and not punish real humans.",
+   "why": "A cheap fix for reply spam: judge an account on a handful of comments, not one.",
+   "likes": 225,
+   "reposts": 11,
+   "url": "https://x.com/emollick/status/2117736864010645567"
+  },
+  {
+   "name": "elvis",
+   "handle": "@omarsar0",
+   "time": "Tue 23:58",
+   "text": "When you optimize an agent harness for both quality and cost, apply your cost preference only at the end of the search, since applying it at every step throws away harnesses that lead to better ones.",
+   "why": "A practical rule if you're tuning agent setups: don't prune on cost too early.",
+   "likes": 62,
+   "reposts": 10,
+   "url": "https://x.com/omarsar0/status/2117738094069944347"
+  },
+  {
+   "name": "Hamel Husain",
+   "handle": "@HamelHusain",
+   "time": "Wed 00:33",
+   "text": "Amazing BenchmarkGate reveal by @xeophon where he found serious (even comical) problems in popular benchmarks: AutomationBench: \"[forces the models to] describe their request bodies in prose rather than in JSON Schema\" [...]",
+   "why": "Another reminder to read a benchmark's grader before trusting its leaderboard.",
+   "likes": 65,
+   "reposts": 6,
+   "url": "https://x.com/HamelHusain/status/2117746902402039859"
+  }
+ ],
+ "writers_corner": {
+  "category": "Philosophy",
+  "writer": "Maria Popova",
+  "publication": "The Marginalian",
+  "date": "Tue 3 Nov",
+  "title": "The Founding Father of Neuroscience on Solitude, the Search for Truth, and the Ideal Environment for Breakthroughs",
+  "take": "Through Cajal's Advice for a Young Investigator, Popova argues that a nation's greatness rests on science, which needs a supportive culture and, above all, solitude to grow original minds.",
+  "quote": "But science, of course, only thrives when scientists thrive.",
+  "url": "https://www.themarginalian.org/2026/11/03/cajal-science-solitude/",
+  "read_note": "short read, free",
+  "feed_url": "https://www.themarginalian.org/feed/"
+ },
+ "quick_hit": {
+  "label": "JET POWER",
+  "text": "Stuck in years-long grid queues, some AI data centres now burn gas in converted jet engines. xAI has eight of them at Colossus 2 in Memphis, per the NYT.",
+  "source": "TechCrunch",
+  "url": "https://techcrunch.com/2026/11/03/data-centers-are-turning-to-old-jet-engines-as-the-wait-for-power-grows/"
+ },
+ "footer": "Compiled 4 Nov 2026, 08:00 Helsinki time. X posts come from two X searches (last ~25 h) and news from open web sources. Times are in Helsinki time."
+}
