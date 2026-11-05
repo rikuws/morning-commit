@@ -5,23 +5,23 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="color-scheme" content="light">
 <meta name="theme-color" content="#f6f1e7">
-<title>The Morning Commit · Wednesday, 4 November 2026</title>
-<meta name="description" content="Wednesday, 4 November 2026: Anthropic&#39;s FlashProve wants to prove which model actually wrote your answer. Anthropic researchers published FlashProve, an open-source system for &#34;provable inference&#34;: a cryptographic proof that a given output came from a specific model. Labs would…">
-<link rel="canonical" href="https://rikuws.github.io/morning-commit/issues/2026-11-04/">
+<title>The Morning Commit · Thursday, 5 November 2026</title>
+<meta name="description" content="Thursday, 5 November 2026: OpenAI&#39;s cyber agents found 948 ways to get root on Linux — and wrote the patches. In one mid-October run, OpenAI&#39;s autonomous pipeline (discovery → validation → exploit → patch) reproduced 1,724 Linux kernel bugs and produced 948 working local…">
+<link rel="canonical" href="https://rikuws.github.io/morning-commit/issues/2026-11-05/">
 <meta property="og:type" content="article">
 <meta property="og:site_name" content="The Morning Commit">
-<meta property="og:title" content="The Morning Commit — Anthropic&#39;s FlashProve wants to prove which model actually wrote your answer">
-<meta property="og:description" content="Wednesday, 4 November 2026: Anthropic&#39;s FlashProve wants to prove which model actually wrote your answer. Anthropic researchers published FlashProve, an open-source system for &#34;provable inference&#34;: a cryptographic proof that a given output came from a specific model. Labs would…">
-<meta property="og:url" content="https://rikuws.github.io/morning-commit/issues/2026-11-04/">
-<meta property="og:image" content="https://rikuws.github.io/morning-commit/issues/2026-11-04/card.png">
+<meta property="og:title" content="The Morning Commit — OpenAI&#39;s cyber agents found 948 ways to get root on Linux — and wrote the patches">
+<meta property="og:description" content="Thursday, 5 November 2026: OpenAI&#39;s cyber agents found 948 ways to get root on Linux — and wrote the patches. In one mid-October run, OpenAI&#39;s autonomous pipeline (discovery → validation → exploit → patch) reproduced 1,724 Linux kernel bugs and produced 948 working local…">
+<meta property="og:url" content="https://rikuws.github.io/morning-commit/issues/2026-11-05/">
+<meta property="og:image" content="https://rikuws.github.io/morning-commit/issues/2026-11-05/card.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="The Morning Commit — Anthropic&#39;s FlashProve wants to prove which model actually wrote your answer">
+<meta property="og:image:alt" content="The Morning Commit — OpenAI&#39;s cyber agents found 948 ways to get root on Linux — and wrote the patches">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://rikuws.github.io/morning-commit/issues/2026-11-04/card.png">
+<meta name="twitter:image" content="https://rikuws.github.io/morning-commit/issues/2026-11-05/card.png">
 
-<meta name="twitter:title" content="The Morning Commit — Anthropic&#39;s FlashProve wants to prove which model actually wrote your answer">
-<meta name="twitter:description" content="Wednesday, 4 November 2026: Anthropic&#39;s FlashProve wants to prove which model actually wrote your answer. Anthropic researchers published FlashProve, an open-source system for &#34;provable inference&#34;: a cryptographic proof that a given output came from a specific model. Labs would…">
+<meta name="twitter:title" content="The Morning Commit — OpenAI&#39;s cyber agents found 948 ways to get root on Linux — and wrote the patches">
+<meta name="twitter:description" content="Thursday, 5 November 2026: OpenAI&#39;s cyber agents found 948 ways to get root on Linux — and wrote the patches. In one mid-October run, OpenAI&#39;s autonomous pipeline (discovery → validation → exploit → patch) reproduced 1,724 Linux kernel bugs and produced 948 working local…">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='10' fill='%23f6f1e7'/%3E%3Ctext x='32' y='48' font-family='Georgia,serif' font-weight='900' font-size='44' text-anchor='middle' fill='%231b1a17'%3EM%3C/text%3E%3Crect x='14' y='54' width='36' height='3' fill='%23b3261e'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -225,31 +225,31 @@ a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
 <body>
 <div class="page">
   <nav class="nav nav-top" aria-label="Issues">
-    <a class="prev" href="issues/2026-11-03/" rel="prev">← Previous</a>
+    <a class="prev" href="issues/2026-11-04/" rel="prev">← Previous</a>
     <a class="mid" href="archive/">Archive</a>
     <span class="next off">Latest</span>
   </nav>
-  <div class="topline"><span>Tampere edition</span><span>No. 27</span><span class="tl">AI · dev tools · tech — a two-minute read</span></div>
+  <div class="topline"><span>Tampere edition</span><span>No. 28</span><span class="tl">AI · dev tools · tech — a two-minute read</span></div>
   <header class="masthead">
     <h1><a href="">The Morning Commit</a></h1>
     <div class="tag">Your morning brief on what moved in AI and dev tools overnight</div>
   </header>
-  <div class="dateline"><span><time datetime="2026-11-04">Wednesday, 4 November 2026</time></span><span>5 posts · 5 stories · 2-minute read</span></div>
+  <div class="dateline"><span><time datetime="2026-11-05">Thursday, 5 November 2026</time></span><span>5 posts · 5 stories · 2-minute read</span></div>
 
   <main>
   <section class="lead-row">
     <article class="lead">
-      <div class="kicker">ANTHROPIC</div>
-      <h2><a href="https://techcrunch.com/2026/11/03/anthropic-is-working-on-a-system-to-prove-ai-models-identity/">Anthropic&#39;s FlashProve wants to prove which model actually wrote your answer</a></h2>
-      <p>Anthropic researchers published FlashProve, an open-source system for &#34;provable inference&#34;: a cryptographic proof that a given output came from a specific model. Labs would publish a fingerprint for each model that doesn&#39;t reveal its weights, so it could work for closed models too, and verification is meant to be light enough to run on your own device. The point is to catch a provider quietly swapping in a cheaper model, or a pricier one to pad benchmark results. The spec and working code are on GitHub, but it&#39;s still research, with no plans yet to deploy it at Anthropic or anywhere else.</p>
-      <div class="src">Source: <b><a href="https://techcrunch.com/2026/11/03/anthropic-is-working-on-a-system-to-prove-ai-models-identity/">TechCrunch</a></b> · techcrunch.com</div>
+      <div class="kicker">SECURITY</div>
+      <h2><a href="https://openai.com/index/a-thousand-fewer-paths-to-root">OpenAI&#39;s cyber agents found 948 ways to get root on Linux — and wrote the patches</a></h2>
+      <p>In one mid-October run, OpenAI&#39;s autonomous pipeline (discovery → validation → exploit → patch) reproduced 1,724 Linux kernel bugs and produced 948 working local privilege-escalation exploits, at about $1.2M in API spend ($1,279 per LPE). Human researchers still review before anything goes to maintainers; OpenAI is shipping critical patches via Patch the Planet. The agents also invented at least 10 novel exploit techniques, and a hardened kernelCTF run still netted 21 LPEs for ~$33k — roughly 45× the historical bounty math.</p>
+      <div class="src">Source: <b><a href="https://openai.com/index/a-thousand-fewer-paths-to-root">OpenAI</a></b> · openai.com</div>
     </article>
     
     <aside class="nod">
       <div class="kicker">Number of the day</div>
-      <div class="big">58%</div>
-      <p>share of Anthropic&#39;s Q3 revenue that went to compute, up from 48% the quarter before. Revenue hit $17B, but $5B of the $10B compute bill was pricier short-term capacity bought to keep up with demand.</p>
-      <div class="src">Source: <b><a href="https://techcrunch.com/2026/11/03/anthropic-is-still-grappling-with-the-economics-of-compute/">TechCrunch</a></b></div>
+      <div class="big">$1,279</div>
+      <p>API cost per working Linux LPE exploit in OpenAI&#39;s mid-October cyber pipeline run — total $1.21M for 948 unique escalations.</p>
+      <div class="src">Source: <b><a href="https://openai.com/index/a-thousand-fewer-paths-to-root">OpenAI</a></b></div>
     </aside>
     
   </section>
@@ -259,43 +259,55 @@ a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
   <section class="posts">
     
     <article class="post" style="--span:2">
-      <div class="who"><span class="n">Gergely Orosz</span><span class="sub2"><span class="h">@@GergelyOrosz</span><span class="t">Wed 01:08 Helsinki</span></span></div>
-      <blockquote>“From a startup founder: “it’s now a red flag for me if I don’t see side projects on someone’s resume / application, because it signals lack of autonomy. Because it’s now so trivial to build anything on the side, vs before.””</blockquote>
-      <div class="why"><b>Why it matters</b>When building is cheap, not building starts to say something about you.</div>
-      <div class="meta"><span class="stats">♥ <b>886</b> &nbsp; ⟲ <b>45</b></span>
-        <a class="u" href="https://x.com/GergelyOrosz/status/2117755886105936144" aria-label="Open @@GergelyOrosz’s post on X"><span class="open">Open on X ↗</span></a></div>
+      <div class="who"><span class="n">Guillermo Rauch</span><span class="sub2"><span class="h">@@rauchg</span><span class="t">Thu 04:22 Helsinki</span></span></div>
+      <blockquote>“We will all be learning in coming weeks &amp; months, that most human-made software:
+
+▫️ Was really slow
+▫️ Had many security vulnerabilities
+▫️ Was under-specified and incorrect
+
+AI will rewrite it all. Many times. It will make it fast, cost-efficient, and secure. It will think”</blockquote>
+      <div class="why"><b>Why it matters</b>A blunt thesis for why agentic coding keeps eating the stack — speed, security, and correctness included.</div>
+      <div class="meta"><span class="stats">♥ <b>2,200</b> &nbsp; ⟲ <b>194</b></span>
+        <a class="u" href="https://x.com/rauchg/status/2118166970273292299" aria-label="Open @@rauchg’s post on X"><span class="open">Open on X ↗</span></a></div>
     </article>
     
     <article class="post" style="--span:2">
-      <div class="who"><span class="n">Guillermo Rauch</span><span class="sub2"><span class="h">@@rauchg</span><span class="t">Tue 23:45 Helsinki</span></span></div>
-      <blockquote>“I&#39;ve been looking forward to this day, because Vercel has an internal security agent that is **astonishingly effective** (lovingly called @hacker). Every single line of code gets audited, automatically. You can now get the same power. [...]”</blockquote>
-      <div class="why"><b>Why it matters</b>Vercel turns its in-house code-auditing agent into a product you can switch on per repo.</div>
-      <div class="meta"><span class="stats">♥ <b>675</b> &nbsp; ⟲ <b>26</b></span>
-        <a class="u" href="https://x.com/rauchg/status/2117734833824948373" aria-label="Open @@rauchg’s post on X"><span class="open">Open on X ↗</span></a></div>
+      <div class="who"><span class="n">@levelsio</span><span class="sub2"><span class="h">@@levelsio</span><span class="t">Thu 01:05 Helsinki</span></span></div>
+      <blockquote>“I managed to port Battlefield 1942 to mobile web too
+
+So now it&#39;s playable as full multiplayer on iPhone and Android from their browser! 🤯
+
+Claude Code built its own graphic layer that translates Direct3D (DirectX) instructions to WebGL, sitting between the game&#39;s machine code [...]”</blockquote>
+      <div class="why"><b>Why it matters</b>Indie builder energy: Claude Code writing a D3D→WebGL shim so a 2002 FPS runs multiplayer in a phone browser.</div>
+      <div class="meta"><span class="stats">♥ <b>120</b> &nbsp; ⟲ <b>3</b></span>
+        <a class="u" href="https://x.com/levelsio/status/2118117357172191242" aria-label="Open @@levelsio’s post on X"><span class="open">Open on X ↗</span></a></div>
     </article>
     
     <article class="post" style="--span:2">
-      <div class="who"><span class="n">Ethan Mollick</span><span class="sub2"><span class="h">@@emollick</span><span class="t">Tue 23:53 Helsinki</span></span></div>
-      <blockquote>“The AI slopcomments are out-of-control on X but also remarkably easy to stop if the company wanted to? I did a little experiment and found that combining as few as five comments and running them through Pangram is good enough to weed out the slop and not punish real humans.”</blockquote>
-      <div class="why"><b>Why it matters</b>A cheap fix for reply spam: judge an account on a handful of comments, not one.</div>
-      <div class="meta"><span class="stats">♥ <b>225</b> &nbsp; ⟲ <b>11</b></span>
-        <a class="u" href="https://x.com/emollick/status/2117736864010645567" aria-label="Open @@emollick’s post on X"><span class="open">Open on X ↗</span></a></div>
+      <div class="who"><span class="n">swyx</span><span class="sub2"><span class="h">@@swyx</span><span class="t">Thu 03:25 Helsinki</span></span></div>
+      <blockquote>“i&#39;m still processing. what an insane run. $0 to $100B ARR in 2.5 years.”</blockquote>
+      <div class="why"><b>Why it matters</b>A short pause on how fast frontier-AI revenue scaled — still hard to internalise.</div>
+      <div class="meta"><span class="stats">♥ <b>218</b> &nbsp; ⟲ <b>3</b></span>
+        <a class="u" href="https://x.com/swyx/status/2118152585911869634" aria-label="Open @@swyx’s post on X"><span class="open">Open on X ↗</span></a></div>
     </article>
     
     <article class="post" style="--span:3">
-      <div class="who"><span class="n">elvis</span><span class="sub2"><span class="h">@@omarsar0</span><span class="t">Tue 23:58 Helsinki</span></span></div>
-      <blockquote>“When you optimize an agent harness for both quality and cost, apply your cost preference only at the end of the search, since applying it at every step throws away harnesses that lead to better ones.”</blockquote>
-      <div class="why"><b>Why it matters</b>A practical rule if you&#39;re tuning agent setups: don&#39;t prune on cost too early.</div>
-      <div class="meta"><span class="stats">♥ <b>62</b> &nbsp; ⟲ <b>10</b></span>
-        <a class="u" href="https://x.com/omarsar0/status/2117738094069944347" aria-label="Open @@omarsar0’s post on X"><span class="open">Open on X ↗</span></a></div>
+      <div class="who"><span class="n">Amjad Masad</span><span class="sub2"><span class="h">@@amasad</span><span class="t">Thu 05:15 Helsinki</span></span></div>
+      <blockquote>“Excited to announce our partnership with Sumitomo Mitsui Finance &amp; Leasing (SMFL), one of Japan’s leading financial institutions!
+
+Replit is powering SMFL’s core software products and has massively accelerated their development process: For example they recently in just one week, [...]”</blockquote>
+      <div class="why"><b>Why it matters</b>A big Japanese lessor putting Replit on core product work — agent IDEs crossing into enterprise delivery.</div>
+      <div class="meta"><span class="stats">♥ <b>198</b> &nbsp; ⟲ <b>11</b></span>
+        <a class="u" href="https://x.com/amasad/status/2118180254300688857" aria-label="Open @@amasad’s post on X"><span class="open">Open on X ↗</span></a></div>
     </article>
     
     <article class="post" style="--span:3">
-      <div class="who"><span class="n">Hamel Husain</span><span class="sub2"><span class="h">@@HamelHusain</span><span class="t">Wed 00:33 Helsinki</span></span></div>
-      <blockquote>“Amazing BenchmarkGate reveal by @xeophon where he found serious (even comical) problems in popular benchmarks: AutomationBench: &#34;[forces the models to] describe their request bodies in prose rather than in JSON Schema&#34; [...]”</blockquote>
-      <div class="why"><b>Why it matters</b>Another reminder to read a benchmark&#39;s grader before trusting its leaderboard.</div>
-      <div class="meta"><span class="stats">♥ <b>65</b> &nbsp; ⟲ <b>6</b></span>
-        <a class="u" href="https://x.com/HamelHusain/status/2117746902402039859" aria-label="Open @@HamelHusain’s post on X"><span class="open">Open on X ↗</span></a></div>
+      <div class="who"><span class="n">Ethan Mollick</span><span class="sub2"><span class="h">@@emollick</span><span class="t">Thu 04:21 Helsinki</span></span></div>
+      <blockquote>“Whatever role AI played as an issue in this election, I suspect it will play a larger role in every election to come, at least for the foreseeable future.”</blockquote>
+      <div class="why"><b>Why it matters</b>A calm forecast: AI as a campaign issue only gets louder from here.</div>
+      <div class="meta"><span class="stats">♥ <b>173</b> &nbsp; ⟲ <b>4</b></span>
+        <a class="u" href="https://x.com/emollick/status/2118166747215954028" aria-label="Open @@emollick’s post on X"><span class="open">Open on X ↗</span></a></div>
     </article>
     
   </section>
@@ -306,31 +318,31 @@ a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
   <section class="news" style="--cols:4">
     
     <article class="item">
-      <div class="kicker">RESEARCH</div>
-      <h3><a href="https://simonwillison.net/2026/Nov/3/qwen-can-interpret-model-weights/">LLMs reading raw weights: Simon Willison gets Qwen 3.8 27B on a laptop to do it too</a></h3>
-      <p>MIT CSAIL&#39;s &#34;weight-space programming&#34; post had GPT-6 Astra tell what small networks were trained on, and edit 0.016% of Qwen3.5-0.8B&#39;s weights to lift MATH-500 from 7.9% to 48.1%. Willison reran the no-tools game test locally: Qwen named Pac-Man, Pong and Breakout (taking 46 to 65 minutes each) but missed Freeway. He&#39;s impressed, but not ready to call it the end of source code.</p>
-      <div class="src">— <b><a href="https://simonwillison.net/2026/Nov/3/qwen-can-interpret-model-weights/">Simon Willison</a></b> · simonwillison.net</div>
+      <div class="kicker">OPENAI</div>
+      <h3><a href="https://openai.com/index/openai-to-acquire-pierre/">OpenAI will buy Pierre Computer to deepen Codex&#39;s Git and code-review stack</a></h3>
+      <p>Pierre makes Code Storage plus the open-source Trees and Diffs libraries already used inside the Codex app. OpenAI wants agent-friendly source control; Code Storage stays available while its features move into Codex, and Pierre&#39;s open-source projects stay open. Closing still needs regulatory approval; terms undisclosed.</p>
+      <div class="src">— <b><a href="https://openai.com/index/openai-to-acquire-pierre/">OpenAI</a></b> · openai.com</div>
     </article>
     
     <article class="item">
-      <div class="kicker">SECURITY</div>
-      <h3><a href="https://techcrunch.com/2026/11/03/crowdstrike-to-shell-out-nearly-500m-for-2-ai-security-startups-as-the-market-for-securing-agents-takes-off/">CrowdStrike pays nearly $500M for two startups that watch and test AI agents</a></h3>
-      <p>Fiddler AI (about $400M, agent observability) becomes Falcon Observe, and Dreadnode (about $95M, automated security testing of models and agents) feeds Falcon Guardian. The bet: companies are rolling out agents faster than their security teams can keep track of them.</p>
-      <div class="src">— <b><a href="https://techcrunch.com/2026/11/03/crowdstrike-to-shell-out-nearly-500m-for-2-ai-security-startups-as-the-market-for-securing-agents-takes-off/">TechCrunch</a></b> · techcrunch.com</div>
+      <div class="kicker">OPEN WEIGHTS</div>
+      <h3><a href="https://gigazine.net/gsc_news/en/20261105-kimi-k3-1-pro-model-weight-release/">Moonshot drops Kimi K3.1 Pro weights: 2.8T MoE, 104B active, 1M context</a></h3>
+      <p>The model that launched on 24 Oct is now free to download on Hugging Face, with coding and agent improvements Moonshot claims put it near GPT-6 Astra and Claude Fable 5.1 on some benches. License is mostly unrestricted; Model-as-a-Service over $20M/yr needs a separate Moonshot deal.</p>
+      <div class="src">— <b><a href="https://gigazine.net/gsc_news/en/20261105-kimi-k3-1-pro-model-weight-release/">GIGAZINE</a></b> · gigazine.net</div>
     </article>
     
     <article class="item">
-      <div class="kicker">EDUCATION</div>
-      <h3><a href="https://techcrunch.com/2026/11/03/google-will-let-schools-disable-its-ai-tools-but-not-without-sacrificing-search/">Google will switch off AI for K-12 students unless schools opt in, but blocking AI also blocks Search</a></h3>
-      <p>The change covers Gemini, NotebookLM, Gemini in Classroom and Search. Google says Search and AI are now too intertwined to split, so a school that turns AI off completely will see students get a &#34;not available&#34; message instead of Google Search.</p>
-      <div class="src">— <b><a href="https://techcrunch.com/2026/11/03/google-will-let-schools-disable-its-ai-tools-but-not-without-sacrificing-search/">TechCrunch</a></b> · techcrunch.com</div>
+      <div class="kicker">OPEN SOURCE</div>
+      <h3><a href="https://www.tencent.com/tencent-launches-hy4-joining-the-ranks-of-the-worlds-leading-open-source-ai-models/">Tencent&#39;s Hy4 adds vision, computer use, and long-horizon agents — weights soon</a></h3>
+      <p>Hy4 is live on Tencent Cloud and OpenRouter today; weights and system cards are promised in the coming days. First with GUI/CLI computer use and Blender/CAD training, same pricing as the preview (~$0.90/$2.70 per M tokens). Tencent says cyber evals found no serious offensive capability concerns.</p>
+      <div class="src">— <b><a href="https://www.tencent.com/tencent-launches-hy4-joining-the-ranks-of-the-worlds-leading-open-source-ai-models/">Tencent</a></b> · tencent.com</div>
     </article>
     
     <article class="item">
       <div class="kicker">FINLAND</div>
-      <h3><a href="https://www.tivi.fi/uutiset/a/b5b74799-784e-4a7e-8738-2752488aa430">Linus Torvalds: AI patches are finally landing as normal development, not a flood of fixes</a></h3>
-      <p>The latest Linux merge window has nearly 20,000 changes versus about 15,000 usually. Torvalds is happy AI-made patches no longer pile up as extra fixes during the -rc phase, though he notes AMD GPU register dumps (about a third) and 7.4 being the expected LTS also swell it.</p>
-      <div class="src">— <b><a href="https://www.tivi.fi/uutiset/a/b5b74799-784e-4a7e-8738-2752488aa430">Tivi</a></b> · tivi.fi</div>
+      <h3><a href="https://www.vaisala.com/fi/lehdistotiedotteet/2026-11/vaisala-xweather-tuo-markkinoille-tekoalya-hyodyntavan-met-box-saaennustejarjestelman">Vaisala Xweather ships Met-in-a-box: AI weather forecasts without a supercomputer</a></h3>
+      <p>First product after Vaisala closed its Atmo deal on 28 Oct. The box runs Atmo&#39;s AI weather model on local and Xweather observations, claims forecasts in minutes (vs hours), up to 100× finer resolution, and ~50% more accurate than classic numerical models — aimed at met offices, defence, and enterprises that want their own forecast stack.</p>
+      <div class="src">— <b><a href="https://www.vaisala.com/fi/lehdistotiedotteet/2026-11/vaisala-xweather-tuo-markkinoille-tekoalya-hyodyntavan-met-box-saaennustejarjestelman">Vaisala</a></b> · vaisala.com</div>
     </article>
     
   </section>
@@ -341,28 +353,29 @@ a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
   <div class="section-h"><h2>The Back Page</h2></div>
   <section class="backpage">
     
-    <article class="wc">
-      <div class="kicker">Writer’s Corner · Philosophy</div>
-      <h3><a href="https://www.themarginalian.org/2026/11/03/cajal-science-solitude/">The Founding Father of Neuroscience on Solitude, the Search for Truth, and the Ideal Environment for Breakthroughs</a></h3>
-      <div class="byline"><b>Maria Popova</b> · The Marginalian · Tue 3 Nov</div>
-      <p class="take">Through Cajal&#39;s Advice for a Young Investigator, Popova argues that a nation&#39;s greatness rests on science, which needs a supportive culture and, above all, solitude to grow original minds.</p>
-      <blockquote class="pull"><a href="https://www.themarginalian.org/2026/11/03/cajal-science-solitude/">“But science, of course, only thrives when scientists thrive.”</a></blockquote>
-      <a class="readit" href="https://www.themarginalian.org/2026/11/03/cajal-science-solitude/">Read it ↗<span>· short read, free</span></a>
-    </article>
     
+    <figure class="insp">
+      <div class="kicker">Inspiration</div>
+      <a class="frame" href="https://clevelandart.org/art/1968.257"><img src="https://openaccess-cdn.clevelandart.org/1968.257/1968.257_web.jpg" alt="1897 colour lithograph poster for the Lembrée Gallery by Theo van Rysselberghe" loading="lazy" decoding="async" width="669" height="900"></a>
+      <figcaption>
+        <span class="t"><i>Poster for the Lembrée Gallery</i>, Theo van Rysselberghe (1897)</span>
+        <span class="c">Belgian Neo-Impressionist type and colour — a quiet gallery poster that still reads as modern layout.</span>
+        <span class="cr">The Cleveland Museum of Art · <a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0</a> · <a href="https://clevelandart.org/art/1968.257">Source ↗</a></span>
+      </figcaption>
+    </figure>
     
   </section>
   
 
   
-  <div class="quick"><span class="lbl">JET POWER</span>
-    <p>Stuck in years-long grid queues, some AI data centres now make their own power with converted jet engines. xAI has installed eight in Mississippi to help power its Colossus 2 data centre in Memphis, per the NYT.<span class="src">— <b><a href="https://techcrunch.com/2026/11/03/data-centers-are-turning-to-old-jet-engines-as-the-wait-for-power-grows/">TechCrunch</a></b></span></p></div>
+  <div class="quick"><span class="lbl">IMAGES</span>
+    <p>ChatGPT Images 2.6 is out with GIFs and reference images; OpenAI says two new API image models are coming with ~50% faster generation.<span class="src">— <b><a href="https://x.com/OpenAI/status/2118124944928432327">OpenAI</a></b></span></p></div>
   
   </main>
 
-  <footer class="foot"><span>Compiled 4 Nov 2026, 08:00 Helsinki time. X posts come from two X searches (last ~25 h) and news from open web sources. Times are in Helsinki time.</span><span class="ed">The Morning Commit · 2026-11-04</span></footer>
+  <footer class="foot"><span>Compiled 5 Nov 2026, 08:00 Helsinki time. X posts come from one X search (last ~48 h, known builders) and news from open web sources. Times are in Helsinki time.</span><span class="ed">The Morning Commit · 2026-11-05</span></footer>
   <nav class="nav nav-bottom" aria-label="Issues">
-    <a class="prev" href="issues/2026-11-03/" rel="prev">← Previous</a>
+    <a class="prev" href="issues/2026-11-04/" rel="prev">← Previous</a>
     <a class="mid" href="archive/">All issues</a>
     <span class="next off">Latest</span>
   </nav>

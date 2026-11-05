@@ -1,0 +1,124 @@
+{
+ "paper_name": "The Morning Commit",
+ "tagline": "AI · dev tools · tech — a two-minute read",
+ "edition": "Tampere edition",
+ "issue_no": "No. 28",
+ "date_long": "Thursday, 5 November 2026",
+ "date_slug": "2026-11-05",
+ "lead": {
+  "kicker": "SECURITY",
+  "headline": "OpenAI's cyber agents found 948 ways to get root on Linux — and wrote the patches",
+  "summary": "In one mid-October run, OpenAI's autonomous pipeline (discovery → validation → exploit → patch) reproduced 1,724 Linux kernel bugs and produced 948 working local privilege-escalation exploits, at about $1.2M in API spend ($1,279 per LPE). Human researchers still review before anything goes to maintainers; OpenAI is shipping critical patches via Patch the Planet. The agents also invented at least 10 novel exploit techniques, and a hardened kernelCTF run still netted 21 LPEs for ~$33k — roughly 45× the historical bounty math.",
+  "source": "OpenAI",
+  "url": "https://openai.com/index/a-thousand-fewer-paths-to-root"
+ },
+ "number_of_day": {
+  "value": "$1,279",
+  "label": "API cost per working Linux LPE exploit in OpenAI's mid-October cyber pipeline run — total $1.21M for 948 unique escalations.",
+  "source": "OpenAI",
+  "url": "https://openai.com/index/a-thousand-fewer-paths-to-root"
+ },
+ "news": [
+  {
+   "tag": "OPENAI",
+   "headline": "OpenAI will buy Pierre Computer to deepen Codex's Git and code-review stack",
+   "summary": "Pierre makes Code Storage plus the open-source Trees and Diffs libraries already used inside the Codex app. OpenAI wants agent-friendly source control; Code Storage stays available while its features move into Codex, and Pierre's open-source projects stay open. Closing still needs regulatory approval; terms undisclosed.",
+   "source": "OpenAI",
+   "url": "https://openai.com/index/openai-to-acquire-pierre/"
+  },
+  {
+   "tag": "OPEN WEIGHTS",
+   "headline": "Moonshot drops Kimi K3.1 Pro weights: 2.8T MoE, 104B active, 1M context",
+   "summary": "The model that launched on 24 Oct is now free to download on Hugging Face, with coding and agent improvements Moonshot claims put it near GPT-6 Astra and Claude Fable 5.1 on some benches. License is mostly unrestricted; Model-as-a-Service over $20M/yr needs a separate Moonshot deal.",
+   "source": "GIGAZINE",
+   "url": "https://gigazine.net/gsc_news/en/20261105-kimi-k3-1-pro-model-weight-release/"
+  },
+  {
+   "tag": "OPEN SOURCE",
+   "headline": "Tencent's Hy4 adds vision, computer use, and long-horizon agents — weights soon",
+   "summary": "Hy4 is live on Tencent Cloud and OpenRouter today; weights and system cards are promised in the coming days. First with GUI/CLI computer use and Blender/CAD training, same pricing as the preview (~$0.90/$2.70 per M tokens). Tencent says cyber evals found no serious offensive capability concerns.",
+   "source": "Tencent",
+   "url": "https://www.tencent.com/tencent-launches-hy4-joining-the-ranks-of-the-worlds-leading-open-source-ai-models/"
+  },
+  {
+   "tag": "FINLAND",
+   "headline": "Vaisala Xweather ships Met-in-a-box: AI weather forecasts without a supercomputer",
+   "summary": "First product after Vaisala closed its Atmo deal on 28 Oct. The box runs Atmo's AI weather model on local and Xweather observations, claims forecasts in minutes (vs hours), up to 100× finer resolution, and ~50% more accurate than classic numerical models — aimed at met offices, defence, and enterprises that want their own forecast stack.",
+   "source": "Vaisala",
+   "url": "https://www.vaisala.com/fi/lehdistotiedotteet/2026-11/vaisala-xweather-tuo-markkinoille-tekoalya-hyodyntavan-met-box-saaennustejarjestelman"
+  }
+ ],
+ "x_posts": [
+  {
+   "name": "Guillermo Rauch",
+   "handle": "@rauchg",
+   "time": "Thu 04:22",
+   "text": "We will all be learning in coming weeks & months, that most human-made software:\n\n▫️ Was really slow\n▫️ Had many security vulnerabilities\n▫️ Was under-specified and incorrect\n\nAI will rewrite it all. Many times. It will make it fast, cost-efficient, and secure. It will think",
+   "why": "A blunt thesis for why agentic coding keeps eating the stack — speed, security, and correctness included.",
+   "likes": 2200,
+   "reposts": 194,
+   "url": "https://x.com/rauchg/status/2118166970273292299"
+  },
+  {
+   "name": "@levelsio",
+   "handle": "@levelsio",
+   "time": "Thu 01:05",
+   "text": "I managed to port Battlefield 1942 to mobile web too\n\nSo now it's playable as full multiplayer on iPhone and Android from their browser! 🤯\n\nClaude Code built its own graphic layer that translates Direct3D (DirectX) instructions to WebGL, sitting between the game's machine code [...]",
+   "why": "Indie builder energy: Claude Code writing a D3D→WebGL shim so a 2002 FPS runs multiplayer in a phone browser.",
+   "likes": 120,
+   "reposts": 3,
+   "url": "https://x.com/levelsio/status/2118117357172191242"
+  },
+  {
+   "name": "swyx",
+   "handle": "@swyx",
+   "time": "Thu 03:25",
+   "text": "i'm still processing. what an insane run. $0 to $100B ARR in 2.5 years.",
+   "why": "A short pause on how fast frontier-AI revenue scaled — still hard to internalise.",
+   "likes": 218,
+   "reposts": 3,
+   "url": "https://x.com/swyx/status/2118152585911869634"
+  },
+  {
+   "name": "Amjad Masad",
+   "handle": "@amasad",
+   "time": "Thu 05:15",
+   "text": "Excited to announce our partnership with Sumitomo Mitsui Finance & Leasing (SMFL), one of Japan’s leading financial institutions!\n\nReplit is powering SMFL’s core software products and has massively accelerated their development process: For example they recently in just one week, [...]",
+   "why": "A big Japanese lessor putting Replit on core product work — agent IDEs crossing into enterprise delivery.",
+   "likes": 198,
+   "reposts": 11,
+   "url": "https://x.com/amasad/status/2118180254300688857"
+  },
+  {
+   "name": "Ethan Mollick",
+   "handle": "@emollick",
+   "time": "Thu 04:21",
+   "text": "Whatever role AI played as an issue in this election, I suspect it will play a larger role in every election to come, at least for the foreseeable future.",
+   "why": "A calm forecast: AI as a campaign issue only gets louder from here.",
+   "likes": 173,
+   "reposts": 4,
+   "url": "https://x.com/emollick/status/2118166747215954028"
+  }
+ ],
+ "inspiration": {
+  "title": "Poster for the Lembrée Gallery",
+  "creator": "Theo van Rysselberghe",
+  "year": "1897",
+  "caption": "Belgian Neo-Impressionist type and colour — a quiet gallery poster that still reads as modern layout.",
+  "image_url": "https://openaccess-cdn.clevelandart.org/1968.257/1968.257_web.jpg",
+  "width": 669,
+  "height": 900,
+  "image_alt": "1897 colour lithograph poster for the Lembrée Gallery by Theo van Rysselberghe",
+  "credit": "The Cleveland Museum of Art",
+  "licence": "CC0",
+  "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "source_url": "https://clevelandart.org/art/1968.257"
+ },
+ "quick_hit": {
+  "label": "IMAGES",
+  "text": "ChatGPT Images 2.6 is out with GIFs and reference images; OpenAI says two new API image models are coming with ~50% faster generation.",
+  "source": "OpenAI",
+  "url": "https://x.com/OpenAI/status/2118124944928432327"
+ },
+ "footer": "Compiled 5 Nov 2026, 08:00 Helsinki time. X posts come from one X search (last ~48 h, known builders) and news from open web sources. Times are in Helsinki time."
+}
