@@ -1,0 +1,122 @@
+{
+  "paper_name": "The Morning Commit",
+  "tagline": "AI · dev tools · tech — a two-minute read",
+  "edition": "Tampere edition",
+  "issue_no": "No. 29",
+  "date_long": "Friday, 6 November 2026",
+  "date_slug": "2026-11-06",
+  "lead": {
+    "kicker": "AI R&D",
+    "headline": "METR: Anthropic is improving models ~2× faster — and AI is doing most of the accelerating",
+    "summary": "After an 11-week high-access look inside Anthropic, METR estimates capabilities on well-specified tasks are growing at about twice the March 2024–Oct 2025 rate (AECI 1.9×, 95% CI 1.5–2.8×). They guess a majority (~80%) of today's acceleration comes from AI used in R&D, not faster compute scaling — and they saw no clear bottlenecks that would stop it compounding. Anthropic redacted much of the most informative evidence.",
+    "source": "METR",
+    "url": "https://metr.org/blog/2026-11-05-anthropic-ai-rd-acceleration-assessment/"
+  },
+  "number_of_day": {
+    "value": "1.9×",
+    "label": "Estimated acceleration in Anthropic AECI benchmark growth since Oct 2025 vs the prior trend (95% CI 1.5–2.8×) — roughly two years of historical progress in one.",
+    "source": "METR",
+    "url": "https://metr.org/blog/2026-11-05-anthropic-ai-rd-acceleration-assessment/"
+  },
+  "news": [
+    {
+      "tag": "OPENAI",
+      "headline": "GPT-6 Cyber ships for Daybreak Red: 48.5% ExploitGym, 81 novel Firefox bugs",
+      "summary": "OpenAI's new cyber model scores 48.5% on ExploitGym (up from 32.1% for GPT-5.6 Cyber) and stays in-scope on 99.93–100% of honeypot tests. It helped produce the 948 Linux LPEs and 81 previously unknown high-severity Firefox vulns Mozilla has been patching. Initially API/Codex for approved Daybreak Red customers only; classified Critical under the Preparedness Framework.",
+      "source": "OpenAI",
+      "url": "https://openai.com/index/introducing-gpt-6-cyber"
+    },
+    {
+      "tag": "GOOGLE",
+      "headline": "Gemini Omni 1.2 Flash: native 15-second video, conversational edits, 30% cheaper",
+      "summary": "Google DeepMind's video model is generally available on the Gemini API and Cloud. Clips go to 15s (from 10s), with multi-turn conversational editing, stronger reference adherence, and $0.07/s for 720p — 30% below Omni 1.1. Draft at 360p/720p, then upscale to 1080p or 4K; outputs carry SynthID.",
+      "source": "Google",
+      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash/"
+    },
+    {
+      "tag": "ANTHROPIC",
+      "headline": "Claude Personal Finance: read-only bank data via Plaid for US Pro/Max/Ultra",
+      "summary": "Beta rolls out this week. Connect banks and cards through Plaid; Claude sees balances, credit limits, and up to two years of transactions — it cannot move or invest money. Hub chats aren't used for training; Anthropic pitches it as a first step toward working alongside licensed advisors.",
+      "source": "Anthropic",
+      "url": "https://claude.com/resources/articles/introducing-personal-finance-in-claude"
+    },
+    {
+      "tag": "FINLAND",
+      "headline": "BackingMinds invests in Helsinki's Saidot — ownership and rules for every AI agent",
+      "summary": "Nordic VC BackingMinds (fresh €50M first close of fund III, EIF-backed) backs Saidot's agent-governance stack: every agent gets an owner, mandate, and dependency record so policy-as-code can travel with models and tools. Crowberry and Ventic join; capital funds Europe strength, US expansion, and Gartner-listed Niche Player growth.",
+      "source": "BackingMinds / STT",
+      "url": "https://www.sttinfo.fi/tiedote/72478668/backingminds-expands-in-finland-with-investment-in-saidot-which-helps-companies-control-their-ai-agents?publisherId=69830940&lang=en"
+    }
+  ],
+  "x_posts": [
+    {
+      "name": "Cursor",
+      "handle": "@cursor_ai",
+      "time": "Thu 23:41",
+      "text": "You can now build live apps in Cursor and share them with a link.\n\nAgents have made it easier to write code, but most apps never make it off localhost. Describe the tool you want - Cursor will build it, set up a database, run deterministic and agentic security checks, and deploy. [...]",
+      "why": "The missing half of agent coding: ship past localhost with DB, security checks, and a shareable link.",
+      "likes": 2433,
+      "reposts": 213,
+      "url": "https://x.com/cursor_ai/status/2118458629091426304"
+    },
+    {
+      "name": "Guillermo Rauch",
+      "handle": "@rauchg",
+      "time": "Thu 22:30",
+      "text": "“Doing stuff for you over time” is the killer app of agents.\n\nMuse and Instinct consolidate memories at night, remind you of stuff in the morning, message you after N days passed since your last interaction…\n\nVercel Schedules are like Cron on steroids. They can be defined at [...]",
+      "why": "A clean thesis for agent value: not one-shot chat, but work that persists across days.",
+      "likes": 251,
+      "reposts": 6,
+      "url": "https://x.com/rauchg/status/2118440831355068671"
+    },
+    {
+      "name": "Amjad Masad",
+      "handle": "@amasad",
+      "time": "Fri 02:38",
+      "text": "There are so many Linux zero-day vulnerabilities these days, but on Replit we’re able to avoid 96% of them with our custom Kernel build.\n\nRead about our new sandbox design. [...]",
+      "why": "Agent IDEs live or die on sandboxing — Replit claims a custom kernel cuts most Linux zero-days.",
+      "likes": 142,
+      "reposts": 13,
+      "url": "https://x.com/amasad/status/2118503241390665776"
+    },
+    {
+      "name": "Ethan Mollick",
+      "handle": "@emollick",
+      "time": "Fri 02:13",
+      "text": "As I have written many times in the past years, any potential financial downturn in AI stocks will not greatly change the AI trajectory\n\nAI is not going away, companies are not slowing down adoption nor is development slowing. We still need policy & effort so that AI is used well",
+      "why": "Stock-cycle noise vs capability trajectory — adoption and R&D keep rolling either way.",
+      "likes": 452,
+      "reposts": 19,
+      "url": "https://x.com/emollick/status/2118497026329518238"
+    },
+    {
+      "name": "@levelsio",
+      "handle": "@levelsio",
+      "time": "Thu 22:07",
+      "text": "I told you, they will try eat all industries one by one",
+      "why": "Indie-hacker shorthand for labs pushing into verticals — timed with Claude's Personal Finance launch.",
+      "likes": 4179,
+      "reposts": 138,
+      "url": "https://x.com/levelsio/status/2118435009354694853"
+    }
+  ],
+  "writers_corner": {
+    "category": "Design",
+    "writer": "Brittany Markert",
+    "publication": "The Creative Independent",
+    "date": "Thu 5 Nov",
+    "title": "On confronting your soul in your creative work",
+    "take": "Markert says New Orleans stripped New York survival mode so her In Rooms photography could face the psyche it had been circling — and that artists need each other more than solitary images do.",
+    "quote": "New Orleans is a place to strip yourself of the survival skills of New York and confront your soul, which can be humbling.",
+    "url": "https://thecreativeindependent.com/people/photographer-brittany-markert-on-confronting-your-soul-in-your-creative-work/",
+    "read_note": "~12-min interview",
+    "feed_url": "https://thecreativeindependent.com/feed.xml"
+  },
+  "quick_hit": {
+    "label": "FINLAND",
+    "text": "Helsinki's Vensum Power raises €9M Series A (Lifeline, L&T, Eviny) to mass-produce software-controlled power converters aimed at AI data centres — revenue targeted for 2027.",
+    "source": "Tech Funding News",
+    "url": "https://techfundingnews.com/vensum-power-9m-series-a-ai-data-centre-power-converters/"
+  },
+  "footer": "Compiled 6 Nov 2026, ~08:00 Helsinki time. X posts come from one X search (last ~48 h, known builders) and news from open web sources. Times are in Helsinki time."
+}
