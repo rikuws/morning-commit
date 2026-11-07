@@ -29,7 +29,7 @@
     {
       "tag": "CODEX",
       "headline": "Codex 0.167 adds an agent command center for your background agents",
-      "summary": "Run `codex agents --no-daemon` to see every agent, with unread markers on finished results. You can also switch backends from the session picker without losing drafts, keep chats visible across model providers, preview local images while composing, and expand patch details while an approval prompt is open.",
+      "summary": "Run codex agents --no-daemon to see every agent, with unread markers on finished results. You can also switch backends from the session picker without losing drafts, keep chats visible across model providers, preview local images while composing, and expand patch details while an approval prompt is open.",
       "source": "GitHub · openai/codex",
       "url": "https://github.com/openai/codex/releases/tag/rust-v0.167.0"
     },
@@ -102,7 +102,7 @@
   ],
   "quick_hit": {
     "label": "CLAUDE CODE",
-    "text": "2.1.319 adds `permissions.denyInsteadOfPrompting`: a tool call that would wait on a permission prompt gets denied and the turn keeps going. That's handy for unattended runs and subagents. MCP tasks now move to the background too.",
+    "text": "2.1.319 adds permissions.denyInsteadOfPrompting: a tool call that would wait on a permission prompt gets denied and the turn keeps going. That's handy for unattended runs and subagents. MCP tasks now move to the background too.",
     "source": "Claude Code changelog",
     "url": "https://code.claude.com/docs/en/changelog"
   },
