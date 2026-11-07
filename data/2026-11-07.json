@@ -1,0 +1,110 @@
+{
+  "paper_name": "The Morning Commit",
+  "tagline": "AI · dev tools · tech — a two-minute read",
+  "edition": "Tampere edition",
+  "issue_no": "No. 30",
+  "date_long": "Saturday, 7 November 2026",
+  "date_slug": "2026-11-07",
+  "lead": {
+    "kicker": "AI × MATHS",
+    "headline": "An unreleased Anthropic model just proved a quantum-computing conjecture open since 2008",
+    "summary": "Physical Superintelligence (PSI) says its in-house research system, running a non-public Anthropic model, proved the Aaronson–Ambainis conjecture: on random inputs, quantum computers can't be exponentially faster without a rare hidden pattern. Lean accepted the proof on day three of the run, and the system then improved the result twice. The Lean code is public; Stanford researchers who settled a special case in August call it \"a huge result\" and are writing an expert exposition.",
+    "source": "PSI",
+    "url": "https://psi.inc/research/aaronson-ambainis/"
+  },
+  "number_of_day": {
+    "value": "$1.25T",
+    "label": "OpenAI's reported valuation after raising $11B so far in a round that may reach about $20B, well short of the $30B it was said to be seeking in September.",
+    "source": "TechCrunch / Bloomberg",
+    "url": "https://techcrunch.com/2026/11/06/openai-reportedly-raises-an-additional-11-billion-at-a-1-25-trillion-valuation/"
+  },
+  "news": [
+    {
+      "tag": "MONEY",
+      "headline": "OpenAI raises $11B at $1.25T, while Anthropic's IPO buyers talk it down",
+      "summary": "Bloomberg reports the round is still open and could total about $20B, below the earlier $30B goal. Hours earlier it reported that some prospective Anthropic IPO buyers see a valuation as low as $1.1T, against the ~$2T expected a month ago, with post-midterm data-centre jitters weighing on the market.",
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/11/06/openai-reportedly-raises-an-additional-11-billion-at-a-1-25-trillion-valuation/"
+    },
+    {
+      "tag": "CODEX",
+      "headline": "Codex 0.167 adds an agent command center for your background agents",
+      "summary": "Run `codex agents --no-daemon` to see every agent, with unread markers on finished results. You can also switch backends from the session picker without losing drafts, keep chats visible across model providers, preview local images while composing, and expand patch details while an approval prompt is open.",
+      "source": "GitHub · openai/codex",
+      "url": "https://github.com/openai/codex/releases/tag/rust-v0.167.0"
+    },
+    {
+      "tag": "AGENTS",
+      "headline": "Perplexity launches Teammates: always-on agents that own ongoing work",
+      "summary": "Each Teammate gets its own thread, runs jobs in parallel, builds on Perplexity Computer's projects, skills and memory, and can be reached in Slack. It joins OpenAI's Dots and Claude Duet in the 24/7 agent race, but needs the $200/month Max plan. Srinivas pictures hundreds of teammates per person.",
+      "source": "The Verge",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1028302/perplexity-teammates-ai-agents-work"
+    },
+    {
+      "tag": "FINLAND",
+      "headline": "Helsinki tightens the rules for big data centres",
+      "summary": "New city principles require operators to bring new low-emission, non-combustion power online as their demand grows, recover waste heat at scale for district heating, prefer non-forested sites and follow Finnish labour law. The forested Henriksdal site faces resident protest and a threatened moss species, so alternatives are now being studied.",
+      "source": "Datacenter Nyheter / HS",
+      "url": "https://www.datacenternyheter.se/20261106/243/helsingfors-infor-strangare-villkor-stora-datacenter"
+    }
+  ],
+  "x_posts": [
+    {
+      "name": "Mitchell Hashimoto",
+      "handle": "@mitchellh",
+      "time": "Sat 01:29",
+      "text": "libghostty 1.0 is here! I started Ghostty ~5yrs ago to work towards this. Today, libghostty is in hundreds of projects used by tens of millions of people. 1.0 marks ABI stability, quality, and an invite for distros to begin packaging. [...]",
+      "why": "Ghostty's terminal core is now a stable library that other apps can embed. The terminal app was the stepping stone to it.",
+      "likes": 2710,
+      "reposts": 189,
+      "url": "https://x.com/mitchellh/status/2118848233762078971"
+    },
+    {
+      "name": "Guillermo Rauch",
+      "handle": "@rauchg",
+      "time": "Sat 02:01",
+      "text": "Generative UI for conversational agents.\n\nCombining @aisdk with Chat SDK and json-render, you can go straight from LLM to UI on platforms like Slack and Teams.\n\nI believe this will become the dominant Human-Agent Interaction (HAI) paradigm: [...]",
+      "why": "A bet that agents will answer in Slack and Teams with real UI cards rather than plain text.",
+      "likes": 1097,
+      "reposts": 56,
+      "url": "https://x.com/rauchg/status/2118856239719608353"
+    },
+    {
+      "name": "dax",
+      "handle": "@thdxr",
+      "time": "Sat 03:29",
+      "text": "we're going to release opencode browse soon to let agents control your real browser but i need some people test the flow\n\ncan use it with any agent, can you try this flow: [...]",
+      "why": "An open-source way to let any agent drive your real, signed-in browser, now in early testing.",
+      "likes": 788,
+      "reposts": 23,
+      "url": "https://x.com/thdxr/status/2118878460391137310"
+    },
+    {
+      "name": "Ethan Mollick",
+      "handle": "@emollick",
+      "time": "Sat 02:14",
+      "text": "Some new data from Anthropic looking at the impact of AI on the sciences by field: \"With current capabilities, if adopted widely, AI could take on 27–52% of the researcher time needed to produce a new study, with a median of 38% across fields...\" [...]",
+      "why": "It pairs well with today's lead: a field-by-field estimate of how much research work AI could already take on.",
+      "likes": 286,
+      "reposts": 35,
+      "url": "https://x.com/emollick/status/2118859591798980657"
+    },
+    {
+      "name": "Gergely Orosz",
+      "handle": "@GergelyOrosz",
+      "time": "Sat 01:38",
+      "text": "Meta has some of the best engineers and researchers in the industry - and thanks to the senseless actions the last few months of leadership it became the single best place for AI labs to hire from.\n\nAnyone without an acquihire golden handcuff has shields down there... [...]",
+      "why": "Context on the talent war: Meta keeps buying teams like Conductor's while competitors recruit away its own engineers.",
+      "likes": 257,
+      "reposts": 8,
+      "url": "https://x.com/GergelyOrosz/status/2118850461134725558"
+    }
+  ],
+  "quick_hit": {
+    "label": "CLAUDE CODE",
+    "text": "2.1.319 adds `permissions.denyInsteadOfPrompting`: a tool call that would wait on a permission prompt gets denied and the turn keeps going. That's handy for unattended runs and subagents. MCP tasks now move to the background too.",
+    "source": "Claude Code changelog",
+    "url": "https://code.claude.com/docs/en/changelog"
+  },
+  "footer": "Compiled 7 Nov 2026, ~08:05 Helsinki time. X posts come from one X search (last ~30 h, known builders) and news from open web sources. Times are in Helsinki time."
+}
