@@ -5,23 +5,23 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="color-scheme" content="light">
 <meta name="theme-color" content="#f6f1e7">
-<title>The Morning Commit · Saturday, 7 November 2026</title>
-<meta name="description" content="Saturday, 7 November 2026: An unreleased Anthropic model just proved a quantum-computing conjecture open since 2008. Physical Superintelligence (PSI) says its in-house research system, running a non-public Anthropic model, proved the Aaronson–Ambainis conjecture: on random inputs, quantum…">
-<link rel="canonical" href="https://rikuws.github.io/morning-commit/issues/2026-11-07/">
+<title>The Morning Commit · Sunday, 8 November 2026</title>
+<meta name="description" content="Sunday, 8 November 2026: Anthropic lets Claude &#39;dream&#39;: offline passes that fix and reorganise an agent&#39;s notes. In a new engineering post, Anthropic explains how Claude agents keep memory as readable notes between sessions, then replay old transcripts while idle to correct wrong notes,…">
+<link rel="canonical" href="https://rikuws.github.io/morning-commit/issues/2026-11-08/">
 <meta property="og:type" content="article">
 <meta property="og:site_name" content="The Morning Commit">
-<meta property="og:title" content="The Morning Commit — An unreleased Anthropic model just proved a quantum-computing conjecture open since 2008">
-<meta property="og:description" content="Saturday, 7 November 2026: An unreleased Anthropic model just proved a quantum-computing conjecture open since 2008. Physical Superintelligence (PSI) says its in-house research system, running a non-public Anthropic model, proved the Aaronson–Ambainis conjecture: on random inputs, quantum…">
-<meta property="og:url" content="https://rikuws.github.io/morning-commit/issues/2026-11-07/">
-<meta property="og:image" content="https://rikuws.github.io/morning-commit/issues/2026-11-07/card.png">
+<meta property="og:title" content="The Morning Commit — Anthropic lets Claude &#39;dream&#39;: offline passes that fix and reorganise an agent&#39;s notes">
+<meta property="og:description" content="Sunday, 8 November 2026: Anthropic lets Claude &#39;dream&#39;: offline passes that fix and reorganise an agent&#39;s notes. In a new engineering post, Anthropic explains how Claude agents keep memory as readable notes between sessions, then replay old transcripts while idle to correct wrong notes,…">
+<meta property="og:url" content="https://rikuws.github.io/morning-commit/issues/2026-11-08/">
+<meta property="og:image" content="https://rikuws.github.io/morning-commit/issues/2026-11-08/card.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="The Morning Commit — An unreleased Anthropic model just proved a quantum-computing conjecture open since 2008">
+<meta property="og:image:alt" content="The Morning Commit — Anthropic lets Claude &#39;dream&#39;: offline passes that fix and reorganise an agent&#39;s notes">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://rikuws.github.io/morning-commit/issues/2026-11-07/card.png">
+<meta name="twitter:image" content="https://rikuws.github.io/morning-commit/issues/2026-11-08/card.png">
 
-<meta name="twitter:title" content="The Morning Commit — An unreleased Anthropic model just proved a quantum-computing conjecture open since 2008">
-<meta name="twitter:description" content="Saturday, 7 November 2026: An unreleased Anthropic model just proved a quantum-computing conjecture open since 2008. Physical Superintelligence (PSI) says its in-house research system, running a non-public Anthropic model, proved the Aaronson–Ambainis conjecture: on random inputs, quantum…">
+<meta name="twitter:title" content="The Morning Commit — Anthropic lets Claude &#39;dream&#39;: offline passes that fix and reorganise an agent&#39;s notes">
+<meta name="twitter:description" content="Sunday, 8 November 2026: Anthropic lets Claude &#39;dream&#39;: offline passes that fix and reorganise an agent&#39;s notes. In a new engineering post, Anthropic explains how Claude agents keep memory as readable notes between sessions, then replay old transcripts while idle to correct wrong notes,…">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='10' fill='%23f6f1e7'/%3E%3Ctext x='32' y='48' font-family='Georgia,serif' font-weight='900' font-size='44' text-anchor='middle' fill='%231b1a17'%3EM%3C/text%3E%3Crect x='14' y='54' width='36' height='3' fill='%23b3261e'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -225,31 +225,31 @@ a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
 <body>
 <div class="page">
   <nav class="nav nav-top" aria-label="Issues">
-    <a class="prev" href="issues/2026-11-06/" rel="prev">← Previous</a>
+    <a class="prev" href="issues/2026-11-07/" rel="prev">← Previous</a>
     <a class="mid" href="archive/">Archive</a>
     <span class="next off">Latest</span>
   </nav>
-  <div class="topline"><span>Tampere edition</span><span>No. 30</span><span class="tl">AI · dev tools · tech — a two-minute read</span></div>
+  <div class="topline"><span>Tampere edition</span><span>No. 31</span><span class="tl">AI · dev tools · tech — a two-minute read</span></div>
   <header class="masthead">
     <h1><a href="">The Morning Commit</a></h1>
     <div class="tag">Your morning brief on what moved in AI and dev tools overnight</div>
   </header>
-  <div class="dateline"><span><time datetime="2026-11-07">Saturday, 7 November 2026</time></span><span>5 posts · 5 stories · 2-minute read</span></div>
+  <div class="dateline"><span><time datetime="2026-11-08">Sunday, 8 November 2026</time></span><span>4 posts · 5 stories · 2-minute read</span></div>
 
   <main>
   <section class="lead-row">
     <article class="lead">
-      <div class="kicker">AI × MATHS</div>
-      <h2><a href="https://psi.inc/research/aaronson-ambainis/">An unreleased Anthropic model just proved a quantum-computing conjecture open since 2008</a></h2>
-      <p>Physical Superintelligence (PSI) says its in-house research system, running a non-public Anthropic model, proved the Aaronson–Ambainis conjecture: on random inputs, quantum computers can&#39;t be exponentially faster without a rare hidden pattern. Lean accepted the proof on day three of the run, and the system then improved the result twice. The Lean code is public; Stanford researchers who settled a special case in August call it &#34;a huge result&#34; and are writing an expert exposition.</p>
-      <div class="src">Source: <b><a href="https://psi.inc/research/aaronson-ambainis/">PSI</a></b> · psi.inc</div>
+      <div class="kicker">AGENT MEMORY</div>
+      <h2><a href="https://www.anthropic.com/research/components-of-agent-memory">Anthropic lets Claude &#39;dream&#39;: offline passes that fix and reorganise an agent&#39;s notes</a></h2>
+      <p>In a new engineering post, Anthropic explains how Claude agents keep memory as readable notes between sessions, then replay old transcripts while idle to correct wrong notes, merge duplicates and build wikis. In Pokémon Red, a dream fixed a bad note that had trapped Claude in a loop. Dreams are now a research preview in Claude Managed Agents, and the input memory store is never modified.</p>
+      <div class="src">Source: <b><a href="https://www.anthropic.com/research/components-of-agent-memory">Anthropic</a></b> · anthropic.com</div>
     </article>
     
     <aside class="nod">
       <div class="kicker">Number of the day</div>
-      <div class="big">$1.25T</div>
-      <p>OpenAI&#39;s reported valuation after raising $11B so far in a round that may reach about $20B, well short of the $30B it was said to be seeking in September.</p>
-      <div class="src">Source: <b><a href="https://techcrunch.com/2026/11/06/openai-reportedly-raises-an-additional-11-billion-at-a-1-25-trillion-valuation/">TechCrunch / Bloomberg</a></b></div>
+      <div class="big">13% → 48%</div>
+      <p>How much Claude&#39;s wiki-only score rose on 25 questions about a 420M-token Stainless corpus as dreaming scaled from 2 to 128 sessions. With search plus the wiki it reached 61%, against 53% for search alone.</p>
+      <div class="src">Source: <b><a href="https://www.anthropic.com/research/components-of-agent-memory">Anthropic</a></b></div>
     </aside>
     
   </section>
@@ -258,52 +258,52 @@ a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
   <div class="section-h"><h2>Overheard on X</h2></div>
   <section class="posts">
     
-    <article class="post" style="--span:2">
-      <div class="who"><span class="n">Mitchell Hashimoto</span><span class="sub2"><span class="h">@@mitchellh</span><span class="t">Sat 01:29 Helsinki</span></span></div>
-      <blockquote>“libghostty 1.0 is here! I started Ghostty ~5yrs ago to work towards this. Today, libghostty is in hundreds of projects used by tens of millions of people. 1.0 marks ABI stability, quality, and an invite for distros to begin packaging. [...]”</blockquote>
-      <div class="why"><b>Why it matters</b>Ghostty&#39;s terminal core is now a stable library that other apps can embed. The terminal app was the stepping stone to it.</div>
-      <div class="meta"><span class="stats">♥ <b>2,710</b> &nbsp; ⟲ <b>189</b></span>
-        <a class="u" href="https://x.com/mitchellh/status/2118848233762078971" aria-label="Open @@mitchellh’s post on X"><span class="open">Open on X ↗</span></a></div>
-    </article>
-    
-    <article class="post" style="--span:2">
-      <div class="who"><span class="n">Guillermo Rauch</span><span class="sub2"><span class="h">@@rauchg</span><span class="t">Sat 02:01 Helsinki</span></span></div>
-      <blockquote>“Generative UI for conversational agents.
+    <article class="post" style="--span:3">
+      <div class="who"><span class="n">dax</span><span class="sub2"><span class="h">@@thdxr</span><span class="t">Sun 01:26 Helsinki</span></span></div>
+      <blockquote>“past week ships:
 
-Combining @aisdk with Chat SDK and json-render, you can go straight from LLM to UI on platforms like Slack and Teams.
+- hex, great way to talk to agent
+- browse, great way for agents to use your browser
+- rune, great way to build native apps
+- deepseek $100 for $10
+- new opencode website
 
-I believe this will become the dominant Human-Agent Interaction (HAI) paradigm: [...]”</blockquote>
-      <div class="why"><b>Why it matters</b>A bet that agents will answer in Slack and Teams with real UI cards rather than plain text.</div>
-      <div class="meta"><span class="stats">♥ <b>1,097</b> &nbsp; ⟲ <b>56</b></span>
-        <a class="u" href="https://x.com/rauchg/status/2118856239719608353" aria-label="Open @@rauchg’s post on X"><span class="open">Open on X ↗</span></a></div>
-    </article>
-    
-    <article class="post" style="--span:2">
-      <div class="who"><span class="n">dax</span><span class="sub2"><span class="h">@@thdxr</span><span class="t">Sat 03:29 Helsinki</span></span></div>
-      <blockquote>“we&#39;re going to release opencode browse soon to let agents control your real browser but i need some people test the flow
-
-can use it with any agent, can you try this flow: [...]”</blockquote>
-      <div class="why"><b>Why it matters</b>An open-source way to let any agent drive your real, signed-in browser, now in early testing.</div>
-      <div class="meta"><span class="stats">♥ <b>788</b> &nbsp; ⟲ <b>23</b></span>
-        <a class="u" href="https://x.com/thdxr/status/2118878460391137310" aria-label="Open @@thdxr’s post on X"><span class="open">Open on X ↗</span></a></div>
+unfortunately wrote zero essays about what a software factory is so they will be punished”</blockquote>
+      <div class="why"><b>Why it matters</b>A week of opencode releases in one list, and a jab at people who write about agent tooling instead of shipping it.</div>
+      <div class="meta"><span class="stats">♥ <b>1,494</b> &nbsp; ⟲ <b>43</b></span>
+        <a class="u" href="https://x.com/thdxr/status/2119209943454888082" aria-label="Open @@thdxr’s post on X"><span class="open">Open on X ↗</span></a></div>
     </article>
     
     <article class="post" style="--span:3">
-      <div class="who"><span class="n">Ethan Mollick</span><span class="sub2"><span class="h">@@emollick</span><span class="t">Sat 02:14 Helsinki</span></span></div>
-      <blockquote>“Some new data from Anthropic looking at the impact of AI on the sciences by field: &#34;With current capabilities, if adopted widely, AI could take on 27–52% of the researcher time needed to produce a new study, with a median of 38% across fields...&#34; [...]”</blockquote>
-      <div class="why"><b>Why it matters</b>It pairs well with today&#39;s lead: a field-by-field estimate of how much research work AI could already take on.</div>
-      <div class="meta"><span class="stats">♥ <b>286</b> &nbsp; ⟲ <b>35</b></span>
-        <a class="u" href="https://x.com/emollick/status/2118859591798980657" aria-label="Open @@emollick’s post on X"><span class="open">Open on X ↗</span></a></div>
+      <div class="who"><span class="n">elvis</span><span class="sub2"><span class="h">@@omarsar0</span><span class="t">Sun 06:08 Helsinki</span></span></div>
+      <blockquote>“Decrease the number of touchpoints with agents and instead improve the coordination with and among agents.
+
+Add a queue and a good memory system and watch how much faster and efficient you become. [...]”</blockquote>
+      <div class="why"><b>Why it matters</b>A practitioner&#39;s take that matches today&#39;s lead: give agents a queue and memory, then step out of the loop.</div>
+      <div class="meta"><span class="stats">♥ <b>26</b> &nbsp; ⟲ <b>3</b></span>
+        <a class="u" href="https://x.com/omarsar0/status/2119280878362759303" aria-label="Open @@omarsar0’s post on X"><span class="open">Open on X ↗</span></a></div>
     </article>
     
     <article class="post" style="--span:3">
-      <div class="who"><span class="n">Gergely Orosz</span><span class="sub2"><span class="h">@@GergelyOrosz</span><span class="t">Sat 01:38 Helsinki</span></span></div>
-      <blockquote>“Meta has some of the best engineers and researchers in the industry - and thanks to the senseless actions the last few months of leadership it became the single best place for AI labs to hire from.
+      <div class="who"><span class="n">@levelsio</span><span class="sub2"><span class="h">@@levelsio</span><span class="t">Sun 02:21 Helsinki</span></span></div>
+      <blockquote>“&#34;What the smartest people (or nerds) do on the weekend is what everyone else will do during the week in ten years.&#34; [...]”</blockquote>
+      <div class="why"><b>Why it matters</b>A good line for a Sunday, and an argument for weekend side projects.</div>
+      <div class="meta"><span class="stats">♥ <b>628</b> &nbsp; ⟲ <b>25</b></span>
+        <a class="u" href="https://x.com/levelsio/status/2119223829172007255" aria-label="Open @@levelsio’s post on X"><span class="open">Open on X ↗</span></a></div>
+    </article>
+    
+    <article class="post" style="--span:3">
+      <div class="who"><span class="n">dax</span><span class="sub2"><span class="h">@@thdxr</span><span class="t">Sun 06:40 Helsinki</span></span></div>
+      <blockquote>“so many high friction things are now more accessible thanks to AI
 
-Anyone without an acquihire golden handcuff has shields down there... [...]”</blockquote>
-      <div class="why"><b>Why it matters</b>Context on the talent war: Meta keeps buying teams like Conductor&#39;s while competitors recruit away its own engineers.</div>
-      <div class="meta"><span class="stats">♥ <b>257</b> &nbsp; ⟲ <b>8</b></span>
-        <a class="u" href="https://x.com/GergelyOrosz/status/2118850461134725558" aria-label="Open @@GergelyOrosz’s post on X"><span class="open">Open on X ↗</span></a></div>
+some people are hyped that there&#39;s more people to play with
+
+other people are mad that their identity is being co-opted
+
+you can really tell who genuinely cared about these things in the first place”</blockquote>
+      <div class="why"><b>Why it matters</b>Why some experts welcome AI newcomers to their craft and others resent them.</div>
+      <div class="meta"><span class="stats">♥ <b>175</b> &nbsp; ⟲ <b>4</b></span>
+        <a class="u" href="https://x.com/thdxr/status/2119289048644612313" aria-label="Open @@thdxr’s post on X"><span class="open">Open on X ↗</span></a></div>
     </article>
     
   </section>
@@ -314,31 +314,31 @@ Anyone without an acquihire golden handcuff has shields down there... [...]”</
   <section class="news" style="--cols:4">
     
     <article class="item">
-      <div class="kicker">MONEY</div>
-      <h3><a href="https://techcrunch.com/2026/11/06/openai-reportedly-raises-an-additional-11-billion-at-a-1-25-trillion-valuation/">OpenAI raises $11B at $1.25T, while Anthropic&#39;s IPO buyers talk it down</a></h3>
-      <p>Bloomberg reports the round is still open and could total about $20B, below the earlier $30B goal. Hours earlier it reported that some prospective Anthropic IPO buyers see a valuation as low as $1.1T, against the ~$2T expected a month ago, with post-midterm data-centre jitters weighing on the market.</p>
-      <div class="src">— <b><a href="https://techcrunch.com/2026/11/06/openai-reportedly-raises-an-additional-11-billion-at-a-1-25-trillion-valuation/">TechCrunch</a></b> · techcrunch.com</div>
+      <div class="kicker">SECURITY</div>
+      <h3><a href="https://interestingengineering.com/ai-robotics/1600x-faster-google-deepmind-agents-expose-weaknesses-in-older-encryption-methods">DeepMind&#39;s agents find two new weak spots in legacy 1024-bit RSA</a></h3>
+      <p>Working under human supervision, the agents showed that once an attacker controls about half of a signed block, padding adds no real protection, and found a theoretical forgery attack about 1,600× faster than the previous best. A batch method cuts the cost of each extra 1024-bit key by about 30×. Modern 2048-bit keys are not affected.</p>
+      <div class="src">— <b><a href="https://interestingengineering.com/ai-robotics/1600x-faster-google-deepmind-agents-expose-weaknesses-in-older-encryption-methods">Interesting Engineering</a></b> · interestingengineering.com</div>
     </article>
     
     <article class="item">
-      <div class="kicker">CODEX</div>
-      <h3><a href="https://github.com/openai/codex/releases/tag/rust-v0.167.0">Codex 0.167 adds an agent command center for your background agents</a></h3>
-      <p>Run codex agents --no-daemon to see every agent, with unread markers on finished results. You can also switch backends from the session picker without losing drafts, keep chats visible across model providers, preview local images while composing, and expand patch details while an approval prompt is open.</p>
-      <div class="src">— <b><a href="https://github.com/openai/codex/releases/tag/rust-v0.167.0">GitHub · openai/codex</a></b> · github.com</div>
+      <div class="kicker">OPENAI</div>
+      <h3><a href="https://openai.com/index/partnering-with-hacktron">OpenAI invites Hacktron to attack its own systems</a></h3>
+      <p>The AI security firm, found through OpenAI&#39;s bug bounty, will pick high-priority targets with OpenAI&#39;s engineers, focusing on where OpenAI&#39;s services connect to third-party ones. Hacktron also gets wider access to frontier models through Daybreak Red. It follows a security sprint with Cathedral and higher bounty rewards earlier in the week.</p>
+      <div class="src">— <b><a href="https://openai.com/index/partnering-with-hacktron">OpenAI</a></b> · openai.com</div>
     </article>
     
     <article class="item">
       <div class="kicker">AGENTS</div>
-      <h3><a href="https://www.theverge.com/ai-artificial-intelligence/1028302/perplexity-teammates-ai-agents-work">Perplexity launches Teammates: always-on agents that own ongoing work</a></h3>
-      <p>Each Teammate gets its own thread, runs jobs in parallel, builds on Perplexity Computer&#39;s projects, skills and memory, and can be reached in Slack. It joins OpenAI&#39;s Dots and Claude Duet in the 24/7 agent race, but needs the $200/month Max plan. Srinivas pictures hundreds of teammates per person.</p>
-      <div class="src">— <b><a href="https://www.theverge.com/ai-artificial-intelligence/1028302/perplexity-teammates-ai-agents-work">The Verge</a></b> · theverge.com</div>
+      <h3><a href="https://github.com/google/adk-python/releases/tag/v2.14.0">Google ADK 2.14 makes A2A and sandboxed environments stable</a></h3>
+      <p>Google&#39;s open-source Agent Development Kit moves the agent-to-agent protocol, execution environments (including E2B and Daytona sandboxes), evaluation and the core runtime out of experimental. It also adds multi-run evals with semantic tool-argument matching, a Microsoft Teams runner and faster long multi-turn workflows.</p>
+      <div class="src">— <b><a href="https://github.com/google/adk-python/releases/tag/v2.14.0">GitHub · google/adk-python</a></b> · github.com</div>
     </article>
     
     <article class="item">
       <div class="kicker">FINLAND</div>
-      <h3><a href="https://www.datacenternyheter.se/20261106/243/helsingfors-infor-strangare-villkor-stora-datacenter">Helsinki tightens the rules for big data centres</a></h3>
-      <p>New city principles require operators to bring new low-emission, non-combustion power online as their demand grows, recover waste heat at scale for district heating, prefer non-forested sites and follow Finnish labour law. The forested Henriksdal site faces resident protest and a threatened moss species, so alternatives are now being studied.</p>
-      <div class="src">— <b><a href="https://www.datacenternyheter.se/20261106/243/helsingfors-infor-strangare-villkor-stora-datacenter">Datacenter Nyheter / HS</a></b> · datacenternyheter.se</div>
+      <h3><a href="https://www.epressi.com/tiedotteet/metsatalous/finnos-esittelee-tekoalyohjatun-sahan.html">Lappeenranta&#39;s Finnos runs sawmills with AI agents</a></h3>
+      <p>Finnos showed a system where agents with APIs to every scanner and program see log stock, saw line, kilns and orders at once. They re-plan production whenever something changes, a person picks the plan, and agents carry it out down to the machines. It already runs at two Finnish sawmills, with a Swedish rollout starting.</p>
+      <div class="src">— <b><a href="https://www.epressi.com/tiedotteet/metsatalous/finnos-esittelee-tekoalyohjatun-sahan.html">Finnos / ePressi</a></b> · epressi.com</div>
     </article>
     
   </section>
@@ -347,14 +347,11 @@ Anyone without an acquihire golden handcuff has shields down there... [...]”</
   
 
   
-  <div class="quick"><span class="lbl">CLAUDE CODE</span>
-    <p>2.1.319 adds permissions.denyInsteadOfPrompting: a tool call that would wait on a permission prompt gets denied and the turn keeps going. That&#39;s handy for unattended runs and subagents. MCP tasks now move to the background too.<span class="src">— <b><a href="https://code.claude.com/docs/en/changelog">Claude Code changelog</a></b></span></p></div>
-  
   </main>
 
-  <footer class="foot"><span>Compiled 7 Nov 2026, ~08:05 Helsinki time. X posts come from one X search (last ~30 h, known builders) and news from open web sources. Times are in Helsinki time.</span><span class="ed">The Morning Commit · 2026-11-07</span></footer>
+  <footer class="foot"><span>Compiled 8 Nov 2026, ~08:00 Helsinki time. A quiet Sunday, so some news is from Friday. X posts come from one X search (last ~30 h, known builders) and news from open web sources. Times are in Helsinki time.</span><span class="ed">The Morning Commit · 2026-11-08</span></footer>
   <nav class="nav nav-bottom" aria-label="Issues">
-    <a class="prev" href="issues/2026-11-06/" rel="prev">← Previous</a>
+    <a class="prev" href="issues/2026-11-07/" rel="prev">← Previous</a>
     <a class="mid" href="archive/">All issues</a>
     <span class="next off">Latest</span>
   </nav>

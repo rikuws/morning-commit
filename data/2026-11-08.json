@@ -1,0 +1,94 @@
+{
+  "paper_name": "The Morning Commit",
+  "tagline": "AI · dev tools · tech — a two-minute read",
+  "edition": "Tampere edition",
+  "issue_no": "No. 31",
+  "date_long": "Sunday, 8 November 2026",
+  "date_slug": "2026-11-08",
+  "lead": {
+    "kicker": "AGENT MEMORY",
+    "headline": "Anthropic lets Claude 'dream': offline passes that fix and reorganise an agent's notes",
+    "summary": "In a new engineering post, Anthropic explains how Claude agents keep memory as readable notes between sessions, then replay old transcripts while idle to correct wrong notes, merge duplicates and build wikis. In Pokémon Red, a dream fixed a bad note that had trapped Claude in a loop. Dreams are now a research preview in Claude Managed Agents, and the input memory store is never modified.",
+    "source": "Anthropic",
+    "url": "https://www.anthropic.com/research/components-of-agent-memory"
+  },
+  "number_of_day": {
+    "value": "13% → 48%",
+    "label": "How much Claude's wiki-only score rose on 25 questions about a 420M-token Stainless corpus as dreaming scaled from 2 to 128 sessions. With search plus the wiki it reached 61%, against 53% for search alone.",
+    "source": "Anthropic",
+    "url": "https://www.anthropic.com/research/components-of-agent-memory"
+  },
+  "news": [
+    {
+      "tag": "SECURITY",
+      "headline": "DeepMind's agents find two new weak spots in legacy 1024-bit RSA",
+      "summary": "Working under human supervision, the agents showed that once an attacker controls about half of a signed block, padding adds no real protection, and found a theoretical forgery attack about 1,600× faster than the previous best. A batch method cuts the cost of each extra 1024-bit key by about 30×. Modern 2048-bit keys are not affected.",
+      "source": "Interesting Engineering",
+      "url": "https://interestingengineering.com/ai-robotics/1600x-faster-google-deepmind-agents-expose-weaknesses-in-older-encryption-methods"
+    },
+    {
+      "tag": "OPENAI",
+      "headline": "OpenAI invites Hacktron to attack its own systems",
+      "summary": "The AI security firm, found through OpenAI's bug bounty, will pick high-priority targets with OpenAI's engineers, focusing on where OpenAI's services connect to third-party ones. Hacktron also gets wider access to frontier models through Daybreak Red. It follows a security sprint with Cathedral and higher bounty rewards earlier in the week.",
+      "source": "OpenAI",
+      "url": "https://openai.com/index/partnering-with-hacktron"
+    },
+    {
+      "tag": "AGENTS",
+      "headline": "Google ADK 2.14 makes A2A and sandboxed environments stable",
+      "summary": "Google's open-source Agent Development Kit moves the agent-to-agent protocol, execution environments (including E2B and Daytona sandboxes), evaluation and the core runtime out of experimental. It also adds multi-run evals with semantic tool-argument matching, a Microsoft Teams runner and faster long multi-turn workflows.",
+      "source": "GitHub · google/adk-python",
+      "url": "https://github.com/google/adk-python/releases/tag/v2.14.0"
+    },
+    {
+      "tag": "FINLAND",
+      "headline": "Lappeenranta's Finnos runs sawmills with AI agents",
+      "summary": "Finnos showed a system where agents with APIs to every scanner and program see log stock, saw line, kilns and orders at once. They re-plan production whenever something changes, a person picks the plan, and agents carry it out down to the machines. It already runs at two Finnish sawmills, with a Swedish rollout starting.",
+      "source": "Finnos / ePressi",
+      "url": "https://www.epressi.com/tiedotteet/metsatalous/finnos-esittelee-tekoalyohjatun-sahan.html"
+    }
+  ],
+  "x_posts": [
+    {
+      "name": "dax",
+      "handle": "@thdxr",
+      "time": "Sun 01:26",
+      "text": "past week ships:\n\n- hex, great way to talk to agent\n- browse, great way for agents to use your browser\n- rune, great way to build native apps\n- deepseek $100 for $10\n- new opencode website\n\nunfortunately wrote zero essays about what a software factory is so they will be punished",
+      "why": "A week of opencode releases in one list, and a jab at people who write about agent tooling instead of shipping it.",
+      "likes": 1494,
+      "reposts": 43,
+      "url": "https://x.com/thdxr/status/2119209943454888082"
+    },
+    {
+      "name": "elvis",
+      "handle": "@omarsar0",
+      "time": "Sun 06:08",
+      "text": "Decrease the number of touchpoints with agents and instead improve the coordination with and among agents.\n\nAdd a queue and a good memory system and watch how much faster and efficient you become. [...]",
+      "why": "A practitioner's take that matches today's lead: give agents a queue and memory, then step out of the loop.",
+      "likes": 26,
+      "reposts": 3,
+      "url": "https://x.com/omarsar0/status/2119280878362759303"
+    },
+    {
+      "name": "@levelsio",
+      "handle": "@levelsio",
+      "time": "Sun 02:21",
+      "text": "\"What the smartest people (or nerds) do on the weekend is what everyone else will do during the week in ten years.\" [...]",
+      "why": "A good line for a Sunday, and an argument for weekend side projects.",
+      "likes": 628,
+      "reposts": 25,
+      "url": "https://x.com/levelsio/status/2119223829172007255"
+    },
+    {
+      "name": "dax",
+      "handle": "@thdxr",
+      "time": "Sun 06:40",
+      "text": "so many high friction things are now more accessible thanks to AI\n\nsome people are hyped that there's more people to play with\n\nother people are mad that their identity is being co-opted\n\nyou can really tell who genuinely cared about these things in the first place",
+      "why": "Why some experts welcome AI newcomers to their craft and others resent them.",
+      "likes": 175,
+      "reposts": 4,
+      "url": "https://x.com/thdxr/status/2119289048644612313"
+    }
+  ],
+  "footer": "Compiled 8 Nov 2026, ~08:00 Helsinki time. A quiet Sunday, so some news is from Friday. X posts come from one X search (last ~30 h, known builders) and news from open web sources. Times are in Helsinki time."
+}
