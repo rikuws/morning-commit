@@ -5,23 +5,23 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="color-scheme" content="light">
 <meta name="theme-color" content="#f6f1e7">
-<title>The Morning Commit · Sunday, 8 November 2026</title>
-<meta name="description" content="Sunday, 8 November 2026: Anthropic lets Claude &#39;dream&#39;: offline passes that fix and reorganise an agent&#39;s notes. In a new engineering post, Anthropic explains how Claude agents keep memory as readable notes between sessions, then replay old transcripts while idle to correct wrong notes,…">
-<link rel="canonical" href="https://rikuws.github.io/morning-commit/issues/2026-11-08/">
+<title>The Morning Commit · Monday, 9 November 2026</title>
+<meta name="description" content="Monday, 9 November 2026: On real change requests, the best coding agent fully finishes only about one task in four. Alibaba and several Asian universities built Co-Design Bench from real user requests to rework existing web apps, favouring ones users had to rephrase or roll back. GPT-6 Astra…">
+<link rel="canonical" href="https://rikuws.github.io/morning-commit/issues/2026-11-09/">
 <meta property="og:type" content="article">
 <meta property="og:site_name" content="The Morning Commit">
-<meta property="og:title" content="The Morning Commit — Anthropic lets Claude &#39;dream&#39;: offline passes that fix and reorganise an agent&#39;s notes">
-<meta property="og:description" content="Sunday, 8 November 2026: Anthropic lets Claude &#39;dream&#39;: offline passes that fix and reorganise an agent&#39;s notes. In a new engineering post, Anthropic explains how Claude agents keep memory as readable notes between sessions, then replay old transcripts while idle to correct wrong notes,…">
-<meta property="og:url" content="https://rikuws.github.io/morning-commit/issues/2026-11-08/">
-<meta property="og:image" content="https://rikuws.github.io/morning-commit/issues/2026-11-08/card.png">
+<meta property="og:title" content="The Morning Commit — On real change requests, the best coding agent fully finishes only about one task in four">
+<meta property="og:description" content="Monday, 9 November 2026: On real change requests, the best coding agent fully finishes only about one task in four. Alibaba and several Asian universities built Co-Design Bench from real user requests to rework existing web apps, favouring ones users had to rephrase or roll back. GPT-6 Astra…">
+<meta property="og:url" content="https://rikuws.github.io/morning-commit/issues/2026-11-09/">
+<meta property="og:image" content="https://rikuws.github.io/morning-commit/issues/2026-11-09/card.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="The Morning Commit — Anthropic lets Claude &#39;dream&#39;: offline passes that fix and reorganise an agent&#39;s notes">
+<meta property="og:image:alt" content="The Morning Commit — On real change requests, the best coding agent fully finishes only about one task in four">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://rikuws.github.io/morning-commit/issues/2026-11-08/card.png">
+<meta name="twitter:image" content="https://rikuws.github.io/morning-commit/issues/2026-11-09/card.png">
 
-<meta name="twitter:title" content="The Morning Commit — Anthropic lets Claude &#39;dream&#39;: offline passes that fix and reorganise an agent&#39;s notes">
-<meta name="twitter:description" content="Sunday, 8 November 2026: Anthropic lets Claude &#39;dream&#39;: offline passes that fix and reorganise an agent&#39;s notes. In a new engineering post, Anthropic explains how Claude agents keep memory as readable notes between sessions, then replay old transcripts while idle to correct wrong notes,…">
+<meta name="twitter:title" content="The Morning Commit — On real change requests, the best coding agent fully finishes only about one task in four">
+<meta name="twitter:description" content="Monday, 9 November 2026: On real change requests, the best coding agent fully finishes only about one task in four. Alibaba and several Asian universities built Co-Design Bench from real user requests to rework existing web apps, favouring ones users had to rephrase or roll back. GPT-6 Astra…">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='10' fill='%23f6f1e7'/%3E%3Ctext x='32' y='48' font-family='Georgia,serif' font-weight='900' font-size='44' text-anchor='middle' fill='%231b1a17'%3EM%3C/text%3E%3Crect x='14' y='54' width='36' height='3' fill='%23b3261e'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -225,31 +225,31 @@ a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
 <body>
 <div class="page">
   <nav class="nav nav-top" aria-label="Issues">
-    <a class="prev" href="issues/2026-11-07/" rel="prev">← Previous</a>
+    <a class="prev" href="issues/2026-11-08/" rel="prev">← Previous</a>
     <a class="mid" href="archive/">Archive</a>
     <span class="next off">Latest</span>
   </nav>
-  <div class="topline"><span>Tampere edition</span><span>No. 31</span><span class="tl">AI · dev tools · tech — a two-minute read</span></div>
+  <div class="topline"><span>Tampere edition</span><span>No. 32</span><span class="tl">AI · dev tools · tech — a two-minute read</span></div>
   <header class="masthead">
     <h1><a href="">The Morning Commit</a></h1>
     <div class="tag">Your morning brief on what moved in AI and dev tools overnight</div>
   </header>
-  <div class="dateline"><span><time datetime="2026-11-08">Sunday, 8 November 2026</time></span><span>4 posts · 5 stories · 2-minute read</span></div>
+  <div class="dateline"><span><time datetime="2026-11-09">Monday, 9 November 2026</time></span><span>5 posts · 5 stories · 2-minute read</span></div>
 
   <main>
   <section class="lead-row">
     <article class="lead">
-      <div class="kicker">AGENT MEMORY</div>
-      <h2><a href="https://www.anthropic.com/research/components-of-agent-memory">Anthropic lets Claude &#39;dream&#39;: offline passes that fix and reorganise an agent&#39;s notes</a></h2>
-      <p>In a new engineering post, Anthropic explains how Claude agents keep memory as readable notes between sessions, then replay old transcripts while idle to correct wrong notes, merge duplicates and build wikis. In Pokémon Red, a dream fixed a bad note that had trapped Claude in a loop. Dreams are now a research preview in Claude Managed Agents, and the input memory store is never modified.</p>
-      <div class="src">Source: <b><a href="https://www.anthropic.com/research/components-of-agent-memory">Anthropic</a></b> · anthropic.com</div>
+      <div class="kicker">CODING AGENTS</div>
+      <h2><a href="https://the-decoder.com/ai-coding-agents-still-need-human-cleanup-on-nearly-three-out-of-four-tasks-in-a-real-world-test/">On real change requests, the best coding agent fully finishes only about one task in four</a></h2>
+      <p>Alibaba and several Asian universities built Co-Design Bench from real user requests to rework existing web apps, favouring ones users had to rephrase or roll back. GPT-6 Astra led the ten models, meeting about 70% of each task&#39;s requirements but fully solving only 26.4% of tasks. Scores fall as tasks mix layout, design, interaction and content changes, and the same model scored 75% or 56% on big overhauls depending on the harness, so the authors say to report model and harness together.</p>
+      <div class="src">Source: <b><a href="https://the-decoder.com/ai-coding-agents-still-need-human-cleanup-on-nearly-three-out-of-four-tasks-in-a-real-world-test/">The Decoder</a></b> · the-decoder.com</div>
     </article>
     
     <aside class="nod">
       <div class="kicker">Number of the day</div>
-      <div class="big">13% → 48%</div>
-      <p>How much Claude&#39;s wiki-only score rose on 25 questions about a 420M-token Stainless corpus as dreaming scaled from 2 to 128 sessions. With search plus the wiki it reached 61%, against 53% for search alone.</p>
-      <div class="src">Source: <b><a href="https://www.anthropic.com/research/components-of-agent-memory">Anthropic</a></b></div>
+      <div class="big">17.9%</div>
+      <p>Share of repository-wide tasks that GPT-6 Astra, the top model on Co-Design Bench, fully completed. Older edit benchmarks now see near-perfect scores.</p>
+      <div class="src">Source: <b><a href="https://codesignbench.github.io/">Co-Design Bench</a></b></div>
     </aside>
     
   </section>
@@ -258,52 +258,44 @@ a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
   <div class="section-h"><h2>Overheard on X</h2></div>
   <section class="posts">
     
-    <article class="post" style="--span:3">
-      <div class="who"><span class="n">dax</span><span class="sub2"><span class="h">@@thdxr</span><span class="t">Sun 01:26 Helsinki</span></span></div>
-      <blockquote>“past week ships:
-
-- hex, great way to talk to agent
-- browse, great way for agents to use your browser
-- rune, great way to build native apps
-- deepseek $100 for $10
-- new opencode website
-
-unfortunately wrote zero essays about what a software factory is so they will be punished”</blockquote>
-      <div class="why"><b>Why it matters</b>A week of opencode releases in one list, and a jab at people who write about agent tooling instead of shipping it.</div>
-      <div class="meta"><span class="stats">♥ <b>1,494</b> &nbsp; ⟲ <b>43</b></span>
-        <a class="u" href="https://x.com/thdxr/status/2119209943454888082" aria-label="Open @@thdxr’s post on X"><span class="open">Open on X ↗</span></a></div>
+    <article class="post" style="--span:2">
+      <div class="who"><span class="n">Simon Willison</span><span class="sub2"><span class="h">@@simonw</span><span class="t">Mon 06:36 Helsinki</span></span></div>
+      <blockquote>“I&#39;ve recently started hiding the bulk of my AI-generated GitHub PR descriptions behind a collapsed &lt;details&gt;&lt;summary&gt; HTML tag (thankfully supported by GitHub Markdown) and I think it&#39;s a useful pattern for making PR slop a little bit less exhausting”</blockquote>
+      <div class="why"><b>Why it matters</b>A tiny, steal-it-today trick for reviewers drowning in agent-written PR text.</div>
+      <div class="meta"><span class="stats">♥ <b>269</b> &nbsp; ⟲ <b>12</b></span>
+        <a class="u" href="https://x.com/simonw/status/2119650353142747181" aria-label="Open @@simonw’s post on X"><span class="open">Open on X ↗</span></a></div>
+    </article>
+    
+    <article class="post" style="--span:2">
+      <div class="who"><span class="n">Hamel Husain</span><span class="sub2"><span class="h">@@HamelHusain</span><span class="t">Mon 02:16 Helsinki</span></span></div>
+      <blockquote>“I see some are drawing the wrong inference from this study: they are focusing on this meta benchmark as yet another benchmark for model picking, i.e. open vs closed models, model families etc. That&#39;s too narrow of an interpretation! You need to do your own private evals on [...]”</blockquote>
+      <div class="why"><b>Why it matters</b>Fits today&#39;s lead: a public benchmark is a hint, and your own evals are what count.</div>
+      <div class="meta"><span class="stats">♥ <b>40</b> &nbsp; ⟲ <b>2</b></span>
+        <a class="u" href="https://x.com/HamelHusain/status/2119584949032693767" aria-label="Open @@HamelHusain’s post on X"><span class="open">Open on X ↗</span></a></div>
+    </article>
+    
+    <article class="post" style="--span:2">
+      <div class="who"><span class="n">Guillermo Rauch</span><span class="sub2"><span class="h">@@rauchg</span><span class="t">Sun 23:03 Helsinki</span></span></div>
+      <blockquote>“Built a physical simulation of a record player with WebGL2 and Web Audio. It&#39;s *shockingly* accurate. Instead of playing a song, it works by converting it into the physical shape of a groove. Then a simulated stylus rides those walls 384,000 times a [...]”</blockquote>
+      <div class="why"><b>Why it matters</b>A lovely weekend build: sound rendered from a simulated groove, not just played back.</div>
+      <div class="meta"><span class="stats">♥ <b>2,123</b> &nbsp; ⟲ <b>133</b></span>
+        <a class="u" href="https://x.com/rauchg/status/2119536313712230802" aria-label="Open @@rauchg’s post on X"><span class="open">Open on X ↗</span></a></div>
     </article>
     
     <article class="post" style="--span:3">
-      <div class="who"><span class="n">elvis</span><span class="sub2"><span class="h">@@omarsar0</span><span class="t">Sun 06:08 Helsinki</span></span></div>
-      <blockquote>“Decrease the number of touchpoints with agents and instead improve the coordination with and among agents.
-
-Add a queue and a good memory system and watch how much faster and efficient you become. [...]”</blockquote>
-      <div class="why"><b>Why it matters</b>A practitioner&#39;s take that matches today&#39;s lead: give agents a queue and memory, then step out of the loop.</div>
-      <div class="meta"><span class="stats">♥ <b>26</b> &nbsp; ⟲ <b>3</b></span>
-        <a class="u" href="https://x.com/omarsar0/status/2119280878362759303" aria-label="Open @@omarsar0’s post on X"><span class="open">Open on X ↗</span></a></div>
+      <div class="who"><span class="n">Ethan Mollick</span><span class="sub2"><span class="h">@@emollick</span><span class="t">Mon 06:20 Helsinki</span></span></div>
+      <blockquote>“A favorite optimistic view of the future of AI is from a pessimistic book that not about AI: &#34;Rise and Fall of American Growth,&#34; which argues that we had a one-time explosion in living standards from 1870 and 1920 [...]”</blockquote>
+      <div class="why"><b>Why it matters</b>A history-minded case that a new growth burst isn&#39;t as far-fetched as it sounds.</div>
+      <div class="meta"><span class="stats">♥ <b>94</b> &nbsp; ⟲ <b>12</b></span>
+        <a class="u" href="https://x.com/emollick/status/2119646219974697351" aria-label="Open @@emollick’s post on X"><span class="open">Open on X ↗</span></a></div>
     </article>
     
     <article class="post" style="--span:3">
-      <div class="who"><span class="n">@levelsio</span><span class="sub2"><span class="h">@@levelsio</span><span class="t">Sun 02:21 Helsinki</span></span></div>
-      <blockquote>“&#34;What the smartest people (or nerds) do on the weekend is what everyone else will do during the week in ten years.&#34; [...]”</blockquote>
-      <div class="why"><b>Why it matters</b>A good line for a Sunday, and an argument for weekend side projects.</div>
-      <div class="meta"><span class="stats">♥ <b>628</b> &nbsp; ⟲ <b>25</b></span>
-        <a class="u" href="https://x.com/levelsio/status/2119223829172007255" aria-label="Open @@levelsio’s post on X"><span class="open">Open on X ↗</span></a></div>
-    </article>
-    
-    <article class="post" style="--span:3">
-      <div class="who"><span class="n">dax</span><span class="sub2"><span class="h">@@thdxr</span><span class="t">Sun 06:40 Helsinki</span></span></div>
-      <blockquote>“so many high friction things are now more accessible thanks to AI
-
-some people are hyped that there&#39;s more people to play with
-
-other people are mad that their identity is being co-opted
-
-you can really tell who genuinely cared about these things in the first place”</blockquote>
-      <div class="why"><b>Why it matters</b>Why some experts welcome AI newcomers to their craft and others resent them.</div>
-      <div class="meta"><span class="stats">♥ <b>175</b> &nbsp; ⟲ <b>4</b></span>
-        <a class="u" href="https://x.com/thdxr/status/2119289048644612313" aria-label="Open @@thdxr’s post on X"><span class="open">Open on X ↗</span></a></div>
+      <div class="who"><span class="n">@levelsio</span><span class="sub2"><span class="h">@@levelsio</span><span class="t">Mon 00:53 Helsinki</span></span></div>
+      <blockquote>“RIP Infinite Slop TV, August 2026 - October 2026. It let anybody on the internet write into a chat that fed into a perpetual stream of live generated AI video (aka slop) [...]”</blockquote>
+      <div class="why"><b>Why it matters</b>An honest indie-hacker obituary for a project that only became possible this year.</div>
+      <div class="meta"><span class="stats">♥ <b>260</b> &nbsp; ⟲ <b>4</b></span>
+        <a class="u" href="https://x.com/levelsio/status/2119564112208257515" aria-label="Open @@levelsio’s post on X"><span class="open">Open on X ↗</span></a></div>
     </article>
     
   </section>
@@ -314,44 +306,60 @@ you can really tell who genuinely cared about these things in the first place”
   <section class="news" style="--cols:4">
     
     <article class="item">
-      <div class="kicker">SECURITY</div>
-      <h3><a href="https://interestingengineering.com/ai-robotics/1600x-faster-google-deepmind-agents-expose-weaknesses-in-older-encryption-methods">DeepMind&#39;s agents find two new weak spots in legacy 1024-bit RSA</a></h3>
-      <p>Working under human supervision, the agents showed that once an attacker controls about half of a signed block, padding adds no real protection, and found a theoretical forgery attack about 1,600× faster than the previous best. A batch method cuts the cost of each extra 1024-bit key by about 30×. Modern 2048-bit keys are not affected.</p>
-      <div class="src">— <b><a href="https://interestingengineering.com/ai-robotics/1600x-faster-google-deepmind-agents-expose-weaknesses-in-older-encryption-methods">Interesting Engineering</a></b> · interestingengineering.com</div>
-    </article>
-    
-    <article class="item">
-      <div class="kicker">OPENAI</div>
-      <h3><a href="https://openai.com/index/partnering-with-hacktron">OpenAI invites Hacktron to attack its own systems</a></h3>
-      <p>The AI security firm, found through OpenAI&#39;s bug bounty, will pick high-priority targets with OpenAI&#39;s engineers, focusing on where OpenAI&#39;s services connect to third-party ones. Hacktron also gets wider access to frontier models through Daybreak Red. It follows a security sprint with Cathedral and higher bounty rewards earlier in the week.</p>
-      <div class="src">— <b><a href="https://openai.com/index/partnering-with-hacktron">OpenAI</a></b> · openai.com</div>
+      <div class="kicker">POWER</div>
+      <h3><a href="https://www.cnbc.com/2026/11/08/anthropic-generator-deal-ai-data-centers.html">Anthropic buys $3.4B of gas generators to power its data centres</a></h3>
+      <p>The Financial Times reports that Anthropic took over commitments for 1.7 GW of heavy-duty generators from Texas supplier OnePWR Solutions in late September, along with the engineering and construction capability to install them. It did not buy OnePWR itself. Neither company commented.</p>
+      <div class="src">— <b><a href="https://www.cnbc.com/2026/11/08/anthropic-generator-deal-ai-data-centers.html">CNBC / FT</a></b> · cnbc.com</div>
     </article>
     
     <article class="item">
       <div class="kicker">AGENTS</div>
-      <h3><a href="https://github.com/google/adk-python/releases/tag/v2.14.0">Google ADK 2.14 makes A2A and sandboxed environments stable</a></h3>
-      <p>Google&#39;s open-source Agent Development Kit moves the agent-to-agent protocol, execution environments (including E2B and Daytona sandboxes), evaluation and the core runtime out of experimental. It also adds multi-run evals with semantic tool-argument matching, a Microsoft Teams runner and faster long multi-turn workflows.</p>
-      <div class="src">— <b><a href="https://github.com/google/adk-python/releases/tag/v2.14.0">GitHub · google/adk-python</a></b> · github.com</div>
+      <h3><a href="https://www.freemalaysiatoday.com/category/business/2026/11/09/deepseek-s-ai-agent-platform-hits-1-54-million-daily-users">DeepSeek&#39;s open-source agent app Harness hits 1.54M daily users</a></h3>
+      <p>Up from about 271,000 at the end of September, less than three months after launch. Harness burns about 92 trillion tokens a day, roughly 60 million per user, an early sign of how much more compute agents eat than chatbots. DeepSeek counts about 35,000 plugins and plans an official plugin marketplace.</p>
+      <div class="src">— <b><a href="https://www.freemalaysiatoday.com/category/business/2026/11/09/deepseek-s-ai-agent-platform-hits-1-54-million-daily-users">Bloomberg via FMT</a></b> · freemalaysiatoday.com</div>
+    </article>
+    
+    <article class="item">
+      <div class="kicker">NVIDIA</div>
+      <h3><a href="https://techcrunch.com/2026/11/08/nvidia-says-its-investigating-ceo-jensen-huangs-relationship-with-possible-chinese-spy/">Nvidia&#39;s board opens an independent probe into reports about Jensen Huang</a></h3>
+      <p>A committee of independent directors with outside counsel will look into reporting that Huang was the target of a foreign intelligence effort; in a memo to staff he admitted an affair. Huang stays CEO, and the board says it has no reason to believe national security or Nvidia secrets were compromised. Results are due 17 November.</p>
+      <div class="src">— <b><a href="https://techcrunch.com/2026/11/08/nvidia-says-its-investigating-ceo-jensen-huangs-relationship-with-possible-chinese-spy/">TechCrunch</a></b> · techcrunch.com</div>
     </article>
     
     <article class="item">
       <div class="kicker">FINLAND</div>
-      <h3><a href="https://www.epressi.com/tiedotteet/metsatalous/finnos-esittelee-tekoalyohjatun-sahan.html">Lappeenranta&#39;s Finnos runs sawmills with AI agents</a></h3>
-      <p>Finnos showed a system where agents with APIs to every scanner and program see log stock, saw line, kilns and orders at once. They re-plan production whenever something changes, a person picks the plan, and agents carry it out down to the machines. It already runs at two Finnish sawmills, with a Swedish rollout starting.</p>
-      <div class="src">— <b><a href="https://www.epressi.com/tiedotteet/metsatalous/finnos-esittelee-tekoalyohjatun-sahan.html">Finnos / ePressi</a></b> · epressi.com</div>
+      <h3><a href="https://www.eu-startups.com/2026/11/helsinkis-vensum-power-secures-e9-million-to-scale-its-software-defined-power-conversion-platform/">Helsinki&#39;s Vensum Power raises €9M for near-lossless power converters</a></h3>
+      <p>Lifeline Ventures co-led the Series A with Larsen &amp; Toubro and Eviny Ventures. Vensum&#39;s software-defined converters are built to stay efficient under fluctuating loads, and go into mass production at partner factories in 2027, first for EV charging and storage, then AI data centres.</p>
+      <div class="src">— <b><a href="https://www.eu-startups.com/2026/11/helsinkis-vensum-power-secures-e9-million-to-scale-its-software-defined-power-conversion-platform/">EU-Startups</a></b> · eu-startups.com</div>
     </article>
     
   </section>
   
 
   
+  
+  <div class="section-h"><h2>The Back Page</h2></div>
+  <section class="backpage">
+    
+    <article class="wc">
+      <div class="kicker">Writer’s Corner · History</div>
+      <h3><a href="https://publicdomainreview.org/collection/marian-wawrzeniecki">Slavdom Unearthed: Marian Wawrzeniecki&#39;s Neopagan Paintings (1891–1923)</a></h3>
+      <div class="byline"><b>Thom Sliwowski</b> · The Public Domain Review · Wed 4 Nov</div>
+      <p class="take">How a Kraków-trained history painter who was also a pioneering archaeologist let his digs reshape his art, until he was painting an imagined pagan Slavic past as Poland&#39;s true self.</p>
+      <blockquote class="pull"><a href="https://publicdomainreview.org/collection/marian-wawrzeniecki">“Although he was, by any measure, a minor painter, Wawrzeniecki was a majorly influential archaeologist”</a></blockquote>
+      <a class="readit" href="https://publicdomainreview.org/collection/marian-wawrzeniecki">Read it ↗<span>· short essay plus a big image gallery</span></a>
+    </article>
+    
+    
+  </section>
+  
 
   
   </main>
 
-  <footer class="foot"><span>Compiled 8 Nov 2026, ~08:00 Helsinki time. A quiet Sunday, so some news is from Friday. X posts come from one X search (last ~30 h, known builders) and news from open web sources. Times are in Helsinki time.</span><span class="ed">The Morning Commit · 2026-11-08</span></footer>
+  <footer class="foot"><span>Compiled 9 Nov 2026, ~08:00 Helsinki time. Weekend news is in; the Finnish item is from Friday. X posts come from one X search (last ~30 h, known builders) and news from open web sources. Times are in Helsinki time.</span><span class="ed">The Morning Commit · 2026-11-09</span></footer>
   <nav class="nav nav-bottom" aria-label="Issues">
-    <a class="prev" href="issues/2026-11-07/" rel="prev">← Previous</a>
+    <a class="prev" href="issues/2026-11-08/" rel="prev">← Previous</a>
     <a class="mid" href="archive/">All issues</a>
     <span class="next off">Latest</span>
   </nav>

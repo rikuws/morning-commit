@@ -1,0 +1,116 @@
+{
+  "paper_name": "The Morning Commit",
+  "tagline": "AI · dev tools · tech — a two-minute read",
+  "edition": "Tampere edition",
+  "issue_no": "No. 32",
+  "date_long": "Monday, 9 November 2026",
+  "date_slug": "2026-11-09",
+  "lead": {
+    "kicker": "CODING AGENTS",
+    "headline": "On real change requests, the best coding agent fully finishes only about one task in four",
+    "summary": "Alibaba and several Asian universities built Co-Design Bench from real user requests to rework existing web apps, favouring ones users had to rephrase or roll back. GPT-6 Astra led the ten models, meeting about 70% of each task's requirements but fully solving only 26.4% of tasks. Scores fall as tasks mix layout, design, interaction and content changes, and the same model scored 75% or 56% on big overhauls depending on the harness, so the authors say to report model and harness together.",
+    "source": "The Decoder",
+    "url": "https://the-decoder.com/ai-coding-agents-still-need-human-cleanup-on-nearly-three-out-of-four-tasks-in-a-real-world-test/"
+  },
+  "number_of_day": {
+    "value": "17.9%",
+    "label": "Share of repository-wide tasks that GPT-6 Astra, the top model on Co-Design Bench, fully completed. Older edit benchmarks now see near-perfect scores.",
+    "source": "Co-Design Bench",
+    "url": "https://codesignbench.github.io/"
+  },
+  "news": [
+    {
+      "tag": "POWER",
+      "headline": "Anthropic buys $3.4B of gas generators to power its data centres",
+      "summary": "The Financial Times reports that Anthropic took over commitments for 1.7 GW of heavy-duty generators from Texas supplier OnePWR Solutions in late September, along with the engineering and construction capability to install them. It did not buy OnePWR itself. Neither company commented.",
+      "source": "CNBC / FT",
+      "url": "https://www.cnbc.com/2026/11/08/anthropic-generator-deal-ai-data-centers.html"
+    },
+    {
+      "tag": "AGENTS",
+      "headline": "DeepSeek's open-source agent app Harness hits 1.54M daily users",
+      "summary": "Up from about 271,000 at the end of September, less than three months after launch. Harness burns about 92 trillion tokens a day, roughly 60 million per user, an early sign of how much more compute agents eat than chatbots. DeepSeek counts about 35,000 plugins and plans an official plugin marketplace.",
+      "source": "Bloomberg via FMT",
+      "url": "https://www.freemalaysiatoday.com/category/business/2026/11/09/deepseek-s-ai-agent-platform-hits-1-54-million-daily-users"
+    },
+    {
+      "tag": "NVIDIA",
+      "headline": "Nvidia's board opens an independent probe into reports about Jensen Huang",
+      "summary": "A committee of independent directors with outside counsel will look into reporting that Huang was the target of a foreign intelligence effort; in a memo to staff he admitted an affair. Huang stays CEO, and the board says it has no reason to believe national security or Nvidia secrets were compromised. Results are due 17 November.",
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/11/08/nvidia-says-its-investigating-ceo-jensen-huangs-relationship-with-possible-chinese-spy/"
+    },
+    {
+      "tag": "FINLAND",
+      "headline": "Helsinki's Vensum Power raises €9M for near-lossless power converters",
+      "summary": "Lifeline Ventures co-led the Series A with Larsen & Toubro and Eviny Ventures. Vensum's software-defined converters are built to stay efficient under fluctuating loads, and go into mass production at partner factories in 2027, first for EV charging and storage, then AI data centres.",
+      "source": "EU-Startups",
+      "url": "https://www.eu-startups.com/2026/11/helsinkis-vensum-power-secures-e9-million-to-scale-its-software-defined-power-conversion-platform/"
+    }
+  ],
+  "x_posts": [
+    {
+      "name": "Simon Willison",
+      "handle": "@simonw",
+      "time": "Mon 06:36",
+      "text": "I've recently started hiding the bulk of my AI-generated GitHub PR descriptions behind a collapsed <details><summary> HTML tag (thankfully supported by GitHub Markdown) and I think it's a useful pattern for making PR slop a little bit less exhausting",
+      "why": "A tiny, steal-it-today trick for reviewers drowning in agent-written PR text.",
+      "likes": 269,
+      "reposts": 12,
+      "url": "https://x.com/simonw/status/2119650353142747181"
+    },
+    {
+      "name": "Hamel Husain",
+      "handle": "@HamelHusain",
+      "time": "Mon 02:16",
+      "text": "I see some are drawing the wrong inference from this study: they are focusing on this meta benchmark as yet another benchmark for model picking, i.e. open vs closed models, model families etc. That's too narrow of an interpretation! You need to do your own private evals on [...]",
+      "why": "Fits today's lead: a public benchmark is a hint, and your own evals are what count.",
+      "likes": 40,
+      "reposts": 2,
+      "url": "https://x.com/HamelHusain/status/2119584949032693767"
+    },
+    {
+      "name": "Guillermo Rauch",
+      "handle": "@rauchg",
+      "time": "Sun 23:03",
+      "text": "Built a physical simulation of a record player with WebGL2 and Web Audio. It's *shockingly* accurate. Instead of playing a song, it works by converting it into the physical shape of a groove. Then a simulated stylus rides those walls 384,000 times a [...]",
+      "why": "A lovely weekend build: sound rendered from a simulated groove, not just played back.",
+      "likes": 2123,
+      "reposts": 133,
+      "url": "https://x.com/rauchg/status/2119536313712230802"
+    },
+    {
+      "name": "Ethan Mollick",
+      "handle": "@emollick",
+      "time": "Mon 06:20",
+      "text": "A favorite optimistic view of the future of AI is from a pessimistic book that not about AI: \"Rise and Fall of American Growth,\" which argues that we had a one-time explosion in living standards from 1870 and 1920 [...]",
+      "why": "A history-minded case that a new growth burst isn't as far-fetched as it sounds.",
+      "likes": 94,
+      "reposts": 12,
+      "url": "https://x.com/emollick/status/2119646219974697351"
+    },
+    {
+      "name": "@levelsio",
+      "handle": "@levelsio",
+      "time": "Mon 00:53",
+      "text": "RIP Infinite Slop TV, August 2026 - October 2026. It let anybody on the internet write into a chat that fed into a perpetual stream of live generated AI video (aka slop) [...]",
+      "why": "An honest indie-hacker obituary for a project that only became possible this year.",
+      "likes": 260,
+      "reposts": 4,
+      "url": "https://x.com/levelsio/status/2119564112208257515"
+    }
+  ],
+  "writers_corner": {
+    "category": "History",
+    "writer": "Thom Sliwowski",
+    "publication": "The Public Domain Review",
+    "date": "Wed 4 Nov",
+    "title": "Slavdom Unearthed: Marian Wawrzeniecki's Neopagan Paintings (1891–1923)",
+    "take": "How a Kraków-trained history painter who was also a pioneering archaeologist let his digs reshape his art, until he was painting an imagined pagan Slavic past as Poland's true self.",
+    "quote": "Although he was, by any measure, a minor painter, Wawrzeniecki was a majorly influential archaeologist",
+    "url": "https://publicdomainreview.org/collection/marian-wawrzeniecki",
+    "read_note": "short essay plus a big image gallery",
+    "feed_url": "https://publicdomainreview.org/rss.xml"
+  },
+  "footer": "Compiled 9 Nov 2026, ~08:00 Helsinki time. Weekend news is in; the Finnish item is from Friday. X posts come from one X search (last ~30 h, known builders) and news from open web sources. Times are in Helsinki time."
+}
