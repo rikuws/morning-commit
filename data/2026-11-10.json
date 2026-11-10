@@ -1,0 +1,124 @@
+{
+  "paper_name": "The Morning Commit",
+  "tagline": "AI · dev tools · tech — a two-minute read",
+  "edition": "Tampere edition",
+  "issue_no": "No. 33",
+  "date_long": "Tuesday, 10 November 2026",
+  "date_slug": "2026-11-10",
+  "lead": {
+    "kicker": "NEW MODELS",
+    "headline": "Claude Fable 5.2 is out, and in testing it ran 1,000+ subagents for eight days to build a bootable OS",
+    "summary": "Anthropic shipped Fable 5.2 and its gated twin Mythos 5.2 on Monday. They are the same model: Fable has cyber and bio safeguards and is open to everyone, while Mythos goes to vetted security and life-sciences groups. Anthropic says outputs come up to 30% faster than 5.1, and the price drops to $8/$40 per million tokens. Its showcase: from an empty folder, Fable coordinated over 1,000 subagents for eight days and produced an operating system that boots on a laptop, with drivers, file storage, windows and a login screen.",
+    "source": "Anthropic",
+    "url": "https://www.anthropic.com/claude-fable-and-mythos-5-2"
+  },
+  "number_of_day": {
+    "value": "30 h",
+    "label": "How long Fable 5.2 took to formalize the proof of Fermat's Last Theorem during Anthropic's prerelease testing.",
+    "source": "Anthropic",
+    "url": "https://www.anthropic.com/claude-fable-and-mythos-5-2"
+  },
+  "news": [
+    {
+      "tag": "MODELS",
+      "headline": "Meta's Muse Ember: a $0.10-per-million-token model for the work agents repeat all day",
+      "summary": "Meta Superintelligence Labs' smallest Muse model is built for tool calls, coding subtasks, routing, extraction and long-document parsing, and reads images and audio too. Meta pitches it as the volume worker under its bigger Muse Wonder: \"Muse Wonder plans, Muse Ember handles the volume.\"",
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/11/09/meta-releases-muse-ember-a-new-lightweight-model-for-agent-execution/"
+    },
+    {
+      "tag": "PRIVACY",
+      "headline": "Google confirms people review some Gmail and Drive content connected to personal Gemini",
+      "summary": "A Hacker News thread on Monday flagged Google's Connected Apps help page: a subset of that data, summaries and excerpts of emails and files, is read by human reviewers, and for a short file the excerpt may be the whole thing. Work and school accounts are excluded. Disconnecting Workspace and turning off Keep Activity stops it going forward.",
+      "source": "Google Gemini Help",
+      "url": "https://support.google.com/gemini/answer/16836988?hl=en"
+    },
+    {
+      "tag": "SECURITY",
+      "headline": "Fireworks AI widens its breach disclosure to customer datasets and unfinished model weights",
+      "summary": "An update dated 9 November says the attackers, linked to an \"LLMjacking\" group that resells stolen model access, also reached account and billing data and, for some customers, secrets, datasets and incomplete weights. Fireworks says inference and training SDK were not hit, and has paused self-serve dataset uploads and downloads.",
+      "source": "Fireworks AI",
+      "url": "https://fireworks.ai/security/bulletins/october-2026-security-incident-update"
+    },
+    {
+      "tag": "FINLAND",
+      "headline": "Japan's MUFG joins Helsinki GPU cloud Verda's $189M unicorn round",
+      "summary": "MUFG's venture arm completed a strategic investment in the former DataCrunch, citing demand for AI compute and Europe's push for sovereign AI infrastructure. Verda says it now runs about 250 people and will use MUFG to grow in Japan and across Asia-Pacific.",
+      "source": "Fintech Observer",
+      "url": "https://www.fintechobserver.com/mufg-backs-finnish-ai-cloud-firm-verda-in-usd-189m-unicorn-round/"
+    }
+  ],
+  "x_posts": [
+    {
+      "name": "Simon Willison",
+      "handle": "@simonw",
+      "time": "Tue 07:42",
+      "text": "When Anthropic release a new model it's always worth taking a look at their updated prompting guide - here's an entertaining tip to make Fable 5.2 less likely to be cautious in how it improves existing code: tell it \"This codebase is yours\"",
+      "why": "A one-line prompt tweak worth trying the first time you point Fable 5.2 at an old repo.",
+      "likes": 19,
+      "reposts": 4,
+      "url": "https://x.com/simonw/status/2120029347948220500"
+    },
+    {
+      "name": "Ethan Mollick",
+      "handle": "@emollick",
+      "time": "Tue 05:49",
+      "text": "Looks like Fable 5.2 is above the already steep trendline on three of the most informative unsaturated benchmarks (ECI is a composite of other benchmarks, Remote Labor measures the ability to do end-to-end freelance jobs, RoboDojo involves controlling robotics).",
+      "why": "A quick read on whether today's lead is a step up or just the trend continuing.",
+      "likes": 383,
+      "reposts": 30,
+      "url": "https://x.com/emollick/status/2120000888974766501"
+    },
+    {
+      "name": "dax",
+      "handle": "@thdxr",
+      "time": "Tue 01:05",
+      "text": "we recently made a seperate aws account to move off of github secrets since AWS SecretsManager supports OIDC natively so we made a lambda function with iam auth that github actions can invoke and get a temporary cloudflare credential hack until cloudflare adds this natively",
+      "why": "A practical pattern for getting long-lived keys out of CI, timely after a week of breach news.",
+      "likes": 625,
+      "reposts": 13,
+      "url": "https://x.com/thdxr/status/2119929443091431497"
+    },
+    {
+      "name": "Gergely Orosz",
+      "handle": "@GergelyOrosz",
+      "time": "Tue 03:40",
+      "text": "The thing with AI: You REALLY can replace existing software with something that is much faster in performance, much cheaper to operate, as reliable (or more!) as before, with shockingly little effort when you know how to use AI. Expertise has never been this valuable!!",
+      "why": "The consultant's case in two sentences: the payoff goes to people who know what good looks like.",
+      "likes": 427,
+      "reposts": 12,
+      "url": "https://x.com/GergelyOrosz/status/2119968519672775045"
+    },
+    {
+      "name": "Simon Willison",
+      "handle": "@simonw",
+      "time": "Tue 02:09",
+      "text": "There is a mysterious intermittent beep coming from somewhere in your room of unopened boxes. Do you: 1. Open boxes methodically until you find it 2. Vibe code software to triangulate it using two laptops, two iPads and a phone all listening at once",
+      "why": "Peak builder energy, and a fun look at what throwaway software is good for now.",
+      "likes": 461,
+      "reposts": 25,
+      "url": "https://x.com/simonw/status/2119945524514328631"
+    }
+  ],
+  "quick_hit": {
+    "label": "UPDATE",
+    "text": "Claude Code 2.1.321 makes Fable 5.2 the default Fable model and moves saved Fable 5.1 picks over; use /model claude-fable-5-1 to switch back.",
+    "source": "Claude Code changelog",
+    "url": "https://code.claude.com/docs/en/changelog"
+  },
+  "inspiration": {
+    "title": "Hand Mirror",
+    "creator": "Villé Vallgren",
+    "year": "c. 1895",
+    "caption": "A Finnish sculptor in Paris turns an everyday object into Art Nouveau: the frame is a cloaked figure whose robe spreads out to hold the glass.",
+    "image_url": "https://openaccess-cdn.clevelandart.org/1976.120/1976.120_web.jpg",
+    "width": 669,
+    "height": 893,
+    "image_alt": "Dark bronze hand mirror whose back is a hooded, cloaked figure with outspread drapery, set on a long slender handle",
+    "credit": "The Cleveland Museum of Art",
+    "licence": "CC0",
+    "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "source_url": "https://clevelandart.org/art/1976.120"
+  },
+  "footer": "Compiled 10 Nov 2026, ~08:00 Helsinki time. X posts come from one X search (last ~30 h, known builders) and news from open web sources. Times are in Helsinki time."
+}

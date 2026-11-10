@@ -1,0 +1,372 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="light">
+<meta name="theme-color" content="#f6f1e7">
+<title>The Morning Commit · Tuesday, 10 November 2026</title>
+<meta name="description" content="Tuesday, 10 November 2026: Claude Fable 5.2 is out, and in testing it ran 1,000+ subagents for eight days to build a bootable OS. Anthropic shipped Fable 5.2 and its gated twin Mythos 5.2 on Monday. They are the same model: Fable has cyber and bio safeguards and is open to everyone, while Mythos goes to…">
+<link rel="canonical" href="https://rikuws.github.io/morning-commit/issues/2026-11-10/">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="The Morning Commit">
+<meta property="og:title" content="The Morning Commit — Claude Fable 5.2 is out, and in testing it ran 1,000+ subagents for eight days to build a bootable OS">
+<meta property="og:description" content="Tuesday, 10 November 2026: Claude Fable 5.2 is out, and in testing it ran 1,000+ subagents for eight days to build a bootable OS. Anthropic shipped Fable 5.2 and its gated twin Mythos 5.2 on Monday. They are the same model: Fable has cyber and bio safeguards and is open to everyone, while Mythos goes to…">
+<meta property="og:url" content="https://rikuws.github.io/morning-commit/issues/2026-11-10/">
+<meta property="og:image" content="https://rikuws.github.io/morning-commit/issues/2026-11-10/card.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="The Morning Commit — Claude Fable 5.2 is out, and in testing it ran 1,000+ subagents for eight days to build a bootable OS">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://rikuws.github.io/morning-commit/issues/2026-11-10/card.png">
+
+<meta name="twitter:title" content="The Morning Commit — Claude Fable 5.2 is out, and in testing it ran 1,000+ subagents for eight days to build a bootable OS">
+<meta name="twitter:description" content="Tuesday, 10 November 2026: Claude Fable 5.2 is out, and in testing it ran 1,000+ subagents for eight days to build a bootable OS. Anthropic shipped Fable 5.2 and its gated twin Mythos 5.2 on Monday. They are the same model: Fable has cyber and bio safeguards and is open to everyone, while Mythos goes to…">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='10' fill='%23f6f1e7'/%3E%3Ctext x='32' y='48' font-family='Georgia,serif' font-weight='900' font-size='44' text-anchor='middle' fill='%231b1a17'%3EM%3C/text%3E%3Crect x='14' y='54' width='36' height='3' fill='%23b3261e'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=Inter:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,700;0,800;0,900;1,400&family=Playfair+Display+SC:wght@700&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap">
+<style>
+:root{
+  --paper:#f6f1e7; --ink:#1b1a17; --muted:#5f5a50; --rule:#1b1a17; --soft:#d8cfbd;
+  --accent:#b3261e; --xblue:#1d4e89; --card:#fffdf8; --desk:#e9e3d6;
+  --serif:"Source Serif 4","Source Serif Pro","Noto Serif",Georgia,serif;
+  --display:"Playfair Display","Playfair Display SC",Georgia,serif;
+  --sans:Inter,"Noto Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --mono:"IBM Plex Mono","JetBrains Mono",ui-monospace,monospace;
+  color-scheme:light;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
+html,body{margin:0;background:var(--desk)}
+body{font-family:var(--serif);color:var(--ink);-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+a{color:inherit;text-decoration:none;-webkit-tap-highlight-color:rgba(179,38,30,.15)}
+a:hover{text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:3px}
+a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+
+.page{max-width:1100px;margin:0 auto;background:var(--paper);padding:14px 18px 22px;
+      background-image:radial-gradient(rgba(0,0,0,.025) 1px,transparent 1px);background-size:4px 4px}
+
+/* issue nav */
+.nav{display:flex;justify-content:space-between;align-items:stretch;gap:6px;font-family:var(--sans);
+     font-size:12px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.nav a,.nav span{display:flex;align-items:center;min-height:44px;padding:0 2px}
+.nav .mid{justify-content:center;color:var(--ink)}
+.nav .next{justify-content:flex-end}
+.nav span.off{opacity:.35}
+.nav a:hover{color:var(--accent);text-decoration:none}
+.nav-top{border-bottom:1px solid var(--soft);margin-bottom:8px}
+.nav-bottom{border-top:1px solid var(--soft);margin-top:14px}
+
+/* masthead */
+.topline{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:4px 12px;font-family:var(--sans);
+         font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);
+         border-bottom:1px solid var(--rule);padding-bottom:7px}
+.topline .tl{display:none}
+.masthead{text-align:center;padding:12px 0 4px}
+.masthead h1{font-family:var(--display);font-weight:900;font-size:clamp(34px,9.6vw,78px);line-height:1;margin:0;letter-spacing:-.5px}
+.masthead h1 a:hover{text-decoration:none}
+.masthead .tag{text-wrap:balance;font-family:var(--display);font-style:italic;font-size:15px;line-height:1.35;color:var(--muted);margin-top:6px}
+.dateline{display:flex;flex-wrap:wrap;justify-content:space-between;gap:2px 14px;font-family:var(--sans);font-size:11.5px;font-weight:600;
+          letter-spacing:.1em;text-transform:uppercase;border-top:3px double var(--rule);border-bottom:1px solid var(--rule);
+          padding:7px 2px;margin-top:12px}
+
+/* lead row */
+.lead-row{display:grid;grid-template-columns:1fr;gap:20px;padding:18px 0;border-bottom:1px solid var(--rule)}
+.kicker{font-family:var(--sans);font-size:11.5px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--accent)}
+.lead h2{text-wrap:balance;font-family:var(--display);font-weight:800;font-size:clamp(30px,8vw,44px);line-height:1.08;margin:8px 0 12px;letter-spacing:-.3px}
+.lead p{font-size:18px;line-height:1.55;margin:0}
+.lead p::first-letter{float:left;font-family:var(--display);font-weight:900;font-size:56px;line-height:.85;padding:5px 8px 0 0}
+.src{font-family:var(--sans);font-size:12.5px;color:var(--muted);margin-top:10px}
+.src b{color:var(--ink)}
+.src a{display:inline-block;padding:6px 0;margin:-6px 0;text-decoration:underline;text-decoration-color:var(--soft);text-underline-offset:3px}
+.nod{border-top:1px solid var(--rule);padding-top:16px;display:flex;flex-direction:column;justify-content:center}
+.nod .big{font-family:var(--display);font-weight:900;font-size:clamp(64px,18vw,86px);line-height:.95;color:var(--accent);margin:6px 0 10px}
+.nod p{font-size:16.5px;line-height:1.5;margin:0}
+
+/* section headers */
+.section-h{display:flex;align-items:center;gap:14px;margin:22px 0 14px}
+.section-h h2{margin:0;font-family:"Playfair Display SC","Playfair Display",serif;font-weight:700;font-size:23px;white-space:nowrap}
+.section-h::before,.section-h::after{content:"";flex:1;border-top:1px solid var(--rule)}
+
+/* X posts */
+.posts{display:grid;grid-template-columns:1fr;gap:14px}
+.post{position:relative;background:var(--card);border:1px solid var(--soft);border-top:3px solid var(--ink);padding:14px 16px 10px;display:flex;flex-direction:column}
+.post:hover{border-color:#bfb49e;border-top-color:var(--ink)}
+.who{font-family:var(--sans);line-height:1.3}
+.who .n{display:block;font-weight:700;font-size:15px}
+.who .sub2{display:flex;justify-content:space-between;gap:8px;font-size:13.5px}
+.who .h{color:var(--xblue);font-weight:500}
+.who .t{color:var(--muted);font-size:12px;white-space:nowrap}
+.post blockquote{margin:9px 0 12px;font-size:16.5px;line-height:1.45;font-style:italic;color:#2b2925;overflow-wrap:anywhere}
+.why{font-family:var(--sans);font-size:14px;line-height:1.45;border-top:1px dotted #9d9583;padding-top:8px;margin-top:auto}
+.why b{color:var(--accent);text-transform:uppercase;letter-spacing:.08em;font-size:11px;margin-right:4px}
+.meta{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-top:4px;font-family:var(--sans);font-size:12.5px;color:var(--muted)}
+.meta .stats b{color:var(--ink);font-weight:700}
+.meta .u{display:inline-flex;align-items:center;gap:6px;min-height:44px;font-family:var(--mono);font-size:11.5px;color:var(--xblue)}
+.meta .u .open{font-family:var(--sans);font-weight:700;font-size:11px;letter-spacing:.1em;text-transform:uppercase}
+.meta .u .path{color:var(--muted)}
+/* whole card is tappable */
+.meta .u::after{content:"";position:absolute;inset:0}
+.post:hover .meta .u{text-decoration:underline}
+
+/* news */
+.news{display:grid;grid-template-columns:1fr;gap:0}
+.item{padding:14px 0;border-top:1px solid var(--soft)}
+.item:first-child{border-top:none;padding-top:0}
+.item .kicker{font-size:11px}
+.item h3{text-wrap:balance;font-family:var(--display);font-weight:700;font-size:23px;line-height:1.18;margin:6px 0 8px}
+.item h3 a{display:block}
+.item p{font-size:16.5px;line-height:1.5;margin:0}
+
+/* quick hit */
+.quick{display:flex;flex-direction:column;gap:6px;margin-top:20px;padding:14px 16px;background:var(--ink);color:var(--paper)}
+.quick .lbl{font-family:var(--sans);font-weight:800;font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:#f2b8b5;white-space:nowrap;padding-top:2px}
+.quick p{margin:0;font-size:16.5px;line-height:1.5}
+.quick .src{color:#bdb5a5;display:inline;margin-left:6px}
+.quick .src b{color:var(--paper)}
+.quick .src a{text-decoration-color:#6d675c}
+
+.foot{margin-top:20px;border-top:3px double var(--rule);padding-top:8px;font-family:var(--sans);font-size:11.5px;line-height:1.5;color:var(--muted);display:flex;flex-direction:column;gap:4px}
+.foot .ed{white-space:nowrap}
+
+/* archive */
+.archive-list{list-style:none;margin:0;padding:0}
+.archive-list li{border-bottom:1px solid var(--soft)}
+.archive-list a{display:grid;grid-template-columns:1fr;gap:4px;padding:14px 0;min-height:44px}
+.archive-list a:hover{text-decoration:none}
+.archive-list a:hover .hl{text-decoration:underline;text-underline-offset:3px}
+.archive-list .d{font-family:var(--sans);font-size:12px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.archive-list .d .no{color:var(--accent);margin-left:8px}
+.archive-list .hl{font-family:var(--display);font-weight:700;font-size:22px;line-height:1.2}
+.archive-intro{font-size:16.5px;line-height:1.5;color:var(--muted);margin:18px 0 8px;font-style:italic}
+
+/* ---- back page: optional Writer's Corner + Inspiration (preview-lab) ---- */
+.backpage{display:grid;grid-template-columns:1fr;gap:16px}
+.wc{background:var(--card);border:1px solid var(--soft);border-top:3px solid var(--accent);padding:14px 16px 6px}
+.wc h3{text-wrap:balance;font-family:var(--display);font-weight:700;font-size:23px;line-height:1.18;margin:6px 0 6px}
+.wc .byline{font-family:var(--sans);font-size:13px;color:var(--muted);line-height:1.4}
+.wc .byline b{color:var(--ink);font-weight:700}
+.wc .take{font-size:16.5px;line-height:1.5;margin:10px 0 0}
+.wc .pull{margin:12px 0 4px;padding:2px 0 2px 14px;border-left:3px solid var(--accent);font-family:var(--display);font-style:italic;font-size:19px;line-height:1.38;color:#2b2925}
+.wc .readit{display:inline-flex;align-items:center;min-height:44px;font-family:var(--sans);font-weight:700;font-size:11.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--accent)}
+.wc .readit span{color:var(--muted);font-weight:600;margin-left:8px}
+.insp{margin:0;border-top:1px solid var(--rule);padding-top:12px}
+.insp .frame{display:block;width:fit-content;max-width:100%;margin:8px 0 8px;background:var(--desk);border:1px solid var(--soft);padding:8px}
+.insp img{display:block;width:auto;max-width:100%;height:auto;max-height:520px;object-fit:contain;filter:sepia(.04)}
+.insp figcaption{font-family:var(--sans);font-size:13px;line-height:1.45;color:var(--muted);display:flex;flex-direction:column;gap:3px}
+.insp figcaption .t{font-family:var(--serif);font-size:16px;color:var(--ink)}
+.insp figcaption .c{font-family:var(--serif);font-size:15px;color:#3a372f}
+.insp figcaption .cr{font-size:11.5px;letter-spacing:.02em}
+.insp figcaption .cr a{text-decoration:underline;text-decoration-color:var(--soft);text-underline-offset:3px;display:inline-block;padding:8px 0;margin:-8px 0}
+@media (min-width:640px){
+  .backpage.both{grid-template-columns:1.35fr 1fr;gap:24px;align-items:start}
+  .insp{border-top:none;padding-top:0}
+  .backpage.both .insp{border-left:1px solid var(--soft);padding-left:24px}
+  .backpage:not(.both) .insp{display:grid;grid-template-columns:auto minmax(0,1fr);column-gap:28px;align-items:start}
+  .backpage:not(.both) .insp figcaption{padding-top:8px;max-width:420px}
+  .backpage:not(.both) .insp .kicker{grid-column:1/-1}
+}
+@media (min-width:900px){
+  .backpage.both{grid-template-columns:1.6fr 1fr;gap:28px}
+  .wc{padding:16px 20px 8px}
+  .wc h3{font-size:26px}
+  .wc .pull{font-size:21px}
+  .insp img{max-height:440px}
+  .backpage.both .insp img{max-height:300px}
+}
+
+/* ≥ 640px: tablets / large phones landscape */
+@media (max-width:899px){.page{min-height:100vh}}
+@media (min-width:640px){
+  .page{padding:22px 30px 24px}
+  .topline .tl{display:inline}
+  .masthead .tag{font-size:17px}
+  .dateline{font-size:12.5px}
+  .posts{grid-template-columns:repeat(2,1fr)}
+  .posts .post:last-child:nth-child(odd){grid-column:1/-1}
+  .news{grid-template-columns:repeat(2,1fr)}
+  .item{padding:14px 18px;border-top:1px solid var(--soft);border-left:1px solid var(--soft)}
+  .item:nth-child(-n+2){border-top:none;padding-top:0}
+  .item:nth-child(odd){border-left:none;padding-left:0}
+  .item:nth-child(even){padding-right:0}
+  .quick{flex-direction:row;gap:16px;align-items:flex-start;padding:13px 18px}
+  .foot{flex-direction:row;justify-content:space-between;gap:20px}
+  .archive-list a{grid-template-columns:220px 1fr;gap:18px;align-items:baseline}
+}
+/* ≥ 900px: desktop newspaper layout */
+@media (min-width:900px){
+  .page{padding:26px 44px 26px;margin:24px auto;box-shadow:0 1px 0 rgba(0,0,0,.06),0 12px 40px rgba(60,45,20,.12)}
+  .topline{font-size:12.5px}
+  .masthead .tag{font-size:17px}
+  .lead-row{grid-template-columns:2.1fr 1fr;gap:30px;padding:22px 0 20px}
+  .lead-row.solo{grid-template-columns:1fr}
+  .lead p{font-size:19px;line-height:1.5}
+  .lead p::first-letter{font-size:62px}
+  .nod{border-top:none;padding-top:0;border-left:1px solid var(--rule);padding-left:28px}
+  .section-h h2{font-size:25px}
+  .posts{grid-template-columns:repeat(6,1fr);gap:16px}
+  .posts .post,.posts .post:last-child:nth-child(odd){grid-column:span var(--span,2)}
+  .post blockquote{font-size:16px;line-height:1.42}
+  .why{font-size:13.5px;line-height:1.4}
+  .news{grid-template-columns:repeat(var(--cols,4),1fr)}
+  .news .item{padding:0 18px;border-top:none;border-left:1px solid var(--soft)}
+  .news .item:first-child{padding-left:0;border-left:none}
+  .news .item:last-child{padding-right:0}
+  .item h3{font-size:22px;line-height:1.15}
+  .item p{font-size:15.5px;line-height:1.45}
+  .quick p{font-size:16px;line-height:1.45}
+}
+@media (prefers-reduced-motion:no-preference){a{transition:color .12s}}
+@media print{html,body{background:#fff}.page{box-shadow:none;margin:0}.nav{display:none}}
+
+</style>
+</head>
+<body>
+<div class="page">
+  <nav class="nav nav-top" aria-label="Issues">
+    <a class="prev" href="../../issues/2026-11-09/" rel="prev">← Previous</a>
+    <a class="mid" href="../../archive/">Archive</a>
+    <a class="next" href="../../">Latest →</a>
+  </nav>
+  <div class="topline"><span>Tampere edition</span><span>No. 33</span><span class="tl">AI · dev tools · tech — a two-minute read</span></div>
+  <header class="masthead">
+    <h1><a href="../../">The Morning Commit</a></h1>
+    <div class="tag">Your morning brief on what moved in AI and dev tools overnight</div>
+  </header>
+  <div class="dateline"><span><time datetime="2026-11-10">Tuesday, 10 November 2026</time></span><span>5 posts · 5 stories · 2-minute read</span></div>
+
+  <main>
+  <section class="lead-row">
+    <article class="lead">
+      <div class="kicker">NEW MODELS</div>
+      <h2><a href="https://www.anthropic.com/claude-fable-and-mythos-5-2">Claude Fable 5.2 is out, and in testing it ran 1,000+ subagents for eight days to build a bootable OS</a></h2>
+      <p>Anthropic shipped Fable 5.2 and its gated twin Mythos 5.2 on Monday. They are the same model: Fable has cyber and bio safeguards and is open to everyone, while Mythos goes to vetted security and life-sciences groups. Anthropic says outputs come up to 30% faster than 5.1, and the price drops to $8/$40 per million tokens. Its showcase: from an empty folder, Fable coordinated over 1,000 subagents for eight days and produced an operating system that boots on a laptop, with drivers, file storage, windows and a login screen.</p>
+      <div class="src">Source: <b><a href="https://www.anthropic.com/claude-fable-and-mythos-5-2">Anthropic</a></b> · anthropic.com</div>
+    </article>
+    
+    <aside class="nod">
+      <div class="kicker">Number of the day</div>
+      <div class="big">30 h</div>
+      <p>How long Fable 5.2 took to formalize the proof of Fermat&#39;s Last Theorem during Anthropic&#39;s prerelease testing.</p>
+      <div class="src">Source: <b><a href="https://www.anthropic.com/claude-fable-and-mythos-5-2">Anthropic</a></b></div>
+    </aside>
+    
+  </section>
+
+  
+  <div class="section-h"><h2>Overheard on X</h2></div>
+  <section class="posts">
+    
+    <article class="post" style="--span:2">
+      <div class="who"><span class="n">Simon Willison</span><span class="sub2"><span class="h">@@simonw</span><span class="t">Tue 07:42 Helsinki</span></span></div>
+      <blockquote>“When Anthropic release a new model it&#39;s always worth taking a look at their updated prompting guide - here&#39;s an entertaining tip to make Fable 5.2 less likely to be cautious in how it improves existing code: tell it &#34;This codebase is yours&#34;”</blockquote>
+      <div class="why"><b>Why it matters</b>A one-line prompt tweak worth trying the first time you point Fable 5.2 at an old repo.</div>
+      <div class="meta"><span class="stats">♥ <b>19</b> &nbsp; ⟲ <b>4</b></span>
+        <a class="u" href="https://x.com/simonw/status/2120029347948220500" aria-label="Open @@simonw’s post on X"><span class="open">Open on X ↗</span></a></div>
+    </article>
+    
+    <article class="post" style="--span:2">
+      <div class="who"><span class="n">Ethan Mollick</span><span class="sub2"><span class="h">@@emollick</span><span class="t">Tue 05:49 Helsinki</span></span></div>
+      <blockquote>“Looks like Fable 5.2 is above the already steep trendline on three of the most informative unsaturated benchmarks (ECI is a composite of other benchmarks, Remote Labor measures the ability to do end-to-end freelance jobs, RoboDojo involves controlling robotics).”</blockquote>
+      <div class="why"><b>Why it matters</b>A quick read on whether today&#39;s lead is a step up or just the trend continuing.</div>
+      <div class="meta"><span class="stats">♥ <b>383</b> &nbsp; ⟲ <b>30</b></span>
+        <a class="u" href="https://x.com/emollick/status/2120000888974766501" aria-label="Open @@emollick’s post on X"><span class="open">Open on X ↗</span></a></div>
+    </article>
+    
+    <article class="post" style="--span:2">
+      <div class="who"><span class="n">dax</span><span class="sub2"><span class="h">@@thdxr</span><span class="t">Tue 01:05 Helsinki</span></span></div>
+      <blockquote>“we recently made a seperate aws account to move off of github secrets since AWS SecretsManager supports OIDC natively so we made a lambda function with iam auth that github actions can invoke and get a temporary cloudflare credential hack until cloudflare adds this natively”</blockquote>
+      <div class="why"><b>Why it matters</b>A practical pattern for getting long-lived keys out of CI, timely after a week of breach news.</div>
+      <div class="meta"><span class="stats">♥ <b>625</b> &nbsp; ⟲ <b>13</b></span>
+        <a class="u" href="https://x.com/thdxr/status/2119929443091431497" aria-label="Open @@thdxr’s post on X"><span class="open">Open on X ↗</span></a></div>
+    </article>
+    
+    <article class="post" style="--span:3">
+      <div class="who"><span class="n">Gergely Orosz</span><span class="sub2"><span class="h">@@GergelyOrosz</span><span class="t">Tue 03:40 Helsinki</span></span></div>
+      <blockquote>“The thing with AI: You REALLY can replace existing software with something that is much faster in performance, much cheaper to operate, as reliable (or more!) as before, with shockingly little effort when you know how to use AI. Expertise has never been this valuable!!”</blockquote>
+      <div class="why"><b>Why it matters</b>The consultant&#39;s case in two sentences: the payoff goes to people who know what good looks like.</div>
+      <div class="meta"><span class="stats">♥ <b>427</b> &nbsp; ⟲ <b>12</b></span>
+        <a class="u" href="https://x.com/GergelyOrosz/status/2119968519672775045" aria-label="Open @@GergelyOrosz’s post on X"><span class="open">Open on X ↗</span></a></div>
+    </article>
+    
+    <article class="post" style="--span:3">
+      <div class="who"><span class="n">Simon Willison</span><span class="sub2"><span class="h">@@simonw</span><span class="t">Tue 02:09 Helsinki</span></span></div>
+      <blockquote>“There is a mysterious intermittent beep coming from somewhere in your room of unopened boxes. Do you: 1. Open boxes methodically until you find it 2. Vibe code software to triangulate it using two laptops, two iPads and a phone all listening at once”</blockquote>
+      <div class="why"><b>Why it matters</b>Peak builder energy, and a fun look at what throwaway software is good for now.</div>
+      <div class="meta"><span class="stats">♥ <b>461</b> &nbsp; ⟲ <b>25</b></span>
+        <a class="u" href="https://x.com/simonw/status/2119945524514328631" aria-label="Open @@simonw’s post on X"><span class="open">Open on X ↗</span></a></div>
+    </article>
+    
+  </section>
+  
+
+  
+  <div class="section-h"><h2>The Wire</h2></div>
+  <section class="news" style="--cols:4">
+    
+    <article class="item">
+      <div class="kicker">MODELS</div>
+      <h3><a href="https://techcrunch.com/2026/11/09/meta-releases-muse-ember-a-new-lightweight-model-for-agent-execution/">Meta&#39;s Muse Ember: a $0.10-per-million-token model for the work agents repeat all day</a></h3>
+      <p>Meta Superintelligence Labs&#39; smallest Muse model is built for tool calls, coding subtasks, routing, extraction and long-document parsing, and reads images and audio too. Meta pitches it as the volume worker under its bigger Muse Wonder: &#34;Muse Wonder plans, Muse Ember handles the volume.&#34;</p>
+      <div class="src">— <b><a href="https://techcrunch.com/2026/11/09/meta-releases-muse-ember-a-new-lightweight-model-for-agent-execution/">TechCrunch</a></b> · techcrunch.com</div>
+    </article>
+    
+    <article class="item">
+      <div class="kicker">PRIVACY</div>
+      <h3><a href="https://support.google.com/gemini/answer/16836988?hl=en">Google confirms people review some Gmail and Drive content connected to personal Gemini</a></h3>
+      <p>A Hacker News thread on Monday flagged Google&#39;s Connected Apps help page: a subset of that data, summaries and excerpts of emails and files, is read by human reviewers, and for a short file the excerpt may be the whole thing. Work and school accounts are excluded. Disconnecting Workspace and turning off Keep Activity stops it going forward.</p>
+      <div class="src">— <b><a href="https://support.google.com/gemini/answer/16836988?hl=en">Google Gemini Help</a></b> · support.google.com</div>
+    </article>
+    
+    <article class="item">
+      <div class="kicker">SECURITY</div>
+      <h3><a href="https://fireworks.ai/security/bulletins/october-2026-security-incident-update">Fireworks AI widens its breach disclosure to customer datasets and unfinished model weights</a></h3>
+      <p>An update dated 9 November says the attackers, linked to an &#34;LLMjacking&#34; group that resells stolen model access, also reached account and billing data and, for some customers, secrets, datasets and incomplete weights. Fireworks says inference and training SDK were not hit, and has paused self-serve dataset uploads and downloads.</p>
+      <div class="src">— <b><a href="https://fireworks.ai/security/bulletins/october-2026-security-incident-update">Fireworks AI</a></b> · fireworks.ai</div>
+    </article>
+    
+    <article class="item">
+      <div class="kicker">FINLAND</div>
+      <h3><a href="https://www.fintechobserver.com/mufg-backs-finnish-ai-cloud-firm-verda-in-usd-189m-unicorn-round/">Japan&#39;s MUFG joins Helsinki GPU cloud Verda&#39;s $189M unicorn round</a></h3>
+      <p>MUFG&#39;s venture arm completed a strategic investment in the former DataCrunch, citing demand for AI compute and Europe&#39;s push for sovereign AI infrastructure. Verda says it now runs about 250 people and will use MUFG to grow in Japan and across Asia-Pacific.</p>
+      <div class="src">— <b><a href="https://www.fintechobserver.com/mufg-backs-finnish-ai-cloud-firm-verda-in-usd-189m-unicorn-round/">Fintech Observer</a></b> · fintechobserver.com</div>
+    </article>
+    
+  </section>
+  
+
+  
+  
+  <div class="section-h"><h2>The Back Page</h2></div>
+  <section class="backpage">
+    
+    
+    <figure class="insp">
+      <div class="kicker">Inspiration</div>
+      <a class="frame" href="https://clevelandart.org/art/1976.120"><img src="https://openaccess-cdn.clevelandart.org/1976.120/1976.120_web.jpg" alt="Dark bronze hand mirror whose back is a hooded, cloaked figure with outspread drapery, set on a long slender handle" loading="lazy" decoding="async" width="669" height="893"></a>
+      <figcaption>
+        <span class="t"><i>Hand Mirror</i>, Villé Vallgren (c. 1895)</span>
+        <span class="c">A Finnish sculptor in Paris turns an everyday object into Art Nouveau: the frame is a cloaked figure whose robe spreads out to hold the glass.</span>
+        <span class="cr">The Cleveland Museum of Art · <a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0</a> · <a href="https://clevelandart.org/art/1976.120">Source ↗</a></span>
+      </figcaption>
+    </figure>
+    
+  </section>
+  
+
+  
+  <div class="quick"><span class="lbl">UPDATE</span>
+    <p>Claude Code 2.1.321 makes Fable 5.2 the default Fable model and moves saved Fable 5.1 picks over; use /model claude-fable-5-1 to switch back.<span class="src">— <b><a href="https://code.claude.com/docs/en/changelog">Claude Code changelog</a></b></span></p></div>
+  
+  </main>
+
+  <footer class="foot"><span>Compiled 10 Nov 2026, ~08:00 Helsinki time. X posts come from one X search (last ~30 h, known builders) and news from open web sources. Times are in Helsinki time.</span><span class="ed">The Morning Commit · 2026-11-10</span></footer>
+  <nav class="nav nav-bottom" aria-label="Issues">
+    <a class="prev" href="../../issues/2026-11-09/" rel="prev">← Previous</a>
+    <a class="mid" href="../../archive/">All issues</a>
+    <a class="next" href="../../">Latest →</a>
+  </nav>
+</div>
+</body>
+</html>
