@@ -1,0 +1,106 @@
+{
+  "paper_name": "The Morning Commit",
+  "tagline": "AI · dev tools · tech — a two-minute read",
+  "edition": "Tampere edition",
+  "issue_no": "No. 34",
+  "date_long": "Wednesday, 11 November 2026",
+  "date_slug": "2026-11-11",
+  "lead": {
+    "kicker": "NEW MODELS",
+    "headline": "Google answers Fable with Gemini 4 Carbon, now #1 on CursorBench, plus a /swarm mode for agent teams",
+    "summary": "A day after Anthropic's Fable 5.2, Google opened up Gemini 4 Carbon, its model for long, multi-step coding, debugging and research. Google says it ranks first on CursorBench 4.0, Perplexity's WANDR and Zapier's AutomationBench at more than 2x lower cost per task than the next-best outside model. It costs $2/$10 per million tokens until 30 November, then $4/$20. Google Antigravity also previews /swarm, which turns one prompt into a team of agents, with Carbon taking the design, coordination and audit roles.",
+    "source": "Google",
+    "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-carbon-now-available/"
+  },
+  "number_of_day": {
+    "value": "$81B",
+    "label": "Anthropic's run-rate revenue at the end of October, up $10B in a single month, per its amended IPO filing.",
+    "source": "CNBC",
+    "url": "https://www.cnbc.com/2026/11/10/anthropic-sets-price-range-of-70-to-78-in-upcoming-ipo.html"
+  },
+  "news": [
+    {
+      "tag": "SECURITY",
+      "headline": "DeepMind's AlphaProof Code proves Signal's core crypto secure, down to the compiled machine code",
+      "summary": "Humans and AI wrote the specs; Carbon-powered prover agents then produced about 6.5 million lines of Lean proof in four weeks, covering the PQXDH handshake and Triple Ratchet. Agents flagged about 1% for human review. When two old, fixed bugs were put back in, the system proved that version insecure.",
+      "source": "Google DeepMind",
+      "url": "https://deepmind.google/blog/introducing-alphaproof-code/"
+    },
+    {
+      "tag": "IPO",
+      "headline": "Anthropic sets its IPO at $70–78 a share, up to a $1.4T valuation, trading as ANT",
+      "summary": "825 million shares, pricing on 18 November and trading from the 19th, according to CNBC's sources, with about 20% earmarked for retail. AMD, Broadcom, Google, Micron, Microsoft, Nvidia and TSMC will buy $26B more in a private placement at the IPO price.",
+      "source": "CNBC",
+      "url": "https://www.cnbc.com/2026/11/10/anthropic-sets-price-range-of-70-to-78-in-upcoming-ipo.html"
+    },
+    {
+      "tag": "TOOLS",
+      "headline": "Claude joins your Google Meet calls and builds things while you talk",
+      "summary": "Claude Meetings, in beta for Team and Enterprise, adds Claude as a visible participant that drafts plans and timelines and answers questions in chat during the call. Anthropic also launched Claude Whiteboards, Claude Sheets and Claude Data.",
+      "source": "Reuters",
+      "url": "https://www.investing.com/news/stock-market-news/anthropic-brings-claude-to-google-meet-to-tackle-tasks-live-5016423"
+    },
+    {
+      "tag": "NORDIC",
+      "headline": "Copenhagen's Sumary raises a $25M seed to automate accounting firms' month-end closes",
+      "summary": "Singular led the round, and the angels include Linear's Tuomas Artman. Sumary says firms spend 50% less time on monthly closes and 75% less on VAT returns after three months, and that it already works with most of the Nordics' 20 largest accounting firms.",
+      "source": "Tech.eu",
+      "url": "https://tech.eu/2026/11/10/sumary-secures-25m-to-expand-its-accounting-software-across-europe/"
+    }
+  ],
+  "x_posts": [
+    {
+      "name": "Cursor",
+      "handle": "@cursor_ai",
+      "time": "Wed 01:20",
+      "text": "Your agents can now coordinate with your teammates’ agents. Projects has been rebuilt for multiplayer: every teammate and their agents can now work together in one unified workspace.",
+      "why": "Coding agents go multiplayer: worth a look if your team already runs agents side by side.",
+      "likes": 2356,
+      "reposts": 138,
+      "url": "https://x.com/cursor_ai/status/2120295553309565139"
+    },
+    {
+      "name": "Guillermo Rauch",
+      "handle": "@rauchg",
+      "time": "Wed 04:06",
+      "text": "Rust is a superb language and ecosystem, especially given it was invented pre agentic coding. With agents, new languages will blossom, even purpose-built ones for specific usecases, and discretionary C or even LLVM IR, assembly… AI is fluid. No more one-size-fits-all.",
+      "why": "A bet that agents will weaken the pull toward one default language.",
+      "likes": 470,
+      "reposts": 11,
+      "url": "https://x.com/rauchg/status/2120337388178379178"
+    },
+    {
+      "name": "dax",
+      "handle": "@thdxr",
+      "time": "Wed 04:10",
+      "text": "wow opencode support built in. admired unreal engine from afar for a decade and it's mindblowing to have any connection to it",
+      "why": "Unreal Engine 5.9's MegaJam Preview lets you work with AI coding agents right in the editor, and opencode is one of them.",
+      "likes": 217,
+      "reposts": 3,
+      "url": "https://x.com/thdxr/status/2120338429276016959"
+    },
+    {
+      "name": "Hamel Husain",
+      "handle": "@HamelHusain",
+      "time": "Wed 04:20",
+      "text": "The Artificial Analysis Intelligence Index is currently made up of 9 benchmarks with arbitrary weights. I wanted to know how these weights varied over time. They vary quite a bit!",
+      "why": "Useful for this week of new models: a reminder to look inside the leaderboard number before trusting it.",
+      "likes": 83,
+      "reposts": 4,
+      "url": "https://x.com/HamelHusain/status/2120340744665989528"
+    }
+  ],
+  "writers_corner": {
+    "category": "Tech",
+    "writer": "Ethan Mollick",
+    "publication": "One Useful Thing",
+    "date": "Mon 9 Nov",
+    "title": "Fable 5.2 and Jagged AGI",
+    "take": "Mollick puts Fable 5.2 to work as a filmmaker, hardware hacker, founder, scholar and world-builder, and calls it 'almost AGI'. What's still missing is noticing on its own when its work is joyless, bloated or tangled in red tape.",
+    "quote": "If building a bureaucracy disqualified you from general intelligence, a lot of us would be in trouble.",
+    "url": "https://www.oneusefulthing.org/p/fable-52-and-jagged-agi",
+    "read_note": "long read, with demos",
+    "feed_url": "https://www.oneusefulthing.org/feed"
+  },
+  "footer": "Compiled 11 Nov 2026, ~08:00 Helsinki time. X posts come from one X search (last ~30 h, known builders) and news from open web sources. Times are in Helsinki time."
+}
