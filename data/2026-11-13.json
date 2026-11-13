@@ -1,0 +1,106 @@
+{
+ "paper_name": "The Morning Commit",
+ "tagline": "AI · dev tools · tech — a two-minute read",
+ "edition": "Tampere edition",
+ "issue_no": "No. 36",
+ "date_long": "Friday, 13 November 2026",
+ "date_slug": "2026-11-13",
+ "lead": {
+  "kicker": "CHIPS",
+  "headline": "Jensen Huang resigns as Nvidia's CEO; CFO Colette Kress steps in",
+  "summary": "Nvidia's board accepted Huang's resignation as president, CEO and director on 11 November, effective immediately, after reports of an affair with a woman alleged to be a Chinese spy. Kress, CFO since 2013, becomes interim CEO and stays CFO while the board searches inside and outside the company. Longtime director Harvey C. Jones becomes Nvidia's first-ever board chair. The company says operations, customer commitments and the product roadmap continue without interruption.",
+  "source": "NVIDIA Newsroom",
+  "url": "https://nvidianews.nvidia.com/news/nvidia-announces-ceo-transition"
+ },
+ "number_of_day": {
+  "value": "438",
+  "label": "AWS API models the agent-built AWS Emulator started from: an empty server that answered all of them and did nothing, until agent teams filled it in.",
+  "source": "Amazon",
+  "url": "https://www.aboutamazon.com/news/aws/how-autonomous-ai-agents-built-aws-emulator"
+ },
+ "news": [
+  {
+   "tag": "OUTAGE",
+   "headline": "A global Microsoft 365 outage takes down Outlook, Teams and Copilot",
+   "summary": "Microsoft says a process that sets up secure connections got overwhelmed on affected servers, so they stopped processing requests; it is looking at recent configuration changes and sees no sign of an attack. Recovery is gradual as servers return and traffic is rerouted. Some users also lost access to other services because their two-factor codes arrive by email.",
+   "source": "ABC News",
+   "url": "https://www.abc.net.au/news/2026-11-13/microsoft-outage-teams-outlook-copilot/107381196"
+  },
+  {
+   "tag": "DEV TOOLS",
+   "headline": "AWS ships a free local emulator of AWS, written entirely by agents",
+   "summary": "AWS Emulator runs on your laptop or in CI, and the AWS CLI, SDKs and coding agents talk to it over a local endpoint with the same APIs and errors as the cloud. It is written in Rust, keeps state in memory, and gives each copy its own port and keys. Agent teams write fidelity tests against real AWS, find gaps and fix them; AWS says no human wrote or reviewed the code. Source is on GitHub under CC0.",
+   "source": "AWS News Blog",
+   "url": "https://aws.amazon.com/blogs/aws/test-your-applications-against-aws-locally-with-aws-emulator/"
+  },
+  {
+   "tag": "MODELS",
+   "headline": "Google's Gemini Decisions API answers up to 1,000 questions in one pass, with no output tokens",
+   "summary": "The new Gemini Decision 1 model scores yes/no, multiple-choice and rubric questions over one shared input (text, images, audio, video or PDF) and returns probabilities and confidence scores in 150–250 ms. It costs $0.10 per million input tokens, aimed at the small branching calls inside agents: routing, tool choice and policy checks.",
+   "source": "Google",
+   "url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/"
+  },
+  {
+   "tag": "POLICY",
+   "headline": "Nonprofits sue five AI labs to freeze development of advanced models",
+   "summary": "Public Citizen, Heat Initiative, the Alliance for Secure AI and Irreplaceable Education Fund filed in San Francisco Superior Court against Anthropic, Google, Meta, OpenAI and SpaceXSI under California's unfair-competition law, alleging the labs can't stop their models from enabling bioweapons, cyberattacks or loss of control.",
+   "source": "Courthouse News Service",
+   "url": "https://www.courthousenews.com/san-francisco-court-asked-to-freeze-ai-development-stave-off-catastrophic-harm/"
+  }
+ ],
+ "x_posts": [
+  {
+   "name": "Gergely Orosz",
+   "handle": "@GergelyOrosz",
+   "time": "Fri 03:01",
+   "text": "Holy cow, there’s a massive Microsoft outage going on. Outlook .com is down, globally, as I understand. Microsoft employees cannot send/receive email as well (plus everyone else using M365)\n\nThis is very bad given how important email is for comms\n\nPostmortem will interesting",
+   "why": "Live reaction to the outage above; he's already waiting for the postmortem.",
+   "likes": 945,
+   "reposts": 56,
+   "url": "https://x.com/GergelyOrosz/status/2121045639173963786"
+  },
+  {
+   "name": "dax",
+   "handle": "@thdxr",
+   "time": "Fri 06:27",
+   "text": "we got to use the models when they were a lot worse and watch them progressively improve\n\nnon-technical people are just discovering agents now and they're going straight into opus 5.5 and getting their minds blown",
+   "why": "Why newcomers and veterans can feel so differently about the same agents.",
+   "likes": 413,
+   "reposts": 7,
+   "url": "https://x.com/thdxr/status/2121097654453379349"
+  },
+  {
+   "name": "dax",
+   "handle": "@thdxr",
+   "time": "Fri 04:34",
+   "text": "how should plugin systems work in a world of agents. plugins esp are something 99% of people will vibe code\n\ntoday they tend to be js but that requires pulling in big js runtimes\n\nseems like an embedded language like lua. but is lua the best choice",
+   "why": "A real design question from the opencode builder: what language do vibe-coded plugins want?",
+   "likes": 243,
+   "reposts": 0,
+   "url": "https://x.com/thdxr/status/2121069247464112486"
+  },
+  {
+   "name": "Simon Willison",
+   "handle": "@simonw",
+   "time": "Fri 02:36",
+   "text": "The pricing for Gemini 4 is pretty confusing - Argon and Carbon are the same token price as each other, and the new Hydrogen is only a 25% discount on that price - though Carbon/Argon will 2x in price on Dec 1st\n\nHydrogen's pelicans are notably worse",
+   "why": "Useful heads-up before budgeting on Gemini 4: Carbon and Argon double in price on 1 Dec.",
+   "likes": 185,
+   "reposts": 4,
+   "url": "https://x.com/simonw/status/2121039423441981444"
+  }
+ ],
+ "writers_corner": {
+  "category": "Philosophy",
+  "writer": "Maria Popova",
+  "publication": "The Marginalian",
+  "date": "Thu 12 Nov",
+  "title": "Place, Personhood, and the Hippocampus",
+  "take": "Walking her childhood mountain paths again, Popova reads M.R. O'Connor's Wayfinding to ask how the places we learn to navigate end up shaping memory and who we become.",
+  "quote": "astonished too at how effortlessly I navigate these routes I have not walked in decades.",
+  "url": "https://www.themarginalian.org/2026/11/12/wayfinding-m-r-oconnor/",
+  "read_note": "free, about a 10-minute read",
+  "feed_url": "https://www.themarginalian.org/feed/"
+ },
+ "footer": "Compiled 13 Nov 2026, ~08:05 Helsinki time. X posts come from one X search (last ~24 h, known builders) and news from open web sources. Times are in Helsinki time."
+}
