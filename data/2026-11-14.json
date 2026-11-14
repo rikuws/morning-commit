@@ -1,0 +1,118 @@
+{
+  "paper_name": "The Morning Commit",
+  "tagline": "AI · dev tools · tech — a two-minute read",
+  "edition": "Tampere edition",
+  "issue_no": "No. 37",
+  "date_long": "Saturday, 14 November 2026",
+  "date_slug": "2026-11-14",
+  "lead": {
+    "kicker": "AGENTS",
+    "headline": "OpenAI launches ChatGPT Wallet, so agents can pay without ever seeing your card",
+    "summary": "Built with American Express, Mastercard and Visa, the wallet lets you add a card once and then approve each agent purchase with a security check such as Face ID or a fingerprint, after reviewing the items, total and card. The payment network hands out a token in place of the real card details, and existing rewards and dispute protections still apply. It starts with ChatGPT Pro subscribers in the US, through dots, alongside tools and guidance for businesses that want to accept agent payments.",
+    "source": "OpenAI",
+    "url": "https://openai.com/index/introducing-chatgpt-wallet/"
+  },
+  "number_of_day": {
+    "value": "7,000",
+    "label": "LangSmith customers LangChain now claims, as it raises $300M at a $3B valuation, more than double its value a year ago.",
+    "source": "TechCrunch",
+    "url": "https://techcrunch.com/2026/11/13/ai-agent-startup-langchain-hits-3b-valuation/"
+  },
+  "news": [
+    {
+      "tag": "FUNDING",
+      "headline": "LangChain raises a $300M Series C at a $3B valuation",
+      "summary": "CapitalG led the round, with GIC, DFJ Growth, IVP and Sapphire Ventures joining. The open-source library from 2022 has turned into an agent-management business: LangSmith pitches itself as model- and cloud-neutral, with customers such as Harvey, Rippling, Clay, Nvidia, Toyota and Salesforce.",
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/11/13/ai-agent-startup-langchain-hits-3b-valuation/"
+    },
+    {
+      "tag": "ROBOTICS",
+      "headline": "OpenAI disbands its stand-alone robotics team",
+      "summary": "Robotics researchers move into the main research org under Mark Chen, and applied robotics and hardware staff into Applied under Greg Brockman. OpenAI says it is betting on general-purpose models driving robots directly, not retreating. Its booth at the CoRL robotics conference in Austin this week sat empty.",
+      "source": "Fortune",
+      "url": "https://fortune.com/2026/11/13/openai-disbands-robotics-team-as-its-general-models-start-running-robots/"
+    },
+    {
+      "tag": "AGENTS",
+      "headline": "Perplexity brings Teammates, its always-on agents, to the Mac",
+      "summary": "Teammates are given an ongoing responsibility, such as triaging bug reports, tracking metrics or running a growth campaign, then plan the work, bring in more agents as it grows and report back for review. Previously on iOS and the web, it needs a Perplexity Max subscription.",
+      "source": "9to5Mac",
+      "url": "https://9to5mac.com/2026/11/13/perplexity-brings-ai-agents-feature-called-teammates-to-the-mac/"
+    },
+    {
+      "tag": "FINLAND",
+      "headline": "Peter Sarlin's PostScriptum takes a majority stake in Finnish AI consultancy Brillian",
+      "summary": "Founded in 2024, Brillian does AI deployment end to end, from strategy to everyday use, from two Finnish hubs, and earns most of its revenue abroad with clients such as Siemens, Storytel and Carnival Cruise Lines. The founders and staff keep a substantial minority, and the plan is bigger projects and new AI hubs next year.",
+      "source": "Tech.eu",
+      "url": "https://tech.eu/2026/11/13/peter-sarlins-postscriptum-acquires-majority-stake-in-brillian-to-accelerate-global-growth/"
+    }
+  ],
+  "x_posts": [
+    {
+      "name": "Cursor",
+      "handle": "@cursor_ai",
+      "time": "Sat 03:13",
+      "text": "We’ve published an update on our recent security incident. See a detailed overview of what happened and our remediation steps here: https://t.co/2lf6lRJPlL",
+      "why": "If you use Cursor at work, the write-up on what happened and how it was fixed is worth a read.",
+      "likes": 1017,
+      "reposts": 77,
+      "url": "https://x.com/cursor_ai/status/2121411147714970092"
+    },
+    {
+      "name": "dax",
+      "handle": "@thdxr",
+      "time": "Sat 05:35",
+      "text": "we have more hardware up serving deepseek and it's looking good\n\nnow we're moving on to figuring out glm",
+      "why": "A small look at the opencode team bringing up its own inference for open models.",
+      "likes": 600,
+      "reposts": 8,
+      "url": "https://x.com/thdxr/status/2121446870639628468"
+    },
+    {
+      "name": "Amjad Masad",
+      "handle": "@amasad",
+      "time": "Sat 04:22",
+      "text": "It's been great partnering with @Visa on agentic commerce. More features and use cases are coming! https://t.co/R15wSaMQ7c",
+      "why": "Same day as ChatGPT Wallet: the card networks are lining up behind agent payments.",
+      "likes": 101,
+      "reposts": 6,
+      "url": "https://x.com/amasad/status/2121428406764204199"
+    },
+    {
+      "name": "Harrison Chase",
+      "handle": "@hwchase17",
+      "time": "Fri 23:22",
+      "text": "we're celebrating this fundraise with a ton of product launches next week, and then a webinar on friday to wrap it all up\n\ncome join us! https://t.co/fcmh4SCwYz https://t.co/JcIGLmo7jF https://t.co/RNYuIZ0e5E",
+      "why": "LangChain's CEO after the $3B round: expect a week of launches.",
+      "likes": 39,
+      "reposts": 7,
+      "url": "https://x.com/hwchase17/status/2121353055174348871"
+    },
+    {
+      "name": "Ethan Mollick",
+      "handle": "@emollick",
+      "time": "Fri 22:17",
+      "text": "\"You see the model called hydrogen is equivalent to the models called sonnet and luna and spark, but the model called fable is like wonder and astra and carbon (but it was like argon)\"\n\n\"Wait, why do you look confused?\"",
+      "why": "Model naming in late 2026, summed up in one exchange.",
+      "likes": 210,
+      "reposts": 7,
+      "url": "https://x.com/emollick/status/2121336727138611689"
+    }
+  ],
+  "inspiration": {
+    "title": "Diagrams of the Universe",
+    "creator": "Unknown artist, Western India (Gujarat)",
+    "year": "1613",
+    "caption": "Jain cosmology drawn as one big information graphic: the universe as a human figure, the earthly realm as a round map of mountains and rivers, and the hells laid out level by level.",
+    "image_url": "https://openaccess-cdn.clevelandart.org/2018.201/2018.201_web.jpg",
+    "width": 900,
+    "height": 495,
+    "image_alt": "Painted cloth with a tall human-shaped diagram of the universe, a large circular map of continents, and panels of hell scenes",
+    "credit": "The Cleveland Museum of Art",
+    "licence": "CC0",
+    "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "source_url": "https://clevelandart.org/art/2018.201"
+  },
+  "footer": "Compiled 14 Nov 2026, ~08:05 Helsinki time. X posts come from one X search (last ~24 h, known builders) and news from open web sources. Times are in Helsinki time."
+}

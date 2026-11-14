@@ -1,0 +1,375 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="light">
+<meta name="theme-color" content="#f6f1e7">
+<title>The Morning Commit · Saturday, 14 November 2026</title>
+<meta name="description" content="Saturday, 14 November 2026: OpenAI launches ChatGPT Wallet, so agents can pay without ever seeing your card. Built with American Express, Mastercard and Visa, the wallet lets you add a card once and then approve each agent purchase with a security check such as Face ID or a…">
+<link rel="canonical" href="https://rikuws.github.io/morning-commit/issues/2026-11-14/">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="The Morning Commit">
+<meta property="og:title" content="The Morning Commit — OpenAI launches ChatGPT Wallet, so agents can pay without ever seeing your card">
+<meta property="og:description" content="Saturday, 14 November 2026: OpenAI launches ChatGPT Wallet, so agents can pay without ever seeing your card. Built with American Express, Mastercard and Visa, the wallet lets you add a card once and then approve each agent purchase with a security check such as Face ID or a…">
+<meta property="og:url" content="https://rikuws.github.io/morning-commit/issues/2026-11-14/">
+<meta property="og:image" content="https://rikuws.github.io/morning-commit/issues/2026-11-14/card.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="The Morning Commit — OpenAI launches ChatGPT Wallet, so agents can pay without ever seeing your card">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://rikuws.github.io/morning-commit/issues/2026-11-14/card.png">
+
+<meta name="twitter:title" content="The Morning Commit — OpenAI launches ChatGPT Wallet, so agents can pay without ever seeing your card">
+<meta name="twitter:description" content="Saturday, 14 November 2026: OpenAI launches ChatGPT Wallet, so agents can pay without ever seeing your card. Built with American Express, Mastercard and Visa, the wallet lets you add a card once and then approve each agent purchase with a security check such as Face ID or a…">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='10' fill='%23f6f1e7'/%3E%3Ctext x='32' y='48' font-family='Georgia,serif' font-weight='900' font-size='44' text-anchor='middle' fill='%231b1a17'%3EM%3C/text%3E%3Crect x='14' y='54' width='36' height='3' fill='%23b3261e'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=Inter:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,700;0,800;0,900;1,400&family=Playfair+Display+SC:wght@700&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap">
+<style>
+:root{
+  --paper:#f6f1e7; --ink:#1b1a17; --muted:#5f5a50; --rule:#1b1a17; --soft:#d8cfbd;
+  --accent:#b3261e; --xblue:#1d4e89; --card:#fffdf8; --desk:#e9e3d6;
+  --serif:"Source Serif 4","Source Serif Pro","Noto Serif",Georgia,serif;
+  --display:"Playfair Display","Playfair Display SC",Georgia,serif;
+  --sans:Inter,"Noto Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --mono:"IBM Plex Mono","JetBrains Mono",ui-monospace,monospace;
+  color-scheme:light;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
+html,body{margin:0;background:var(--desk)}
+body{font-family:var(--serif);color:var(--ink);-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+a{color:inherit;text-decoration:none;-webkit-tap-highlight-color:rgba(179,38,30,.15)}
+a:hover{text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:3px}
+a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+
+.page{max-width:1100px;margin:0 auto;background:var(--paper);padding:14px 18px 22px;
+      background-image:radial-gradient(rgba(0,0,0,.025) 1px,transparent 1px);background-size:4px 4px}
+
+/* issue nav */
+.nav{display:flex;justify-content:space-between;align-items:stretch;gap:6px;font-family:var(--sans);
+     font-size:12px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.nav a,.nav span{display:flex;align-items:center;min-height:44px;padding:0 2px}
+.nav .mid{justify-content:center;color:var(--ink)}
+.nav .next{justify-content:flex-end}
+.nav span.off{opacity:.35}
+.nav a:hover{color:var(--accent);text-decoration:none}
+.nav-top{border-bottom:1px solid var(--soft);margin-bottom:8px}
+.nav-bottom{border-top:1px solid var(--soft);margin-top:14px}
+
+/* masthead */
+.topline{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:4px 12px;font-family:var(--sans);
+         font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);
+         border-bottom:1px solid var(--rule);padding-bottom:7px}
+.topline .tl{display:none}
+.masthead{text-align:center;padding:12px 0 4px}
+.masthead h1{font-family:var(--display);font-weight:900;font-size:clamp(34px,9.6vw,78px);line-height:1;margin:0;letter-spacing:-.5px}
+.masthead h1 a:hover{text-decoration:none}
+.masthead .tag{text-wrap:balance;font-family:var(--display);font-style:italic;font-size:15px;line-height:1.35;color:var(--muted);margin-top:6px}
+.dateline{display:flex;flex-wrap:wrap;justify-content:space-between;gap:2px 14px;font-family:var(--sans);font-size:11.5px;font-weight:600;
+          letter-spacing:.1em;text-transform:uppercase;border-top:3px double var(--rule);border-bottom:1px solid var(--rule);
+          padding:7px 2px;margin-top:12px}
+
+/* lead row */
+.lead-row{display:grid;grid-template-columns:1fr;gap:20px;padding:18px 0;border-bottom:1px solid var(--rule)}
+.kicker{font-family:var(--sans);font-size:11.5px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--accent)}
+.lead h2{text-wrap:balance;font-family:var(--display);font-weight:800;font-size:clamp(30px,8vw,44px);line-height:1.08;margin:8px 0 12px;letter-spacing:-.3px}
+.lead p{font-size:18px;line-height:1.55;margin:0}
+.lead p::first-letter{float:left;font-family:var(--display);font-weight:900;font-size:56px;line-height:.85;padding:5px 8px 0 0}
+.src{font-family:var(--sans);font-size:12.5px;color:var(--muted);margin-top:10px}
+.src b{color:var(--ink)}
+.src a{display:inline-block;padding:6px 0;margin:-6px 0;text-decoration:underline;text-decoration-color:var(--soft);text-underline-offset:3px}
+.nod{border-top:1px solid var(--rule);padding-top:16px;display:flex;flex-direction:column;justify-content:center}
+.nod .big{font-family:var(--display);font-weight:900;font-size:clamp(64px,18vw,86px);line-height:.95;color:var(--accent);margin:6px 0 10px}
+.nod p{font-size:16.5px;line-height:1.5;margin:0}
+
+/* section headers */
+.section-h{display:flex;align-items:center;gap:14px;margin:22px 0 14px}
+.section-h h2{margin:0;font-family:"Playfair Display SC","Playfair Display",serif;font-weight:700;font-size:23px;white-space:nowrap}
+.section-h::before,.section-h::after{content:"";flex:1;border-top:1px solid var(--rule)}
+
+/* X posts */
+.posts{display:grid;grid-template-columns:1fr;gap:14px}
+.post{position:relative;background:var(--card);border:1px solid var(--soft);border-top:3px solid var(--ink);padding:14px 16px 10px;display:flex;flex-direction:column}
+.post:hover{border-color:#bfb49e;border-top-color:var(--ink)}
+.who{font-family:var(--sans);line-height:1.3}
+.who .n{display:block;font-weight:700;font-size:15px}
+.who .sub2{display:flex;justify-content:space-between;gap:8px;font-size:13.5px}
+.who .h{color:var(--xblue);font-weight:500}
+.who .t{color:var(--muted);font-size:12px;white-space:nowrap}
+.post blockquote{margin:9px 0 12px;font-size:16.5px;line-height:1.45;font-style:italic;color:#2b2925;overflow-wrap:anywhere}
+.why{font-family:var(--sans);font-size:14px;line-height:1.45;border-top:1px dotted #9d9583;padding-top:8px;margin-top:auto}
+.why b{color:var(--accent);text-transform:uppercase;letter-spacing:.08em;font-size:11px;margin-right:4px}
+.meta{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-top:4px;font-family:var(--sans);font-size:12.5px;color:var(--muted)}
+.meta .stats b{color:var(--ink);font-weight:700}
+.meta .u{display:inline-flex;align-items:center;gap:6px;min-height:44px;font-family:var(--mono);font-size:11.5px;color:var(--xblue)}
+.meta .u .open{font-family:var(--sans);font-weight:700;font-size:11px;letter-spacing:.1em;text-transform:uppercase}
+.meta .u .path{color:var(--muted)}
+/* whole card is tappable */
+.meta .u::after{content:"";position:absolute;inset:0}
+.post:hover .meta .u{text-decoration:underline}
+
+/* news */
+.news{display:grid;grid-template-columns:1fr;gap:0}
+.item{padding:14px 0;border-top:1px solid var(--soft)}
+.item:first-child{border-top:none;padding-top:0}
+.item .kicker{font-size:11px}
+.item h3{text-wrap:balance;font-family:var(--display);font-weight:700;font-size:23px;line-height:1.18;margin:6px 0 8px}
+.item h3 a{display:block}
+.item p{font-size:16.5px;line-height:1.5;margin:0}
+
+/* quick hit */
+.quick{display:flex;flex-direction:column;gap:6px;margin-top:20px;padding:14px 16px;background:var(--ink);color:var(--paper)}
+.quick .lbl{font-family:var(--sans);font-weight:800;font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:#f2b8b5;white-space:nowrap;padding-top:2px}
+.quick p{margin:0;font-size:16.5px;line-height:1.5}
+.quick .src{color:#bdb5a5;display:inline;margin-left:6px}
+.quick .src b{color:var(--paper)}
+.quick .src a{text-decoration-color:#6d675c}
+
+.foot{margin-top:20px;border-top:3px double var(--rule);padding-top:8px;font-family:var(--sans);font-size:11.5px;line-height:1.5;color:var(--muted);display:flex;flex-direction:column;gap:4px}
+.foot .ed{white-space:nowrap}
+
+/* archive */
+.archive-list{list-style:none;margin:0;padding:0}
+.archive-list li{border-bottom:1px solid var(--soft)}
+.archive-list a{display:grid;grid-template-columns:1fr;gap:4px;padding:14px 0;min-height:44px}
+.archive-list a:hover{text-decoration:none}
+.archive-list a:hover .hl{text-decoration:underline;text-underline-offset:3px}
+.archive-list .d{font-family:var(--sans);font-size:12px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.archive-list .d .no{color:var(--accent);margin-left:8px}
+.archive-list .hl{font-family:var(--display);font-weight:700;font-size:22px;line-height:1.2}
+.archive-intro{font-size:16.5px;line-height:1.5;color:var(--muted);margin:18px 0 8px;font-style:italic}
+
+/* ---- back page: optional Writer's Corner + Inspiration (preview-lab) ---- */
+.backpage{display:grid;grid-template-columns:1fr;gap:16px}
+.wc{background:var(--card);border:1px solid var(--soft);border-top:3px solid var(--accent);padding:14px 16px 6px}
+.wc h3{text-wrap:balance;font-family:var(--display);font-weight:700;font-size:23px;line-height:1.18;margin:6px 0 6px}
+.wc .byline{font-family:var(--sans);font-size:13px;color:var(--muted);line-height:1.4}
+.wc .byline b{color:var(--ink);font-weight:700}
+.wc .take{font-size:16.5px;line-height:1.5;margin:10px 0 0}
+.wc .pull{margin:12px 0 4px;padding:2px 0 2px 14px;border-left:3px solid var(--accent);font-family:var(--display);font-style:italic;font-size:19px;line-height:1.38;color:#2b2925}
+.wc .readit{display:inline-flex;align-items:center;min-height:44px;font-family:var(--sans);font-weight:700;font-size:11.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--accent)}
+.wc .readit span{color:var(--muted);font-weight:600;margin-left:8px}
+.insp{margin:0;border-top:1px solid var(--rule);padding-top:12px}
+.insp .frame{display:block;width:fit-content;max-width:100%;margin:8px 0 8px;background:var(--desk);border:1px solid var(--soft);padding:8px}
+.insp img{display:block;width:auto;max-width:100%;height:auto;max-height:520px;object-fit:contain;filter:sepia(.04)}
+.insp figcaption{font-family:var(--sans);font-size:13px;line-height:1.45;color:var(--muted);display:flex;flex-direction:column;gap:3px}
+.insp figcaption .t{font-family:var(--serif);font-size:16px;color:var(--ink)}
+.insp figcaption .c{font-family:var(--serif);font-size:15px;color:#3a372f}
+.insp figcaption .cr{font-size:11.5px;letter-spacing:.02em}
+.insp figcaption .cr a{text-decoration:underline;text-decoration-color:var(--soft);text-underline-offset:3px;display:inline-block;padding:8px 0;margin:-8px 0}
+@media (min-width:640px){
+  .backpage.both{grid-template-columns:1.35fr 1fr;gap:24px;align-items:start}
+  .insp{border-top:none;padding-top:0}
+  .backpage.both .insp{border-left:1px solid var(--soft);padding-left:24px}
+  .backpage:not(.both) .insp{display:grid;grid-template-columns:auto minmax(0,1fr);column-gap:28px;align-items:start}
+  .backpage:not(.both) .insp figcaption{padding-top:8px;max-width:420px}
+  .backpage:not(.both) .insp .kicker{grid-column:1/-1}
+}
+@media (min-width:900px){
+  .backpage.both{grid-template-columns:1.6fr 1fr;gap:28px}
+  .wc{padding:16px 20px 8px}
+  .wc h3{font-size:26px}
+  .wc .pull{font-size:21px}
+  .insp img{max-height:440px}
+  .backpage.both .insp img{max-height:300px}
+}
+
+/* ≥ 640px: tablets / large phones landscape */
+@media (max-width:899px){.page{min-height:100vh}}
+@media (min-width:640px){
+  .page{padding:22px 30px 24px}
+  .topline .tl{display:inline}
+  .masthead .tag{font-size:17px}
+  .dateline{font-size:12.5px}
+  .posts{grid-template-columns:repeat(2,1fr)}
+  .posts .post:last-child:nth-child(odd){grid-column:1/-1}
+  .news{grid-template-columns:repeat(2,1fr)}
+  .item{padding:14px 18px;border-top:1px solid var(--soft);border-left:1px solid var(--soft)}
+  .item:nth-child(-n+2){border-top:none;padding-top:0}
+  .item:nth-child(odd){border-left:none;padding-left:0}
+  .item:nth-child(even){padding-right:0}
+  .quick{flex-direction:row;gap:16px;align-items:flex-start;padding:13px 18px}
+  .foot{flex-direction:row;justify-content:space-between;gap:20px}
+  .archive-list a{grid-template-columns:220px 1fr;gap:18px;align-items:baseline}
+}
+/* ≥ 900px: desktop newspaper layout */
+@media (min-width:900px){
+  .page{padding:26px 44px 26px;margin:24px auto;box-shadow:0 1px 0 rgba(0,0,0,.06),0 12px 40px rgba(60,45,20,.12)}
+  .topline{font-size:12.5px}
+  .masthead .tag{font-size:17px}
+  .lead-row{grid-template-columns:2.1fr 1fr;gap:30px;padding:22px 0 20px}
+  .lead-row.solo{grid-template-columns:1fr}
+  .lead p{font-size:19px;line-height:1.5}
+  .lead p::first-letter{font-size:62px}
+  .nod{border-top:none;padding-top:0;border-left:1px solid var(--rule);padding-left:28px}
+  .section-h h2{font-size:25px}
+  .posts{grid-template-columns:repeat(6,1fr);gap:16px}
+  .posts .post,.posts .post:last-child:nth-child(odd){grid-column:span var(--span,2)}
+  .post blockquote{font-size:16px;line-height:1.42}
+  .why{font-size:13.5px;line-height:1.4}
+  .news{grid-template-columns:repeat(var(--cols,4),1fr)}
+  .news .item{padding:0 18px;border-top:none;border-left:1px solid var(--soft)}
+  .news .item:first-child{padding-left:0;border-left:none}
+  .news .item:last-child{padding-right:0}
+  .item h3{font-size:22px;line-height:1.15}
+  .item p{font-size:15.5px;line-height:1.45}
+  .quick p{font-size:16px;line-height:1.45}
+}
+@media (prefers-reduced-motion:no-preference){a{transition:color .12s}}
+@media print{html,body{background:#fff}.page{box-shadow:none;margin:0}.nav{display:none}}
+
+</style>
+</head>
+<body>
+<div class="page">
+  <nav class="nav nav-top" aria-label="Issues">
+    <a class="prev" href="../../issues/2026-11-13/" rel="prev">← Previous</a>
+    <a class="mid" href="../../archive/">Archive</a>
+    <a class="next" href="../../">Latest →</a>
+  </nav>
+  <div class="topline"><span>Tampere edition</span><span>No. 37</span><span class="tl">AI · dev tools · tech — a two-minute read</span></div>
+  <header class="masthead">
+    <h1><a href="../../">The Morning Commit</a></h1>
+    <div class="tag">Your morning brief on what moved in AI and dev tools overnight</div>
+  </header>
+  <div class="dateline"><span><time datetime="2026-11-14">Saturday, 14 November 2026</time></span><span>5 posts · 5 stories · 2-minute read</span></div>
+
+  <main>
+  <section class="lead-row">
+    <article class="lead">
+      <div class="kicker">AGENTS</div>
+      <h2><a href="https://openai.com/index/introducing-chatgpt-wallet/">OpenAI launches ChatGPT Wallet, so agents can pay without ever seeing your card</a></h2>
+      <p>Built with American Express, Mastercard and Visa, the wallet lets you add a card once and then approve each agent purchase with a security check such as Face ID or a fingerprint, after reviewing the items, total and card. The payment network hands out a token in place of the real card details, and existing rewards and dispute protections still apply. It starts with ChatGPT Pro subscribers in the US, through dots, alongside tools and guidance for businesses that want to accept agent payments.</p>
+      <div class="src">Source: <b><a href="https://openai.com/index/introducing-chatgpt-wallet/">OpenAI</a></b> · openai.com</div>
+    </article>
+    
+    <aside class="nod">
+      <div class="kicker">Number of the day</div>
+      <div class="big">7,000</div>
+      <p>LangSmith customers LangChain now claims, as it raises $300M at a $3B valuation, more than double its value a year ago.</p>
+      <div class="src">Source: <b><a href="https://techcrunch.com/2026/11/13/ai-agent-startup-langchain-hits-3b-valuation/">TechCrunch</a></b></div>
+    </aside>
+    
+  </section>
+
+  
+  <div class="section-h"><h2>Overheard on X</h2></div>
+  <section class="posts">
+    
+    <article class="post" style="--span:2">
+      <div class="who"><span class="n">Cursor</span><span class="sub2"><span class="h">@@cursor_ai</span><span class="t">Sat 03:13 Helsinki</span></span></div>
+      <blockquote>“We’ve published an update on our recent security incident. See a detailed overview of what happened and our remediation steps here: https://t.co/2lf6lRJPlL”</blockquote>
+      <div class="why"><b>Why it matters</b>If you use Cursor at work, the write-up on what happened and how it was fixed is worth a read.</div>
+      <div class="meta"><span class="stats">♥ <b>1,017</b> &nbsp; ⟲ <b>77</b></span>
+        <a class="u" href="https://x.com/cursor_ai/status/2121411147714970092" aria-label="Open @@cursor_ai’s post on X"><span class="open">Open on X ↗</span></a></div>
+    </article>
+    
+    <article class="post" style="--span:2">
+      <div class="who"><span class="n">dax</span><span class="sub2"><span class="h">@@thdxr</span><span class="t">Sat 05:35 Helsinki</span></span></div>
+      <blockquote>“we have more hardware up serving deepseek and it&#39;s looking good
+
+now we&#39;re moving on to figuring out glm”</blockquote>
+      <div class="why"><b>Why it matters</b>A small look at the opencode team bringing up its own inference for open models.</div>
+      <div class="meta"><span class="stats">♥ <b>600</b> &nbsp; ⟲ <b>8</b></span>
+        <a class="u" href="https://x.com/thdxr/status/2121446870639628468" aria-label="Open @@thdxr’s post on X"><span class="open">Open on X ↗</span></a></div>
+    </article>
+    
+    <article class="post" style="--span:2">
+      <div class="who"><span class="n">Amjad Masad</span><span class="sub2"><span class="h">@@amasad</span><span class="t">Sat 04:22 Helsinki</span></span></div>
+      <blockquote>“It&#39;s been great partnering with @Visa on agentic commerce. More features and use cases are coming! https://t.co/R15wSaMQ7c”</blockquote>
+      <div class="why"><b>Why it matters</b>Same day as ChatGPT Wallet: the card networks are lining up behind agent payments.</div>
+      <div class="meta"><span class="stats">♥ <b>101</b> &nbsp; ⟲ <b>6</b></span>
+        <a class="u" href="https://x.com/amasad/status/2121428406764204199" aria-label="Open @@amasad’s post on X"><span class="open">Open on X ↗</span></a></div>
+    </article>
+    
+    <article class="post" style="--span:3">
+      <div class="who"><span class="n">Harrison Chase</span><span class="sub2"><span class="h">@@hwchase17</span><span class="t">Fri 23:22 Helsinki</span></span></div>
+      <blockquote>“we&#39;re celebrating this fundraise with a ton of product launches next week, and then a webinar on friday to wrap it all up
+
+come join us! https://t.co/fcmh4SCwYz https://t.co/JcIGLmo7jF https://t.co/RNYuIZ0e5E”</blockquote>
+      <div class="why"><b>Why it matters</b>LangChain&#39;s CEO after the $3B round: expect a week of launches.</div>
+      <div class="meta"><span class="stats">♥ <b>39</b> &nbsp; ⟲ <b>7</b></span>
+        <a class="u" href="https://x.com/hwchase17/status/2121353055174348871" aria-label="Open @@hwchase17’s post on X"><span class="open">Open on X ↗</span></a></div>
+    </article>
+    
+    <article class="post" style="--span:3">
+      <div class="who"><span class="n">Ethan Mollick</span><span class="sub2"><span class="h">@@emollick</span><span class="t">Fri 22:17 Helsinki</span></span></div>
+      <blockquote>“&#34;You see the model called hydrogen is equivalent to the models called sonnet and luna and spark, but the model called fable is like wonder and astra and carbon (but it was like argon)&#34;
+
+&#34;Wait, why do you look confused?&#34;”</blockquote>
+      <div class="why"><b>Why it matters</b>Model naming in late 2026, summed up in one exchange.</div>
+      <div class="meta"><span class="stats">♥ <b>210</b> &nbsp; ⟲ <b>7</b></span>
+        <a class="u" href="https://x.com/emollick/status/2121336727138611689" aria-label="Open @@emollick’s post on X"><span class="open">Open on X ↗</span></a></div>
+    </article>
+    
+  </section>
+  
+
+  
+  <div class="section-h"><h2>The Wire</h2></div>
+  <section class="news" style="--cols:4">
+    
+    <article class="item">
+      <div class="kicker">FUNDING</div>
+      <h3><a href="https://techcrunch.com/2026/11/13/ai-agent-startup-langchain-hits-3b-valuation/">LangChain raises a $300M Series C at a $3B valuation</a></h3>
+      <p>CapitalG led the round, with GIC, DFJ Growth, IVP and Sapphire Ventures joining. The open-source library from 2022 has turned into an agent-management business: LangSmith pitches itself as model- and cloud-neutral, with customers such as Harvey, Rippling, Clay, Nvidia, Toyota and Salesforce.</p>
+      <div class="src">— <b><a href="https://techcrunch.com/2026/11/13/ai-agent-startup-langchain-hits-3b-valuation/">TechCrunch</a></b> · techcrunch.com</div>
+    </article>
+    
+    <article class="item">
+      <div class="kicker">ROBOTICS</div>
+      <h3><a href="https://fortune.com/2026/11/13/openai-disbands-robotics-team-as-its-general-models-start-running-robots/">OpenAI disbands its stand-alone robotics team</a></h3>
+      <p>Robotics researchers move into the main research org under Mark Chen, and applied robotics and hardware staff into Applied under Greg Brockman. OpenAI says it is betting on general-purpose models driving robots directly, not retreating. Its booth at the CoRL robotics conference in Austin this week sat empty.</p>
+      <div class="src">— <b><a href="https://fortune.com/2026/11/13/openai-disbands-robotics-team-as-its-general-models-start-running-robots/">Fortune</a></b> · fortune.com</div>
+    </article>
+    
+    <article class="item">
+      <div class="kicker">AGENTS</div>
+      <h3><a href="https://9to5mac.com/2026/11/13/perplexity-brings-ai-agents-feature-called-teammates-to-the-mac/">Perplexity brings Teammates, its always-on agents, to the Mac</a></h3>
+      <p>Teammates are given an ongoing responsibility, such as triaging bug reports, tracking metrics or running a growth campaign, then plan the work, bring in more agents as it grows and report back for review. Previously on iOS and the web, it needs a Perplexity Max subscription.</p>
+      <div class="src">— <b><a href="https://9to5mac.com/2026/11/13/perplexity-brings-ai-agents-feature-called-teammates-to-the-mac/">9to5Mac</a></b> · 9to5mac.com</div>
+    </article>
+    
+    <article class="item">
+      <div class="kicker">FINLAND</div>
+      <h3><a href="https://tech.eu/2026/11/13/peter-sarlins-postscriptum-acquires-majority-stake-in-brillian-to-accelerate-global-growth/">Peter Sarlin&#39;s PostScriptum takes a majority stake in Finnish AI consultancy Brillian</a></h3>
+      <p>Founded in 2024, Brillian does AI deployment end to end, from strategy to everyday use, from two Finnish hubs, and earns most of its revenue abroad with clients such as Siemens, Storytel and Carnival Cruise Lines. The founders and staff keep a substantial minority, and the plan is bigger projects and new AI hubs next year.</p>
+      <div class="src">— <b><a href="https://tech.eu/2026/11/13/peter-sarlins-postscriptum-acquires-majority-stake-in-brillian-to-accelerate-global-growth/">Tech.eu</a></b> · tech.eu</div>
+    </article>
+    
+  </section>
+  
+
+  
+  
+  <div class="section-h"><h2>The Back Page</h2></div>
+  <section class="backpage">
+    
+    
+    <figure class="insp">
+      <div class="kicker">Inspiration</div>
+      <a class="frame" href="https://clevelandart.org/art/2018.201"><img src="https://openaccess-cdn.clevelandart.org/2018.201/2018.201_web.jpg" alt="Painted cloth with a tall human-shaped diagram of the universe, a large circular map of continents, and panels of hell scenes" loading="lazy" decoding="async" width="900" height="495"></a>
+      <figcaption>
+        <span class="t"><i>Diagrams of the Universe</i>, Unknown artist, Western India (Gujarat) (1613)</span>
+        <span class="c">Jain cosmology drawn as one big information graphic: the universe as a human figure, the earthly realm as a round map of mountains and rivers, and the hells laid out level by level.</span>
+        <span class="cr">The Cleveland Museum of Art · <a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0</a> · <a href="https://clevelandart.org/art/2018.201">Source ↗</a></span>
+      </figcaption>
+    </figure>
+    
+  </section>
+  
+
+  
+  </main>
+
+  <footer class="foot"><span>Compiled 14 Nov 2026, ~08:05 Helsinki time. X posts come from one X search (last ~24 h, known builders) and news from open web sources. Times are in Helsinki time.</span><span class="ed">The Morning Commit · 2026-11-14</span></footer>
+  <nav class="nav nav-bottom" aria-label="Issues">
+    <a class="prev" href="../../issues/2026-11-13/" rel="prev">← Previous</a>
+    <a class="mid" href="../../archive/">All issues</a>
+    <a class="next" href="../../">Latest →</a>
+  </nav>
+</div>
+</body>
+</html>
