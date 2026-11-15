@@ -1,0 +1,100 @@
+{
+  "paper_name": "The Morning Commit",
+  "tagline": "AI · dev tools · tech — a two-minute read",
+  "edition": "Tampere edition",
+  "issue_no": "No. 38",
+  "date_long": "Sunday, 15 November 2026",
+  "date_slug": "2026-11-15",
+  "lead": {
+    "kicker": "NVIDIA",
+    "headline": "115,000 sign a petition to bring Jensen Huang back to Nvidia, Musk and Masad among them",
+    "summary": "The petition says signers include 5,965 current Nvidia employees, 1,108 former employees and 63,063 shareholders, with Elon Musk, Replit's Amjad Masad, Epic's Tim Sweeney and YC's Garry Tan named as supporters. It argues Huang was removed \"without meaningful due process\" and asks the board to reinstate him while an independent investigation runs. Huang resigned on Thursday; CFO Colette Kress is interim CEO, and Nvidia's stock fell sharply through the week.",
+    "source": "TechCrunch",
+    "url": "https://techcrunch.com/2026/11/14/elon-musk-other-tech-execs-sign-petition-calling-on-nvidia-to-reinstate-jensen-huang/"
+  },
+  "number_of_day": {
+    "value": "663",
+    "label": "Theorems Claude pulled from Kurt Gödel's shorthand notebooks. Checked in the Coq proof assistant, about 400 held as stated, about 200 needed repairs and about 50 were false.",
+    "source": "The Guardian",
+    "url": "https://www.theguardian.com/science/2026/nov/13/kurt-godel-notebooks-ai-helps-unlock-hidden-discoveries-man-who-transformed-maths"
+  },
+  "news": [
+    {
+      "tag": "ANTHROPIC",
+      "headline": "Days before its IPO, Amodei calls compute Anthropic's \"deepest business dilemma\"",
+      "summary": "Speaking with Jamie Dimon at a JPMorgan investor event on Friday, he said capacity has to be bought one to two years ahead, before anyone knows if revenue will justify it. Per Bloomberg, Anthropic has committed nearly $901B, mostly to compute and chips, with about $71B due by September 2027. The IPO is planned for 19 November.",
+      "source": "The Decoder",
+      "url": "https://the-decoder.com/anthropic-ceo-amodei-admits-theres-a-huge-uncertainty-in-whats-going-to-happen-next-year-days-before-a-record-ipo/"
+    },
+    {
+      "tag": "CLAUDE",
+      "headline": "Anthropic: stop telling Claude Opus 5.5 to \"think hard\"",
+      "summary": "Now the default on Pro, Max, Ultra and Team plans, Opus 5.5 reasons on its own, and Anthropic says responses without those phrases started faster with no measurable drop in quality. It recommends starting at Medium effort, which matched Opus 5 on High in its tests, and stating the goal, output and check-in points in one message.",
+      "source": "The Decoder",
+      "url": "https://the-decoder.com/anthropic-says-outdated-prompting-habits-are-slowing-down-claude-opus-5-5/"
+    },
+    {
+      "tag": "OPEN SOURCE",
+      "headline": "llama.cpp and ggml reach v1.0.0 and switch to semantic versioning",
+      "summary": "After 3.5 years, major version bumps will now mark breaking changes to the public C API, so downstream tools can pin a release. v1.0.0 also removes 35 deprecated functions, adds FP8 KV caches and a MoE expert cache, hardens llama-server (SSRF, CORS, DNS rebinding) and adds a /v1/audio/speech endpoint. Released Friday.",
+      "source": "Hugging Face",
+      "url": "https://huggingface.co/blog/ggml-org/llama-cpp-v1"
+    },
+    {
+      "tag": "FINLAND",
+      "headline": "A Helsinki logician uses Claude to unlock Gödel's lost notebooks",
+      "summary": "Jan von Plato, who leads a University of Helsinki project on 1,009 pages of Gödel's 1940s workbooks in obsolete Gabelsberger shorthand, had been moving at about a page a week. Given his transcriptions, Claude produced a 650-page digest in a couple of days, including a near-complete proof of the axiom of choice's independence that then passed Coq.",
+      "source": "The Guardian",
+      "url": "https://www.theguardian.com/science/2026/nov/13/kurt-godel-notebooks-ai-helps-unlock-hidden-discoveries-man-who-transformed-maths"
+    }
+  ],
+  "x_posts": [
+    {
+      "name": "Ethan Mollick",
+      "handle": "@emollick",
+      "time": "Sun 01:46",
+      "text": "AI is getting better faster than our measurements are\n\nI threw together SatBench, which measures how quickly major AI benchmarks become saturated (effectively beaten). Of 173 benchmarks cited by the Labs since 2023, 63% are now saturated. Saturation is happening faster each year. https://t.co/tITFRo7w0z",
+      "why": "A useful reminder to read launch-day benchmark tables with some caution.",
+      "likes": 406,
+      "reposts": 37,
+      "url": "https://x.com/emollick/status/2121751565845360769"
+    },
+    {
+      "name": "dax",
+      "handle": "@thdxr",
+      "time": "Sun 06:47",
+      "text": "the entire advantage of llms is they are incredibly flexible\n\nwhich means they can conform to whatever way you prefer to work and think and build\n\nthere's infinite people posting about the best way to use agents. like, first you need to do a plan, and then you need to blah blah",
+      "why": "The opencode builder pushes back on one-true-workflow agent advice.",
+      "likes": 235,
+      "reposts": 5,
+      "url": "https://x.com/thdxr/status/2121827372122959974"
+    },
+    {
+      "name": "Guillermo Rauch",
+      "handle": "@rauchg",
+      "time": "Sun 05:15",
+      "text": "Got to experience the magic of @uisdk.\n\nTwo prompts of fx + Gemini Argon. Pure Web Components. No framework.\n\nThe agent reused 14 UI SDK behaviors out of the box 🤯: window resizing, drag, menubar hover-switching,  typeahead, roving toolbar focus, 10-band EQ sliders, scoped https://t.co/B7nDKZP3h6 https://t.co/cdMCz0G01d",
+      "why": "Agents get far more done when they have good, reusable UI building blocks.",
+      "likes": 566,
+      "reposts": 21,
+      "url": "https://x.com/rauchg/status/2121804295381377342"
+    },
+    {
+      "name": "Gergely Orosz",
+      "handle": "@GergelyOrosz",
+      "time": "Sun 02:38",
+      "text": "The Economist is the one I only publication I told to NEVER use any material from me ever again.\n\nThey redrew and renamed my Trimodal compensation diagram, did not link to my work… not even after I called them out\n\nNot much original journalism left there\n\nhttps://t.co/c848A3Zv1t https://t.co/P2rMGM74HC",
+      "why": "The author of the well-known trimodal pay model says it was used without credit.",
+      "likes": 880,
+      "reposts": 27,
+      "url": "https://x.com/GergelyOrosz/status/2121764764737290472"
+    }
+  ],
+  "quick_hit": {
+    "label": "ROBOTAXIS",
+    "text": "Tesla opened Cybercab pre-orders \"for personal use\" to select customers: $29,990 plus $299 a month to operate, delivery in a handful of Texas cities, geofenced areas only, estimated December 2026.",
+    "source": "TechCrunch",
+    "url": "https://techcrunch.com/2026/11/14/tesla-opens-cybercab-pre-orders-for-personal-use-with-geo-restrictions-and-a-299-monthly-fee/"
+  },
+  "footer": "Compiled 15 Nov 2026, ~08:15 Helsinki time. X posts come from one X search (last ~24 h, known builders) and news from open web sources. Times are in Helsinki time."
+}
