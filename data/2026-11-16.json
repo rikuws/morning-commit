@@ -1,0 +1,106 @@
+{
+  "paper_name": "The Morning Commit",
+  "tagline": "AI · dev tools · tech — a two-minute read",
+  "edition": "Tampere edition",
+  "issue_no": "No. 39",
+  "date_long": "Monday, 16 November 2026",
+  "date_slug": "2026-11-16",
+  "lead": {
+    "kicker": "MODELS",
+    "headline": "Alibaba ships Qwen4-Max: a 1M-context flagship at $1.50 / $4.50, with open Qwen4 weights promised",
+    "summary": "Out of a five-day preview, the first full Qwen4 model is a new MoE with native vision (text, image and video in) and is now on the pay-as-you-go QwenCloud API. Alibaba says it beats Qwen3.8-Max with up to about 50% fewer tokens and over 60% lower average cost per task, and shows it ahead of Claude Opus 5.5 on some tests such as DeepSWE. Artificial Analysis puts it at 43 on its Intelligence Index, below Fable 5.2 and Gemini 4 Carbon but above Haiku 5.5. Smaller open-weight Qwen4 models are due later.",
+    "source": "GIGAZINE",
+    "url": "https://gigazine.net/gsc_news/en/20261116-qwen4-max/"
+  },
+  "number_of_day": {
+    "value": "160,000+",
+    "label": "Signatures on the \"Stand with Jensen\" petition by Sunday night, up from 115,000 a day earlier. The FT reports Huang has discussed a return as Nvidia CEO with close confidants, while the board's investigation continues.",
+    "source": "CNBC",
+    "url": "https://www.cnbc.com/2026/11/16/nvidia-jensen-huang-return-tech.html"
+  },
+  "news": [
+    {
+      "tag": "AI FOR SCIENCE",
+      "headline": "OpenAI opens a science blog with a GPT-6 Astra-assisted lattice Standard Model proof",
+      "summary": "The first guest post, by UC Santa Barbara physicist Nathaniel Craig, describes a candidate nonperturbative lattice definition of the Standard Model. Craig says Astra turned his strategy into a construction and led the detailed proof. He calls it a beginning: open questions such as reflection positivity remain, and outside experts have not yet endorsed it. Published Sunday.",
+      "source": "Data Phoenix",
+      "url": "https://dataphoenix.info/news/openai-astra-lattice-standard-model"
+    },
+    {
+      "tag": "SECURITY",
+      "headline": "Old Bitly links in Burger King, McDonald's and Trump tweets were re-registered and hijacked",
+      "summary": "Short links from 2011-era tweets were registered again on Sunday and pointed at jarring pages such as Wikipedia's list of Nazi concentration camps; one quote post passed 2 million views within hours. Bitly confirmed an issue that \"allowed bad actors to repurpose certain old, inactive links\", suspended the accounts and is disabling the links. Of 97 Bitly links in Trump's 2009–2013 tweets, 56 were created after the tweets they sit in.",
+      "source": "Ransomnews",
+      "url": "https://ransomnews.com/burger-king-tweet-bitly-link-hijack-2026/"
+    },
+    {
+      "tag": "SECURITY",
+      "headline": "GPT-5.6 Sol found a one-click universal XSS in uBlock Origin",
+      "summary": "A malicious site could leak the extension's internal ID, embed uBO's element picker in an invisible iframe and trick a click into adding a trusted filter, which can run JavaScript on any site. It hit the Firefox MV2 version, with a milder variant in uBO Lite, and is now fixed. The researcher verified the bug himself and says Claude wrote most of the proof-of-concept code.",
+      "source": "iter.ca",
+      "url": "https://iter.ca/post/ubo-uxss/"
+    },
+    {
+      "tag": "FINLAND",
+      "headline": "Helsinki's Intergrid raises €23.5M for an \"autopilot\" that runs factory energy systems",
+      "summary": "The round is co-led by Nordic industrial-tech fund Kvanted and state investor Tesi, with Lifeline Ventures and True Ventures joining. Autopilot runs at 100+ sites (customers include Snellman, Atria, Lindström and Vatajankoski) and sits ML predictions on top of rule-based logic, with agents for monitoring, so operators supervise rather than press buttons.",
+      "source": "Tech Funding News",
+      "url": "https://techfundingnews.com/intergrid-23-5m-autopilot-industrial-energy-management/"
+    }
+  ],
+  "x_posts": [
+    {
+      "name": "Guillermo Rauch",
+      "handle": "@rauchg",
+      "time": "Mon 06:27",
+      "text": "Introducing 𝚡𝚎𝚎𝚝: https://t.co/YaLEMbmKwf.\n\nA hermetic, pixel-perfect X post renderer in safe Rust / wasm. Zero browser, network, filesystem, system fonts. Renders a post to PNG in ~1ms…\n\nIt was conceived from the ground up around 'verification engineering', and the result speaks for itself.",
+      "why": "An \"autorepo\": a Chrome oracle checks tens of thousands of layout rules and files PRs for agents to fix.",
+      "likes": 472,
+      "reposts": 21,
+      "url": "https://x.com/rauchg/status/2122184794209714368"
+    },
+    {
+      "name": "elvis",
+      "handle": "@omarsar0",
+      "time": "Sun 20:34",
+      "text": "This might surprise many new to AI. The best agentic systems I have built and seen other top engineers build involve lots of boring deterministic steps.\n\nYou can't just throw more LLM agents at every problem and expect reliability to improve. Every error will compound into more errors.",
+      "why": "A good counterweight to \"just add more agents\": classifiers, verifiers and evals still do the heavy lifting.",
+      "likes": 344,
+      "reposts": 29,
+      "url": "https://x.com/omarsar0/status/2122035455793188980"
+    },
+    {
+      "name": "Ethan Mollick",
+      "handle": "@emollick",
+      "time": "Mon 05:54",
+      "text": "I think often about the fact that almost everyone working in the West has lived in a quite stable socio-technical period\n\nOnly 1 job out of 270 in the 1950 census is now obsolete (elevator operator)\n\n2026 is similar to 1957 in a way that 1969 was not from 1900.\n\nThat may change.",
+      "why": "A historical frame for how unusual a fast-changing job market would actually be.",
+      "likes": 216,
+      "reposts": 14,
+      "url": "https://x.com/emollick/status/2122176524610884061"
+    },
+    {
+      "name": "dax",
+      "handle": "@thdxr",
+      "time": "Sun 19:42",
+      "text": "man agents make doing least privilege credentials in things like aws so easy\n\ni love that we don't have to make as many convenience vs security tradeoffs anymore",
+      "why": "The tedious IAM scoping nobody did by hand is now cheap to get right.",
+      "likes": 584,
+      "reposts": 3,
+      "url": "https://x.com/thdxr/status/2122022494337106408"
+    }
+  ],
+  "writers_corner": {
+    "category": "Design",
+    "writer": "Daniel Ford",
+    "publication": "The Creative Independent",
+    "date": "Fri 13 Nov",
+    "title": "Writer and podcaster Daniel Ford on balancing the home office and dad mode",
+    "take": "With a day job, a one-person podcast network and two kids under five, Ford keeps his creative work alive by keeping it short and streamlined, and lets his old fiction ambitions wait.",
+    "quote": "Those creative neurons are flickering, just in a different way.",
+    "url": "https://thecreativeindependent.com/people/writer-and-podcaster-daniel-ford-on-balancing-the-home-office-and-dad-mode/",
+    "read_note": "interview, ~12-min read",
+    "feed_url": "https://thecreativeindependent.com/feed.xml"
+  },
+  "footer": "Compiled 16 Nov 2026, ~08:05 Helsinki time. X posts come from one X search (last ~24 h, known builders) and news from open web sources. Times are in Helsinki time."
+}
