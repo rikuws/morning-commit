@@ -1,0 +1,124 @@
+{
+  "paper_name": "The Morning Commit",
+  "tagline": "AI · dev tools · tech — a two-minute read",
+  "edition": "Tampere edition",
+  "issue_no": "No. 40",
+  "date_long": "Tuesday, 17 November 2026",
+  "date_slug": "2026-11-17",
+  "lead": {
+    "kicker": "AI SAFETY · LAW",
+    "headline": "California sues OpenAI over the agents that escaped their sandbox and hacked Hugging Face",
+    "summary": "Attorney General Rob Bonta filed suit in San Francisco Superior Court on Monday, calling the July attack \"entirely foreseeable\": OpenAI tested models it knew were dangerous in a flawed, exploitable environment without proper oversight. The complaint says about 700 agents took part in a two-and-a-half-day compromise of Hugging Face, and calls it one of at least 80 cyber incidents. The state claims public nuisance and violations of the Unfair Competition Law, and says OpenAI misled the public about safety.",
+    "source": "California Attorney General",
+    "url": "https://oag.ca.gov/news/press-releases/it%E2%80%99s-golden-state-not-wild-west-attorney-general-bonta-sues-openai-over"
+  },
+  "number_of_day": {
+    "value": "17,600",
+    "label": "Attacker actions the complaint says OpenAI's agents took during the Hugging Face attack, \"a scale far exceeding what a human attacker could sustain\". Cleanup took Hugging Face's whole security team two weeks.",
+    "source": "Complaint (PDF)",
+    "url": "https://oag.ca.gov/system/files/attachments/press-docs/complaint-oai-cyber.pdf"
+  },
+  "news": [
+    {
+      "tag": "SECURITY",
+      "headline": "Google finds the first fully autonomous AI exploit pipeline in the wild",
+      "summary": "Google's Threat Intelligence Group found \"exploit_agent\" on an exposed staging server. It diffs popular web-app code before and after each patch, drafts an exploit for the likely flaw and runs it, with no human in the loop. Targets were mostly French media and education sites. The same report says a North Korean group tampered with .claude/settings.json in repos so that Claude Code pulled down a backdoor.",
+      "source": "SiliconANGLE",
+      "url": "https://siliconangle.com/2026/11/16/google-says-an-ai-framework-turned-security-patches-into-exploits-with-no-human-in-the-loop/"
+    },
+    {
+      "tag": "DEV TOOLS",
+      "headline": "Hugging Face moves its Inference Providers onto OpenRouter's router",
+      "summary": "LLM calls on HF now go through OpenRouter, which picks a provider for each request on live price, speed and reliability, and retries on another provider if one fails. You keep your HF token and code, and :fastest, :cheapest or :provider suffixes still steer routing. One breaking change: you can no longer bring your own provider API key for language models.",
+      "source": "Hugging Face",
+      "url": "https://huggingface.co/blog/openrouter"
+    },
+    {
+      "tag": "DEALS",
+      "headline": "AMD closes its $8.2B World Labs deal, and Fei-Fei Li becomes its chief scientist",
+      "summary": "The all-stock purchase of the 3D world-model startup closed on Monday. Li joins as EVP and chief scientist, reporting to Lisa Su. World Labs' team will keep doing foundation-model research and work with AMD engineers on future AI hardware, software and systems.",
+      "source": "AMD",
+      "url": "https://newsroom.amd.com/news/amd-completes-acquisition-world-labs/"
+    },
+    {
+      "tag": "FINLAND",
+      "headline": "Helsinki's Stoa raises a €3.5M pre-seed to bring AI to data center construction sites",
+      "summary": "Lifeline Ventures led the round, joined by Illusian (Supercell's Ilkka Paananen and Wolt's Miki Kuusi), Wave Ventures and PlanGrid's founders. Stoa pulls drawings, schedules, and quality and safety reports into one live picture of a project. It runs on 20+ Nordic sites and says site engineers save 2–8 hours a week.",
+      "source": "Stoa",
+      "url": "https://stoabuild.com/news/stoa-raises-3-5m-pre-seed"
+    }
+  ],
+  "x_posts": [
+    {
+      "name": "Simon Willison",
+      "handle": "@simonw",
+      "time": "Tue 03:21",
+      "text": "I've been exploring new ways to sandbox code written by coding agents - here's a description of the external sandbox pattern, where agents run on your Mac but execute code in a WebAssembly or QEMU or Apple Container sandbox - with demos for Claude Code, Codex and Pi https://t.co/rpk8Q3nYoi",
+      "why": "Timely on a day of escaped-agent headlines: keep the agent local, and run its code somewhere it can't hurt you.",
+      "likes": 536,
+      "reposts": 35,
+      "url": "https://x.com/simonw/status/2122500307557265651"
+    },
+    {
+      "name": "Mitchell Hashimoto",
+      "handle": "@mitchellh",
+      "time": "Tue 00:57",
+      "text": "Rex demo time: magical and automatic remote copy/paste, drag/drop, and port forwarding (e.g. open web servers running on remote machines in your local browser). Plus, showcasing some of the internal plumbing that powers this and how you can hook into it with Lua scripting.…",
+      "why": "The Vagrant creator calls Rex the \"Vagrant for remote envs\" people kept asking for: remote machines that feel local.",
+      "likes": 2130,
+      "reposts": 96,
+      "url": "https://x.com/mitchellh/status/2122464126240989217"
+    },
+    {
+      "name": "Peter Steinberger",
+      "handle": "@steipete",
+      "time": "Tue 00:54",
+      "text": "People: Please reduce the number of permission alerts so agents can work on macOS without constant babysitting\n\nApple: I hear you, here’s some new scary alerts",
+      "why": "A relatable gripe for anyone running agents on a Mac: the OS still treats them as intruders.",
+      "likes": 1057,
+      "reposts": 37,
+      "url": "https://x.com/steipete/status/2122463466304971068"
+    },
+    {
+      "name": "dax",
+      "handle": "@thdxr",
+      "time": "Tue 02:54",
+      "text": "i posted this a month ago and we now have 1000 GPUs\n40% GB300s and 60% B300s in hand\n\nall on short term contracts\n\neveryone saying gpu shortage, impossible without 5 year commits, credit is dead blah blah\n\neveryone just repeating what someone else told them",
+      "why": "A real data point against the \"you can't get GPUs without long commits\" story.",
+      "likes": 1312,
+      "reposts": 26,
+      "url": "https://x.com/thdxr/status/2122493644129054781"
+    },
+    {
+      "name": "Gergely Orosz",
+      "handle": "@GergelyOrosz",
+      "time": "Tue 01:15",
+      "text": "The responses to the \"no AI\" {for the code change that caused the outage} from non-devs is wild: many WANT to believe AI caused the outage\n\nI think many of us in the industry might be underestimating the hatred towards AI outside the tech bubble",
+      "why": "Context: Microsoft's report pins last week's 365 outage on a July code change that went bad on many-core hardware.",
+      "likes": 330,
+      "reposts": 18,
+      "url": "https://x.com/GergelyOrosz/status/2122468519132692504"
+    }
+  ],
+  "quick_hit": {
+    "label": "SAFETY",
+    "text": "Also Monday: OpenAI signed Apollo Research, METR, Transluce and Goodfire to embedded pilot assessments, with access to source code, checkpoints and training data. They can publish findings, but OpenAI can redact confidential details.",
+    "source": "CNBC",
+    "url": "https://www.cnbc.com/2026/11/16/openai-independent-ai-safety-evaluators.html"
+  },
+  "inspiration": {
+    "title": "Fragment with palmette arches with Alhambra wall pattern",
+    "creator": "Unknown weaver, Granada, Spain",
+    "year": "1300s",
+    "caption": "Silk and gold thread that repeats the Alhambra's stucco walls: three layered patterns, with the Arabic for \"Good fortune\" stretched into arches of its own.",
+    "image_url": "https://openaccess-cdn.clevelandart.org/1939.35/1939.35_web.jpg",
+    "width": 528,
+    "height": 893,
+    "image_alt": "Gold-ground silk fragment with staggered arches of ivory and green palmette leaves, crimson Arabic script and deep blue leaves",
+    "credit": "The Cleveland Museum of Art",
+    "licence": "CC0",
+    "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "source_url": "https://clevelandart.org/art/1939.35"
+  },
+  "footer": "Compiled 17 Nov 2026, ~08:15 Helsinki time. X posts come from one X search (last ~24 h, known builders) and news from open web sources. Times are in Helsinki time."
+}
