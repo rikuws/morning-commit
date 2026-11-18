@@ -1,0 +1,116 @@
+{
+  "paper_name": "The Morning Commit",
+  "tagline": "AI · dev tools · tech — a two-minute read",
+  "edition": "Tampere edition",
+  "issue_no": "No. 41",
+  "date_long": "Wednesday, 18 November 2026",
+  "date_slug": "2026-11-18",
+  "lead": {
+    "kicker": "MODELS · OPENAI",
+    "headline": "OpenAI ships GPT-6.2 Astra and Sol: more work for fewer tokens, and Astra gets 20% cheaper",
+    "summary": "Astra is the new frontier model for hard projects, Sol the everyday default, and both are live in ChatGPT Work and Codex and in the API. OpenAI says Astra beats Claude Fable 5.2 by 5.5 points on Agents' Last Exam at 5% of the cost, and writes cleaner code and better frontends. Astra API pricing drops to $8 in / $40 out per million tokens (cached input $0.40); Sol stays at $2 / $10. Artificial Analysis still ranks Astra second, just behind Fable 5.2.",
+    "source": "OpenAI",
+    "url": "https://openai.com/index/introducing-gpt-6-2-astra-sol/"
+  },
+  "number_of_day": {
+    "value": "< €70,000",
+    "label": "What Tampere and the other eVaka municipalities paid for the AI-assisted mobile upgrade (notifications and biometric sign-in). A separate native app was estimated in 2024 at €400,000, plus about €400,000 a year to maintain.",
+    "source": "City of Tampere",
+    "url": "https://www.tampere.fi/en/current/2026/11/17/evaka-users-wish-came-true-thanks-artificial-intelligence"
+  },
+  "news": [
+    {
+      "tag": "MODELS",
+      "headline": "Microsoft drops seven cheap MAI models at Ignite, led by MAI Code 2",
+      "summary": "Microsoft says MAI Code 2 reaches 98% of GPT-6.1 Sol's coding quality at about 40% of the price, and 96% of Opus 5.5 at 5% of the price. The lineup also has Code 2 Flash, Cyber 2 Flash, Image 2.7 and Realtime 1 (from $0.01 per audio minute), and its Maia 200 chip is now in production. MAI Code 2 and Code 2 Flash are already in GitHub Copilot.",
+      "source": "Microsoft AI",
+      "url": "https://microsoft.ai/news/microsoft-ignite-2026/"
+    },
+    {
+      "tag": "CODING AGENTS",
+      "headline": "Replit Missions: give a swarm of agents an outcome and a budget",
+      "summary": "You set the goal and the limits, and Replit coordinates parallel agents that plan, build, test and iterate. Replit's own demo: in two days and within a $3,000 budget, a swarm built DataCat, an in-house monitoring platform with dashboards, alerts and tracing, tested against performance and reliability goals.",
+      "source": "Replit",
+      "url": "https://replit.com/blog/introducing-replit-missions"
+    },
+    {
+      "tag": "TAMPERE",
+      "headline": "eVaka now works like a phone app, built with Claude instead of a €400k native app",
+      "summary": "A Reaktor developer prototyped the progressive web app with Claude in a couple of days, and the team then refined it almost weekly for five months, shifting effort from coding to user journeys and design. You can add eVaka to your home screen, get notifications and sign in with fingerprint or face. The city now plans to revisit requests once deemed too costly.",
+      "source": "City of Tampere",
+      "url": "https://www.tampere.fi/en/current/2026/11/17/evaka-users-wish-came-true-thanks-artificial-intelligence"
+    },
+    {
+      "tag": "FINLAND",
+      "headline": "Ex-Swappie CEO's AI healthtech Treat raises a €3M pre-seed in Helsinki",
+      "summary": "byFounders and Illusian led the round. Sami Marttinen started Treat after his wife went through nine private doctor visits before a diagnosis: it has doctors review a patient's history before connecting them in minutes. Co-founders are doctor Antti Mauno and engineer Onni Wahlberg; Marttinen says the deal closed in a week.",
+      "source": "Tech Funding News",
+      "url": "https://techfundingnews.com/treat-raises-3m-pre-seed-ai-healthtech-helsinki/"
+    }
+  ],
+  "x_posts": [
+    {
+      "name": "dax",
+      "handle": "@thdxr",
+      "time": "Wed 04:48",
+      "text": "unfortunately there's a big vacuum left by jensen wrt to open weight models\n\nnvidia is one of the only companies who had financial incentive to want open weight models to thrive and they had a crazy amount of leverage over everyone who didn't\n\nnow even without any drastic moves…",
+      "why": "A sharp second-order take on Huang's exit: who now has a business reason to push open weights?",
+      "likes": 774,
+      "reposts": 33,
+      "url": "https://x.com/thdxr/status/2122884545422799052"
+    },
+    {
+      "name": "Ethan Mollick",
+      "handle": "@emollick",
+      "time": "Wed 03:49",
+      "text": "A rush of patches to address security concerns is exactly the most plausible answer for recent outages, as well as the official reason. CIOs I talked to have been exhausted trying to keep up with security patch demands & balacing that with normal operations.",
+      "why": "A plausible read on the recent outage wave: ops teams are drowning in security patch demands.",
+      "likes": 399,
+      "reposts": 49,
+      "url": "https://x.com/emollick/status/2122869773683831129"
+    },
+    {
+      "name": "Guillermo Rauch",
+      "handle": "@rauchg",
+      "time": "Wed 01:11",
+      "text": "Actually a huge deal for web performance. agent-browser vitals is so smart… self-optimizing software is here!",
+      "why": "Bookmarked 600+ times: Vercel's CEO on agent-browser vitals, which he frames as software that optimizes itself.",
+      "likes": 469,
+      "reposts": 20,
+      "url": "https://x.com/rauchg/status/2122830064152899991"
+    },
+    {
+      "name": "OpenAI Developers",
+      "handle": "@OpenAIDevs",
+      "time": "Wed 00:51",
+      "text": "We updated the API usage dashboard to make it easier to monitor your usage and investigate issues.\n\nIn Analytics, you can now:\n• Better track usage and spend\n• Check rate limits and rate-limited requests\n• Explore errors by model, project, or API key",
+      "why": "Small but practical if you run agents on the API: spend, rate limits and errors in one place.",
+      "likes": 547,
+      "reposts": 30,
+      "url": "https://x.com/OpenAIDevs/status/2122824859491205152"
+    },
+    {
+      "name": "Simon Willison",
+      "handle": "@simonw",
+      "time": "Wed 00:40",
+      "text": "Here's GPT-6.2 Astra and GPT-6.2 Sol for \"Make a three js animation where yonkers stands up as a big mech (cool stand up motion) and stomps around manhattan and queens and Brooklyn, use openstreetmap mapping data\"",
+      "why": "A quick hands-on side-by-side of today's lead, from someone who tests every model the day it lands.",
+      "likes": 217,
+      "reposts": 5,
+      "url": "https://x.com/simonw/status/2122822310428279136"
+    }
+  ],
+  "writers_corner": {
+    "category": "History",
+    "writer": "Lhamsuren Munkh-Erdene",
+    "publication": "Aeon",
+    "date": "Mon 16 Nov",
+    "title": "The horse made the state",
+    "take": "A Mongolian historian argues states grew out of transport and conquest, horses, boats and herders, not grain stores, and that the farming-first story wrote pastoralists out of history.",
+    "quote": "Transportation – not grain – is what brought the state and civilisation into existence, and what continues to maintain them.",
+    "url": "https://aeon.co/essays/the-origins-of-the-state-are-not-agrarian-but-pastoralist",
+    "read_note": "long essay, free",
+    "feed_url": "https://aeon.co/feed.rss"
+  },
+  "footer": "Compiled 18 Nov 2026, ~08:05 Helsinki time. X posts come from one X search (last ~24 h, known builders) and news from open web sources. Times are in Helsinki time."
+}
