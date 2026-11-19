@@ -1,0 +1,124 @@
+{
+  "paper_name": "The Morning Commit",
+  "tagline": "AI · dev tools · tech — a two-minute read",
+  "edition": "Tampere edition",
+  "issue_no": "No. 42",
+  "date_long": "Thursday, 19 November 2026",
+  "date_slug": "2026-11-19",
+  "lead": {
+    "kicker": "MARKETS · ANTHROPIC",
+    "headline": "Anthropic prices its IPO at $83 a share and starts trading on Nasdaq today, the biggest IPO on record",
+    "summary": "The offering is 980 million shares, about 956 million sold by Anthropic itself and the rest by existing holders. AP says the price values the Claude maker at about $1.5 trillion and passes SpaceX as the largest IPO ever; Renaissance Capital puts gross proceeds at about $81.3 billion. Shares are expected to trade under the ticker ANT. The pricing came in above expectations despite bubble worries and the turmoil after Nvidia's CEO change.",
+    "source": "AP News",
+    "url": "https://apnews.com/article/anthropic-ipo-nasdaq-ai-b6a74b8949021207dc162fcc876c4649"
+  },
+  "number_of_day": {
+    "value": "~50 → 200",
+    "label": "Data centres in Finland today, and the total if the roughly 150 planned ones get built. President Stubb used the figures in Slush's opening talk to argue Finland can become an AI-infrastructure superpower.",
+    "source": "ETN",
+    "url": "https://etn.fi/index.php/13-news/19536-stubb-uskoo-suomen-nousevan-tekoaelyinfran-suurvallaksi"
+  },
+  "news": [
+    {
+      "tag": "MODELS",
+      "headline": "Google's Gemini 4 Neon: a fast frontier model at $3 / $15 with a 1M context",
+      "summary": "Google says Neon is #3 overall on the Artificial Analysis Intelligence Index (61, at xhigh thinking) and #2 on the Vals Index, with its lowest fabrication rate yet in internal Antigravity testing. Cached input is $0.15 per million tokens. It is rolling out in the Gemini API, Antigravity and the Gemini app, and it's already in Cursor and GitHub Copilot.",
+      "source": "Google",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-neon/"
+    },
+    {
+      "tag": "CODING AGENTS",
+      "headline": "Mistral Vibe goes desktop, with local and cloud agents on Git worktrees",
+      "summary": "The macOS and Windows app (Linux 'coming soon') combines Vibe CLI's local runs with cloud sandbox sessions, so parallel agents can work on separate branches of the same repo. It works with VS Code, JetBrains and Zed via ACP, plus MCP. European developers get three free months of Pro ($14.99/mo) with the code LECHONK, and Mistral had to add more codes after day one.",
+      "source": "AI Weekly",
+      "url": "https://aiweekly.co/alerts/mistral-ships-vibe-desktop-app-for-macos-and-windows-with-local-and-cloud"
+    },
+    {
+      "tag": "CHIPS",
+      "headline": "OpenAI shows how its models redesigned parts of its Jalapeño chip, and now AMD GPU blocks",
+      "summary": "One multiplier redesign used about 15% less cell area and cut latency from two clock cycles to one; an adder lost about 15% of its area with the same latency. OpenAI is now applying the approach to AMD hardware and working with Synopsys to build frontier models into the chip-design (EDA) tools engineers already use.",
+      "source": "OpenAI",
+      "url": "https://openai.com/index/advancing-chip-design-with-our-models/"
+    },
+    {
+      "tag": "FINLAND · SLUSH",
+      "headline": "Slush opens in Helsinki, and Stubb pitches Finland as an AI-infrastructure superpower",
+      "summary": "12,000 people at a sold-out Slush on 18–19 Nov. In the opening talk the president pointed to clean energy (96% of supply, he said), Nokia's networks, and IQM, Bluefors, Iceye and Reorbit, and suggested that Google's planned €13B investment in Finland could end up much larger.",
+      "source": "ETN",
+      "url": "https://etn.fi/index.php/13-news/19536-stubb-uskoo-suomen-nousevan-tekoaelyinfran-suurvallaksi"
+    }
+  ],
+  "x_posts": [
+    {
+      "name": "dax",
+      "handle": "@thdxr",
+      "time": "Thu 02:48",
+      "text": "reflecting on this, it was in august where deepseek 4.1's success and price hike destroyed our economics\n\nwe talked to every inference company that existed. startups and massive companies as well\n\nnone of them could deliver what we needed. we owned no hardware. had zero leases.",
+      "why": "A rare candid look at the economics of running a coding-agent product on rented inference.",
+      "likes": 2072,
+      "reposts": 56,
+      "url": "https://x.com/thdxr/status/2123216909931864355"
+    },
+    {
+      "name": "Guillermo Rauch",
+      "handle": "@rauchg",
+      "time": "Thu 01:56",
+      "text": "I’m being pitched a new inference neocloud company on average every two days. No exaggeration. I take every entrepreneur seriously and I look deeply into each.\n\nBut it’s hard to fathom this being sustainable. At the same time, AI Gateway token demand on Vercel has been ~40% MoM",
+      "why": "Bubble or real demand? Vercel's CEO sees both: a flood of neocloud pitches and 40% monthly token growth.",
+      "likes": 970,
+      "reposts": 33,
+      "url": "https://x.com/rauchg/status/2123203741570740504"
+    },
+    {
+      "name": "Cursor",
+      "handle": "@cursor_ai",
+      "time": "Thu 01:35",
+      "text": "Gemini 4 Neon is now available in Cursor!\n\nAt its default effort, it sets a new cost-performance frontier on CursorBench 4.1, scoring 63.7%, up from 57.3% for Gemini 4 Hydrogen.\n\nPriced at $3/M input and $15/M output tokens.",
+      "why": "Today's Google model is already in your editor, with Cursor's own benchmark numbers.",
+      "likes": 1819,
+      "reposts": 113,
+      "url": "https://x.com/cursor_ai/status/2123198346802450926"
+    },
+    {
+      "name": "OpenAI Developers",
+      "handle": "@OpenAIDevs",
+      "time": "Thu 00:54",
+      "text": "Not every workflow requires an immediate response.\n\nFor single- or multi-turn workflows that can wait, save up to 40% per token than Standard on GPT-6.2 Astra or GPT-6.2 Sol.\n\nIn Responses API background mode, choose a 2h or 8h target for the first response. These discounted…",
+      "why": "Up to 40% off for agent jobs that can wait 2–8 hours: worth knowing for batch evals and overnight runs.",
+      "likes": 1751,
+      "reposts": 80,
+      "url": "https://x.com/OpenAIDevs/status/2123188195202617408"
+    },
+    {
+      "name": "Ethan Mollick",
+      "handle": "@emollick",
+      "time": "Thu 04:59",
+      "text": "At its current shipping trend, halving the time between each model release, Google exhausts all the element names on November 24, with a final shipping cadence of 2.5 × 10⁻²⁹ seconds (25 quectoseconds) between Tennessine and their final model, Oganesson.",
+      "why": "The release pace, summed up in one joke about Gemini's element names.",
+      "likes": 460,
+      "reposts": 20,
+      "url": "https://x.com/emollick/status/2123249864503091301"
+    }
+  ],
+  "inspiration": {
+    "title": "Boating",
+    "creator": "Ellen Thesleff",
+    "year": "1925",
+    "caption": "A Finnish modernist's colour woodcut: two rowers cut down to a few dark shapes, with loose teal and violet ink that she seems to have rubbed on by hand rather than printed evenly.",
+    "image_url": "https://openaccess-cdn.clevelandart.org/1926.453/1926.453_web.jpg",
+    "width": 759,
+    "height": 900,
+    "image_alt": "Colour woodcut of two figures in a rowing boat in dark violet on tan paper, with patches of teal around them",
+    "credit": "The Cleveland Museum of Art",
+    "licence": "CC0",
+    "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "source_url": "https://clevelandart.org/art/1926.453"
+  },
+  "quick_hit": {
+    "label": "Fine print",
+    "text": "Citi updated its terms so customers are responsible for what third-party AI agents with access to their accounts do, even when something goes wrong. Other banks are taking similar positions.",
+    "source": "The Neuron",
+    "url": "https://www.theneuron.ai/digest/everything-that-happened-in-ai-today-thursday-november-19-2026/"
+  },
+  "footer": "Compiled 19 Nov 2026, ~08:10 Helsinki time. X posts come from one X search (last ~24 h, known builders) and news from open web sources. Times are in Helsinki time."
+}
