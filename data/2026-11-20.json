@@ -1,0 +1,122 @@
+{
+  "paper_name": "The Morning Commit",
+  "tagline": "AI · dev tools · tech — a two-minute read",
+  "edition": "Tampere edition",
+  "issue_no": "No. 43",
+  "date_long": "Friday, 20 November 2026",
+  "date_slug": "2026-11-20",
+  "lead": {
+    "kicker": "MARKETS · ANTHROPIC",
+    "headline": "Anthropic's first day: a 34% pop, a 17% close, and Asia sells off anyway",
+    "summary": "ANT opened at $111.50 on Nasdaq, briefly valuing Anthropic above $2 trillion, then gave back much of it to close at $97.17, still 17% above the $83 offer (about $1.76 trillion). It slipped another 6% after hours. The Nasdaq fell over 2% to a seven-month low, and on Friday morning Asian markets dropped hard: the Taiex fell more than 6.8%, the Kospi 5.4% and the Nikkei as much as 4.9%, on worries that the AI boom has peaked.",
+    "source": "Investing.com / Al Jazeera",
+    "url": "https://www.investing.com/news/stock-market-news/anthropic-opens-34-above-ipo-price-reaches-2-trillion-valuation-in-nasdaq-debut-5039595"
+  },
+  "number_of_day": {
+    "value": "600+",
+    "label": "Performance regressions that OpenAI's Codex-run 'Performance Factory' root-caused in just over three months, out of more than 1,700 automated investigations (about 17 a day).",
+    "source": "OpenAI",
+    "url": "https://openai.com/index/how-openai-performance-factory-keeps-chatgpt-fast/"
+  },
+  "news": [
+    {
+      "tag": "AGENTS IN PRODUCTION",
+      "headline": "OpenAI's Performance Factory: Codex agents that investigate, fix and verify ChatGPT slowdowns",
+      "summary": "A performance alert opens a task, an agent investigates and proposes a fix for an engineer to review, and after the deploy another agent checks that latency is back to baseline. The process came out of a shared `perf-forensics` skill, tested with evals built from past regressions. It's a useful blueprint for anyone turning agent skills into workflows that run on their own.",
+      "source": "OpenAI",
+      "url": "https://openai.com/index/how-openai-performance-factory-keeps-chatgpt-fast/"
+    },
+    {
+      "tag": "COMPUTER USE",
+      "headline": "Gemini can now drive your Mac in a background window",
+      "summary": "The Gemini app for Mac can now work across local files, native apps and the web to finish multi-step tasks. It runs in an isolated window with a live preview in the chat, so your own cursor stays free. You pick which apps it can touch and approve key actions. For now it's US-only, English-only, and needs a Google AI Plus, Pro or Ultra plan.",
+      "source": "Google",
+      "url": "https://blog.google/innovation-and-ai/products/gemini-app/computer-use-mac/"
+    },
+    {
+      "tag": "WORLD MODELS",
+      "headline": "Genie 4 opens to developers in the Gemini API and AI Studio",
+      "summary": "One day after launch, developers can generate continuous 720p, 24fps worlds with native audio from a text prompt or an image, then move around with keyboard controls and change the weather, lighting or events with live prompts. Google pitches it for prototyping interactive experiences and for training robots and agents.",
+      "source": "Google",
+      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/genie-4-in-gemini-api/"
+    },
+    {
+      "tag": "TAMPERE · SLUSH",
+      "headline": "Tampere brings 27 startup and research teams to Slush investors",
+      "summary": "Under the Next from Tampere banner, startups and Tampere University Research to Business teams pitched across four themes: industrial tech, semiconductors, health tech and AI. The projects include ways to assess whether organs are viable for transplant and to predict breast cancer metastasis. The aim is more research-based, student-founded growth companies.",
+      "source": "City of Tampere",
+      "url": "https://www.tampere.fi/en/current/2026/11/19/tampere-joins-forces-slush-27-startup-and-research-teams-meet"
+    }
+  ],
+  "x_posts": [
+    {
+      "name": "Ethan Mollick",
+      "handle": "@emollick",
+      "time": "Fri 06:16",
+      "text": "Early fascinating work on how an AI science community would work. 35 human labs deployed agents that worked with each other to do science. They published 936 papers, publicly retracted mistakes, were willing to publish nulls more than humans, and founded a peer review journal.",
+      "why": "A glimpse of agents doing science together, including the unglamorous parts: retractions, null results and peer review.",
+      "likes": 160,
+      "reposts": 14,
+      "url": "https://x.com/emollick/status/2123631539942801732"
+    },
+    {
+      "name": "OpenAI Developers",
+      "handle": "@OpenAIDevs",
+      "time": "Fri 01:56",
+      "text": "Agents using GPT-6.2 in the Responses API can build on earlier reasoning to deliver better results with fewer tokens and more cache hits.\n\nStarting with our newest frontier models, each reasoning item is now tied to the conversation history before it, so editing earlier messages…",
+      "why": "If you build agents on the Responses API, carried-over reasoning means fewer tokens and more cache hits, so check how your app edits history.",
+      "likes": 662,
+      "reposts": 35,
+      "url": "https://x.com/OpenAIDevs/status/2123566018866151579"
+    },
+    {
+      "name": "Ethan Mollick",
+      "handle": "@emollick",
+      "time": "Fri 00:18",
+      "text": "I suspect companies will end up frustrating a lot of customers by telling them they can’t use their own AI agents to help with their own accounts or to manage their own computer. Scaring them will only work so well for so long.",
+      "why": "This follows yesterday's fine print about banks and AI agents: who gets to use their own agent on their own accounts?",
+      "likes": 397,
+      "reposts": 9,
+      "url": "https://x.com/emollick/status/2123541572490817605"
+    },
+    {
+      "name": "Amjad Masad",
+      "handle": "@amasad",
+      "time": "Thu 23:55",
+      "text": "Build your own Muse-like personal agent with one prompt.",
+      "why": "Replit's CEO says a Muse-like personal agent is now a one-prompt build.",
+      "likes": 383,
+      "reposts": 23,
+      "url": "https://x.com/amasad/status/2123535544718418191"
+    },
+    {
+      "name": "swyx",
+      "handle": "@swyx",
+      "time": "Fri 03:38",
+      "text": "when scrolling social media i think it is worth bearing in mind that you can say “odds of reaching SOTA have dropped to zero” and get alot of likes and then 3 months later when they have reached SOTA you post apology form and get even more likes and the subject of your writing",
+      "why": "A good reminder for the bubble-talk week: confident 'it's over' takes get likes, and so do the apologies afterwards.",
+      "likes": 241,
+      "reposts": 5,
+      "url": "https://x.com/swyx/status/2123591875349422435"
+    }
+  ],
+  "writers_corner": {
+    "category": "Tech",
+    "writer": "Simon Willison",
+    "publication": "Simon Willison's Weblog",
+    "date": "Tue 17 Nov",
+    "title": "Running the full server-side Datasette Python app in the browser with service workers and Pyodide",
+    "take": "Simon rebuilt Datasette Lite on service workers, so the whole Python app runs in the browser. Any version, plugin or SQLite build is now one URL away, which makes it great for bug repros and demos.",
+    "quote": "I’ve released a complete rewrite of Datasette Lite using service workers, and it’s now almost indistinguishable from the real server-side application.",
+    "url": "https://simonwillison.net/2026/Nov/17/datasette-lite/",
+    "read_note": "free, ~8-min read",
+    "feed_url": "https://simonwillison.net/atom/entries/"
+  },
+  "quick_hit": {
+    "label": "Slush 100",
+    "text": "Goldfish, a San Francisco startup building a personal AI memory that helps people write, won Slush's €500,000 no-equity prize on Thursday. It beat Sqwish Labs and TerraSpark in a field of more than 1,400 applicants, a record.",
+    "source": "Sesamers",
+    "url": "https://www.sesamers.com/program/slush-100-2026/"
+  },
+  "footer": "Compiled 20 Nov 2026, ~08:00 Helsinki time. X posts come from one X search (last ~24 h, known builders) and news from open web sources. Times are in Helsinki time."
+}
