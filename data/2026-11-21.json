@@ -1,0 +1,87 @@
+{
+  "paper_name": "The Morning Commit",
+  "tagline": "AI · dev tools · tech — a two-minute read",
+  "edition": "Tampere edition",
+  "issue_no": "No. 44",
+  "date_long": "Saturday, 21 November 2026",
+  "date_slug": "2026-11-21",
+  "lead": {
+    "kicker": "OPEN WEIGHTS · LOCAL MODELS",
+    "headline": "Thinking Machines' Inkling 2 Mini: a looped 26B model that runs on your laptop",
+    "summary": "Inkling 2 Mini runs its middle layers three times for every token, so it can reason more without writing everything down. It's a mixture-of-experts model with 26.4B total and 3.4B active parameters, and Thinking Machines says it leads every open-weights model under 100B on DeepSWE v1.1 (48.2%) and Vals Index v2.2 (46.5%). A research variant with a variable loop count ships alongside it, and the lab reports that its chain of thought got shorter with more loops but stayed readable.",
+    "source": "Thinking Machines Lab",
+    "url": "https://thinkingmachines.ai/news/inkling-2-mini/"
+  },
+  "number_of_day": {
+    "value": "13%+",
+    "label": "How far Nvidia and AMD shares each fell on Friday, as Anthropic slid 8.5% on its first full day of trading and the AI sell-off deepened.",
+    "source": "CNBC",
+    "url": "https://www.cnbc.com/2026/11/20/anthropic-stock-ai-amd-nvidia.html"
+  },
+  "news": [
+    {
+      "tag": "MARKETS",
+      "headline": "Anthropic drops 8.5% on its first full day as chip stocks get hammered",
+      "summary": "After Thursday's record debut, ANT closed Friday 8.5% lower. Nvidia and AMD both fell more than 13%, and Amazon, Google and Microsoft closed lower too. CNBC points to worries about the AI trade after Jensen Huang's ouster at Nvidia, sour public sentiment around data centers, and rising interest rates.",
+      "source": "CNBC",
+      "url": "https://www.cnbc.com/2026/11/20/anthropic-stock-ai-amd-nvidia.html"
+    },
+    {
+      "tag": "SECURITY",
+      "headline": "The European Commission confirms an AI-assisted cyberattack took down some of its services",
+      "summary": "The attack was detected on 22 October and hit systems including the Sysper HR platform, the MyPMO medical-reimbursement system and translation tools. The Commission says it found no evidence of a staff data breach. It hasn't named the AI tool, but the disclosure came about two weeks after CERT-EU warned that attackers were using the open AI pentesting framework Artex.",
+      "source": "SecurityWeek",
+      "url": "https://www.securityweek.com/european-commission-confirms-ai-assisted-cyberattack-disrupted-services/"
+    },
+    {
+      "tag": "SLUSH · HELSINKI",
+      "headline": "Slush investors: AI makes software easy to copy, so money moves to hardware",
+      "summary": "At Slush, investors said incumbents can now copy a software product in about four weeks, down from a year, so defensibility is moving to robotics, physical AI and deep tech. PitchBook data puts 2026 robotics and drone deal value at $68.8B, more than double 2025, with space-tech investment tripling.",
+      "source": "PitchBook",
+      "url": "https://pitchbook.com/news/articles/slush-investors-point-to-hardware-and-deep-tech-for-defensibility"
+    }
+  ],
+  "x_posts": [
+    {
+      "name": "dax",
+      "handle": "@thdxr",
+      "time": "Sat 03:41",
+      "text": "it was already difficult going from building everything myself to having a team  it feels uneasy seeing a problem solved and not fully knowing how it works behind the scene  but now with everyone shipping at AI speed this transition is even harder",
+      "why": "An honest note from a founder on losing touch with your own codebase when the whole team ships at agent speed.",
+      "likes": 523,
+      "reposts": 11,
+      "url": "https://x.com/thdxr/status/2123954871363678630"
+    },
+    {
+      "name": "dax",
+      "handle": "@thdxr",
+      "time": "Sat 06:23",
+      "text": "our experimental password manager will eventually have an mcp but can see the flow already even with cli commands  can write a single codemode script to read credit card number and pass into browser tab without the agent ever seeing the values",
+      "why": "A neat pattern for agents and secrets: the script moves the value, and the model never sees it.",
+      "likes": 153,
+      "reposts": 1,
+      "url": "https://x.com/thdxr/status/2123995791190798378"
+    },
+    {
+      "name": "Ethan Mollick",
+      "handle": "@emollick",
+      "time": "Sat 07:22",
+      "text": "It is amazing that human language turned out to be so unreasonably effective at modeling the universe that training a system to predict what comes next in a sentence would get us this far.",
+      "why": "A one-line philosophy prompt for your Saturday coffee.",
+      "likes": 200,
+      "reposts": 14,
+      "url": "https://x.com/emollick/status/2124010579836768572"
+    },
+    {
+      "name": "@levelsio",
+      "handle": "@levelsio",
+      "time": "Sat 01:23",
+      "text": "This was a great success  So I've also added a report endpoint to report AI reply bots yourself … My AI reviews them all, and then I review them again to see if their other replies are also AI",
+      "why": "An indie hacker fighting AI reply spam in the open, with AI as the first filter and a human as the second.",
+      "likes": 124,
+      "reposts": 5,
+      "url": "https://x.com/levelsio/status/2123920308126060726"
+    }
+  ],
+  "footer": "Compiled 21 Nov 2026, ~08:00 Helsinki time. X posts come from one X search (last ~24 h, known builders) and news from open web sources. Times are in Helsinki time."
+}
