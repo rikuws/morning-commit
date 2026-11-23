@@ -1,0 +1,99 @@
+{
+  "paper_name": "The Morning Commit",
+  "tagline": "AI · dev tools · tech — a two-minute read",
+  "edition": "Tampere edition",
+  "issue_no": "No. 46",
+  "date_long": "Monday, 23 November 2026",
+  "date_slug": "2026-11-23",
+  "lead": {
+    "kicker": "OPENAI · SAFETY · PRETRAINING",
+    "headline": "OpenAI's chief scientist wants industry-wide limits on AI, measured in perplexity",
+    "summary": "In a Sunday essay, Jakub Pachocki argues that perplexity (how well a model predicts the next token) should become the shared yardstick for AI progress, and publishes OpenAI's own internal numbers for the first time. He proposes common limits that labs commit not to cross until monitoring of AI behaviour reaches a concrete milestone, such as a successor to chain-of-thought monitors, and warns that AI-driven pretraining breakthroughs could arrive as soon as 2027. Sam Altman called it the most important thing OpenAI has published in a while.",
+    "source": "OpenAI",
+    "url": "https://openai.com/index/perplexity-and-intelligence/"
+  },
+  "number_of_day": {
+    "value": "~0.76",
+    "label": "The log-perplexity at which, Pachocki says, OpenAI's model started producing groundbreaking maths results. GPT-3.5 sat at ~0.99, GPT-4 at ~0.91.",
+    "source": "OpenAI",
+    "url": "https://openai.com/index/perplexity-and-intelligence/"
+  },
+  "news": [
+    {
+      "tag": "CHIPS · AI AGENTS",
+      "headline": "Startup says AI agents designed a brand-new CPU architecture from scratch",
+      "summary": "Palo Alto's Architect Labs says its AI systems discovered, designed and verified Frostbite, a general-purpose CPU with a new instruction set built around interaction nets. In simulation, a four-tile 7nm cluster delivered 4.59x the performance per watt of a dual-issue in-order core across 25 workloads (3.83x without AI tuning). It has not been made in silicon yet.",
+      "source": "Tom's Hardware",
+      "url": "https://www.tomshardware.com/tech-industry/semiconductors/ai-agents-design-an-entirely-new-cpu-architecture-from-scratch-startup-claims-frostbite-posts-4-59x-the-performance-per-watt-of-an-in-order-core-in-pre-silicon-tests"
+    },
+    {
+      "tag": "PRIVACY · OS AGENTS",
+      "headline": "Signal blocks screenshots on Android and iOS to keep OS-level AI agents out of chats",
+      "summary": "Meredith Whittaker called agentic operating systems an \"existential threat\": once an OS agent scans the screen, the data is out of Signal's control. Screenshot blocking, already default on Windows, now comes to mobile. Users can switch it off, which she says breaks Signal's privacy guarantees, and she admits it is an incomplete fix.",
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/11/21/signal-restricts-mobile-screenshots-as-it-confronts-existential-threat-of-ai-surveillance/"
+    },
+    {
+      "tag": "REACTION · POLICY",
+      "headline": "Altman backs the limits proposal; Reuters frames it against fast-growing risk concerns",
+      "summary": "Pachocki wants a first industry-wide development limit plus defined milestones that must be met before passing it. Altman said on X that the industry should seek agreement on common limits. The post also concedes that publishing internal perplexity figures gives competitors a clearer view of where OpenAI stands.",
+      "source": "Reuters (via Investing.com)",
+      "url": "https://www.investing.com/news/stock-market-news/openai-scientist-proposes-industry-ai-limits-tied-to-model-intelligence-metric-5044174"
+    }
+  ],
+  "x_posts": [
+    {
+      "name": "Jeremy Howard",
+      "handle": "@jeremyphoward",
+      "likes": 392,
+      "reposts": 33,
+      "text": "I think a lot of the folks in the \"software is solved\" camp aren't being bold enough. If you try to do something really really difficult, well beyond what anyone has previously achieved in the field, you'll see the limitations and opportunities clearly.",
+      "url": "https://x.com/jeremyphoward/status/2124697969547182326",
+      "time": "Mon 04:54",
+      "why": "A useful test for any coding agent: aim it at something nobody has done before."
+    },
+    {
+      "name": "Ethan Mollick",
+      "handle": "@emollick",
+      "likes": 252,
+      "reposts": 27,
+      "text": "Yes, it is reasonable to expect AI models struggle more with unverifiable domains, but I do think it is worth noting that we also see very large gains in domains without automatic verification as well. Here are human evaluations of AI in writing, business problems, design, etc.",
+      "url": "https://x.com/emollick/status/2124695652341035179",
+      "time": "Mon 04:44",
+      "why": "Pushes back on the idea that AI only improves where answers can be checked automatically."
+    },
+    {
+      "name": "Guillermo Rauch",
+      "handle": "@rauchg",
+      "likes": 477,
+      "reposts": 20,
+      "text": "There's a tweet out there (will likely get deleted soon) of a provider giving you \"free\" inference of a \"stealth model\" that's \"ZDR\" with millions of views. These stealth models are mechanisms of industrial scale data exfiltration to nation state…",
+      "url": "https://x.com/rauchg/status/2124595496849445079",
+      "time": "Sun 22:06",
+      "why": "Follows up on Sunday's leaked-canaries story: \"free\" inference has a price."
+    },
+    {
+      "name": "Harrison Chase",
+      "handle": "@hwchase17",
+      "likes": 154,
+      "reposts": 15,
+      "text": "it is a great vision of the agent *runtime* of the future but the runtime is just one part of an agent platform. theres two glaring omissions imo: 1/ observability/evals 2/ governance…",
+      "url": "https://x.com/hwchase17/status/2124654748104302930",
+      "time": "Mon 02:02",
+      "why": "A short checklist of what agent platforms still lack beyond the runtime."
+    }
+  ],
+  "writers_corner": {
+    "category": "Philosophy",
+    "writer": "Maria Popova",
+    "publication": "The Marginalian",
+    "date": "Sun 22 Nov",
+    "title": "The Most Powerful Attitude You Can Take Toward Your Life and the Life of the World",
+    "take": "Through Richard Powers' advice to the next generation, Popova argues that small deliberate acts still reshape the world, and that algorithmic search has quietly taken away the joy of stumbling onto things.",
+    "quote": "Somewhere along the way of choices being made for us by an insular tribe of technologists, discovery was sacrificed at the altar of search",
+    "url": "https://www.themarginalian.org/2026/11/22/richard-powers-advice/",
+    "read_note": "short read",
+    "feed_url": "https://www.themarginalian.org/feed/"
+  },
+  "footer": "Compiled 23 Nov 2026, ~08:00 Helsinki time. X posts come from one X search (last ~24 h, known builders) and news from open web sources. No Finnish story from the last day made the cut. Times are in Helsinki time."
+}
