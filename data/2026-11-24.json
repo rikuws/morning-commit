@@ -1,0 +1,114 @@
+{
+  "paper_name": "The Morning Commit",
+  "tagline": "AI · dev tools · tech — a two-minute read",
+  "edition": "Tampere edition",
+  "issue_no": "No. 47",
+  "date_long": "Tuesday, 24 November 2026",
+  "date_slug": "2026-11-24",
+  "lead": {
+    "kicker": "NVIDIA · GOVERNANCE · MARKETS",
+    "headline": "Jensen Huang is back as Nvidia's CEO, and the stock adds nearly $1 trillion in a day",
+    "summary": "Less than two weeks after he resigned, Nvidia's board reinstated Huang on Monday under pressure from President Trump, days after its chair said he would not be rehired. The board also opened a probe into possible foreign intelligence efforts targeting Huang. Wall Street cheered and the shares closed up 31.5%, but lawmakers from both parties objected, and governance experts question the board's independence.",
+    "source": "Reuters",
+    "url": "https://www.reuters.com/3fec1b0a85a0/technology/nvidia-reinstates-jensen-huang-ceo-2026-11-23/"
+  },
+  "number_of_day": {
+    "value": "+31.5%",
+    "label": "Nvidia's one-day gain on Huang's return, adding nearly $1 trillion in market value. It still didn't erase all losses since 12 November.",
+    "source": "Reuters",
+    "url": "https://www.reuters.com/3fec1b0a85a0/technology/nvidia-reinstates-jensen-huang-ceo-2026-11-23/"
+  },
+  "news": [
+    {
+      "tag": "CODING AGENTS · CODE REVIEW",
+      "headline": "Anthropic's Claude Ship reviews your PRs, fixes them, and approves the ones your policy allows",
+      "summary": "Code Review (already GA) is joined by two beta agents: PR Steward keeps a PR green by fixing failing CI, conflicts and review comments, and Claude Approvals approves routine changes based on a policy file in the repo, like a smarter CODEOWNERS. Developers can try it with a new /ship command in Claude Code. Anthropic recommends running approvals in observe-only mode first.",
+      "source": "Anthropic",
+      "url": "https://claude.com/resources/articles/introducing-claude-ship"
+    },
+    {
+      "tag": "SECURITY · OPEN SOURCE",
+      "headline": "OpenAI and Cisco open-source Shirudo, eBPF \"shields\" that protect running Linux boxes before the patch lands",
+      "summary": "Agents can investigate a vulnerability and write a targeted eBPF shield that blocks the exploit path while legitimate requests still go through, with no restart. Shields are signed and checked by the eBPF verifier, and a TPM keeps a record of what was loaded. In a test, a Codex-generated shield blocked a Java4Shell exploit against a live Elasticsearch service.",
+      "source": "OpenAI",
+      "url": "https://openai.com/index/introducing-shirudo/"
+    },
+    {
+      "tag": "RESEARCH · AGENT TEAMS",
+      "headline": "DeepMind's Gemini 4 agent teams make quantum algorithms up to 11.8x cheaper, with every result proven in Lean",
+      "summary": "Independent agent teams hunted for improvements, verified each idea in Lean, and met at a virtual \"conference\" every four hours to trade ideas. Results include an 11.8x cost cut for a fusion simulation circuit, 2.5x for the drug-metabolising enzyme Cytochrome P450, and a 290x speedup for arcsin. The Lean library and solutions are open-sourced.",
+      "source": "Google DeepMind",
+      "url": "https://deepmind.google/blog/finding-faster-quantum-algorithms-with-agents-and-formal-verification/"
+    },
+    {
+      "tag": "MODELS · OPEN WEIGHTS",
+      "headline": "Z.ai's GLM-5.4 is its first Loop Transformer, reusing layers to punch at 2–3T-parameter level",
+      "summary": "A group of weight-shared layers runs several times per forward pass, giving more depth without more parameters. Z.ai pitches it as the start of \"Generalized Coding\", with code as the base for a wider range of tasks, and admits it can get stuck in overly long \"marathon thinking\" loops.",
+      "source": "Z.ai",
+      "url": "https://z.ai/blog/glm-5.4"
+    }
+  ],
+  "x_posts": [
+    {
+      "name": "Simon Willison",
+      "handle": "@simonw",
+      "likes": 121,
+      "reposts": 1,
+      "text": "GLM-5.4 is out, and in running pelicans riding bicycles for 5.4 v.s. 5.3, 5.2, and 5.1 I spotted quite a stark style change between 5.2 and 5.3",
+      "url": "https://x.com/simonw/status/2125017693917155424",
+      "time": "Tue 02:04",
+      "why": "A quick, hands-on look at today's GLM-5.4 release, using his long-running pelican test."
+    },
+    {
+      "name": "Mitchell Hashimoto",
+      "handle": "@mitchellh",
+      "likes": 1074,
+      "reposts": 25,
+      "text": "Some folks are shocked we're doing Windows (client) before Linux (client) for Rex. Note we will publicly ship with full Linux and FreeBSD server support soon, but clients will come later. Why? Let's talk about it!",
+      "url": "https://x.com/mitchellh/status/2125005793883980054",
+      "time": "Tue 01:17",
+      "why": "A builder explains a platform-order decision that looks backwards at first glance."
+    },
+    {
+      "name": "Ethan Mollick",
+      "handle": "@emollick",
+      "likes": 70,
+      "reposts": 6,
+      "text": "Two big points from this new Anthropic paper: 1) The most AI value comes from changing the organization 2) There is wide worker resistance to AI adoption (partially due to point 1). Changes that expand what workers do & share AI gains with them could help",
+      "url": "https://x.com/emollick/status/2125098309928812898",
+      "time": "Tue 07:24",
+      "why": "A useful read for anyone rolling out AI inside a company like Solita's clients."
+    },
+    {
+      "name": "Simon Willison",
+      "handle": "@simonw",
+      "likes": 148,
+      "reposts": 6,
+      "text": "I built (with a lot of help from Fable 5.2) a new datasette-charts plugin, which is my best attempt yet at having Datasette automatically pick credible visualizations for any data you might throw at it",
+      "url": "https://x.com/simonw/status/2125007029442114041",
+      "time": "Tue 01:22",
+      "why": "A real shipped tool built with a coding model, with notes on the approach."
+    }
+  ],
+  "inspiration": {
+    "title": "Imperial Barometer",
+    "creator": "Johan Viktor Aarne for the House of Fabergé",
+    "year": "1900–1901",
+    "caption": "A Finnish workmaster's neoclassical barometer in palisander, silver gilt and ruby; records suggest the tsar's brother bought it as a birthday gift for Nicholas II in 1901.",
+    "image_url": "https://openaccess-cdn.clevelandart.org/1966.484/1966.484_web.jpg",
+    "width": 669,
+    "height": 893,
+    "image_alt": "A tall dark-wood barometer with a round dial, framed by gilded silver ornament and garlands",
+    "credit": "The Cleveland Museum of Art",
+    "licence": "CC0",
+    "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "source_url": "https://clevelandart.org/art/1966.484"
+  },
+  "quick_hit": {
+    "label": "Quick hit",
+    "text": "Claude Code has an experimental Code Mode: the model writes JavaScript to run its tools in parallel and return only what it needs. Turn it on with CLAUDE_CODE_EXPERIMENTAL_CODE_MODE=1 (v2.1.323+).",
+    "source": "InfoQ",
+    "url": "https://www.infoq.com/news/2026/11/claude-code-mode/"
+  },
+  "footer": "Compiled 24 Nov 2026, ~08:00 Helsinki time. X posts come from one X search (last ~24 h, known builders) and news from open web sources. No Finnish or Nordic story from the last day made the cut. Times are in Helsinki time."
+}
