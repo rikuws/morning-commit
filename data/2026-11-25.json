@@ -1,0 +1,122 @@
+{
+  "paper_name": "The Morning Commit",
+  "tagline": "AI · dev tools · tech — a two-minute read",
+  "edition": "Tampere edition",
+  "issue_no": "No. 48",
+  "date_long": "Wednesday, 25 November 2026",
+  "date_slug": "2026-11-25",
+  "lead": {
+    "kicker": "GOOGLE WORKSPACE · MCP · AGENTS",
+    "headline": "Google makes Workspace MCP servers and CLI GA, and from 1 February agents must use them instead of the REST APIs",
+    "summary": "Google-hosted MCP servers now cover Gmail, Drive, Docs, Sheets, Slides, Calendar, Chat and Tasks, and a Workspace CLI with packaged agent skills serves terminal agents. The catch: AI agents must use MCP rather than calling Workspace REST APIs directly, with enforcement from 1 February 2027. A free Standard tier keeps published quotas; a paid Scaled tier for higher limits starts billing on 1 April 2027. Admins get agent audit logs, DLP and human-confirmation rules.",
+    "source": "Google Workspace Updates",
+    "url": "https://workspaceupdates.googleblog.com/2026/11/mcp-servers-cli-standardized-usage-tiers-now-available.html"
+  },
+  "number_of_day": {
+    "value": "27M",
+    "label": "Fully AI-generated tracks Tidal will remove when its ban takes effect on 9 December. It says 43% of uploads in the past 90 days were made entirely by AI.",
+    "source": "The Guardian",
+    "url": "https://www.theguardian.com/music/2026/nov/25/tidal-streaming-service-bans-ai-generated-music"
+  },
+  "news": [
+    {
+      "tag": "MCP · CLAUDE",
+      "headline": "On MCP's second birthday, servers can ship Skills to Claude, and Tasks and Elicitation go GA",
+      "summary": "Skills over MCP (public beta in Claude and Claude Code) lets a server publish playbooks next to its tools, loaded only when needed. Tasks let servers run long jobs in the background, and Elicitation lets them pause for user sign-off: Supabase confirms costs before creating a paid project, Railway asks before removing a service. File Uploads is coming soon.",
+      "source": "Anthropic",
+      "url": "https://claude.com/resources/articles/skills-over-mcp-tasks-and-more"
+    },
+    {
+      "tag": "RESEARCH · BIOLOGY",
+      "headline": "OpenAI says GPT-6 models can design new proteins with only reasoning and code",
+      "summary": "No specialised biology models generate the designs. An internal research model matched or beat specialised models on many design tasks, and in lab tests with Onava, proteins based on GPT-6.2's designs showed evidence of binding across five targets. Specialised models still helped supply sequences and pick candidates for testing.",
+      "source": "OpenAI",
+      "url": "https://openai.com/index/gpt-6-models-demonstrate-intrinsic-protein-design-capabilities/"
+    },
+    {
+      "tag": "EUROPE · FUNDING",
+      "headline": "The EU plans a €50B Sovereign Tech Equity Fund, mainly for AI and quantum companies",
+      "summary": "According to the Financial Times, citing two officials, the fund would make larger, riskier and longer-term bets than existing EU schemes, to cut Europe's dependence on US and Chinese tech. Reuters says it could not immediately verify the report.",
+      "source": "Reuters / FT",
+      "url": "https://live.euronext.com/en/financial-news/eu-plans-eu50-billion-tech-fund-challenge-us-and-china-ft-reports"
+    },
+    {
+      "tag": "CHIPS · INFERENCE",
+      "headline": "Amazon buys Decart's AI optimization stack and team, a reported $7.5B bet on Trainium",
+      "summary": "Amazon is buying the technology behind the Decart Optimization Stack and bringing over its three co-founders and engineers. The stack tunes kernels, compilers and runtimes, and Amazon says it will make training and inference on its own chips faster and cheaper as it competes with Nvidia.",
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/11/23/amazon-snaps-up-decarts-ai-optimization-tech-for-7-5b-as-it-prepares-to-sell-trainium-chips/"
+    }
+  ],
+  "x_posts": [
+    {
+      "name": "Anthropic",
+      "handle": "@AnthropicAI",
+      "likes": 3835,
+      "reposts": 354,
+      "time": "Wed 01:05",
+      "text": "New Anthropic Fellows research: Returning to the neuron basis for interpretability. Understanding what’s happening inside an AI model helps to make it safer. One obvious place to look is its neurons, or the simple units it’s built from. Early interpretability work did just that,",
+      "why": "Interpretability research going back to individual neurons, the place the field started.",
+      "url": "https://x.com/AnthropicAI/status/2125365268381929637"
+    },
+    {
+      "name": "Eugene Yan",
+      "handle": "@eugeneyan",
+      "likes": 143,
+      "reposts": 23,
+      "time": "Wed 04:38",
+      "text": "AI benchmarks are more realistic than ever. But they still have bugs (e.g., failing correct work) and mostly measure what's easy, not what matters. Here's my breakdown of 12 public evals: how they're built, where they break, and what to measure instead.",
+      "why": "A practical teardown of 12 evals, worth reading before you trust the next leaderboard.",
+      "url": "https://x.com/eugeneyan/status/2125418696248095188"
+    },
+    {
+      "name": "dax",
+      "handle": "@thdxr",
+      "likes": 1739,
+      "reposts": 27,
+      "time": "Wed 04:21",
+      "text": "we moved all of our current kimi traffic on to our own GPUs and it's serving more efficiently than any other provider and no you dummies it's not quantized, you can test it yourself",
+      "why": "A tool maker now serving an open model on its own hardware, and inviting you to check the quality.",
+      "url": "https://x.com/thdxr/status/2125414608877895857"
+    },
+    {
+      "name": "Simon Willison",
+      "handle": "@simonw",
+      "likes": 121,
+      "reposts": 10,
+      "time": "Wed 01:21",
+      "text": "To accompany the video from my recent talk at @aiDotEngineer, here's an expanded version of my argument that we've seen three key inflection points with LLM over the past twelve months",
+      "why": "One year after Opus 4.5, a look back at when coding agents went from flaky to daily drivers.",
+      "url": "https://x.com/simonw/status/2125369126877286662"
+    },
+    {
+      "name": "Kent C. Dodds",
+      "handle": "@kentcdodds",
+      "likes": 28,
+      "reposts": 1,
+      "time": "Wed 04:59",
+      "text": "People don't want to use your agent. They want to use their agent with your stuff",
+      "why": "One line that sums up today's MCP news from Google and Anthropic.",
+      "url": "https://x.com/kentcdodds/status/2125424058456281324"
+    }
+  ],
+  "writers_corner": {
+    "category": "History",
+    "writer": "Nikos Magouliotis",
+    "publication": "The Public Domain Review",
+    "date": "Tue 24 Nov",
+    "title": "Bickering Buildings: A Dialogue Between the Churches of Athens in 1854",
+    "take": "An anonymous 1854 newspaper satire let Athens' belfries argue over a new Russian-funded bell tower. Magouliotis reads it as a window on the young Greek state's fights over style, foreign influence and its Byzantine past.",
+    "quote": "Buildings are often thought of as “silent witnesses of history”, but they have a history of talking, especially in moments of crisis.",
+    "url": "https://publicdomainreview.org/essay/bickering-buildings",
+    "read_note": "long illustrated essay",
+    "feed_url": "https://publicdomainreview.org/rss.xml"
+  },
+  "quick_hit": {
+    "label": "Quick hit",
+    "text": "Claude can now install an artifact as a Mac or Windows app (beta): it gets its own icon and window, can use your connectors, and updates when you edit the artifact.",
+    "source": "Anthropic",
+    "url": "https://claude.com/resources/articles/install-as-app"
+  },
+  "footer": "Compiled 25 Nov 2026, ~08:10 Helsinki time. X posts come from one X search (last ~24 h, known builders) and news from open web sources. No Finnish or Nordic story from the last day made the cut. Times are in Helsinki time."
+}
