@@ -1,0 +1,94 @@
+{
+  "paper_name": "The Morning Commit",
+  "tagline": "AI · dev tools · tech — a two-minute read",
+  "edition": "Tampere edition",
+  "issue_no": "No. 49",
+  "date_long": "Thursday, 26 November 2026",
+  "date_slug": "2026-11-26",
+  "lead": {
+    "kicker": "ANTHROPIC · RUST · MIGRATIONS",
+    "headline": "Anthropic moved its Messages API from Python to Rust by turning production into the test suite",
+    "summary": "Claude wrote a first version of the core request path in about a week; the hard part was proving parity while the Python API kept changing, outputs were nondeterministic and customer requests couldn't be read. Anthropic shadowed production traffic through both versions, compared results and automatically dispatched agents to fix the differences. The Rust API uses about 70% less CPU per request and cuts median time to first token by about 20%, shipped without downtime or a feature freeze. API traffic grew roughly 1,800x from early 2024 to fall 2026.",
+    "source": "Anthropic",
+    "url": "https://www.anthropic.com/research/migrating-api-to-rust"
+  },
+  "number_of_day": {
+    "value": "9/4",
+    "label": "The matrix multiplication exponent ω, according to a new OpenAI preprint that claims a matching lower bound over every field. If it holds up, ω = 2 is off the table. Not yet independently verified.",
+    "source": "OpenAI (preprint)",
+    "url": "https://raw.githubusercontent.com/openai/math/main/preprints/The-matrix-multiplication-exponent-is-nine-fourths-November-24-2026/paper.pdf"
+  },
+  "news": [
+    {
+      "tag": "CODING MODELS",
+      "headline": "Cognition releases SWE-2.1, an RL-trained coding model on Kimi K3 that roughly doubles SWE-2",
+      "summary": "Terminal-Bench 4.1 goes from 24.2 to 50.0 and FrontierCode 2.0 from 24.1 to 41.3, though Opus 5.5 and Gemini 4 Neon still lead both. The bigger jump is security: 80% on ExploitBench, with full exploit chains over hours of autonomous work.",
+      "source": "Cognition",
+      "url": "https://cognition.com/blog/swe-2-1"
+    },
+    {
+      "tag": "LOCAL MODELS",
+      "headline": "PrismML squeezes a 27B agentic coding model into 5.9 GB with ternary weights",
+      "summary": "Ternary Bonsai 2.5 27B, based on Qwen3.8-27B, stores every weight as −1, 0 or +1 (about 54 GB at full precision). SWE-bench Verified rises from 60.8% to 75.6% versus Bonsai 2 (the full Qwen hits 80.6%), with about 204 tokens/s on an RTX 4090. Apache 2.0, runs via llama.cpp and MLX.",
+      "source": "The Decoder",
+      "url": "https://the-decoder.com/prismml-squeezes-an-agent-based-coding-model-with-27-billion-parameters-into-5-9-gb/"
+    },
+    {
+      "tag": "AI SAFETY · POLICY",
+      "headline": "After Axios reports lab staff fear their best models are unsafe to release, Democrats call for action",
+      "summary": "More than two dozen sources told Axios that employees at OpenAI and Anthropic doubt some unreleased models can be safely released. Senators Kelly, Schatz and Van Hollen called for safeguards and independent examiners now; Sanders called for a pause on advanced AI development.",
+      "source": "Axios",
+      "url": "https://www.axios.com/2026/11/25/democrats-ai-safety-restrictions-openai-anthropic-axios"
+    },
+    {
+      "tag": "HARDWARE",
+      "headline": "HP says AI PCs were nearly 60% of its shipments last quarter",
+      "summary": "That beats HP's 50% target, and it expects the share to go above 60% in fiscal 2027. Rising memory costs are the catch for anyone buying team laptops.",
+      "source": "Benzinga / HP",
+      "url": "https://www.benzinga.com/markets/earnings/26/11/63610829/hp-posts-strong-q4-earnings-with-ai-pcs-nearly-60-of-shipments"
+    }
+  ],
+  "x_posts": [
+    {
+      "name": "Andrej Karpathy",
+      "handle": "@karpathy",
+      "likes": 8305,
+      "reposts": 697,
+      "time": "Thu 04:31",
+      "text": "I asked Claude to populate a Civilization-style game map with real data from the US. Opus 5.5 downloaded and parse a ton of public data and 7 hours and 45K lines of code later... it works :) - 31 real data sources including Census, BEA, BLS, EIA, NOAA, USGS, DoD, NPS, FAA, FEMA,",
+      "why": "A 7-hour, 45K-line agent run on 31 public datasets: a good look at how long the leash can be now.",
+      "url": "https://x.com/karpathy/status/2125779541952246039"
+    },
+    {
+      "name": "Mitchell Hashimoto",
+      "handle": "@mitchellh",
+      "likes": 2440,
+      "reposts": 151,
+      "time": "Thu 00:10",
+      "text": "Rex can now resume your programs through a server restart! This is based on a brand new terminal protocol we're also publishing today (OSC 7577) that we worked on in collaboration with @herdrdev with review from multiple terminal emulator and terminal program authors.",
+      "why": "A new open terminal escape sequence for surviving restarts, reviewed by other terminal authors.",
+      "url": "https://x.com/mitchellh/status/2125713695233970521"
+    },
+    {
+      "name": "dax",
+      "handle": "@thdxr",
+      "likes": 476,
+      "reposts": 6,
+      "time": "Wed 23:29",
+      "text": "you've probably gathered this from our work on rune that opencode desktop is becoming fully native. we want to continue to support js based plugins and this allows for that without embedding a full js runtime. it even works on mobile",
+      "why": "opencode desktop goes fully native while keeping JS plugins, without shipping a JS runtime.",
+      "url": "https://x.com/thdxr/status/2125703538995274106"
+    },
+    {
+      "name": "Ethan Mollick",
+      "handle": "@emollick",
+      "likes": 74,
+      "reposts": 0,
+      "time": "Thu 06:44",
+      "text": "Model names and numbers have never been less useful in determining ability levels. In part this is because the names are more confusing (neon or carbon) and partly because the numbering is not indicative of model families or progress anymore (eg Astra 6.2 vs. 6, Opus 5.5 vs. 5)",
+      "why": "Fair point on a week when SWE-2.1's benchmark table lists eight differently named rivals.",
+      "url": "https://x.com/emollick/status/2125812805534183923"
+    }
+  ],
+  "footer": "Compiled 26 Nov 2026, ~08:10 Helsinki time. X posts come from one X search (last ~24 h, known builders) and news from open web sources. No Finnish or Nordic story from the last day made the cut. Times are in Helsinki time."
+}
